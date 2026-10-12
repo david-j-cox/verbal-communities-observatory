@@ -96,6 +96,13 @@ details.prompt pre{white-space:pre-wrap;font:12.5px/1.45 Menlo,Consolas,monospac
 .bccos{text-align:right;font-size:14px;padding-top:6px}
 .bcmain{min-width:0}
 canvas.bc{width:100%;height:30px;display:block;border:1px solid var(--rule)}
+.bcleg{display:flex;align-items:flex-start;gap:12px;margin:10px 0 4px;flex-wrap:wrap}
+.bcleg .lab{font-size:13px;color:var(--muted);padding-top:2px}
+.bcscale{position:relative;width:340px;max-width:100%}
+.bcscale canvas{width:100%;height:14px;display:block;border:1px solid var(--rule)}
+.bcticks{position:relative;height:30px;font-size:12px}
+.bcticks span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
+.bcticks span::before{content:"";position:absolute;left:50%;top:-4px;height:4px;border-left:1px solid #111}
 .bctitle{font-size:13.5px;margin-top:3px}
 .nbstrip{display:flex;flex-wrap:wrap;gap:3px;margin:8px 0 4px;max-width:620px}
 .nbstrip i{width:13px;height:13px;border-radius:50%;border:1.3px solid var(--ink);display:block}
@@ -397,6 +404,8 @@ function step2() {
   sorted by the top title's values. Similar titles repeat the top title's blue-to-red sweep. The
   number at left is each title's similarity to the top title.</p></div>
   <label class="small" style="cursor:pointer"><input type="checkbox" id="bctog" ${barsSorted ? '' : 'checked'}> Show original order</label>
+  <div class="bcleg"><span class="lab">Color scale</span>
+    <div class="bcscale"><canvas id="bcleg"></canvas><div class="bcticks" id="bcticks"></div></div></div>
   <div class="bchead">The title</div>${row(e.strip[0], 0)}
   <div class="bchead">Its ${e.strip.length - 2} most similar titles</div>
   ${e.strip.slice(1, -1).map((j, n) => row(j, n + 1)).join('')}
@@ -420,6 +429,21 @@ function drawBars() {
       g.fillRect(Math.floor(i * bw), 0, Math.ceil(bw) + 1, h);
     });
   });
+  // Legend: the same color scale, from -m to +m; values beyond either end take the end color.
+  const lc = $('bcleg');
+  if (lc) {
+    const {g, w, h} = setup(lc);
+    for (let px = 0; px < w; px++) {
+      const x = (px / (w - 1)) * 2 - 1, f = Math.abs(x);
+      const [r, gg, b] = x >= 0 ? [178, 24, 43] : [33, 102, 172];
+      const mix = c0 => Math.round(247 + (c0 - 247) * f);
+      g.fillStyle = `rgb(${mix(r)},${mix(gg)},${mix(b)})`;
+      g.fillRect(px, 0, 1, h);
+    }
+    const lab = v => (v > 0 ? '+' : v < 0 ? '\u2212' : '') + Math.abs(v).toFixed(2).replace(/^0\./, '.');
+    const ticks = [[-m, '\u2264 ' + lab(-m)], [-m / 2, lab(-m / 2)], [0, '0'], [m / 2, lab(m / 2)], [m, '\u2265 ' + lab(m)]];
+    $('bcticks').innerHTML = ticks.map(([v, t]) => `<span style="left:${50 + 50 * v / m}%">${t}</span>`).join('');
+  }
 }
 
 function ciSvg(i) {
