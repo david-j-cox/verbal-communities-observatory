@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Quantitative Models of Choice Behavior\",\"definition\":\"Basic and theoretical research on choice, including matching and concurrent-schedule models, changeover behavior, suboptimal and intertemporal choice, behavior dynamics theories, and choice under reinforcing and punishing contingencies.\",\"distinct_from_neighbours\":\"Focuses on general choice theory and quantitative modeling, not conditioned reinforcement and delay effects on human choice, stimulus preference assessments, or behavioral economic demand analyses.\"}",
+ "usage": {
+  "input": 1322,
+  "output": 179
+ },
+ "generated_utc": "2026-10-10T17:56:11+00:00"
+}

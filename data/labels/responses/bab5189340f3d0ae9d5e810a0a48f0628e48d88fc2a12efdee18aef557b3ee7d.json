@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Functional Analysis Advances for Problem Behavior\",\"definition\":\"Work on refining and reviewing functional analysis and functional assessment of problem behavior, including clarifying inconclusive results, synthesized versus isolated contingencies, efficiency and safety, and linking findings to function-based treatment.\",\"distinct_from_neighbours\":\"Centres on functional analysis as the route to treatment, unlike broader assessment-and-treatment overviews of severe challenging behavior, conceptual discussions of behavior-analytic science, or narrower methodological variants such as trial-based formats.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1489,
+  "output": 198
+ },
+ "generated_utc": "2026-10-11T00:38:23+00:00"
+}

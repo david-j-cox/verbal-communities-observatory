@@ -1,0 +1,42 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 109
+Key terms: monkeys, rhesus, chimpanzee, squirrel
+
+Titles closest to the topic's center, conference presentations:
+- The Effect of Signaling Reinforcement in Capuchin Monkeys: Extension of the Gambling Paradigm
+- Evolutionary economics: Value-based decision-making in chimpanzees, bonobos, and humans
+
+Titles closest to the topic's center, journal articles:
+- Negative Behavioral Contrast in Capuchin Monkeys (Sapajus sp.)
+- Acquisition and maintenance of delayed matching‐to‐sample in tufted capuchin monkeys
+- Development and Demonstration of Paired Stimulus Preference Assessment and Embedded Reinforcer Validation with Adult Gorillas
+- On the nature of directed behavior to drug-associated light cues in rhesus monkeys (Macaca mulatta).
+- Effective use of the blank comparison procedure in simple discrimination by infant capuchin monkeys: A methodological note
+- Impact of putamen inhibition by DREADDs on schedule‐induced drinking in rhesus monkeys
+
+NEIGHBOURING TOPIC 58 (similarity 0.71)
+Key terms: behavior rats, food, conditioning, operant
+- Operant Conditioning of Rats
+- When Do Rats Wait for More Food? An Investigation of Reinforcer Accumulation
+- Effects of a spatially separated operant requirement on bouts of responding in rats
+
+NEIGHBOURING TOPIC 154 (similarity 0.69)
+Key terms: olfactory, rats, discrimination, contrast
+- Functional equivalence classes in rats: Repeated olfactory discrimination reversals and delayed stimulus probes
+- An investigation of stimulus prevalence effects in rats
+- Conditional Discrimination in Rats: The Role of Response Topography
+
+NEIGHBOURING TOPIC 128 (similarity 0.69)
+Key terms: fish, species, conditioning, operant
+- Behavioral Interference Between Species
+- Spatial Behavior and Conditioning in Orange Head Cockroaches
+- The Behavior of (Other) Organisms: Considerations for Nontraditional Animal Research

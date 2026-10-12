@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "```json\n{\n  \"label\": \"Assessing and Treating Self-Injurious Behavior\",\n  \"definition\": \"Functional assessment, measurement, treatment, and quantitative modeling of self-injurious behavior, especially automatically maintained forms. Covers protective procedures, injury characteristics, treatment reviews, and treatment-resistant cases in people with developmental disabilities.\",\n  \"distinct_from_neighbours\": \"Unlike the closely related self-injury topic, which centers on restraint, inhibitory stimulus control, and nonsuicidal self-injury, this topic covers broader functional analysis and treatment. It excludes aggression and self-control choice research.\"\n}\n```",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1559,
+  "output": 537
+ },
+ "generated_utc": "2026-10-10T19:07:49+00:00"
+}

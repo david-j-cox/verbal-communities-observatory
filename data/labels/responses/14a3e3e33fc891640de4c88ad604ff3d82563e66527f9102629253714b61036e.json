@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Anxiety, Panic, and Experiential Avoidance\",\"definition\":\"Assessment and treatment of anxiety, panic, and fear, including exposure therapy, acceptance-based and contextual behavioral processes such as experiential avoidance, relational accounts of fear, and anxiety-related behavior in autistic individuals.\",\"distinct_from_neighbours\":\"Focuses on general anxiety, panic, and fear rather than obsessive-compulsive disorder, phobias, and tics, depression and behavioral activation, or serious mental illness in psychiatric settings.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1574,
+  "output": 195
+ },
+ "generated_utc": "2026-10-10T19:07:44+00:00"
+}

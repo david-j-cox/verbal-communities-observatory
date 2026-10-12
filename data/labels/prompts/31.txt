@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 31
+Key terms: teaching behavior, higher education, schools, students
+
+Titles closest to the topic's center, conference presentations:
+- Applied Behavior Analysis in Educational Settings
+- When Applied Behavior Analysis Goes to School: Lessons Learned From the Field
+- Improving Classroom Behavior Support Through Applied Behavior Analysis
+- Behavior Analysis in Schools: Practicing What We Preach
+- Behavior Analysis in Classrooms: Applications Across Teachers and Students
+- Improving Classroom Behavior Support Practices Through Applied Behavior Analysis
+- Don Baer Lecture: The Current Future of Behavior Analysis in Educational Settings
+- Giving the History of Behavior Analysis Away in Teaching Behavior Analysis
+- Recent Advances in Teaching Behavior Analysis in Higher Education Settings
+- Applied Behavior Analysis in Higher Education
+
+Titles closest to the topic's center, journal articles:
+- Preparation of Behavior Analysts for School-based Practice
+- Behavior analysis in college classrooms: A scoping review
+- Introduction to Teaching the History of Behavior Analysis: Past, Purpose, and Prologue
+- How I Learned to Love Teaching Behavior Analysis
+- Open Educational Resources in Behavior Analysis
+- Collaborative Practices of Behavior Analysts in School Settings: Evidence from the Field
+- Ten Instructional Design Efforts to Help Behavior Analysts Take Up the Torch of Direct Instruction
+- Behavior Analysis Goes to School: Teacher Acceptability of Behavior-Analytic Language in Behavioral Consultation
+- Teaching Behavior Analysis through Its History: Narrative and Stories
+- Teaching a Course on the History of Behavior Analysis
+
+NEIGHBOURING TOPIC 77 (similarity 0.90)
+Key terms: graduate training, undergraduate, training behavior, training programs
+- Issues Regarding Graduate Training in Behavior Analysis: Curriculum Content
+- Saving the World With Behavior Analysis: One Undergraduate Student at a Time
+- Essential Readings for Undergraduate Students in Behavior Analysis: A Survey of Behavior Analytic Faculty and Practitioners
+
+NEIGHBOURING TOPIC 135 (similarity 0.84)
+Key terms: science
+- On the Dimensions of Behavior Analysis
+- Theoretical Issues in Behavior Analysis
+- Basic research in behavior analysis.
+
+NEIGHBOURING TOPIC 37 (similarity 0.83)
+Key terms: analysis aba
+- Applied Behavior Analysis: Past, Present, and Future
+- The importance of analysis in applied behavior analysis.
+- Behavior Analysis as an Applied Field: Concerns and Solutions

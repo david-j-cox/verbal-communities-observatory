@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 120
+Key terms: inappropriate mealtime, nervosa, mealtime behavior, eating
+
+Titles closest to the topic's center, conference presentations:
+- Function And Topography of Challenging Mealtime Behavior As Tools For Treatment Identification
+- Measures Related to Social Validity During Intensive Feeding Treatment
+- Review and Implementation of Positive Behavioral Feeding Interventions to Increase Food Consumption
+- Everyone Eats: Behavior Analysis Applied to Eating and Meal-Related Behaviors
+- Disordered Behavioral Processes and Diet-Induced Obesity
+- Evaluation of Antecedent-Based Manipulations in Applied Behavior-Analytic Feeding Interventions
+- To What Extent Does the Reinforcer Pathology Model Predict a Self-Reported Measure of Food Addiction?
+- The Role of Nutrition in Medicine: Dietary and Other Behavioral Interventions for the Management of Significant Health Conditions
+- Choice, Healthy Eating, and Functional Analysis Training
+- Meaningful Mealtimes: A Tiered Approach to Supporting Feeding and Mealtime
+
+Titles closest to the topic's center, journal articles:
+- An evaluation of trial‐based functional analyses of inappropriate mealtime behavior
+- A Comparison of Descriptive and Functional Analyses of Inappropriate Mealtime Behavior
+- Efficacy of functional analysis for informing behavioral treatment of inappropriate mealtime behavior: A systematic review and meta‐analysis
+- A Review of the Literature on the Functional Analysis of Inappropriate Mealtime Behavior
+- Further examination of the treatment of multiply controlled inappropriate mealtime behavior
+- On the role of operant contingencies in the maintenance of inappropriate mealtime behavior: An epidemiological analysis
+- A comparison of functional analysis methods of inappropriate mealtime behavior
+- A translational evaluation of renewal of inappropriate mealtime behavior
+- Functional analysis screening for inappropriate mealtime behavior
+- Ready or Not: Examining Self-Reported Readiness for Behavior Change at Intake Assessment for Adults With an Eating Disorder
+
+NEIGHBOURING TOPIC 24 (similarity 0.76)
+Key terms: food refusal, treatment food, chronic food, pediatric food
+- Further examination of behavior during extinction‐based treatment of pediatric food refusal
+- Treating Food Refusal
+- Behavioral Interventions for Pediatric Food Refusal Maintain Effectiveness Despite Integrity Degradation: A Preliminary Demonstration
+
+NEIGHBOURING TOPIC 49 (similarity 0.75)
+Key terms: food selectivity, presentation, fixed, schedules
+- Delay Gadients to Food Among Different Schedule-Induced Behaviors
+- Comparing Simultaneous and Sequential Food Presentation to Increase Consumption of Novel Target Foods
+- Frequency and Magnitude of Reinforcement in Multiple Schedules: Short Component Durations Show Sensitivity to Frequency Higher than to Duration of Access to Food
+
+NEIGHBOURING TOPIC 63 (similarity 0.72)
+Key terms: food selectivity, selectivity children, treatment food, edible
+- Treatment of Food Selectivity Among Individuals With Autism Spectrum Disorders
+- Randomized controlled trial of an applied behavior analytic intervention for food selectivity in children with autism spectrum disorder
+- Treating food selectivity as resistance to change in children with autism spectrum disorder

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Cocaine Seeking, Self-Administration, and Abstinence\",\"definition\":\"Studies of cocaine as a reinforcer, covering self-administration, relapse and resurgence of cocaine seeking, and impulsive choice in rats and monkeys, plus contingency management for abstinence in people with cocaine use disorder.\",\"distinct_from_neighbours\":\"Focuses specifically on cocaine, unlike stimulant effects on timing and schedule-induced behavior, smoking and general substance-abuse treatment, or behavioral pharmacology of medications as a discipline.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1704,
+  "output": 198
+ },
+ "generated_utc": "2026-10-10T19:04:03+00:00"
+}

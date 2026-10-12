@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Positive and Negative Reinforcement Concepts\",\"definition\":\"Conceptual, basic, and applied work on the nature of reinforcement itself, including positive versus negative reinforcement, induction and molar accounts, reinforcement arrangements, and treating problem behavior maintained by escape or avoidance.\",\"distinct_from_neighbours\":\"Addresses reinforcement as a general process and the positive–negative distinction, rather than alternative-behavior treatments and resurgence, response–reinforcer correlations and dependencies, or conditioned reinforcement in human choice.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1467,
+  "output": 195
+ },
+ "generated_utc": "2026-10-10T19:12:43+00:00"
+}

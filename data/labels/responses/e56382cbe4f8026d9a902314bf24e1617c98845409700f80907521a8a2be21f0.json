@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Substance Use Treatment and Behavioral Economics\",\"definition\":\"Applied and translational work on human addiction, including smoking and other drug use, through contingency management and voucher incentives, behavioral economic measures of severity, choice theories, and treatment dissemination.\",\"distinct_from_neighbours\":\"Centers on treating and measuring human substance use, unlike animal drug self-administration and relapse studies, general behavioral pharmacology of medications, or broad behavioral intervention programs.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1546,
+  "output": 166
+ },
+ "generated_utc": "2026-10-10T19:13:34+00:00"
+}

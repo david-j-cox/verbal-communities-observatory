@@ -1,0 +1,47 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 100
+Key terms: private events, science
+
+Titles closest to the topic's center, conference presentations:
+- Private Events, Thoughts, and Feelings… Oh My! Making Private Behavior Public and Allowing Behavior Analysis Do Its Job
+- Private Events: A Matter of Threshold, Culture, and Analysis Refinement
+- Private Events, Selfing Behaviors, and Responding to the Own Behavior
+- Telling Secrets: Behavior-Analytic Investigations of Private Events
+- Radical Behaviorism and Analyzing Private Events
+- Private Events Are Not Mental Events and Mental Events Are Not Private Events
+- Tacting Interesting Stimuli and Private Events: Analyses and Procedures
+- Research on Imagining and Problem Solving: Investigations Into Private Events and Complex Behavior
+- The Behavior Analysis of Private Events in Visualization-Based Mnemonic Systems and "Mental" Mathematics
+- Complex Overt and Covert Behavior
+
+Titles closest to the topic's center, journal articles:
+- A Neurobiological-Behavioral Approach to Predicting and Influencing Private Events
+- Drug discrimination and the analysis of private events.
+- Issues with Private Practice
+
+NEIGHBOURING TOPIC 64 (similarity 0.63)
+Key terms: cooperation, social behavior, human
+- Some Considerations in the Analysis of Social Behavior
+- It Takes Two to Tango: Analyses of Social Behavior
+- Building the Good Life: Behavioral Foundations of Social Connection, Community, and Cooperation
+
+NEIGHBOURING TOPIC 132 (similarity 0.60)
+Key terms: behaviorism, psychology, science
+- Current Diversification of Behaviorism
+- Methodological Behaviorism: Historical Origins of a Problematic Concept (1923–1973)
+- The Role of Theory in Behavior Analysis: A Response to Unfinished Business, Travis Thompson’s Review of Staddon's New Behaviorism (2nd edition)
+
+NEIGHBOURING TOPIC 61 (similarity 0.58)
+Key terms: mind
+- A Behaviour Analysis of Theory of Mind: Conceptual and Applied Implications
+- A Verbal Behavior Analysis of Theory of Mind: Conceptual and Applied Implications
+- The Intact Mind and Why It Matters

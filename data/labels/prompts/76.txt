@@ -1,0 +1,53 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 76
+Key terms: self-injurious, injurious behavior, self injurious, treatment self
+
+Titles closest to the topic's center, conference presentations:
+- Recent Findings on Automatically Maintained Self-Injurious Behavior
+- Assessment and Treatment of Automatically Maintained Self-Injurious Behavior
+- Self-Injurious Behavior: Decades Past, Decades Ahead (The Problem Is Not Solved)
+- Treatment of Automatically Maintained Self-Injurious Behavior (ASIB)
+- Intractable Head-Directed Self-Injurious Behavior: A Functional Reconsideration
+- Recent Advances in Automatically Reinforced Self-Injurious Behavior
+- Personalizing Interventions for Treatment-Resistant Automatically Maintained Self-Injurious Behavior (SIB)
+- SQAB Tutorial: Choice, Time, and Evolution: Dynamics in Self-Injurious Behavior
+- The Effects of Permanent and Changing Stimuli on the Perception of Self-Movement
+
+Titles closest to the topic's center, journal articles:
+- Protective procedures in functional analysis of self‐injurious behavior: An updated scoping review
+- Injury characteristics across functional classes of self‐injurious behavior
+- Evaluating the relationship between the rate and temporal distribution of self-injurious behavior.
+- Treatment of self‐injurious behavior using differential punishment of high rates of behavior (DPH)
+- Further evaluation of latency measures in the assessment and treatment of severe self‐injurious behavior
+- The effects of an escape extinction procedure using protective equipment on self‐injurious behavior
+- Identifying predictive behavioral markers: A demonstration using automatically reinforced self‐injurious behavior
+- Self-Injurious Behavior in Children With Developmental Disabilities: A Systematic Review of Behavioral Intervention Literature
+- A Meta-Analysis of Treatment for Self-Injurious Behavior in Children and Adolescents With Intellectual and Developmental Disabilities
+- Applying the evolutionary theory of behavior dynamics to model the subtypes of automatically reinforced self‐injurious behavior
+
+NEIGHBOURING TOPIC 121 (similarity 0.75)
+Key terms: self injury, self-injury, treatment self, restraint
+- Establishing inhibitory stimulus control of automatically maintained self-injury.
+- Interventions for Automatically Reinforced Self-Injury: Current Knowledge and Future Directions
+- Examining the Presence, Frequency, and Associated Characteristics of Nonsuicidal Self-Injury by Proxy: Initial Validation of the Nonsuicidal Self-Injury by Proxy Questionnaire (NSSIBPQ)
+
+NEIGHBOURING TOPIC 35 (similarity 0.73)
+Key terms: destructive, aggression, aggressive, attention
+- Evaluating the effects of physical reactions on aggression via concurrent‐operant analyses
+- Assessment and treatment of aggressive behavior maintained by access to physical attention.
+- Effects of Noncontingent Reinforcement on the Persistence and Resurgence of Mild Aggression
+
+NEIGHBOURING TOPIC 103 (similarity 0.73)
+Key terms: self control, self-control, aversive, choice
+- Current Research on Self Control
+- Toward a Unifying Account of Impulsivity and the Development of Self-Control
+- Assessment and treatment of self‐control with aversive events

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 176
+Key terms: compliance training, instructions, child, high
+
+Titles closest to the topic's center, conference presentations:
+- Assessment and Treatment of Compliance Problems in Children
+- Children’s Compliance Function and Subjective Reinforcement Value
+- Further Refinements in Defining and Teaching Compliant Behavior
+- Reevaluating Compliance Training and Embracing Autonomy in Applied Behavior Analysis
+- The Latest in Time-Out and Compliance Training Research
+- Advancing the Understanding and Consideration of Behavioral Models of Adherence
+- The Price of Compliance: Is Negative Reinforcement Worth the Cost?
+- Increasing Compliance With Dental Examination Procedures
+- Maximizing Assent in Restrictive Settings: Case Studies From Residential Treatment and a Conceptual Analysis
+- Culture, Compliance, and Consent Culture, Compliance, and Consent Amoy K Hugh-Pennie (TCI-VCS Program)
+
+Titles closest to the topic's center, journal articles:
+- The effects of errorless compliance training on children in home and school settings
+- Effects of response independent delivery of preferred items and the high‐probability instructional sequence on compliance
+- The effects of high‐p and low‐p instruction similarity on compliance among young children
+- Embedding a functional analysis of compliance in small group instruction
+- An evaluation of generalization of compliance across response types.
+- Mand compliance as a contingency controlling problem behavior: A systematic review
+- A comparison of group contingencies on academic compliance
+- Differential negative reinforcement of other behavior to increase compliance with wearing an anti‐strip suit
+- Tolerance Training with Adolescents in a Residential Juvenile Facility
+- Bug-in-the-Ear Training Increases Teachers’ Effective Instruction Delivery and Student Compliance
+
+NEIGHBOURING TOPIC 133 (similarity 0.71)
+Key terms: child, disorders, treatment, assessment
+- Practical Considerations and Applications of Behavior Analysis to Working With Children in Healthcare Settings
+- Dissemination of Behavior Analysis to the Pediatric Community
+- Quality of Early Intensive Behavioral Intervention as a Predictor of Children's Outcome
+
+NEIGHBOURING TOPIC 105 (similarity 0.70)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 22 (similarity 0.69)
+Key terms: classroom, student, teacher, instructional
+- Interventions for Instruction Following and On-Task Behavior
+- Effects of High-Probability Instructional Sequences as a Programmed Consequence
+- Instructional Strategies That Promote Independent Responding and Reduce Dependence on Prompts

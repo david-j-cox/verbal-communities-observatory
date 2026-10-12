@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 7
+Key terms: reinforcement alternative, alternative reinforcement, alternative behavior, differential reinforcement
+
+Titles closest to the topic's center, conference presentations:
+- Bigger Isn’t Always Better: Effects of Reinforcer-Quality Manipulations During Differential-Reinforcement Procedures on Persistence and Relapse
+- Examining the Intersection Between Resurgence and Variability Following Discontinuation of Reinforcement for Previously Reinforced Responding
+- The Incorporation of Differential Reinforcement of Alternative Behavior in the Treatment of Challenging Behavior
+- Cues Associated with Alternative Reinforcement Can Reduce Resurgence of an Extinguished Instrumental Response
+- Renewal During Dense and Lean Schedules of Differential Alternative Reinforcement: A Human Operant Investigation
+- Differential Reinforcement as an Adjunctive Treatment Component for Interventions Employing Response Interruption and Redirection
+- Investigations of Operant ABA Renewal During Differential Alternative Reinforcement
+- Novel Interventions to Address Behaviors Maintained by Automatic Reinforcement
+- Competition Time! Current Research in the Role of Competing Stimuli and Matched Stimulation in the Treatment of Automatically Maintained Problem Behavior
+- Recent Advances in Basic and Applied Research on Differential Reinforcement of Low Rates Procedures
+
+Titles closest to the topic's center, journal articles:
+- Resurgence following differential reinforcement of alternative behavior implemented with and without extinction
+- Noncontingent reinforcement without extinction plus differential reinforcement of alternative behavior during treatment of problem behavior
+- Concurrent schedules of differential reinforcement of alternative behavior in the treatment of problem behavior without extinction
+- Differential reinforcement without extinction: A review of the literature.
+- Differential Reinforcement Procedures to Decrease Behavior
+- Effects of differential rates of alternative reinforcement on resurgence of human behavior
+- Comparison of operant behavior renewal after elimination by extinction or differential reinforcement of other behavior.
+- Experience with dynamic reinforcement rates decreases resistance to extinction
+- Evaluation of resurgence following differential reinforcement of alternative behavior with and without extinction in a human operant model
+- The role of adventitious reinforcement during differential reinforcement of other behavior: A systematic replication
+
+NEIGHBOURING TOPIC 177 (similarity 0.89)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change
+
+NEIGHBOURING TOPIC 171 (similarity 0.89)
+Key terms: negative reinforcement, positive, contingencies
+- Increasing Behavior With Conditioned Reinforcement
+- Increasing a Behavior With Positive Reinforcement
+- Selection, Reinforcement, and Behavior
+
+NEIGHBOURING TOPIC 130 (similarity 0.85)
+Key terms: delayed reinforcement, delays, fixed, interval
+- Progressive Delay of Reinforcement: Effects on Response Rate, Post-Reinforcement Pause, and Response Induction
+- Factors and Procedures Pertaining to Delays to Reinforcement: Translational and Applied Evaluations
+- Response duration is sensitive to both immediate and delayed reinforcement

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Functional Analysis Procedural Variations and Validity\",\n\"definition\": \"Research refining experimental functional analysis methods, comparing formats such as trial-based, brief, and interview-informed analyses for validity, efficiency, safety, and acceptability, and training staff to implement and interpret them.\",\n\"distinct_from_neighbours\": \"Focuses on the methodology of experimental functional analysis itself, not broader functional behavior assessment protocols, function-based treatment of problem behavior, or qualitative research methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1555,
+  "output": 176
+ },
+ "generated_utc": "2026-10-10T19:11:25+00:00"
+}

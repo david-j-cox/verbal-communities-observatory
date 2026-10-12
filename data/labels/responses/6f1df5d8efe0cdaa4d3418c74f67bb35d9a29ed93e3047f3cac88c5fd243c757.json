@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Pigeon key-peck timing and schedule performance\",\"definition\":\"Laboratory studies of pigeons' key pecking under reinforcement schedules, examining timing of intervals, delays, pausing, response variability and force, midsession reversal, and drug effects on ongoing performance.\",\"distinct_from_neighbours\":\"Focuses on the temporal patterning and dynamics of pecking under schedules, not on choice and preference, visual discrimination and memory, or inference and distance effects in choice.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1159,
+  "output": 168
+ },
+ "generated_utc": "2026-10-10T19:13:42+00:00"
+}

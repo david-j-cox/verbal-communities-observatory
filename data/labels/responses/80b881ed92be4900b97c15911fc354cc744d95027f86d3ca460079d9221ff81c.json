@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Punishment Processes and Quantitative Models\",\"definition\":\"Basic and applied research on punishment as a behavior-reduction process, including quantitative and choice-based models, punishment sensitivity, intensity effects, side effects, and its use with severe problem behavior.\",\"distinct_from_neighbours\":\"Centers on response-contingent punishment itself, not assessment and treatment of aggression, response–reinforcer relations, or positive and negative reinforcement for increasing behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1332,
+  "output": 163
+ },
+ "generated_utc": "2026-10-10T19:12:52+00:00"
+}

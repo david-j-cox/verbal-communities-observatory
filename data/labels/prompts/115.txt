@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 115
+Key terms: reading, writing, students, instruction
+
+Titles closest to the topic's center, conference presentations:
+- Unlocking Literacy: Applying the Science of Behavior to Reading Instruction for Early and Advanced Readers
+- Establishing Conditioned Reinforcement for Reading and Writing and Incorporating Functional Writing Contingencies in the General Education Setting
+- ACoLE/BARR: Behavioral Assessment of Reading and Writing: Analyzing Student's Skills and Establishing Teaching Goals
+- Reading-to-Learn: The Science of Behavior and Advanced Reading Instruction
+- Developing Reading Skills in Mainstream Education
+- Achieving Fluency With Academic Behaviors: Procedures and Results From Three Intervention Studies on Reading and Writing
+- Teaching Reading and Writing to Preschool Students: A Verbal Behavior Development Approach
+- Verbal Developmental Cusps and Reading: Conditioned Reinforcement and Phonemic Derived Relations for School-Age Readers
+- Small Steps Toward a Complex and Integrated Reading and Writing Repertoire
+- Emergent Learning and Textual Stimulus Variables for Teaching Reading to Children and Adults
+
+Titles closest to the topic's center, journal articles:
+- Establishment of Conditioned Reinforcement for Reading Content and Effects on Reading Achievement for Early-Elementary Students
+- The Effect of the Establishment of Conditioned Reinforcement for Reading Content on Second-Graders’ Reading Achievement
+- Second-Grade Urban Learners: Preliminary Findings for a Computer-Assisted, Culturally Relevant, Repeated Reading Intervention
+- Elementary Students Prefer Extra Reading Practice Before Reading in Front of Peers
+- Between the Lines: Integrating the Science of Reading and the Science of Behavior to Improve Reading Outcomes for Australian Children
+- On the Science of Reading: How Social Justice, Behavior Analysis, and Literacy Instruction Converge
+- Using a Simple Discrimination Procedure with Compound Class-Specific Consequences to Teach Early Reading Skills
+- A Systematic Review of Explicit Instruction and Frequency Building Interventions to Teach Students to Write
+- Remediation of the picture‐text problem for learners exhibiting reading deficits
+- An evaluation of Headsprout early reading as an online parent‐mediated intervention for primary school children
+
+NEIGHBOURING TOPIC 170 (similarity 0.83)
+Key terms: reading fluency, oral reading, reading comprehension, reading performance
+- Effects of a Multicomponent Intervention to Improve Reading Fluency in Adult Students
+- Effects of Performance Criteria during Reading Instruction on Generalized Oral Reading Fluency
+- Effect of Repeated Reading on Reading Fluency for Adults with Specific Learning Disabilities
+
+NEIGHBOURING TOPIC 181 (similarity 0.73)
+Key terms: spelling, sight, word, reading
+- Brief and Extended Experimental Analyses of Spelling Deficits
+- Effects of stimulus disparity on acquisition of sight word sets: Manipulation of initial letter
+- An Evaluation of Strategic Incremental Rehearsal on Sight Word Acquisition Among Students with Specific Learning Disabilities in Reading
+
+NEIGHBOURING TOPIC 106 (similarity 0.69)
+Key terms: equivalence based, precision teaching, based instruction, students
+- Conceptual and Technical Issues in Instruction
+- Features of Direct Instruction: Interactive Lessons
+- Making Learning Work: Evolving and Evidenced-Based Methods in Generative and Efficient Instruction

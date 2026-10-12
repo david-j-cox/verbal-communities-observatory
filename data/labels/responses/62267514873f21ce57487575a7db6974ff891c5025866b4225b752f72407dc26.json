@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Skill Teaching for Intellectual Disabilities\",\"definition\":\"Instructional interventions that teach academic, social, play, life, and vocational skills to students and adults with intellectual and developmental disabilities, often delivered by educators, staff, or volunteers in schools.\",\"distinct_from_neighbours\":\"It centres on teaching new skills broadly, not on communication modality and augmentative systems, assessing and treating challenging behavior, or supported employment outcomes for adults.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1717,
+  "output": 162
+ },
+ "generated_utc": "2026-10-10T19:09:45+00:00"
+}

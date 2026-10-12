@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Learning and Choice in Nonhuman Primates\",\"definition\":\"Experimental studies with monkeys, chimpanzees, bonobos, and gorillas examining discrimination, matching-to-sample, reinforcer contrast, preference assessment, choice and gambling, drug-associated cues, and neural influences on schedule-induced behavior.\",\"distinct_from_neighbours\":\"Defined by nonhuman primate subjects, unlike the rat operant and rat discrimination topics and the topic on fish, insects, and other nontraditional species.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1113,
+  "output": 185
+ },
+ "generated_utc": "2026-10-10T19:09:21+00:00"
+}

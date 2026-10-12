@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 11
+Key terms: language, verbal, operant, words
+
+Titles closest to the topic's center, conference presentations:
+- Advancing Evaluations on the Emergence and Acquisition of Various Verbal Operants
+- Correspondence of Verbal Reports: An Experimental Analysis
+- English Verb Constructions: A Behavior Analytic Reinterpretation
+- The Echoic: An Overlooked, but Fundamental, Verbal Operant
+- Assessing Functional Language With a Verbal Operant Experimental (VOX) Analysis
+- Verbal Correspondence: From the Laboratory to Applied Research
+- Verbal Functions: From Learning Names to Writing Algorithms
+- Complex Invariance: Translation, Paraphrase, and the Precision of Technical Language
+- The Role of Verbal Behavior in Translation and Humor
+- Speaking the Same Language: Why Definitions Matter in the Treatment of Complex Cases
+
+Titles closest to the topic's center, journal articles:
+- Toward a Behavioral Interpretation of English Grammar
+- The Behavior Analysis of Language and Cognition: A Call for System Building
+- Emotional Overtones of Behavior Analysis Terms in English and Five Other Languages
+- Inflexitext: A program assessing psychological inflexibility in unstructured verbal data
+- Thirty Million Words––and Even More Functional Relations: a Review of Suskind’s Thirty Million Words
+- Verbal Repertoires and Contextual Factors in Cultural Change
+- Relational Coherence, Rule-Following and Speaker Preference: Punishment and Extinction as Operations Are Similar, but Not for Everyone
+- When language inspires and when language bamboozles: An analysis and appraisal of Words Like Loaded Pistols: The Power of Rhetoric from the Iron Age to the Information Age by Sam Leith
+- Functional and descriptive contextualism
+- Exploratory Factor Analysis of the VB-MAPP: Support for the Interdependency of Elementary Verbal Operants
+
+NEIGHBOURING TOPIC 172 (similarity 0.79)
+Key terms: foreign language, language acquisition, repertoires, instruction
+- The Social and Cognitive Foundations of Language Acquisition
+- Learning a foreign language: Effects of tact and listener instruction on the emergence of bidirectional intraverbals
+- Humans Learn Language Through Observation: A Verbal Behavior Development Account of Language Acquisition
+
+NEIGHBOURING TOPIC 169 (similarity 0.76)
+Key terms: analysis verbal, verbal behavior
+- Basic Research on Verbal Behavior
+- Advances in Verbal Behavior
+- The current status of the experimental analysis of verbal behavior.
+
+NEIGHBOURING TOPIC 17 (similarity 0.75)
+Key terms: nonverbal, speech, intraverbal, verbal behavior
+- Verbal Stimulus Control and the Intraverbal Relation
+- Emergent Relations between Discriminative Stimuli, Responses, and Consequences in Intraverbals
+- Verbal-Like Effects of Nonverbal Stimuli

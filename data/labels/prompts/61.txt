@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 61
+Key terms: mind
+
+Titles closest to the topic's center, conference presentations:
+- A Behaviour Analysis of Theory of Mind: Conceptual and Applied Implications
+- The Intact Mind and Why It Matters
+- Issues in Reductionism: Mind, Brain, and Behavior
+- Developing a Behavior al Account of Consciousness
+- Another Strange Inversion: Absolute Ignorance, Adaptive Behavior, and the Origins of Reflexes
+- Translating Mentalism: Mind as a Metaphor for Functional Relations
+- Consciousness: Taking the Debate Forward
+- Lies, Labels, and Limits: Contextual Control of Listening
+- Countertransference or Cultural Blindness? When Empathy Becomes Assumption
+- Why Children Need to Talk to Themselves: The Foundation of Reasoning and Questioning
+
+Titles closest to the topic's center, journal articles:
+- A Verbal Behavior Analysis of Theory of Mind: Conceptual and Applied Implications
+- A pragmatic sign theory of truth for the behavioral sciences
+- Defusion techniques on self-referential thought in laboratory-based experimental research: A meta-analysis of believability and discomfort outcomes
+- Automatic thoughts: Understanding the precursors of self-concealment within the psychological flexibility framework
+- The IRAP as a Measure of Implicit Cognition: A Case of Frankenstein’s Monster
+- Still some explaining to do: A review of The Escape of the Mind by Howard Rachlin
+- In support of reacquainting functional contextualism and interbehaviorism
+- Attempting to Analyze Perspective-Taking with a False Belief Vignette Using the Implicit Relational Assessment Procedure
+- Perspective taking reduces the correspondence bias: A systematically replication of Hooper et al. (2015)
+- Is talking to yourself thinking?
+
+NEIGHBOURING TOPIC 53 (similarity 0.79)
+Key terms: creativity, psychology, psychological, science
+- Complex Behavior and Behavioral Artistry
+- Behavioral contrast: Research and areas for investigation
+- Behavioral Interpretations of Creativity
+
+NEIGHBOURING TOPIC 157 (similarity 0.71)
+Key terms: relational responding, derived relational, relations, verbal
+- On the structure of relational responding
+- Applications of Derived Relational Responding in Diverse Contexts
+- A Verbal Behavior Analysis of Complex Relational Responding
+
+NEIGHBOURING TOPIC 39 (similarity 0.70)
+Key terms: scientific, science, human, scientist
+- The Language of Science
+- The Culture of Science
+- The Scientist Behavior, Behavior Analysis, Relational Framing: A Tree as a Metaphor for Keeping Alive the Functional Sap in Our Practices

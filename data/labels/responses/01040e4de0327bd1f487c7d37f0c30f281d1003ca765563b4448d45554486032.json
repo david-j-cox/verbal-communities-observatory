@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Clinical Behavior Analysis and Psychotherapy\",\n\"definition\": \"Work defining, extending, and evaluating behavior-analytic therapy for outpatient-style clinical problems, including psychotherapy approaches, therapeutic relationships, values, assessment for comprehensive therapy programs, and links with clinical psychology.\",\n\"distinct_from_neighbours\": \"Centres on clinical behavior analysis as a therapy tradition, rather than particular intervention programs, qualitative research methods, or assessment and treatment of severe problem behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1501,
+  "output": 191
+ },
+ "generated_utc": "2026-10-10T19:05:04+00:00"
+}

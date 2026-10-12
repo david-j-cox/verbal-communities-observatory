@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 42
+Key terms: staff training, human services, management, performance
+
+Titles closest to the topic's center, conference presentations:
+- Advances in Staff Training
+- Evaluating the Efficacy of Staff Training Procedure
+- Recent Advancements in Staff Training Interventions
+- Further Examination of Training and Supervision Strategies to Promote Staff Performance in Applied Settings
+- Tools for Positive Supports: Staff Training in Residential Settings
+- Behavioral Systems Approaches to Staff Training: Effective Orientation, On-Boarding, and Training Systems
+- Variations in Staff Training Across Different Settings and Skills
+- Staff Training in Adult Services
+- Advancements in Staff Training Practices via Progressive Behavior-Analytic Approaches
+- Getting the Job Done: Evaluating Methodologies for Improving Staff Performance Across Different Settings
+
+Titles closest to the topic's center, journal articles:
+- A Survey of Staff Training and Performance Management Practices: An Update
+- A review of the literature on staff training strategies that minimize trainer involvement
+- Expanding the pyramidal staff training approach
+- An Evaluation of Staff Reactivity Following Performance Feedback and Self-Monitoring Procedures in a Group Home Setting
+- An Evaluation of a Staff Management Strategy to Minimize Reactivity in Procedural Fidelity of Intervention Implementers
+- Using the Performance Diagnostic Checklist–Human Services to identify an indicated intervention to decrease employee tardiness
+- Effective remote staff training of objective session notes
+- A Review of The Supervisor’s Guidebook: Evidence-Based Strategies for Promoting Work Quality and Enjoyment among Human Service Staff
+- Reducing Response Effort to Improve Employee Preparedness in a Human Service Organization
+- Review of The Supervisor's Guidebook: Evidence‐Based Strategies for Promoting Work Quality and Enjoyment Among Human Service Staff (2nd edition) by Dennis Reid, Marsha Parsons, and Carolyn Green
+
+NEIGHBOURING TOPIC 81 (similarity 0.70)
+Key terms: behavioral skills, skills training, using behavioral, staff
+- Recent Research on the Varied Applications of Behavioral Skills Training
+- Recent Advancements and Applications in Behavioral Skills Training
+- Recent Applications of Behavioral Skills Training
+
+NEIGHBOURING TOPIC 164 (similarity 0.69)
+Key terms: supervision practices, effective supervision, bcba, ethical
+- Recommended Practices for Individual Supervision: Considerations for the Behavior-Analytic Trainee
+- Current Research and Ethical Issues in Supervision
+- Engaging in Ethical and Effective Supervision Practices
+
+NEIGHBOURING TOPIC 196 (similarity 0.68)
+Key terms: skill acquisition, skills, training, performance
+- Recent Research in Skill Acquisition
+- Skill Acquisition Learning Arrangements: How the Little Things Can Make a Big Difference
+- Efficacy and Efficiency in Skill Acquisition: Novel Approaches to Measurement and Procedural Refinement

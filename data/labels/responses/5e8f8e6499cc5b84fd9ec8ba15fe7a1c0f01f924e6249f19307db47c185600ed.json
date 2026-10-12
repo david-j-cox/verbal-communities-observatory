@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Good Behavior Game and Classroom Disruption\",\"definition\":\"School-based interventions to reduce disruptive and challenging student behavior and increase appropriate classroom behavior, especially the Good Behavior Game, classroom management, rules and feedback, and function-based supports.\",\"distinct_from_neighbours\":\"Targets reduction of disruptive and challenging behavior through classroom management and group contingencies, unlike instructional strategies for on-task responding, broad school dissemination of behavior analysis, or pediatric healthcare services.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1759,
+  "output": 370
+ },
+ "generated_utc": "2026-10-10T19:11:45+00:00"
+}

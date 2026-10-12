@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 73
+Key terms: pediatric feeding, feeding disorders, treatment pediatric, children feeding
+
+Titles closest to the topic's center, conference presentations:
+- Considerations Regarding the Assessment and Treatment of Pediatric Feeding Disorders
+- Advancements in the Assessment and Treatment of Pediatric Feeding Disorders
+- Introductory Assessment and Treatment of Pediatric Feeding Disorders
+- Assessment Modifications and Antecedent Interventions in the Treatment of Pediatric Feeding Disorders
+- Assessment and Treatment of Pediatric Feeding Disorders
+- Recent Advancements in the Assessment and Treatment of Pediatric Feeding Disorders
+- Research Trends, Practical Considerations, and Future Directions in Pediatric Feeding Disorders
+- Examining Treatment Procedures for Feeding Problems Exhibited by Children With and Without Diagnoses
+- Recent Advancements in the Treatment of Pediatric Feeding Disorders
+- Training in Assessment and Treatment of Pediatric Feeding Disorders
+
+Titles closest to the topic's center, journal articles:
+- On the efficacy and efficiency of treating pediatric feeding disorder
+- Evaluation of two physical guidance procedures in the treatment of pediatric feeding disorder
+- Food preferences before and during treatment for a pediatric feeding disorder
+- Relapse during the treatment of pediatric feeding disorders
+- Considerations for early dropout and barriers to outpatient treatment for pediatric feeding disorders.
+- Noncontingent reinforcement in the treatment of pediatric feeding disorder: A concise review
+- Pediatric feeding disorders research—Special virtual issue
+- Synthesis of Applied Behavior Analytic Interventions for Packing in Pediatric Feeding Disorders
+- A systematic review of functional analysis in pediatric feeding disorders
+- Noncontingent and differential reinforcement in the treatment of pediatric feeding problems
+
+NEIGHBOURING TOPIC 63 (similarity 0.74)
+Key terms: food selectivity, selectivity children, treatment food, edible
+- Treatment of Food Selectivity Among Individuals With Autism Spectrum Disorders
+- Randomized controlled trial of an applied behavior analytic intervention for food selectivity in children with autism spectrum disorder
+- Treating food selectivity as resistance to change in children with autism spectrum disorder
+
+NEIGHBOURING TOPIC 24 (similarity 0.74)
+Key terms: food refusal, treatment food, chronic food, pediatric food
+- Further examination of behavior during extinction‐based treatment of pediatric food refusal
+- Treating Food Refusal
+- Behavioral Interventions for Pediatric Food Refusal Maintain Effectiveness Despite Integrity Degradation: A Preliminary Demonstration
+
+NEIGHBOURING TOPIC 120 (similarity 0.72)
+Key terms: inappropriate mealtime, nervosa, mealtime behavior, eating
+- An evaluation of trial‐based functional analyses of inappropriate mealtime behavior
+- A Comparison of Descriptive and Functional Analyses of Inappropriate Mealtime Behavior
+- Efficacy of functional analysis for informing behavioral treatment of inappropriate mealtime behavior: A systematic review and meta‐analysis

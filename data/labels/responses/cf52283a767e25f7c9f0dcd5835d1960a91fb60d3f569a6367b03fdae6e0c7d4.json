@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Apparatus and Devices in Behavioral Research\",\n\"definition\": \"Work describing equipment and technology used to study or change behavior, including operant laboratory apparatus, aversive stimulation and avoidance setups, biofeedback devices, prosthetic wearing, and scent-detection animals.\",\n\"distinct_from_neighbours\": \"Centers on the equipment and devices themselves rather than rat operant conditioning procedures, food or water delivery and feeding, or olfactory discrimination and stimulus-class learning in rats.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1049,
+  "output": 181
+ },
+ "generated_utc": "2026-10-10T19:10:47+00:00"
+}

@@ -1,0 +1,52 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 93
+Key terms: trial teaching, discrete-trial, discrete trial, trial instruction
+
+Titles closest to the topic's center, conference presentations:
+- Evaluating Data Collection Procedures During Discrete Trial Teaching
+- Discrete Trial Teaching: The Worst Form of Instruction Except for All Those Other Forms of Instruction
+- Tactics to Increase the Efficacy and Efficiency of Discrete Trial Training
+- Comparing Methods to Maximize Teaching: Equivalence Based Instruction, Progressive and Conventional Discrete Trial Teaching
+- Improving Procedural Fidelity of Discrete-Trial Instruction with Self-Monitoring
+- Comparing Instructional Strategies for Discrete Trial Teaching via Telehealth
+- Assessing and Enhancing Discrete Trial Procedures to Maximize Learning for Children With ASD
+- Improving Treatment Integrity of Error Correction Procedures in Teaching
+
+Titles closest to the topic's center, journal articles:
+- Using Computer-Based Instruction to Teach Implementation of Discrete Trial Instruction: A Replication and Extension
+- An evaluation of estimation data collection to trial‐by trial data collection during discrete trial teaching
+- Training individuals to implement discrete‐trial teaching procedures using behavioral skills training: A scoping review with implications for practice and research
+- The influence of observations and ratings on implementation of discrete trial instruction
+- Using behavioral skills training to teach high school students to implement discrete trial training.
+- The use of performance criteria for determining “mastery” in discrete‐trial instruction: A call for research
+- Discrete‐trial teaching: A scoping review
+- Using Behavioral Skill Training to Extend Discrete-Trial Teaching Skills Across Instructional Programs
+- Toward Efficiency and Effectiveness: Comparing Equivalence-based Instruction to Progressive Discrete Trial Teaching
+- The Use of Behavioral Skills Training to Teach Staff Discrete Trial Teaching
+
+NEIGHBOURING TOPIC 106 (similarity 0.73)
+Key terms: equivalence based, precision teaching, based instruction, students
+- Conceptual and Technical Issues in Instruction
+- Features of Direct Instruction: Interactive Lessons
+- Making Learning Work: Evolving and Evidenced-Based Methods in Generative and Efficient Instruction
+
+NEIGHBOURING TOPIC 196 (similarity 0.70)
+Key terms: skill acquisition, skills, training, performance
+- Recent Research in Skill Acquisition
+- Skill Acquisition Learning Arrangements: How the Little Things Can Make a Big Difference
+- Efficacy and Efficiency in Skill Acquisition: Novel Approaches to Measurement and Procedural Refinement
+
+NEIGHBOURING TOPIC 141 (similarity 0.68)
+Key terms: math, fluency, course, student
+- Improving Learning in Higher Education: Fluency, Oral Quizzes, Reducing Procrastination, and Weekly Quizzes
+- Improving Students’ Academic Performance
+- A Comparison of Escalating Versus Fixed Reinforcement Schedules on Undergraduate Quiz Taking

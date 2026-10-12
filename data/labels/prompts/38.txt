@@ -1,0 +1,53 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 38
+Key terms: interval schedules, schedules reinforcement, variable interval, fixed interval
+
+Titles closest to the topic's center, conference presentations:
+- Responding Under Variable- and Cyclic-Interval Schedules of reinforcement
+- Translational and Applied Studies on Schedules and Parameters of Reinforcement
+- Human Operant Schedules of Reinforcement
+- A Parametric Replication of the Effect on Performance and Timing of Delayed Reinforcement in a Fixed-Interval Schedule
+- Computational Simulation and the Search for a Quantitative Description of Simple Reinforcement Schedules
+- Bout Engagement in Differential Reinforcement of Low Rate Schedules
+- Set in Motion: The Experimental Analysis of Dynamic Reinforcement Schedule and Behavior
+- Basic and Applied Research on Behavior in Transitions Between Rich and Lean Schedules of Reinforcement
+- Preference and Performance for the Distribution of Reinforcement and Arrangement of Work
+
+Titles closest to the topic's center, journal articles:
+- Theory of reinforcement schedules
+- Concurrent schedules: How responses per reinforcer affects estimates of sensitivity to reinforcement
+- Effects of rules on schedule performance with synchronous schedules of reinforcement
+- Variable‐time schedules protect against effects of fidelity errors during noncontingent reinforcement
+- Temporal distribution of schedule‐induced behavior depends on the essential value of the reinforcer
+- Differential Reinforcement of Low Rate Schedules Reduce Severe Problem Behavior
+- Further Evaluation of the Use of Multiple Schedules for Behavior Maintained by Negative Reinforcement
+- Reinforcement value and fixed‐interval performance
+- The role of schedules of reinforcement in the experimental analysis of social behavior
+- Multiple schedules, off‐baseline reinforcement shifts, and resistance to extinction
+
+NEIGHBOURING TOPIC 130 (similarity 0.88)
+Key terms: delayed reinforcement, delays, fixed, interval
+- Progressive Delay of Reinforcement: Effects on Response Rate, Post-Reinforcement Pause, and Response Induction
+- Factors and Procedures Pertaining to Delays to Reinforcement: Translational and Applied Evaluations
+- Response duration is sensitive to both immediate and delayed reinforcement
+
+NEIGHBOURING TOPIC 26 (similarity 0.86)
+Key terms: interval schedules, fixed interval, timing, multiple schedules
+- Effects of signaling on temporal control of behavior in response‐initiated fixed intervals
+- Investigations of Schedule-Induced Behavior: Pausing, Escape, and Polydipsia
+- Understanding Disruptive Effects of Stimuli Correlated With Schedules of Positive Reinforcement
+
+NEIGHBOURING TOPIC 7 (similarity 0.83)
+Key terms: reinforcement alternative, alternative reinforcement, alternative behavior, differential reinforcement
+- Resurgence following differential reinforcement of alternative behavior implemented with and without extinction
+- Noncontingent reinforcement without extinction plus differential reinforcement of alternative behavior during treatment of problem behavior
+- Concurrent schedules of differential reinforcement of alternative behavior in the treatment of problem behavior without extinction

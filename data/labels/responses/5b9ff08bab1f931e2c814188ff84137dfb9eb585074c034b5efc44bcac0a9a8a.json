@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Student Incentives, Self-Monitoring, and Campus Behavior\", \"definition\": \"Work applying group contingencies, incentives, self-monitoring, check-in/check-out, and feedback to college and secondary students' academic performance, attendance, self-care, procrastination, and campus behaviors such as energy conservation and recycling.\", \"distinct_from_neighbours\": \"Centres on older students, especially college and campus settings, and extends beyond the classroom to sustainability and self-care, rather than school-wide public education, Good Behavior Game disruption, or instruction following.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1349,
+  "output": 484
+ },
+ "generated_utc": "2026-10-10T19:05:21+00:00"
+}

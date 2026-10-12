@@ -1,0 +1,51 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 193
+Key terms: mands information, mand training, teaching mands, communication training
+
+Titles closest to the topic's center, conference presentations:
+- An Evaluation of Training Procedures and Generalization of Mands for Information
+- Updated Considerations When Mand Training
+- Current Research on Mand Preference and Proficiency
+- Analyzing MOs and Reinforcers in Mand Training
+- Analyzing Sign, PECS, and Speech-Generating Devices for Mand Training
+- Effects of Voice Preference on Rate of Mands via Speech Generating Device (SGD)
+- Implementing The ASKED Model in Applied Settings To Increase Information-Seeking Mands
+
+Titles closest to the topic's center, journal articles:
+- A Tutorial on Indicating Responses and Their Importance in Mand Training
+- Mand acquisition across different teaching methodologies
+- A Clinical Tutorial on Methods to Capture and Contrive Establishing Operations to Teach Mands
+- Does teaching an omnibus mand preclude the development of specifying mands?
+- A systematic review of mands for information
+- Using a Prerequisite Skills Assessment to Identify Optimal Modalities for Mand Training
+- Teaching mands for information using speech generating devices: A replication and extension
+- The Generalization of Mands
+- Some Dimensions of Mand Variability and Implications for Research and Practice
+- A Review of the Environmental Variables Included in Mand Training Interventions
+
+NEIGHBOURING TOPIC 196 (similarity 0.52)
+Key terms: skill acquisition, skills, training, performance
+- Recent Research in Skill Acquisition
+- Skill Acquisition Learning Arrangements: How the Little Things Can Make a Big Difference
+- Efficacy and Efficiency in Skill Acquisition: Novel Approaches to Measurement and Procedural Refinement
+
+NEIGHBOURING TOPIC 169 (similarity 0.49)
+Key terms: analysis verbal, verbal behavior
+- Basic Research on Verbal Behavior
+- Advances in Verbal Behavior
+- The current status of the experimental analysis of verbal behavior.
+
+NEIGHBOURING TOPIC 17 (similarity 0.49)
+Key terms: nonverbal, speech, intraverbal, verbal behavior
+- Verbal Stimulus Control and the Intraverbal Relation
+- Emergent Relations between Discriminative Stimuli, Responses, and Consequences in Intraverbals
+- Verbal-Like Effects of Nonverbal Stimuli

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Augmentative Communication and Conversation Skills Training\",\"definition\":\"Teaching functional and social communication, including augmentative and alternative systems, picture exchange, conversation and small-talk skills, and public speaking, often by training educators or paraeducators to deliver instruction.\",\"distinct_from_neighbours\":\"Focuses on applied communication systems and conversational skill instruction, not theoretical analyses of intraverbal relations, functional communication training for problem behavior, or language acquisition and foreign-language learning.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1567,
+  "output": 174
+ },
+ "generated_utc": "2026-10-10T19:08:32+00:00"
+}

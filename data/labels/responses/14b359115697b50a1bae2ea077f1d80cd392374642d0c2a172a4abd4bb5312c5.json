@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Temporal Control and Schedule-Signaled Behavior\",\"definition\": \"Research on how time and schedule-correlated stimuli control behavior, including interval timing, temporal discrimination, midsession reversal, schedule-induced behavior, lag schedules for variability, and multiple schedules signaling attention availability.\",\"distinct_from_neighbours\": \"Emphasizes timing and stimulus signaling of schedule conditions, unlike general variable- and fixed-interval schedule theory, concurrent-schedule choice and contrast, or effects of reinforcement delay.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1502,
+  "output": 194
+ },
+ "generated_utc": "2026-10-10T19:05:40+00:00"
+}

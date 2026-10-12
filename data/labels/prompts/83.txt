@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 83
+Key terms: ratio, performance
+
+Titles closest to the topic's center, conference presentations:
+- Systematic Fading of Restrictive Programming
+- SQAB Tutorial: Present and Future of Do-It-Yourself Instrumentation for Operant Research
+- Implementing Delay/Denial Protocols with a 4-Part Randomized Contingency
+- Time Horizons, Energy Depletion and Dynamic Sensitivity to Delay
+- The Approximate Number System as a Building Block for Mathematics
+- Recent Basic and Applied Research on Rich-Lean Transitions
+- Don Baer Lecture: Gains and Losses on the Balance Sheet: ABA 1964–2020
+- Survey of Local Behavior Dependence in IRI Distribution in Static and Dynamic Environment
+- Resistance to change and transfer of function
+- The Misbehavior of the RANDD Function in Med-PC® IV
+
+Titles closest to the topic's center, journal articles:
+- Twiddling Bits
+- Emergent completion of multistep instructions via joint control
+- Modeling VI and VDRL feedback functions: Searching normative rules through computational simulation
+- Applications of the Premack Principle: A Review of the Literature
+- Tutorial: Small-N Power Analysis
+- Comparing the Detection Accuracy of Operational Definitions and Pinpoints
+- An evaluation of selected and non-selected feedback packages on performance
+- The effect of embedded bonus rounds on slot machine preference
+- A comparison of Nuk presentation and Nuk redistribution to treat packing
+- Examining the Relationship Between Component and Composite Frequency and Natural Gain in Basic Multiplication: A Systematic Replication of Lin and Kubina
+
+NEIGHBOURING TOPIC 56 (similarity 0.55)
+Key terms: generalization, learning
+- Generalization across dimensions: A model for three‐alternative choice
+- Selectionism and Machine Learning
+- An Information Theoretic Approach to Model Selection: A Tutorial with Monte Carlo Confirmation
+
+NEIGHBOURING TOPIC 111 (similarity 0.54)
+Key terms: concurrent variable, interval schedules, interval variable, variable interval
+- Explaining Performance on Interval and Ratio Schedules with a Molar View of Behavior
+- On the Constancy of the Rate of Responding under Variable-Interval Schedules
+- Timing in Variable Interval Schedules
+
+NEIGHBOURING TOPIC 21 (similarity 0.52)
+Key terms: concurrent chains, concurrent schedules, terminal, ratio schedules
+- Toward a Comprehensive Theory of Choice in Concurrent Schedules of Reinforcement
+- Effects of schedule type and terminal‐link duration on choice in concurrent chains
+- Choice dynamics in concurrent ratio schedules of reinforcement

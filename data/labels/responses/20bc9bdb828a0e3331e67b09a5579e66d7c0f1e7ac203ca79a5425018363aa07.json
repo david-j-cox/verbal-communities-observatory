@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Establishing and Analyzing Stimulus Control\",\"definition\": \"Basic, translational, and applied work on how antecedent stimuli come to control responding, including discrimination training, fading, compound and relational control, quantitative models, and procedures to strengthen stimulus control.\",\"distinct_from_neighbours\": \"Focuses on discriminative control of responding itself, not on forming equivalence classes, conditioned reinforcement or suppression, or competing-stimulus assessments for reducing problem behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1471,
+  "output": 170
+ },
+ "generated_utc": "2026-10-10T19:07:25+00:00"
+}

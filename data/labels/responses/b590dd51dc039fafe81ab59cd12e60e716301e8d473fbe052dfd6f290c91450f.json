@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Operant Variability and Response Units\", \"definition\": \"Basic and conceptual research on the dimensions of operant behavior, including response variability, bouts and response units, persistence, observing responses, eye movements, and perception of randomness, time and number.\", \"distinct_from_neighbours\": \"Studies how operant responses themselves vary, organize and persist, rather than discriminative stimulus control, competing stimulus assessments for applied problems, or derived stimulus equivalence relations.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1347,
+  "output": 161
+ },
+ "generated_utc": "2026-10-10T19:04:33+00:00"
+}

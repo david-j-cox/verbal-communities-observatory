@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Problem Behavior and Health in Developmental Disabilities\",\"definition\": \"Assessment and treatment of challenging behavior, along with promotion of health, adaptive behavior, and quality of life, for children and adults with intellectual and developmental disabilities.\",\"distinct_from_neighbours\": \"Centers on problem behavior assessment, treatment, and health or quality of life, not communication systems and social interaction, school-based academic instruction, or older mental-retardation-era research.\"}",
+ "usage": {
+  "input": 1684,
+  "output": 160
+ },
+ "generated_utc": "2026-10-10T17:55:54+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Response Effort, Cost, Interruption, and Variability\", \"definition\": \"Basic, translational, and applied studies of procedures that act directly on responding, including response interruption and redirection, response blocking, response effort, response cost, and timeout. It also covers response variability, persistence, and performance feedback.\", \"distinct_from_neighbours\": \"It targets manipulations of the response itself, such as blocking, redirecting, adding effort or cost, or requiring variation, rather than response–reinforcer relations, reinforcement delays, or interval-schedule timing.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1425,
+  "output": 488
+ },
+ "generated_utc": "2026-10-11T00:37:50+00:00"
+}

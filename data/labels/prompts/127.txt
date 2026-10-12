@@ -1,0 +1,49 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 127
+Key terms: revs acknowledgement, guest eds, eds revs, editor
+
+Titles closest to the topic's center, conference presentations:
+- Peering Behind the Curtain: ABAI Journal Editors Discuss the Peer Review Process
+- PDS: Benefits of Becoming an Effective Reviewer for ABAI Journals
+- An Introduction to Peer Review: Insights From the ABAI Journal Editors
+- You Want Me to What? Responding to Reviewer Comments
+- Maximizing Your Impact as a Site Visitor: Conducting Fair, Consistent, and Constructive Reviews
+- The Joys (and Perils) of Writing: How to Prepare a Manuscript for Publication
+- Reviewing the Literature in Special Topic Areas
+
+Titles closest to the topic's center, journal articles:
+- Editors' perspectives on the selection of reviewers and the quality of reviews
+- Guest Eds & Revs Acknowledgement
+- Education and Treatment of Children Guest Associate Editors and Reviewers, July 2017
+- Editor's note: The power of big ideas
+- ETC Special Issue Reviewers
+- End of Volume Editorial Board
+- Farewell Editorial
+- Using a Checklist to Increase Objective Session Note Writing: Preliminary Results
+
+NEIGHBOURING TOPIC 137 (similarity 0.48)
+Key terms: jack, michael
+- Television's Mixed Messages: Choose the Best and Mute the Rest (The Sequel)
+- Seeking to be serviceable some reflections on Hayes and Fryling (2019)
+- Quiet Courage
+
+NEIGHBOURING TOPIC 89 (similarity 0.47)
+Key terms: chomsky, books, thorndike, big
+- THE epistemologies of parsimony: A review of Ockham's razors: A user's manual by Elliott Sober
+- Generalizing from the Past, Choosing the Future
+- Murray Sidman: fostering progress through foundational choices
+
+NEIGHBOURING TOPIC 52 (similarity 0.47)
+Key terms: jaba, readers, jeab, comments
+- I'm Not Like the Others: Atypical Research Subjects in JEAB Publications
+- Citations of Murray Sidman's work in JEAB : Evidence of a long and large contribution
+- Joe Spradlin: JABA thanks you for your contributions

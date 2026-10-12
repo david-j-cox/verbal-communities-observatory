@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 116
+Key terms: telehealth, services, disorder, training
+
+Titles closest to the topic's center, conference presentations:
+- Integrating Telehealth into Behavior Analytic Practice
+- Lessons Learned From Telehealth Direct Therapy and Implications for Practice
+- Efficacy and Acceptability of Telehealth Training and Coaching Across Caregivers and Professionals
+- A Review of Training Applications Via Telehealth to Teach Individuals Implementation of Behavior- Analytic Procedures
+- Further Evaluation of Telehealth Services: Parent-Implemented Functional Analyses and Functional Communication Training
+- Utilizing Telehealth to Deliver Interventions to Increase Communication and Play Skills and Reduce Challenging Behavior
+- Conducting Parent-Mediated Treatment via Telehealth to Reduce Problem Behavior
+- Evaluating Behavioral Interventions for Individuals Diagnosed With Autism Spectrum Disorder Delivered via Direct Telehealth
+- Barriers and Facilitators to Engaging With Behavior Analysis Services via Telehealth
+- Telehealth for Applied Behavior Analysis Services: National Advancements and Global Demands
+
+Titles closest to the topic's center, journal articles:
+- Developing and Delivering Behavioral Interventions Through Telehealth
+- Training Individuals to Implement Applied Behavior Analytic Procedures via Telehealth: A Systematic Review of the Literature
+- Advances in Telehealth and Behavioral Assessment and Intervention in Education: Introduction to the Special Issue
+- Evaluation of a Telehealth Training Program to Teach Educators to Implement Behavioral Assessment and Treatment
+- Preliminary evidence on the use of telehealth in an outpatient behavior clinic
+- Effects of telehealth‐mediated behavioral assessments and interventions on client outcomes: A quality review
+- Technology to Facilitate Telehealth in Applied Behavior Analysis
+- Caregiver Training Via Telehealth on Behavioral Procedures: A Systematic Review
+- Functional assessment and function‐based treatment delivered via telehealth: A brief summary
+- Utilizing Telehealth to Coach Parents to Implement Trial-Based Functional Analysis and Treatment
+
+NEIGHBOURING TOPIC 198 (similarity 0.60)
+Key terms: care, services, clinical, treatment
+- Putting the Analysis Back Into Clinical Practice: Data-Based Decisions to Improve Lives
+- An Attorney and a BCBA Walked Into a Symposium: Clinical Best Practices and the Law
+- Evidence based and intensity specific services in the integrated care setting: Ethical considerations for a developing field.
+
+NEIGHBOURING TOPIC 184 (similarity 0.57)
+Key terms: profound multiple, multiple disabilities, developmental disabilities, persons
+- Evaluating Augmentative and Alternative Communication Systems for Individuals with Developmental Disabilities
+- Current Research on Communication Modality Assessments for Individuals With Development Disabilities
+- Teaching Adults with Neurodevelopmental Disabilities to Interact Successfully with Others in a Virtual Format
+
+NEIGHBOURING TOPIC 29 (similarity 0.54)
+Key terms: caregiver, infant, skills training, service
+- Advances in Caregiver Training and Caregiver-Implemented Interventions
+- Recent Findings and Future Directions for Caregiver Training: Increasing Effectiveness and Social Validity
+- Working With Caregivers in the Treatment of Behavior Problems: Methods, Barriers, and Considerations From Intake to Follow-Up

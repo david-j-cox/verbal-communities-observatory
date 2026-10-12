@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 101
+Key terms: dementia, alzheimer disease, behavioral gerontology, elderly
+
+Titles closest to the topic's center, conference presentations:
+- Behavioral Gerontology Applications From Basic to Applied Research in Older Adults With Neurocognitive Disorder
+- Clinical Applications of Behavioral Gerontology for Older Adults With Neurocognitive Disorders
+- Behavioral Approaches to Evaluate and Address Memory Deficits in Older Adults
+- Verbal Behavior Interventions With Older Adults
+- Behavior Analytic Interpretations of Services for Older Adults With Neurocognitive Disorders
+- Basic and Applied Evaluations in Behavioral Gerontology With Older Adults With Neurocognitive Disorder
+- Increasing Activity Engagement in Older Adults With Intellectual Disabilities and Neurocogntive Disorder
+- The Behavioral Gerontology Special Interest Group Presents: An Introduction to Working in Behavioral Gerontology
+- Psychological Research to Guide Technology Design That Supports Successful Aging
+- Introduction to a Behavioral Analysis of Cognitive Loss and Functional Decline
+
+Titles closest to the topic's center, journal articles:
+- Preliminary investigation of two functional assessment methods for people with dementia: Effectiveness and acceptability
+- An Assessment Method for Identifying Acceptable and Effective Ways to Present Demands to an Adult With Dementia
+- Cognition and language in dementia patients: Contributions from behavior analysis
+- Evaluating the influence of time of day on activity engagement in persons with dementia
+- Effects of check‐in interval on active engagement in people with dementia
+- Behavioral gerontology at home: Retaining self-care skills in an older adult with major neurocognitive disorder through stimulus control and subtle prompt hierarchies from spousal caregiver.
+- Third wave behavioral interventions for individuals with Dementia: A systematic review
+- Presentation of preferred stimuli as an intervention for aggression in a person with dementia.
+- Increasing conversations between older adults with dementia using textual stimuli
+- The Potential of a Relational Training Intervention to Improve Older Adults’ Cognition
+
+NEIGHBOURING TOPIC 29 (similarity 0.60)
+Key terms: caregiver, infant, skills training, service
+- Advances in Caregiver Training and Caregiver-Implemented Interventions
+- Recent Findings and Future Directions for Caregiver Training: Increasing Effectiveness and Social Validity
+- Working With Caregivers in the Treatment of Behavior Problems: Methods, Barriers, and Considerations From Intake to Follow-Up
+
+NEIGHBOURING TOPIC 105 (similarity 0.58)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 43 (similarity 0.57)
+Key terms: persons developmental, intellectual developmental, individuals developmental, developmental disabilities
+- Innovations in the Assessment of Challenging Behavior for Individuals With Developmental Disabilities
+- Practical Applications in Assessing and Treating Common Challenging Behavior for Individuals Diagnosed With Intellectual and Developmental Disabilities
+- Expanding Behavior Analysis to Promote Better Outcomes for Persons With Disabilities

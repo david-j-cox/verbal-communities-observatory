@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 153
+Key terms: commitment therapy, acceptance commitment, commitment training, randomized
+
+Titles closest to the topic's center, conference presentations:
+- The Clinical Utility of Acceptance and Commitment Therapy in Diverse Settings
+- Emerging Trends in Acceptance and Commitment Therapy
+- Acceptance and Commitment Therapy in the Real World by Behavior Analysts: Assessment, Treatment, and Data Collection
+- Considerations for Using Acceptance and Commitment Therapy in Practice: Ethics, Psychometrics, and Novel Populations
+- Persisting and Thriving: Recent Research on Acceptance and Commitment Therapy and Applied Behavior Analysis
+- Emerging Research on Acceptance and Commitment Therapy for Behavior Analysts
+- Functional Analysis in Acceptance and Commitment Training and Therapy
+- Clinical Applications of Assessing and Implementing Acceptance & Commitment Therapy in Community Based Settings
+- Acceptance and Commitment Therapy Goes to School: Effectiveness of Acceptance and Commitment Therapy on Academic Performance, Classroom Disruption, and Psychological Flexibility
+- Flexibility in Action: Integrating Acceptance and Commitment Therapy (ACT) and Improv to Build Contextually Adaptive Skills
+
+Titles closest to the topic's center, journal articles:
+- Changes of valued behaviors and functioning during an Acceptance and Commitment Therapy Intervention
+- The development and validation of the Comprehensive assessment of Acceptance and Commitment Therapy processes (CompACT)
+- Acceptance and commitment therapy: What the history of ACT and the first 1,000 randomized controlled trials reveal
+- Monitoring Clinically Relevant Behaviors and Experiential Avoidance Throughout the Course of Acceptance and Commitment Therapy: A Single-Case Quasi-Experimental Study
+- Beyond Acceptance and Commitment Therapy: Process-Based Therapy
+- A Critical Review of Acceptance and Commitment Therapy for Behavior Analysts
+- The empirical status of acceptance and commitment therapy: A review of meta-analyses
+- The differences between acceptance and commitment therapy (ACT) and cognitive behavioral therapy: A three-level meta-analysis
+- A single-session of acceptance and commitment therapy for health-related behavior change: Protocol description and initial case examples.
+- A systematic review of values measures in acceptance and commitment therapy research
+
+NEIGHBOURING TOPIC 105 (similarity 0.67)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 15 (similarity 0.65)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis
+
+NEIGHBOURING TOPIC 114 (similarity 0.63)
+Key terms: depression, depressed, behavioral activation, anxiety
+- Beyond symptom severity: The differential impact of distress tolerance and reward responsiveness on quality of life in depressed and non-depressed individuals
+- Functional Analytic Psychotherapy Enhanced Behavioral Activation for Depression: A Concurrent and Non-Concurrent Between-Participants Study
+- Verbal Behavior and Depression

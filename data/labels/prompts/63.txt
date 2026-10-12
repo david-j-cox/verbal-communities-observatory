@@ -1,0 +1,51 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 63
+Key terms: food selectivity, selectivity children, treatment food, edible
+
+Titles closest to the topic's center, conference presentations:
+- Treatment of Food Selectivity Among Individuals With Autism Spectrum Disorders
+- One Bite at a Time: A Compassionate, Evidence-Based Approach to Food Selectivity Intervention for Children With Autism
+- Treatment of Feeding Problems in Individuals With Autism Spectrum Disorders
+- From Selectivity to Success: Promoting Healthy Eating Across Settings for Individuals With Autism
+- Interventions for Toddlers and Pre-Schoolers With Autism and Other Delays: A Focus on Food Selectivity, Pretend Play, and Generative Language
+- Addressing Bite Size during Meals with a Child with Autism
+- Snack Talk: A Two-Part Study With Young Children and Adults With Autism and Intellectual and Developmental Disabilities
+
+Titles closest to the topic's center, journal articles:
+- Randomized controlled trial of an applied behavior analytic intervention for food selectivity in children with autism spectrum disorder
+- Treating food selectivity as resistance to change in children with autism spectrum disorder
+- Treating Food Selectivity in Adolescents and Adults with Autism: A Systematic Replication
+- Treatment of Food Selectivity in an Adult With Autism Spectrum Disorder
+- Failure to Replicate the Effects of the High-Probability Instructional Sequence on Feeding in Children With Autism and Food Selectivity
+- Comparing two variations of the high‐probability instructional sequence to improve food consumption with a child with autism
+- Evaluation of Instructions and Video Modeling to Train Parents to Implement a Structured Meal Procedure for Food Selectivity Among Children With Autism
+- Further evaluation of contingency modeling to increase consumption of nutritive foods in children with autism and food selectivity
+- A comparison of a modified sequential oral sensory approach to an applied behavior‐analytic approach in the treatment of food selectivity in children with autism spectrum disorder
+- Increasing Vegetable Consumption in Students with Autism Spectrum Disorder Using Pre-meal Presentation: A Preliminary Analysis
+
+NEIGHBOURING TOPIC 147 (similarity 0.74)
+Key terms: children autism, autistic, autism spectrum, spectrum disorder
+- Evaluating Interventions for the Treatment of Autism
+- A convergent review of interventions for school-age children with autism spectrum disorder.
+- Early Intervention for Children With Autism; Outcomes Short and Long Term
+
+NEIGHBOURING TOPIC 73 (similarity 0.74)
+Key terms: pediatric feeding, feeding disorders, treatment pediatric, children feeding
+- Considerations Regarding the Assessment and Treatment of Pediatric Feeding Disorders
+- Advancements in the Assessment and Treatment of Pediatric Feeding Disorders
+- Introductory Assessment and Treatment of Pediatric Feeding Disorders
+
+NEIGHBOURING TOPIC 188 (similarity 0.74)
+Key terms: children autism, activity schedules, autism spectrum, autistic
+- Addressing Restricted and Repetitive Behavior and Social Deficits in Individuals With Autism
+- A comparison of token and tandem schedules of reinforcement on response patterns for adolescents with autism
+- Social and Nonsocial Stimuli as Reinforcers for the Behavior of Children With Autism Spectrum Disorders and Typically Developing Children

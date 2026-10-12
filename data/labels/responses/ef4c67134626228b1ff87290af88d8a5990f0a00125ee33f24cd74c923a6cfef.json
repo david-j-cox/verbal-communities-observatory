@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Instructional Design Methods\",\"definition\":\"Research and practice on structured behavior-analytic teaching technologies, including Direct Instruction, equivalence-based instruction, precision teaching, fluency-based and generative instruction, and how these are designed, compared, and disseminated.\",\"distinct_from_neighbours\":\"Centres on named instructional technologies and their design, unlike neighbours on college course performance and quizzing, classroom on-task behavior and prompting, or general skill acquisition procedures.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1440,
+  "output": 174
+ },
+ "generated_utc": "2026-10-10T19:09:15+00:00"
+}

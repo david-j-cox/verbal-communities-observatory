@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Certification, Licensure, and Professional Ethics\",\"definition\":\"Work on credentialing and regulating practicing behavior analysts, including certification board updates, licensure efforts, ethics and compliance codes, ethical dilemmas in practice, and standards for supervising trainees seeking certification.\",\"distinct_from_neighbours\":\"Centers on credentialing, licensure, ethics codes, and certification supervision requirements, not general professional development of behavior analysts, academic program curricula, or behavioral skills training methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1455,
+  "output": 176
+ },
+ "generated_utc": "2026-10-11T00:38:15+00:00"
+}

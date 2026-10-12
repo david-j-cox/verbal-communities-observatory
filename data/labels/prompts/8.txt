@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 8
+Key terms: autism, spectrum disorder, behavioral skills, parents
+
+Titles closest to the topic's center, conference presentations:
+- Skills Training Research for Adults With Autism or Developmental Disabilities
+- Innovations in Parent Training for Children With Autism Spectrum Disorder: Reaching New Populations and Skills
+- Advancements in Parent- and Staff-Training Practices Addressing Children With Autism Spectrum Disorder
+- Training Issues in Autism Spectrum Disorder
+- Innovative Approaches to Training and Supervision in Autism Interventions: Enhancing Skills, Confidence, and Instruction Delivery
+- Brief Training Programs for Parents of and Staff Servicing Children With Autism
+- New Horizons in Training Parents of Children With Autism
+- Recent Advancements in Social Skills Instruction With Individuals With Autism Spectrum Disorder
+- The Use of Technology to Teach Skills to Individuals With Autism Spectrum Disorder
+- A Search for Efficiency in Teaching Basic Skills to Implement Autism Intervention: Research on Technology-Based Training in Brazil
+
+Titles closest to the topic's center, journal articles:
+- Training caregivers to teach communication skills to their child diagnosed with autism using behavioral skills training: An assessment of booster trainings.
+- Implementation of a statewide autism training program: Effects on trainee knowledge and skill acquisition.
+- A review of the literature on vocational training interventions with individuals with autism spectrum disorder
+- Using Behavioral Skills Training to Teach Interview Skills to Young Adults with Autism
+- Evaluation of Behavior Skills Training for Teaching Work Skills to a Student with Autism Spectrum Disorder
+- Group‐based behavioral skills training to promote effective instruction delivery for children with autism spectrum disorder
+- Implementing skill‐based treatment within a classroom setting for an adolescent with autism
+- Effectiveness of an Interactive Computer Training Tool to Teach Labor Social Skills to Autistic Adults
+- A randomized clinical trial of a virtual‐training program for teaching applied‐behavior‐analysis skills to parents of children with autism spectrum disorder
+- Effects of an Interactive Web Training to Support Parents in Reducing Challenging Behaviors in Children with Autism
+
+NEIGHBOURING TOPIC 162 (similarity 0.92)
+Key terms: children autism, learners autism, skill acquisition, autism spectrum
+- Advancing and Refining Skill Acquisition Procedures for Young Children With Autism
+- Recent Research on Skill Acquisition With Children With Autism
+- Enhancing the Efficiency of Instructional Procedures for Children With Autism Spectrum Disorders
+
+NEIGHBOURING TOPIC 13 (similarity 0.91)
+Key terms: children autism, teaching children, video modeling, skills children
+- Teaching Social Skills to Children With Autism and Related Disorders
+- Teaching Social Skills to Individuals With Autism Spectrum Disorders
+- Teaching Social Skills Repertoires to Children With Autism
+
+NEIGHBOURING TOPIC 147 (similarity 0.89)
+Key terms: children autism, autistic, autism spectrum, spectrum disorder
+- Evaluating Interventions for the Treatment of Autism
+- A convergent review of interventions for school-age children with autism spectrum disorder.
+- Early Intervention for Children With Autism; Outcomes Short and Long Term

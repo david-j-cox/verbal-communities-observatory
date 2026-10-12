@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 3
+Key terms: parent training, training parents, behavioral parent, behavioral skills
+
+Titles closest to the topic's center, conference presentations:
+- Overcoming Barriers to Parent Training
+- Current Research for Training Parents, Educators, and Direct-Care Staff to Implement Behavioral Assessment and Treatment
+- Training the Trainers: Success and Challenges of Different Parent Training Modes
+- Behavioral Skills Training to Teach Assessment and Intervention Strategies to Allied Professionals and Parents
+- Examining Components of Parent and Staff Training: Assessment, Instruction, and Preferences
+- Parent Training: Exploring Approaches to Sleep, Communication, Skill Development and the State of the Literature
+- Parent Training Across the World
+- Behavioral Training Strategies to Train Staff and Parents In-Person and Remotely
+- Training Parents, Educators, and Staff to Implement Practical Functional Assessment and Skill-Based Treatment: Advancements in Hybrid and Distance-Learning Approaches
+- Taking a Constructional Approach to Parent Training: Building Skills to Address the Complex Problems Clinicians Encounter
+
+Titles closest to the topic's center, journal articles:
+- Evaluating Behavioral Skills Training as an Evidence-Based Practice When Training Parents to Intervene with Their Children
+- Pyramidal parent training using behavioral skills training: Training caregivers in the use of a differential reinforcement procedure
+- The Role of Emotion Regulation and Socialization in Behavioral Parent Training: A Proof-of-Concept Study
+- Virtual Behavioral Skills Training for Parents: Generalization of Parent Behavior and Child Learning
+- Searching for the Standard: The Impact of Level of Training on In Vivo Coaching in Parent-Child Interaction Therapy
+- A Review of Effective Strategies for Parent-Delivered Instruction
+- Teaching Future School Personnel to Train Parents to Implement Explicit Instruction Interventions
+- Correspondence between data provided by parents and trained observers about challenging behavior.
+- Effect of Therapist Coaching Statements on Parenting Skills in a Brief Parenting Intervention for Infants
+- A Systematic Review of Parent-Implemented Functional Communication Training for Children With ASD
+
+NEIGHBOURING TOPIC 139 (similarity 0.83)
+Key terms: parenting, parents, families, family
+- Parent Perceptions of Behavior Analytic Interventions
+- Behavior Therapy for Families and Their Children
+- Supporting Parents to Implement Effective Interventions
+
+NEIGHBOURING TOPIC 155 (similarity 0.80)
+Key terms: parent, children, care, early
+- Developing Procedures to Improve Therapist–Child Rapport in Early Intervention
+- Using Pre-Treatment Screening and Assessments to Improve the Safety and Care of Children
+- Implementation of interventions informed by precursor functional analyses with young children: A replication
+
+NEIGHBOURING TOPIC 133 (similarity 0.73)
+Key terms: child, disorders, treatment, assessment
+- Practical Considerations and Applications of Behavior Analysis to Working With Children in Healthcare Settings
+- Dissemination of Behavior Analysis to the Pediatric Community
+- Quality of Early Intensive Behavioral Intervention as a Predictor of Children's Outcome

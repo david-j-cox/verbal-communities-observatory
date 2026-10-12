@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "```json\n{\n  \"label\": \"Children with intellectual disability (older terminology)\",\n  \"definition\": \"Work involving children described with the older term 'mental retardation', often severe, a population now called children with intellectual disability; this description rests on title wording alone.\",\n  \"distinct_from_neighbours\": \"It concerns children rather than adults described with the same older terminology, and intellectual disability rather than sensory impairments or autism.\"\n}\n```",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 779,
+  "output": 427
+ },
+ "generated_utc": "2026-10-10T19:04:10+00:00"
+}

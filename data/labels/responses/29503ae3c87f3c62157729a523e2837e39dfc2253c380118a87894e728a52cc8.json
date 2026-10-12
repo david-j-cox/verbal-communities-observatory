@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Verbal Behavior and Emergent Intraverbals in Autism\",\"definition\": \"Teaching and assessing verbal operants with autistic children, especially intraverbals, and studying how listener, tact, and multiple-exemplar training produce emergent or derived verbal responses and vocalizations.\",\"distinct_from_neighbours\": \"Centers on Skinnerian verbal operants and emergent intraverbal relations, not speech-generating device communication, reinforcement schedules and repetitive behavior, or broader social skills teaching.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1664,
+  "output": 180
+ },
+ "generated_utc": "2026-10-10T19:06:27+00:00"
+}

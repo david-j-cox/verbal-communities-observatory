@@ -1,0 +1,48 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 179
+Key terms: seat belt, belt use, driving, drivers
+
+Titles closest to the topic's center, conference presentations:
+- Quantitative Analysis of Behavior Goes Out to the Street: Car Drivers' Choice Between Obey or Violate a Traffic Rule
+- Behavior-Based Safety Driving: Improve Your Driving With the B-BS Protocol
+- Research on the Gateway Use of In-Street Signs to Increase Pedestrian Safety
+- Research on a Low Cost Treatment for Pedestrian Safety: More Variables Influencing the Efficacy of the Gateway Treatment
+
+Titles closest to the topic's center, journal articles:
+- The effects of pedestrian gestures on driver yielding at crosswalks: A systematic replication
+- Bringing Behavior-Analytic Theory to Eco-driving Research: Verbal Rules Mediate the Effectiveness of Feedback for Professional and Civilian Drivers
+- Changing driver yielding behavior on a city-wide basis
+- Examining generalization of motorist yielding at an adjacent crosswalk with variations of the gateway sign configuration
+- Increasing tolerance for transport in vehicles: A case study using desensitization, visual supports, and differential reinforcement.
+- Using Prompts and Feedback to Reduce Illegal Parking in a University Parking Lot
+- A Behavioral Economic Analysis of Demand for Texting while Driving
+- Increasing Following Headway in a Driving Simulator and Transfer to Real World Driving
+- The Use of an Onboard Diagnostic Device to Provide Feedback on Driving Behaviors Related to Fuel Economy
+- Comparative Effects of “Do” Versus “Don’t” Formatted Signage on Littering
+
+NEIGHBOURING TOPIC 60 (similarity 0.64)
+Key terms: safety belt, belt use, safety skills, behavioral safety
+- Using Behavior Analytic Strategies to Promote Safety Skills
+- Advances in Interventions for Teaching Safety Skills
+- Teaching Safety Skills to Children: A Discussion of Critical Features and Practice Recommendations
+
+NEIGHBOURING TOPIC 110 (similarity 0.49)
+Key terms: social media, consumer, dissemination, science
+- Considerations to Effective Dissemination of Behavior Science
+- Spread the Word! An Overview of Some Current Interdisciplinary Applications of Behavior Analytic Dissemination
+- What if Behavior Analysts Ran Facebook?: Using Behavioral Principles to Study and Improve Social Media Interactions
+
+NEIGHBOURING TOPIC 143 (similarity 0.49)
+Key terms: behavior modification, change, new, getting
+- Toward an Understanding and Application of Necessary Components of Written Behavior Plans
+- Disrupting Established Operant Behavior
+- The Way Forward: Behavior Analysis and the Contingencies of Inclusion

@@ -1,0 +1,41 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 195
+Key terms: rumination, satiation, supplemental, chronic
+
+Titles closest to the topic's center, conference presentations:
+- Translational Intervention Research in Rumination Disorder: Novel Populations and Analytic Methodology
+
+Titles closest to the topic's center, journal articles:
+- A Preliminary Test of the Efficacy of Brief Self-Administered Behavioral Interventions for Rumination
+- The combined effects of noncontingent reinforcement and punishment on the reduction of rumination
+- Assessment and treatment of rumination in a young man with autism
+- Empirically derived consequences to treat rumination
+- An Evaluation of Contingent Gum Chewing on Rumination Exhibited by an Adolescent with Autism Spectrum Disorder
+- The relative importance of rumination, experiential avoidance and mindfulness as predictors of depressive symptoms
+
+NEIGHBOURING TOPIC 17 (similarity 0.57)
+Key terms: nonverbal, speech, intraverbal, verbal behavior
+- Verbal Stimulus Control and the Intraverbal Relation
+- Emergent Relations between Discriminative Stimuli, Responses, and Consequences in Intraverbals
+- Verbal-Like Effects of Nonverbal Stimuli
+
+NEIGHBOURING TOPIC 120 (similarity 0.53)
+Key terms: inappropriate mealtime, nervosa, mealtime behavior, eating
+- An evaluation of trial‐based functional analyses of inappropriate mealtime behavior
+- A Comparison of Descriptive and Functional Analyses of Inappropriate Mealtime Behavior
+- Efficacy of functional analysis for informing behavioral treatment of inappropriate mealtime behavior: A systematic review and meta‐analysis
+
+NEIGHBOURING TOPIC 98 (similarity 0.51)
+Key terms: avoidance behavior, operant avoidance, free operant, stimulus
+- Behavioral variability as avoidance behavior
+- Effects of the Shock-Shock Interval on the Punishment of Avoidance Responding
+- The effects of warned loss magnitude and timeout duration on human avoidance behavior

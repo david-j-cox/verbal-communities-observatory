@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 138
+Key terms: interobserver, agreement, reliability, contingency
+
+Titles closest to the topic's center, conference presentations:
+- Analyzing Procedural Fidelity in Practice: Insights From Research
+- Parametric and Comparative Analyses of Procedural Fidelity Errors
+- Diverse Applications of Contingency Management
+- Current Applications of Contingency Management
+- Conditions Contributing to the Effectiveness of Error-Correction Procedures
+- Defining, Understanding, and Incorporating Assent Into Programming and Research Through Nonlinear Contingency Analysis
+- An Evaluation of Prompting and Error Correction Procedures
+- Translational Evaluations of Basic Findings: Bridging Research and Concepts to Practice
+- Direction Dependence Analysis: Testing the Direction of Causation in Non-Experimental Person- Oriented Research
+- Measurement of Assent and Assent-Based Interventions
+
+Titles closest to the topic's center, journal articles:
+- On the Evidence for Interactive Effects During and Following Synthesized Contingency Assessments
+- Adaptations of the interview‐informed synthesized contingency analysis
+- Does analysis brevity result in loss of control? A consecutive case series of 26 single‐session interview‐informed synthesized contingency analyses
+- Interobserver agreement and procedural fidelity: An odd asymmetry
+- Interview-Informed Synthesized Contingency Analysis (IISCA): Novel Interpretations and Future Directions
+- An evaluation of the single‐session interview‐informed synthesized contingency analysis
+- A comparison of analysis methods to estimate contingency strength
+- Evaluation of a trial‐based interview‐informed synthesized contingency analysis
+- Interview‐informed synthesized contingency analyses: Thirty replications and reanalysis
+- From Percentages to Precision: Using Response Rates to Advance Analyses of Procedural Fidelity
+
+NEIGHBOURING TOPIC 158 (similarity 0.62)
+Key terms: treatment acceptability, alternating, treatment integrity, treatments
+- Treatment Fidelity: Evaluation of Error Types and Mitigation Strategies
+- Clinical Interventions in Treatment
+- Practical Issues in Treatment
+
+NEIGHBOURING TOPIC 68 (similarity 0.62)
+Key terms: single-case experimental, experimental designs, single-case designs, single-subject
+- Questionable and Improved Research Practices in Single-Case Experimental Design: Initial Investigation and Findings
+- Single‐case experimental designs: Characteristics, changes, and challenges
+- Introduction to the Special Section: Translating Advanced Quantitative Techniques for Single-Case Experimental Design Data
+
+NEIGHBOURING TOPIC 45 (similarity 0.59)
+Key terms: response rate, responding, interruption, redirection
+- An Irreversible Effect of Response Cost on Human Fixed-Interval Responding
+- Recent Applied and Translational Research on Response Persistence
+- An analysis of procedures that affect response variability

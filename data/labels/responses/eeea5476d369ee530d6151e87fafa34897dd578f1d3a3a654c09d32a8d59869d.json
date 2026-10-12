@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Pavlovian Conditioning and Conditioned Reinforcement\",\"definition\":\"Basic, translational, and conceptual work on respondent (Pavlovian) conditioning processes such as blocking, occasion setting, higher-order conditioning, and conditioned inhibition, and how stimulus pairing establishes conditioned reinforcers.\",\"distinct_from_neighbours\":\"Focuses on stimulus–stimulus pairing and respondent processes that give stimuli value, not on discriminative stimulus control, response–reinforcer contingencies, or formation of equivalence classes.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1315,
+  "output": 199
+ },
+ "generated_utc": "2026-10-10T19:07:07+00:00"
+}

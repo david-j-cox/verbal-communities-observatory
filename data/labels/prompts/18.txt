@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 18
+Key terms: racism, justice, human, social
+
+Titles closest to the topic's center, conference presentations:
+- Why So Racist? A Function-Based and Organizational Assessment and Interventions for Policing
+- Behavior Analysis and Restorative Justice: Birds of a Feather?
+- Systems of Oppression & Violence: A Behavioral Systems Analysis
+- Law Enforcement and Applied Behavioral Science: Cultivating Positive Police-Community Relations
+- To Change We Must Understand: A Behavioral Data Science and Culturo-Behavior Systems Science Analysis of Policing
+- Racism, Bias, and Behavior Analysis
+- Stereotypes Can Kill: Processes of Injustice in Criminal Trials
+- Addressing Violence With Behavior Analysis
+- Discrimination, Microaggressions, and Perpetrator Blame: Behavioral Conceptualizations of Problematic Interpersonal Behavior from Social Psychology
+- Discussion of Behavior Analysis in Community Corrections, Criminal Justice, and Policing
+
+Titles closest to the topic's center, journal articles:
+- Leading the Charge: A Look Inside the Behavior Analysis in Practice Emergency Series of Publications on Systemic Racism and Police Brutality
+- Anti-Oppressive Restorative Justice: Behavior Analysis in Alternatives to Policing
+- Can Behavior Analysis Help Us Understand and Reduce Racism? A review of the Current Literature
+- A Look in the Mirror: How the Field of Behavior Analysis Can become Anti-Racist
+- A Behavioral Analysis of Two Strategies to Eliminate Racial Bias in Police Use of Force
+- Actively Addressing Systemic Racism Using a Behavioral Community Approach
+- A Sociobehavioral Model of Racism against the Black Community and Avenues for Anti-Racism Research
+- Interrupting internalized racial oppression: A community based ACT intervention
+- Variables involved in the acquisition and maintenance of racial aggression and its victims’ reactions
+- Ending the School-to-Prison Pipeline: Perception and Experience with Zero-Tolerance Policies and Interventions to Address Racial Inequality
+
+NEIGHBOURING TOPIC 64 (similarity 0.66)
+Key terms: cooperation, social behavior, human
+- Some Considerations in the Analysis of Social Behavior
+- It Takes Two to Tango: Analyses of Social Behavior
+- Building the Good Life: Behavioral Foundations of Social Connection, Community, and Cooperation
+
+NEIGHBOURING TOPIC 132 (similarity 0.66)
+Key terms: behaviorism, psychology, science
+- Current Diversification of Behaviorism
+- Methodological Behaviorism: Historical Origins of a Problematic Concept (1923–1973)
+- The Role of Theory in Behavior Analysis: A Response to Unfinished Business, Travis Thompson’s Review of Staddon's New Behaviorism (2nd edition)
+
+NEIGHBOURING TOPIC 82 (similarity 0.66)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation

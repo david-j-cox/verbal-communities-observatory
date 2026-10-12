@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Communication and Conversation Training in Autism\",\"definition\":\"Teaching language and communication to autistic children, adolescents, and adults, including speech-generating devices, verbal operants, instructive feedback, second-language learning, functional communication training, and conversational skills.\",\"distinct_from_neighbours\":\"Covers broad communication modes, including devices and adult conversation, unlike topic 13's social skills and video modeling, topic 46's intraverbals and vocalizations, and topic 162's general skill acquisition.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1801,
+  "output": 644
+ },
+ "generated_utc": "2026-10-10T19:11:39+00:00"
+}

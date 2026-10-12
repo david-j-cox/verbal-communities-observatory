@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Obituaries and Tributes to Behavior Analysts\",\"definition\":\"Memorial articles, obituaries, personal remembrances and biographical tributes honoring individual behavior analysts and forerunners, including career retrospectives, mentor appreciations, bibliographies and award commemorations.\",\"distinct_from_neighbours\":\"Centers on commemorating specific deceased or honored individuals, unlike neighbouring topics on personal reflective essays, book reviews and intellectual history, or the nature and culture of science.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1005,
+  "output": 175
+ },
+ "generated_utc": "2026-10-11T01:32:22+00:00"
+}

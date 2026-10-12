@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 160
+Key terms: treatment challenging, severe challenging, challenging behavior, assessment treatment
+
+Titles closest to the topic's center, conference presentations:
+- Advances in Assessment and Intervention for Difficult-to-Treat Problem Behavior
+- Synthesizing Research on the Assessment and Treatment of Problem Behavior
+- From Research to Practice: Current Procedural Advances in the Assessment and Treatment of Problem Behavior
+- Issues Related to Assessment and Treatment of Problem Behavior from a Variety of Perspectives
+- Assessment and Treatment of Challenging Behavior
+- Advances in the Assessment and Treatment of Automatically Maintained Challenging Behavior
+- Evaluating the Efficacy and Effectiveness of Treatments for Severe Problem Behavior
+- A Review of Additional Factors Influencing Assessment and Treatment of Challenging Behavior
+- Synthesizing the Assessment and Treatment of Problem Behavior Literature
+- Recent Advances in Assessment and Intervention for Challenging Behavior
+
+Titles closest to the topic's center, journal articles:
+- Noncontingent reinforcement for the treatment of severe problem behavior: An analysis of 27 consecutive applications
+- Current Practices for the Assessment and Treatment of Severe Problem Behavior: A Colorado-Based Survey
+- Description and evaluation of a function‐informed and mechanisms‐based framework for treating challenging behavior
+- Clinical applications of a brief experimental analysis for problem behavior: Analysis of treatment effects and durability
+- State of Current Training for Severe Problem Behavior: A Survey
+- On the longevity of behavioral interventions for challenging behavior
+- Further Evaluation of Presentation Format of Competing Stimuli for Treatment of Automatically Maintained Challenging Behavior
+- Prevention of the development of problem behavior: A laboratory model
+- Treatment of Challenging Behavior During Physical Transitions: A Case Study
+- Incorporating an activity schedule during schedule thinning in treatment of problem behavior
+
+NEIGHBOURING TOPIC 168 (similarity 0.84)
+Key terms: analysis problem, analyses problem, treatment problem, problem behavior
+- Functional analysis of problem behavior: A 40‐year review
+- Advances in the Functional Analysis and Treatment of Problem Behavior
+- Functional Assessment of Causes of Problem Behavior
+
+NEIGHBOURING TOPIC 105 (similarity 0.83)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 15 (similarity 0.82)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis

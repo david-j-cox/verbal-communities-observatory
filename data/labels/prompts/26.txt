@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 26
+Key terms: interval schedules, fixed interval, timing, multiple schedules
+
+Titles closest to the topic's center, conference presentations:
+- Investigations of Schedule-Induced Behavior: Pausing, Escape, and Polydipsia
+- Understanding Disruptive Effects of Stimuli Correlated With Schedules of Positive Reinforcement
+- Arousal and Resistance to Change in Multiple Schedules
+- Effects of Lag Schedules on Behavioral Variability: Targeting Different Portions of Response Sequences
+- Attention to Delay: The Effects of Fixed-Interval and Fixed-Time Interventions on Impulsive Choice and Timing
+- On Time: An Exploration of Factors Influencing Temporal Control
+- Discrimination of Our Own Reaction Time
+- Tagging components of behavior entrained to long intervals: An opportunity-cost model of interval timing
+- Deactivation of the Dorsal Hippocampus Impairs Acquisition More than Maintenance of Interval Timing
+- When a Stay is a Switch: Discriminative Control of Response Chunks Determines Preference During Concurrent VI VI Schedules
+
+Titles closest to the topic's center, journal articles:
+- Effects of signaling on temporal control of behavior in response‐initiated fixed intervals
+- Using a Multiple-Schedule Procedure to Signal the Availability of Attention: Three Demonstrations
+- An evaluation of a three‐component multiple schedule to indicate attention availability
+- The effect of reinforcement probability on time discrimination in the midsession reversal task
+- Lag schedules to increase variability in responding in a home setting
+- Being there on time: Reinforcer effects on timing and locating
+- The Effects of Temporal Placement of Feedback on Performance With and Without Goals
+- Access to Arbitrary Stimuli During Fixed-Lean Schedule Thinning
+- Temporal and nontemporal control in a midsession reversal task with variable intertrial intervals
+- A Closer Examination of the Visual Schedule Component of Interventions to Improve Transitions
+
+NEIGHBOURING TOPIC 38 (similarity 0.86)
+Key terms: interval schedules, schedules reinforcement, variable interval, fixed interval
+- Responding Under Variable- and Cyclic-Interval Schedules of reinforcement
+- Translational and Applied Studies on Schedules and Parameters of Reinforcement
+- Theory of reinforcement schedules
+
+NEIGHBOURING TOPIC 6 (similarity 0.84)
+Key terms: concurrent schedules, schedule performance, multiple schedule, contrast
+- Challenges on the Timing of Schedule-Induced Behavior
+- Multiple schedules in practical application: Research trends and implications for future investigation
+- Are behaviors at one alternative in concurrent schedules independent of contingencies at the other alternative?
+
+NEIGHBOURING TOPIC 130 (similarity 0.84)
+Key terms: delayed reinforcement, delays, fixed, interval
+- Progressive Delay of Reinforcement: Effects on Response Rate, Post-Reinforcement Pause, and Response Induction
+- Factors and Procedures Pertaining to Delays to Reinforcement: Translational and Applied Evaluations
+- Response duration is sensitive to both immediate and delayed reinforcement

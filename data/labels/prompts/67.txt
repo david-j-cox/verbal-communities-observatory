@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 67
+Key terms: self, practice, treatment, mindfulness
+
+Titles closest to the topic's center, conference presentations:
+- Self-Care and Wellbeing: Taking Care of Yourself so You Can Take Care of Others
+- Fostering Belonging Through Person-Centered Assessment, Strength-Based Treatment, and Compassionate, Assent-Based Practices
+- Elevate Your Therapeutic Impact: A Journey Into Self-Awareness and the Power of Functional Analytic Psychotherapy
+- Self-Determination: Just Another Buzzword?
+- Promoting Gratuity and Subjective Well-Being: Applications of Behavioral Science for Positive Psychology
+- I Bet You Think This Talk is About You: Philosophical and Practical Perspectives on the Self in Solitude and in Society
+- Mindfulness: Investigations of Its Effects on Creativity, Charity, and Emotional Regulation
+- Understanding Non-Compliance Through a Self-Advocacy Lens
+- Behavioral Systemic Applications in Promoting Well-Being and Cultural Humility in Medical Education
+- Interbehaviorism in Application: Post-Kantorian Implications for the Clinician-Scientist
+
+Titles closest to the topic's center, journal articles:
+- An Invitation to Act on the Value of Self-Care: Being a Whole Person in All That You Do
+- From experiential attachment to nonattachment: A theory-informed review of harmful and healthy pursuits of comfort, approval, competence, status, and control
+- Behaving versus thinking positively: When the benefits of cognitive reappraisal are contingent on satisfying basic psychological needs
+- The Self-as-Context Scale: Development and preliminary psychometric properties
+- Measuring self and rules in what people say: exploring whether self-discrimination predicts long-term wellbeing
+- Experiential avoidance as a moderator for coping with a brief episode of ostracism: A pilot study
+- Measuring perceptions of self and others in what people say: A replication and extension of the functional self-discrimination measure
+- Extending assessments of sociability to clinical practice.
+- Psychological flexibility, self-compassion and daily functioning in chronic pain
+- Cognitive fusion, experiential avoidance, and their interactive effect: Examining associations with thwarted belongingness and perceived burdensomeness
+
+NEIGHBOURING TOPIC 53 (similarity 0.74)
+Key terms: creativity, psychology, psychological, science
+- Complex Behavior and Behavioral Artistry
+- Behavioral contrast: Research and areas for investigation
+- Behavioral Interpretations of Creativity
+
+NEIGHBOURING TOPIC 103 (similarity 0.70)
+Key terms: self control, self-control, aversive, choice
+- Current Research on Self Control
+- Toward a Unifying Account of Impulsivity and the Development of Self-Control
+- Assessment and treatment of self‐control with aversive events
+
+NEIGHBOURING TOPIC 61 (similarity 0.68)
+Key terms: mind
+- A Behaviour Analysis of Theory of Mind: Conceptual and Applied Implications
+- A Verbal Behavior Analysis of Theory of Mind: Conceptual and Applied Implications
+- The Intact Mind and Why It Matters

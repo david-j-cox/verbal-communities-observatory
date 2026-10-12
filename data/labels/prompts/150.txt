@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 150
+Key terms: certified behavior, board certified, certification, behavior analyst
+
+Titles closest to the topic's center, conference presentations:
+- Licensure of Behavior Analysts: Ethical Considerations, Lessons Learned, and Next Steps
+- An Update on the Behavior Analyst Certification Board
+- Applied Ethics for Practicing Behavior Analysts
+- Professional Development Series: Ethical Considerations for the Practicing Behavior Analyst
+- Supporting School-Based Board Certified Behavior Analysts (BCBAs): Resolving Ethical Dilemmas
+- Discussing the New Behavior Analyst Certification Board’s Compliance Code
+- Developments in Credentialing of Behavior Analysts
+- Becoming a Behavior Analyst: Understanding Professionals’ Introduction to the Field and Why They Pursue Certification
+- Important and Unique Features of Practitioner Training Programs for Behavior Analysts
+- Some Recent Developments Related to Behavior Analyst Licensure: Some Recent Adventures of the ABAI Licensing Committee
+
+Titles closest to the topic's center, journal articles:
+- What makes a good board certified behavior analyst? Employer opinions of newly credentialed behavior analysts.
+- Perspectives from 30 Years of Training Behavior Analysts
+- The History of the Behavior Analyst Certification Board’s Ethics Codes
+- The Need for Greater Training in Consultation for Behavior Analysts
+- Supervision Behaviors of Board Certified Behavior Analysts With Trainees
+- Cultivating the Ethical Repertoires of Behavior Analysts: Prevention of Common Violations
+- Common struggles of behavior analysts and their relation to the professional and ethical compliance code.
+- A History of the Professional Credentialing of Applied Behavior Analysts
+- Board Certified Behavior Analysts’ Supervisory Practices of Trainees: Survey Results and Recommendations
+- The Apprentice: an Innovative Approach to Meet the Behavior Analysis Certification Board’s Supervision Standards
+
+NEIGHBOURING TOPIC 10 (similarity 0.91)
+Key terms: analyst, professional, public, training
+- The Special Issue on the Education of Behavior Analysts: Common Themes
+- Behavior Analysts in the Making
+- A Behavior Analyst’s Journey
+
+NEIGHBOURING TOPIC 77 (similarity 0.80)
+Key terms: graduate training, undergraduate, training behavior, training programs
+- Issues Regarding Graduate Training in Behavior Analysis: Curriculum Content
+- Saving the World With Behavior Analysis: One Undergraduate Student at a Time
+- Essential Readings for Undergraduate Students in Behavior Analysis: A Survey of Behavior Analytic Faculty and Practitioners
+
+NEIGHBOURING TOPIC 81 (similarity 0.77)
+Key terms: behavioral skills, skills training, using behavioral, staff
+- Recent Research on the Varied Applications of Behavioral Skills Training
+- Recent Advancements and Applications in Behavioral Skills Training
+- Recent Applications of Behavioral Skills Training

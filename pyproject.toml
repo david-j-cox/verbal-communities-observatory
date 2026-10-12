@@ -1,0 +1,47 @@
+[project]
+name = "presented-published"
+version = "1.0.0"
+description = "Replication code for 'What is Presented and What is Published' (Cox, Behavioral Interventions)."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT (code); CC BY 4.0 (data)" }
+authors = [{ name = "David J. Cox" }]
+# Versions used to produce the published results.
+dependencies = [
+    "numpy==2.4.6",
+    "pandas==3.0.3",
+    "pyarrow==24.0.0",
+    "scipy==1.17.1",
+    "scikit-learn==1.8.0",
+    "matplotlib==3.10.9",
+    "sentence-transformers==5.5.1",
+    "transformers==5.9.0",
+    "torch==2.12.0",
+]
+
+[project.optional-dependencies]
+llm = ["anthropic==1.13.0"]   # only to fetch new group labels (scripts/label_groups.py --call-model)
+dev = ["pytest==9.0.3", "ruff==0.15.15"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/presented_published"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "scripts", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# pick() is called within the same loop iteration that defines it, so it sees current values.
+"src/presented_published/groups.py" = ["B023"]

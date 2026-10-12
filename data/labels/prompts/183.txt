@@ -1,0 +1,52 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 183
+Key terms: treatment stereotypy, motor stereotypy, redirection, response interruption
+
+Titles closest to the topic's center, conference presentations:
+- Innovations in Evaluation and Treatment of Stereotypy
+- Recent Advances in the Measurement, Assessment, and Treatment of Stereotypy
+- Recent Research on Automatically Maintained Stereotypy in Clinical and Community Settings
+- A Comparison of Contextual and Arbitrary Redirection in Treatment of Stereotypy
+- Recent Research on Establishing Stimulus Control of Stereotypy in Individuals With Autism Spectrum Disorder
+- Advances in the Treatment of Stereotypy in Persons With Autism
+- Best Practices in Treating Repetitive Behavior: From Stereotypy to Social Skills
+- Recent Advances in Treating Stereotypic Behavior
+
+Titles closest to the topic's center, journal articles:
+- Examining Procedural Variations of Delivering Competing Stimuli in the Treatment of Stereotypy
+- Further Analysis of the Predictive Effects of a Free-Operant Competing Stimulus Assessment on Stereotypy
+- Skill‐based treatment of interfering stereotypy
+- Functional communication training and noncontingent reinforcement in treatment of stereotypy
+- Parent‐implemented treatment for automatically maintained stereotypy
+- A retrospective analysis of stereotypy: Applicability of the behavioral subtyping model
+- A comparison of continuous, dense, and lean schedules of noncontingent access to matched competing stimuli to reduce stereotypy
+- The effect of response interruption and redirection with and without a differential reinforcement of alternative behavior component on stereotypy and appropriate responses
+- To What Extent Do Practitioners Need to Treat Stereotypy During Academic Tasks?
+- Decreasing motor stereotypy with competing stimuli and tasks: Analysis of prompted engagement and response blocking
+
+NEIGHBOURING TOPIC 40 (similarity 0.64)
+Key terms: auditory, control responding, location, intensity
+- Relativity in Hearing and Stimulus Discrimination
+- Emergence of auditory–visual discrimination and tacts through exclusionary responding
+- Teaching the Function of Auditory Stimuli Using Secondary Target Instruction
+
+NEIGHBOURING TOPIC 87 (similarity 0.62)
+Key terms: vocal stereotypy, stuttering, vocalizations, interruption redirection
+- Effects of toy removal and number of demands on vocal stereotypy during response interruption and redirection
+- A comparison of response interruption and redirection and competing items on vocal stereotypy and appropriate vocalizations
+- Further evaluation of treatments for vocal stereotypy: Response interruption and redirection and response cost
+
+NEIGHBOURING TOPIC 32 (similarity 0.60)
+Key terms: competing stimulus, attention, task, assessment
+- Initial outcomes of an augmented competing stimulus assessment
+- Further Evaluations of Competing Stimulus Assessments and the Effects of Competition on On-Task Behavior
+- Competing Stimulus Assessments: Procedural Modifications to Improve Effectiveness and Efficiency

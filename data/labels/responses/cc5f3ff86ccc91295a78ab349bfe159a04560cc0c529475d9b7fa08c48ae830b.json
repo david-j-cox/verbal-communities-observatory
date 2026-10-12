@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"University Training Programs in Behavior Analysis\",\"definition\":\"Work on designing and evaluating undergraduate and graduate behavior-analysis programs, including curriculum content, assigned readings, practicum and supervision, faculty roles, program models, and equity in academic training.\",\"distinct_from_neighbours\":\"Concerns how university programs train future behavior analysts. Neighbours cover applying behavior analysis in school classrooms, professional development and identity of analysts, and qualitative research methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1500,
+  "output": 167
+ },
+ "generated_utc": "2026-10-10T19:07:55+00:00"
+}

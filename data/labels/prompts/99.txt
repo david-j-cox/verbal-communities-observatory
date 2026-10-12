@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 99
+Key terms: choice, preference, model
+
+Titles closest to the topic's center, conference presentations:
+- Behavior Analytic Perspectives on Choice
+- A Model of Changeover Behavior in Two-Alternative Choice
+- Exploring the Role of Temporal Information in Suboptimal Choice
+- Recent Evaluations of Choice Procedures Involving Reinforcing and Aversive Consequences
+- Recent Developments in the Study of Mechanisms Underlying Suboptimal Choice
+- Investigations of Choice
+- Informative Value in Suboptimal and Intertemporal Choice: An Integrated Model of Two Additive Processes
+- We Are the Sum of Our Choices: Choice Procedures in Behavior Analysis
+- Recent Development in Choice: Applied Applications and a Review
+- Modeling the Dynamics of Choice with the Generalized Matching Equation
+
+Titles closest to the topic's center, journal articles:
+- A model of changeover behavior in two‐alternative choice
+- Choice versus no choice: Practical considerations for increasing choices
+- The nanoeconomics of concurrent choice behavior
+- Human Behavior in Suboptimal Choice Tasks: Defining Optimality
+- Toward a Procedure to Study Rule-Governed Choice: Preliminary Data
+- A contemporary quantitative model for continuous choice under reinforcing and punishing contingencies
+- The effect of risk on intertemporal choice and preference reversal
+- Preference, resistance to change, and the cumulative decision model
+- Testing the evolutionary theory of behavior dynamics' predictions about choice under concurrent random‐ratio schedules
+- Choice among two and three alternatives
+
+NEIGHBOURING TOPIC 12 (similarity 0.83)
+Key terms: reinforcement choice, conditioned reinforcement, delay, humans
+- Renewal in Choice Behavior: Effect of Reinforcement Rate
+- An evaluation of methods for studying the effects of conditioned reinforcement on human choice
+- Tests of an Indifference Rule in Variable-Delay and Double-Reward Choice Procedures with Humans
+
+NEIGHBOURING TOPIC 51 (similarity 0.72)
+Key terms: preference assessment, stimulus preference, assessments, evaluating
+- Current Issues and Directions Regarding Stimulus Preference Assessments: Implications for Research and Practice
+- An Exploration of Novel Considerations and Directions in Preference Assessments Research
+- Advancements in Preference Assessment Research
+
+NEIGHBOURING TOPIC 57 (similarity 0.68)
+Key terms: behavioral economics
+- Behavioral Economics: Implications for Research and Practice
+- Advances in Behavioral Economics
+- Behavioral Economics: Novel Applications to Basic and Applied Research

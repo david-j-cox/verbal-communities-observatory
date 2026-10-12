@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Applied Behavior Analysis as a Field\",\"definition\":\"Broad reflections on applied behavior analysis as a discipline and profession: its definition, history, methods, scope, current issues, international growth, diversity, and future directions in research and practice.\",\"distinct_from_neighbours\":\"Focuses on the applied branch as a whole, unlike basic science and theory, qualitative research methods, or applied behavior analysis specifically within schools and education.\"}",
+ "usage": {
+  "input": 1313,
+  "output": 150
+ },
+ "generated_utc": "2026-10-10T17:55:52+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Racism, Policing, and Criminal Justice\",\"definition\": \"Behavioral and systems analyses of racism, bias, oppression, and violence, especially in policing and criminal justice, including anti-racist interventions, restorative justice, and calls for behavior analysis to become anti-racist.\",\"distinct_from_neighbours\": \"Focuses on racism, injustice, and policing rather than general social behavior and cooperation, the philosophy and history of behaviorism, or qualitative research methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1560,
+  "output": 166
+ },
+ "generated_utc": "2026-10-10T19:05:15+00:00"
+}

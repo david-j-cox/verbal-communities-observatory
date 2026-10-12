@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 98
+Key terms: avoidance behavior, operant avoidance, free operant, stimulus
+
+Titles closest to the topic's center, conference presentations:
+- Effects of the Shock-Shock Interval on the Punishment of Avoidance Responding
+- Narrow, Rigid, and Verbally-Maintained: Exploring Derived Avoidance and Conditioned Suppression
+- Re-Examining Avoidance: Contextualizing Appetitive and Aversive Functional Relations of Behaviors Typically Characterized as Avoidant
+- Escaping the Uncomfortable: Why the Measurement of Experiential Avoidance Matters
+- When We Ought to Save the World, But Don't Really Feel Like it: Motivating Avoidance Behavior when Consequences are Uncertain or Delayed
+- Derived Transformation of Fear and Avoidance Functions: A Literature Review
+- Theory and Intervention for Misophonia: A Conditioned Aversive Respondent Behavior
+- Behavioral and Pharmacological Determinants of Impulsive Behavior and Attending: A Search for Mechanism
+- Delay Aversion Reduction as a Potential Mechanism of Delay-Exposure Training
+- Interventions to Reduce Impulsive Choice in Animal Model
+
+Titles closest to the topic's center, journal articles:
+- Behavioral variability as avoidance behavior
+- The effects of warned loss magnitude and timeout duration on human avoidance behavior
+- “Watch out!”: Effects of instructed threat and avoidance on human free‐operant approach–avoidance behavior
+- Transfer of conditioned fear and avoidance: Concurrent measurement of arousal and operant responding
+- Conditioned Inhibition and its Relationship to Impulsivity: Empirical and Theoretical Considerations
+- Direct and Derived Extinction of Avoidance Responses in Equivalence Classes
+- The development and validation of the experiential avoidance rating scale (EARS): A self-report questionnaire that might actually measure experiential avoidance
+- On stimulus avoidance assessment to inform treatment efficacy: A retrospective consecutive case series.
+- Next-day effects of dysfunctional and functional emotion regulation and the moderating role of experiential avoidance
+- Impulsive choice and pre‐exposure to delays: iv. effects of delay‐ and immediacy‐exposure training relative to maturational changes in impulsivity
+
+NEIGHBOURING TOPIC 136 (similarity 0.77)
+Key terms: escape behavior, injurious escape, escape maintained, treatment escape
+- Initial Suppression of Escape Behavior Across Three Behavioral Treatments
+- Engage in Escape-Maintained Behavior
+- Establishing Behavior by Escape and Avoidance Conditioning
+
+NEIGHBOURING TOPIC 62 (similarity 0.76)
+Key terms: conditioned suppression, conditioned reinforcement, operant conditioning, signal detection
+- Conditioned Reinforcement: the Effectiveness of Stimulus—Stimulus Pairing and Operant Discrimination Procedures
+- Blocking of Stimulus Control and Conditioned Reinforcement
+- Bridging the Conditioned Reinforcement Gap: Translational and Applied Research on Altering and Evaluating Stimulus Function
+
+NEIGHBOURING TOPIC 185 (similarity 0.76)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability

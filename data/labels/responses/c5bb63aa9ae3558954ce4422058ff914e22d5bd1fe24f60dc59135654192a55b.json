@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Functional Analysis of Inappropriate Mealtime Behavior\",\"definition\":\"Research on assessing and treating inappropriate or challenging mealtime behavior. It centres on functional and descriptive analyses that identify maintaining contingencies and guide function-based feeding treatment, with some work on broader eating problems.\",\"distinct_from_neighbours\":\"Focuses on the function of disruptive mealtime behavior, not on extinction-based treatment of food refusal, food presentation and reinforcement schedules, or treatment of food selectivity in autism.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1611,
+  "output": 188
+ },
+ "generated_utc": "2026-10-10T19:10:03+00:00"
+}

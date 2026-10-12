@@ -1,0 +1,38 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 104
+Key terms: relay, circuit, timer, pulse
+
+Titles closest to the topic's center, conference presentations:
+- A Review of Affordable Custom-Built Devices for Contemporary Operant Research
+
+Titles closest to the topic's center, journal articles:
+- Similarities between Kantor’s S ↔ R Interaction and Dewey’s Sensori-Motor Circuit
+- Two open source designs for a low‐cost operant chamber using Raspberry Pi™
+- Direct Instruction of Absolute Pitch Using the Theremin as a Musical Instrument and Experimental Apparatus
+
+NEIGHBOURING TOPIC 74 (similarity 0.57)
+Key terms: cumulative recorder, paper, recording, tape
+- A Comparison of Electronic and Pen‐And‐Paper Recording in ABA Sessions
+- Practical, Inexpensive, and Easy-to-Program USB Interfacing: Recording and Control of External Equipment
+- Functional and Practical Applications of the Picture Exchange Communication System
+
+NEIGHBOURING TOPIC 134 (similarity 0.47)
+Key terms: electrodes, rat, shock, simple
+- The rodent electronic nicotine delivery system: Apparatus for voluntary nose‐only e‐cigarette aerosol inhalation
+- Advances in Technology for the Operant Laboratory
+- Challenging the FDA Ban on Electrical Stimulation Devices
+
+NEIGHBOURING TOPIC 83 (similarity 0.44)
+Key terms: ratio, performance
+- Systematic Fading of Restrictive Programming
+- Twiddling Bits
+- Emergent completion of multistep instructions via joint control

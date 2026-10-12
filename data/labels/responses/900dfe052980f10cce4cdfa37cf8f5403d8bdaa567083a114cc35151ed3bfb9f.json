@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Clinical Service Delivery and Care Systems\",\"definition\":\"Work on how clinical behavioral services are organized and delivered: data-based decisions, clinician training systems, consent and assent, insurance and legal requirements, quality metrics, integrated healthcare collaboration, and research within patient care.\",\"distinct_from_neighbours\":\"Focuses on systems, administration, and ethics of delivering clinical care, not treatment fidelity and acceptability, clinical behavior analysis as psychotherapy, or descriptions of specific intervention programs.\"}",
+ "usage": {
+  "input": 1545,
+  "output": 186
+ },
+ "generated_utc": "2026-10-10T17:56:44+00:00"
+}

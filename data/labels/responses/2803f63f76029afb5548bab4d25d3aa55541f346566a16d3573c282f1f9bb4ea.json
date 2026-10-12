@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Self-Injury Treatment, Restraint, and Punishment\",\"definition\": \"Assessment and treatment of self-injury, often automatically maintained, including stimulus control, enriched environments, contingent shock and other punishment, restraint and arm splints, injury measurement, and wearable monitoring.\",\"distinct_from_neighbours\": \"Unlike the broad self-injurious behavior reviews, it covers specific treatment procedures, restraint, punishment, and measuring injuries; unlike the brain injury and aggression topics, it concerns self-directed harm.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1466,
+  "output": 501
+ },
+ "generated_utc": "2026-10-10T19:10:08+00:00"
+}

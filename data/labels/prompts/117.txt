@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 117
+Key terms: handicapped, intellectual developmental, intellectual disabilities, developmental disabilities
+
+Titles closest to the topic's center, conference presentations:
+- Educator-Implemented Interventions for Students With Developmental Disabilities in the School Setting
+- Teaching Academic Content and Communication Skills to Students With Intellectual and Developmental Disabilities
+- Teaching Academic and Functional Life Skills to Young Adults With Intellectual Disabilities
+- Instructional Programs for Children With Intellectual and Developmental Disabilities
+- Supporting Elementary and Secondary Students With Developmental Disabilities in Inclusive Settings: Shaping Academic, Adaptive, and Metacognitive Behaviors
+- Teaching Vocational and Problem-Solving Skills to Adults With Developmental Disabilities
+- Advances in Skill Acquisition Programs for Individuals With Intellectual and Developmental Disabilities
+- Recent Advances in Skill Acquisition Interventions for Children With Developmental Disabilities
+- Behavioral Academic Instruction for Students With Developmental Disabilities in Public Schools: Three Large Scale Applications
+- Recent Research in Teaching Social, Functional Living, and Vocational Skills to Adults With Developmental Disabilities
+
+Titles closest to the topic's center, journal articles:
+- Training perspective taking skills in individuals with intellectual disabilities: A functional approach
+- Social Skills Training for Adolescents With Intellectual Disabilities
+- Using a Literacy Based Behavioral Intervention to Teach College Students with Intellectual and Developmental Disabilities to Request a Classroom Accommodation
+- Noncontingent Reinforcement to Improve Classroom Behavior of a Student With Developmental Disability
+- An Evaluation of Behavior Skills Training to Teach Staff to Implement the Step It UP! Game with Adults with Disabilities
+- Mastery criteria and the maintenance of skills in children with developmental disabilities
+- A Comparison of Modeling, Prompting, and a Multi-component Intervention for Teaching Play Skills to Children with Developmental Disabilities
+- A component analysis of behavioral skills training with volunteers teaching motor skills to individuals with developmental disabilities
+- Life skills instruction for children with developmental disabilities
+- Are We There Yet? An Emerging Research Agenda for College Students with Intellectual and Developmental Disabilities
+
+NEIGHBOURING TOPIC 184 (similarity 0.87)
+Key terms: profound multiple, multiple disabilities, developmental disabilities, persons
+- Evaluating Augmentative and Alternative Communication Systems for Individuals with Developmental Disabilities
+- Current Research on Communication Modality Assessments for Individuals With Development Disabilities
+- Teaching Adults with Neurodevelopmental Disabilities to Interact Successfully with Others in a Virtual Format
+
+NEIGHBOURING TOPIC 43 (similarity 0.86)
+Key terms: persons developmental, intellectual developmental, individuals developmental, developmental disabilities
+- Innovations in the Assessment of Challenging Behavior for Individuals With Developmental Disabilities
+- Practical Applications in Assessing and Treating Common Challenging Behavior for Individuals Diagnosed With Intellectual and Developmental Disabilities
+- Expanding Behavior Analysis to Promote Better Outcomes for Persons With Disabilities
+
+NEIGHBOURING TOPIC 20 (similarity 0.76)
+Key terms: supported employment, adults developmental, employment outcomes, vocational
+- Improving Vocational Skills and Employment Outcomes in Adolescents and Adults With Developmental Disabilities
+- Considerations for Working With Adult and Aging Populations With Disabilities
+- An Evaluation of Assistive Technology in Determining Job-Specific Preference for Adults With Autism and Intellectual Disabilities

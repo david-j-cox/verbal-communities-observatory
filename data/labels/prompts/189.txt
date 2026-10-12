@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 189
+Key terms: preschool children, preschoolers, skills, development
+
+Titles closest to the topic's center, conference presentations:
+- Behavior Analysis Goes to Preschool: Strategies for Increasing Critical Skills in Young Children
+- Using Behavior Analysis to Promote Early Social Repertoires in Infants and Children With Developmental Disabilities
+- Child Development: Recent Advancements in Theory, Basic, and Applied Research
+- Child Development: Recent Advancements in Theory and Basic and Applied Research
+- The Self & Match System: A Systematic Review of the Literature and Clinical Applications in Preschool Settings
+- Applied Research on Early Childhood Development
+- Behavior Analysts in Early Childhood Special Education: Challenges in Promoting Parent Participation and Team Collaboration
+- Two Procedures for Accelerating the Rates of Learning for Preschoolers and Adults
+- How to Implement Infant Operant Learning Procedures for Research and Practice
+- From Clinic to Classroom: Building Bridges for Transition to Kindergarten
+
+Titles closest to the topic's center, journal articles:
+- Preschool life skills: Recent advancements and future directions
+- Descriptive Analysis of Preschool Social Interactions
+- Preschool life skills using the response to intervention model with preschoolers with developmental disabilities.
+- Instructional Control with Preschoolers and Stimulus Equivalence
+- An Empirical Comparison of Common Problem Behavior Among Preschoolers With and Without Neurodevelopmental Disorders
+- An evaluation of parents as behavior change agents in the Preschool Life Skills program
+- Using a Tiered Approach to Support Early Childhood Educators’ Use of Behavioral Strategies
+- Efficacy of Coaching Preschool Teachers to Manage Challenging Behavior
+- Topographies and functions of emerging problem behavior and appropriate requests in neurotypical preschoolers
+- An evaluation of synchronous reinforcement for increasing on‐task behavior in preschool children
+
+NEIGHBOURING TOPIC 133 (similarity 0.80)
+Key terms: child, disorders, treatment, assessment
+- Practical Considerations and Applications of Behavior Analysis to Working With Children in Healthcare Settings
+- Dissemination of Behavior Analysis to the Pediatric Community
+- Quality of Early Intensive Behavioral Intervention as a Predictor of Children's Outcome
+
+NEIGHBOURING TOPIC 155 (similarity 0.80)
+Key terms: parent, children, care, early
+- Developing Procedures to Improve Therapist–Child Rapport in Early Intervention
+- Using Pre-Treatment Screening and Assessments to Improve the Safety and Care of Children
+- Implementation of interventions informed by precursor functional analyses with young children: A replication
+
+NEIGHBOURING TOPIC 149 (similarity 0.75)
+Key terms: classroom behavior, good behavior, behavior game, disruptive
+- Recent Research on School-Based Behavioral Interventions
+- Improving Classroom Behavior in Children With Problem Behavior
+- Preventing Disruptive Behavior via Classroom Management

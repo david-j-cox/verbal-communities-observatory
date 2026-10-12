@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 58
+Key terms: behavior rats, food, conditioning, operant
+
+Titles closest to the topic's center, conference presentations:
+- Operant Conditioning of Rats
+- When Do Rats Wait for More Food? An Investigation of Reinforcer Accumulation
+- Effects of a spatially separated operant requirement on bouts of responding in rats
+- Rats' use of information in a simulation of natural foraging.
+- Rats’ Conditioned Inhibition Does Not Dissipate in a Suboptimal Choice Procedure
+- Comparison of SHR, WKY and Wistar Rats on Acquisition of Operant Behavior
+- The Role of Prior Delay Exposure on Intertemporal Choice Preference in Rats
+- Schedule-Induced Behaviours Minimize Differences Between SHR and WKY Rats in a Delay Discounting Task
+- The Contrasting Neurophysiology of Foraging and Deliberation in Mice, Rats, and Humans
+- Cue-Motivated Reward Seeking and Response Inhibition in Adolescent and Adult Rats
+
+Titles closest to the topic's center, journal articles:
+- Pairs of rats cooperate more when responding to simultaneous reinforcement than to alternated reinforcement
+- Cooperative responding in rats maintained by fixed‐ and variable‐ratio schedules
+- Contributions of delay, duration, and intensity of shock on rats' choices involving conflicting‐valence consequences
+- Reinstatement of negatively reinforced behavior with rats
+- Social preference in rats
+- Immediate Reinforcement Training Has Moderate Effect on Delay Discounting Behavior in Rats: A Systematic Replication
+- Cooperative responding in rats: II . Performance on fixed‐ratio schedules of mutual reinforcement
+- Positive correlation between measures of habitual responding and motivated responding in mice
+- Rats ( Rattus norvegicus ) find occupancy of a restraint tube rewarding
+- Interactions between Motivational and Discriminative Functions of Motivating Operations in the Renewal of Operant Responding in Mice
+
+NEIGHBOURING TOPIC 154 (similarity 0.82)
+Key terms: olfactory, rats, discrimination, contrast
+- Functional equivalence classes in rats: Repeated olfactory discrimination reversals and delayed stimulus probes
+- An investigation of stimulus prevalence effects in rats
+- Conditional Discrimination in Rats: The Role of Response Topography
+
+NEIGHBOURING TOPIC 109 (similarity 0.71)
+Key terms: monkeys, rhesus, chimpanzee, squirrel
+- Negative Behavioral Contrast in Capuchin Monkeys (Sapajus sp.)
+- The Effect of Signaling Reinforcement in Capuchin Monkeys: Extension of the Gambling Paradigm
+- Acquisition and maintenance of delayed matching‐to‐sample in tufted capuchin monkeys
+
+NEIGHBOURING TOPIC 185 (similarity 0.66)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability

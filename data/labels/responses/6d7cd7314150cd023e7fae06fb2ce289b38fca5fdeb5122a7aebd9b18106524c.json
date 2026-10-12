@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavior Analysis in Child Health and Welfare\",\"definition\":\"Broad applications of behavior analysis to children's health, rights, safety, and clinical services, including pediatric care, neurodevelopmental disorders, service quality and medical necessity, treatment integrity, and practitioner decision-making.\",\"distinct_from_neighbours\":\"Covers child services at a broad, systemic level rather than parent-involved early intervention and rapport, preschool skill-building, or classroom behavior-management interventions.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1521,
+  "output": 171
+ },
+ "generated_utc": "2026-10-10T19:10:39+00:00"
+}

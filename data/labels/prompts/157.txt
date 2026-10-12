@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 157
+Key terms: relational responding, derived relational, relations, verbal
+
+Titles closest to the topic's center, conference presentations:
+- Applications of Derived Relational Responding in Diverse Contexts
+- A Verbal Behavior Analysis of Complex Relational Responding
+- Applications of Derived Relational Responding
+- Pushing Language Relations to the Edge: Advanced Investigations of Derived Relational Responding as a Generalized Operant
+- Investigations of Higher Order Verbal Behavior: Modifications to Relational Training Procedures to Promote Derived Relational Responding
+- Basic and Applied Research on Relational Responding
+- Multiple Applications of Relational Responding: Under Which Conditions Take Place Humor, Memory Distortions, Rumination, and Time Perception?
+- Advanced Translational Research on Derived Relational Responding and the Relational Field
+- Recent Advances in Training and Testing Relational Responding
+- Rules, Derived Relational Responding, and Understanding Complex Language
+
+Titles closest to the topic's center, journal articles:
+- On the structure of relational responding
+- On the measurement of relational responding
+- To Dismantle or Not to Dismantle: Components of Derived Relational Responding
+- The go/no‐go successive matching task and the emergence of arbitrary relational responding: A review
+- Reversing Time and Size: Mutual Entailment of Nonarbitrary Temporal and Magnitude Relational Responding
+- Equivalence class analysis of responding consistent with the relational frame of opposition
+- Exploring the Dynamics of Relational Responding Using Visual and Auditory Stimuli: Replicating Two Prominent IRAP Effects
+- A Commentary on the Dynamics of Arbitrarily Applicable Relational Responding Involving Positive Valenced Stimuli and its Implications for the IRAP Research
+- Analysis of apparent demonstrations of responding in accordance with relational frames of sameness and opposition
+- From the IRAP and REC model to a multi-dimensional multi-level framework for analyzing the dynamics of arbitrarily applicable relational responding
+
+NEIGHBOURING TOPIC 61 (similarity 0.71)
+Key terms: mind
+- A Behaviour Analysis of Theory of Mind: Conceptual and Applied Implications
+- A Verbal Behavior Analysis of Theory of Mind: Conceptual and Applied Implications
+- The Intact Mind and Why It Matters
+
+NEIGHBOURING TOPIC 17 (similarity 0.71)
+Key terms: nonverbal, speech, intraverbal, verbal behavior
+- Verbal Stimulus Control and the Intraverbal Relation
+- Emergent Relations between Discriminative Stimuli, Responses, and Consequences in Intraverbals
+- Verbal-Like Effects of Nonverbal Stimuli
+
+NEIGHBOURING TOPIC 33 (similarity 0.71)
+Key terms: frame theory, relational frame, human language, language cognition
+- Conceptual Developments in Relational Frame Theory: Basic Experimental Analyses
+- Recent Conceptual and Empirical Advances in Relational Frame Theory
+- Relational Frame Theory: Past, Present, and Future

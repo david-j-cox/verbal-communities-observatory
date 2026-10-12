@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Teaching Social Skills\",\"definition\":\"Assessment and intervention for teaching social, conversational and play skills to children, students and young adults, including those with autism or emotional and behavioral disorders, through skills groups, peer-mediated, parent-implemented and manualized programs.\",\"distinct_from_neighbours\":\"Defined by social behavior as the teaching target, unlike general behavioral skills training applications, social validity measurement, or classroom management of disruptive behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1419,
+  "output": 159
+ },
+ "generated_utc": "2026-10-11T00:38:01+00:00"
+}

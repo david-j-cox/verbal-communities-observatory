@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 164
+Key terms: supervision practices, effective supervision, bcba, ethical
+
+Titles closest to the topic's center, conference presentations:
+- Current Research and Ethical Issues in Supervision
+- Engaging in Ethical and Effective Supervision Practices
+- Variations in Supervision Practices: How to Best Conduct Supervision Using Different Methodologies
+- Practical Supervision: Providing Meaningful & Significant Experiences to Supervisees
+- Advancing Supervision Practices: Ensuring Quality Training in Behavior Analysis
+- Effective Supervision and Ethics
+- Performance in Practice: Innovations Towards Effective Supervision and Training
+- A Strategic Approach to Supervision
+- Supervising Supervision: Designing, Monitoring, and Supporting Supervision in ABA
+- Establishing Pivotal Professional Skills in the Course of Supervision
+
+Titles closest to the topic's center, journal articles:
+- Recommended Practices for Individual Supervision: Considerations for the Behavior-Analytic Trainee
+- Recommendations for Detecting and Addressing Barriers to Successful Supervision
+- Refining Supervisory Practices in the Field of Behavior Analysis: Introduction to the Special Section on Supervision
+- The softer side of supervision: Recommendations when teaching and evaluating behavior-analytic professionalism.
+- Taking Full Responsibility: the Ethics of Supervision in Behavior Analytic Practice
+- Supervision for Aspiring Behaviour Analysts in Australia: An Exploration of Current Practices, Challenges, and Opportunities
+- Designing A Successful Supervision Journey: Recommendations and Resources for New BCBA Supervisors
+- Maintaining Effective Supervision Systems for Trainees Pursuing a Behavior Analyst Certification Board Certification During the COVID-19 Pandemic
+- An Investigation of Trainees’ Supervision Experiences in Applied Behavior Analysis Fieldwork
+- Evidence-Based Practice: A Framework for Behavior Analytic Training and Supervision
+
+NEIGHBOURING TOPIC 42 (similarity 0.69)
+Key terms: staff training, human services, management, performance
+- Advances in Staff Training
+- A Survey of Staff Training and Performance Management Practices: An Update
+- Evaluating the Efficacy of Staff Training Procedure
+
+NEIGHBOURING TOPIC 81 (similarity 0.67)
+Key terms: behavioral skills, skills training, using behavioral, staff
+- Recent Research on the Varied Applications of Behavioral Skills Training
+- Recent Advancements and Applications in Behavioral Skills Training
+- Recent Applications of Behavioral Skills Training
+
+NEIGHBOURING TOPIC 150 (similarity 0.65)
+Key terms: certified behavior, board certified, certification, behavior analyst
+- Licensure of Behavior Analysts: Ethical Considerations, Lessons Learned, and Next Steps
+- An Update on the Behavior Analyst Certification Board
+- What makes a good board certified behavior analyst? Employer opinions of newly credentialed behavior analysts.

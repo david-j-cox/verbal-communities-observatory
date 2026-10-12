@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Competing Stimulus Assessments and Attention\",\"definition\":\"Work on assessing and delivering competing stimuli to reduce automatically reinforced problem behavior and increase engagement, plus related studies of attention, stimulus salience, and on-task responding.\",\"distinct_from_neighbours\":\"Focuses on applied assessment of competing items and attention for engagement and problem behavior, not basic stimulus control, behavioral contrast, or operant variability and response organization.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1504,
+  "output": 159
+ },
+ "generated_utc": "2026-10-10T19:05:54+00:00"
+}

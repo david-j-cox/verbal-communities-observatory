@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Tact Training in Autism\",\"definition\":\"Research on teaching children with autism to label stimuli (tacts), comparing procedures, reinforcement delays, stimulus set sizes and background stimuli, and examining generalization and emergent intraverbal-tact and listener responding.\",\"distinct_from_neighbours\":\"Focuses specifically on tact acquisition, unlike neighbours on divergent intraverbals and vocalization, sign language and communication for deaf or blind learners, or general skill-acquisition procedures in autism.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1410,
+  "output": 179
+ },
+ "generated_utc": "2026-10-10T19:08:49+00:00"
+}

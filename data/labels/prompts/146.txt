@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 146
+Key terms: induced drinking, alcohol, ethanol, schedule induced
+
+Titles closest to the topic's center, conference presentations:
+- The Scalar Property of Schedule-Induced Drinking Depends on a Time-Based Contingency
+- Schedule-Induced Drinking and Performance in the Peak-Procedure
+- Displacement of Schedule-Induced Drinking in Different Interval Durations
+- Acquisition of Schedule-Induced Drinking as a Function of Temporal Proximity Between Drinking and Food Delivery
+- Effect of Schedule-induced Drinking on impulsive choice in a delay discounting task
+- Contextualizing Drinking Behavior Change in Natural Environments: Behavioral Economic Approaches and Beyond
+- Human Self-Administration and Preference for Alcohol With or Without Caffeine: Caffeine Choice Reflects Differences in Subjective Effects of Alcohol
+- Nondrug Reinforcer-Rate Effects on Resurgence of Alcohol Seeking Following Voluntary Abstinence
+- Environmental Enrichment Effects on Schedule-Induced Drinking Acquisition in Rats
+- Effects of Delay Exposure (DE) on Impulsive Choice and Alcohol Self Administration
+
+Titles closest to the topic's center, journal articles:
+- Behavioral history effects on the maintenance of schedule‐induced drinking in rats
+- Reinforcer pathology II : Reward magnitude, reward delay, and demand for alcohol collectively relate to college students' alcohol related problems
+- Effects of Alcohol Concentration on Choice and Persistence of Alcohol Seeking
+- The maladaptive alcohol self‐administration task: An adapted novel model of alcohol seeking with negative consequences
+- Concurrent nonindependent fixed‐ratio schedules of alcohol self‐administration: Effects of schedule size on choice
+- Behavioral Variation in Individuals with a History of Alcohol Abuse
+- Sex differences in adolescent ethanol drinking to behavioral intoxication
+- Effects of negative incentive shifts in food reward on rats' consumption of concurrent ethanol solutions
+- Behavioral skills training to teach college students to free‐pour standard servings of alcohol
+- Resurgence of ethanol seeking following voluntary abstinence produced by nondrug differential reinforcement of other behavior
+
+NEIGHBOURING TOPIC 190 (similarity 0.62)
+Key terms: smoking, abstinence, addiction, substance abuse
+- Novel Behavioral Economic Approaches to Assessing and Treating Substance Abuse
+- Behavioral Science and the Prevention of Adolescent Substance Abuse
+- Novel Behavioral Economic Approaches to Measuring Substance Abuse Severity and Motivating Change
+
+NEIGHBOURING TOPIC 0 (similarity 0.61)
+Key terms: cocaine, rhesus, monkeys, abstinence
+- Clinical neuropharmacology of cocaine reinforcement: A narrative review of human laboratory self‐administration studies
+- Abstinence from Cocaine Impairs Behavioral Inhibition and Alters Neural Activity in the Prelimbic Cortex
+- The Effects of Treatment Duration on Resurgence of Cocaine Seeking
+
+NEIGHBOURING TOPIC 142 (similarity 0.59)
+Key terms: amphetamine, polydipsia, drug, schedule induced
+- Twin Peaks: Effects of d-Amphetamine on Mixed Peak-Interval Schedules in Pigeons
+- Choice Between Drug and Non-Drug Reinforcers: Effects of Delay Discounting, Drug Cues, and Pharmacological Interventions
+- Effects of methylphenidate on sensitivity to reinforcement delay, magnitude, and probability: Implications for impulsive and risky choice

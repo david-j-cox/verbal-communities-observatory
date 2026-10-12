@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Low-Cost Custom Laboratory Apparatus Design\",\"definition\":\"Work on building affordable custom equipment for operant research, such as relay and timer circuits, microcontroller-based chambers and novel experimental instruments, plus a few conceptual papers about stimulus–response circuits.\",\"distinct_from_neighbours\":\"It covers building whole devices and circuits, not data-recording methods and computer interfacing, shock or drug-delivery apparatus for animals, or applied programming and instruction.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 933,
+  "output": 171
+ },
+ "generated_utc": "2026-10-10T19:09:10+00:00"
+}

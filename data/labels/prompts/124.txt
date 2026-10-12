@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 124
+Key terms: organizational behavior, behavior management, management obm, staff
+
+Titles closest to the topic's center, conference presentations:
+- Advancements in Organizational Behavior Management Assessment and Intervention
+- Organizational Behavior Management and Beyond: Case Studies in Organizational Behavior Management
+- Organizational Behavior Management: The Present and Future of the Field
+- Supporting Staff Performance Through Organizational Behavior Management
+- Recent Applied Research in Organizational Behavior Management
+- New Applications of Organizational Behavior Management
+- Recent Innovations in Organizational Behavior Management
+- From Principles to Practice: Leveraging Organizational Behavior Management (OBM) for Improved Outcomes in Behavior Analytic Organizations
+- Organizational Behavior Management: Feedback and Experimental Designs
+- Process, Culture, and Generalization Considerations Within Organizational Behavior Management
+
+Titles closest to the topic's center, journal articles:
+- Review of Organizational Behavior Management: The Essentials, edited by Byron Wine and Joshua K. Pritchard
+- On Terms within Organizational Behavior Management
+- A History of Organizational Behavior Management
+- A Special Section of the Journal of Organizational Behavior Management
+- Experimental Research Methodologies in Organizational Behavior Management
+- My organizational behavior management journey: Lessons learned from a career in behavioral systems analysis.
+- Self-Management in Organizational Behavior Management
+- COMMENTARY: Is Organizational Behavior Management Enough? How Language and Person-States Could Make a Difference
+- Common Antecedent Strategies within Organizational Behavior Management: The Use of Goal Setting, Task Clarification, and Job Aids
+- Observing the Behavior of Organisms in Organizational Behavior Management
+
+NEIGHBOURING TOPIC 82 (similarity 0.75)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 110 (similarity 0.73)
+Key terms: social media, consumer, dissemination, science
+- Considerations to Effective Dissemination of Behavior Science
+- Spread the Word! An Overview of Some Current Interdisciplinary Applications of Behavior Analytic Dissemination
+- What if Behavior Analysts Ran Facebook?: Using Behavioral Principles to Study and Improve Social Media Interactions
+
+NEIGHBOURING TOPIC 37 (similarity 0.70)
+Key terms: analysis aba
+- Applied Behavior Analysis: Past, Present, and Future
+- The importance of analysis in applied behavior analysis.
+- Behavior Analysis as an Applied Field: Concerns and Solutions

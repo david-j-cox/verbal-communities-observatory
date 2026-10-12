@@ -1,0 +1,53 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 163
+Key terms: toilet, enuresis, incontinence, children
+
+Titles closest to the topic's center, conference presentations:
+- Advances in Efficiency and Effectiveness of Toilet Training Procedures
+- Advances in Toilet Training Research
+- Toilet Training Across the Lifespan: Recent Advances and Recommendations
+- Extensions of Reinforcement-Based Approaches to Toilet Training
+- Toilet Training: Advancements in Measurement and Stakeholder Implementation
+- Crash Course in Behavior Analytic Toilet Training: Translating Research to Practice
+- When Number 2 is Your Number 1 Concern: Solutions for Bowel Movement Training Challenges
+- Punishment: Don’t Throw the Baby Out With the Bathwater!
+- Harnessing Covert Operants: Technology, Behavior, and the Future of Physical Medicine
+
+Titles closest to the topic's center, journal articles:
+- Before the Potty Party: Preparing Practitioners for Toilet Training
+- An extension of commonly used toilet‐training procedures to children with autism spectrum disorder
+- Reflections and Critical Directions for Toilet Training in Applied Behavior Analysis
+- Caregiver‐implemented toilet training procedures for children with autism spectrum disorder
+- Evaluating bowel movements, self‐initiations, and problem behavior with the emergence of urinary continence
+- An Approach to Cleanliness Training to Support Bathroom Hygiene among Children with Autism Spectrum Disorder
+- A comparison of prompts and feedback for promoting handwashing in university restrooms
+- Teaching effective postbowel movement hygiene.
+- Teaching Practitioners to Use the Bristol Stool Form Scale
+- Part, III : Increasing odor detection performance after training with progressively leaner schedules of odor prevalence
+
+NEIGHBOURING TOPIC 126 (similarity 0.49)
+Key terms: picking, mouthing, skin, habit
+- Differential Reinforcement of Other Behaviour for the Reduction of Severe Nail Biting
+- An Electronic Bracelet for Self-Monitoring of Nail Biting in Habit Reversal Procedures
+- Using competing stimuli with an adult with stereotypic skin picking: A case study of assessment, treatment, and generalization
+
+NEIGHBOURING TOPIC 155 (similarity 0.48)
+Key terms: parent, children, care, early
+- Developing Procedures to Improve Therapist–Child Rapport in Early Intervention
+- Using Pre-Treatment Screening and Assessments to Improve the Safety and Care of Children
+- Implementation of interventions informed by precursor functional analyses with young children: A replication
+
+NEIGHBOURING TOPIC 176 (similarity 0.46)
+Key terms: compliance training, instructions, child, high
+- Assessment and Treatment of Compliance Problems in Children
+- The effects of errorless compliance training on children in home and school settings
+- Children’s Compliance Function and Subjective Reinforcement Value

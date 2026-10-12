@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 70
+Key terms: sleep, bruxism, infant, children autism
+
+Titles closest to the topic's center, conference presentations:
+- Assessment and Treatment of Sleep Problems for Children With Autism Spectrum Disorder
+- Sleep Problems of Children With Autism: Prevalent, Relevant, and Treatable by Behavior Analysts
+- Behavioral Assessment and Treatment of Sleep Problems in Children With Developmental Disabilities and Rare Genetic Developmental Disorders
+- Understanding and Improving Sleep in Children With Autism: Assessment, Analysis, and Behavioral Interventions
+- Understanding and Improving Sleep in Children With Autism: Assessment, Analysis and Behavioral Interventions
+- Functional Behavior Assessment and Treatment of Sleep Problems in Individuals Diagnosed With Autism Spectrum Disorder
+- Prerequisite Skill Development for the Enhancement of Sleep Treatment
+- How to Create and Maintain Sleep Behavior Plans - Toddlers to Teens
+- Sleep, Unpredictability and Behavioral Choice: You are not the Only One with Problems
+- Designing and Implementing Comprehensive Sleep Plans Within the Applied Behavior Analysis (ABA) Service Model
+
+Titles closest to the topic's center, journal articles:
+- Applied behavior analysis measurement, assessment, and treatment of sleep and sleep‐related problems
+- The effectiveness of function‐based interventions to treat sleep problems, including unwanted co‐sleeping, in children with autism
+- Recommendations for Identifying Sleep Problems and Treatment Resources for Children with Autism Spectrum Disorder
+- Treatment for Improving Sleep in Residential Setting
+- Suggestions for Repeated Measurement of Sleep and Behavior for Children with Autism Receiving Behavior Analysis Service
+- A review of behavioral treatments for sleep disturbances in civilians who have experienced trauma
+- How Does Sleep Deprivation Functionally Impact the Challenging Behavior of People With Intellectual Disabilities? A Systematic Review
+- Training medical students to teach safe infant sleep environments using pyramidal behavioral skills training
+- The Use of Technology and Telehealth to Improve Behavioral Sleep Assessment and Intervention
+- Using the ACT matrix to improve sleep: A practical guide for implementing the "what" and the "how" of sleep hygiene
+
+NEIGHBOURING TOPIC 133 (similarity 0.56)
+Key terms: child, disorders, treatment, assessment
+- Practical Considerations and Applications of Behavior Analysis to Working With Children in Healthcare Settings
+- Dissemination of Behavior Analysis to the Pediatric Community
+- Quality of Early Intensive Behavioral Intervention as a Predictor of Children's Outcome
+
+NEIGHBOURING TOPIC 147 (similarity 0.55)
+Key terms: children autism, autistic, autism spectrum, spectrum disorder
+- Evaluating Interventions for the Treatment of Autism
+- A convergent review of interventions for school-age children with autism spectrum disorder.
+- Early Intervention for Children With Autism; Outcomes Short and Long Term
+
+NEIGHBOURING TOPIC 152 (similarity 0.55)
+Key terms: analysis autism, autistic, autism spectrum, children autism
+- Have We Forgotten Our Roots? Applied Behavior Analysis and the Assessment and Treatment of Significant Behavioral Challenges in Adults With Autism and other Intellectual Disabilities
+- Beyond Autism: Applied Behavior Analysis for All
+- The Autism Society Applied Behavior Analysis (ABA) Commission: Making Informed Decisions

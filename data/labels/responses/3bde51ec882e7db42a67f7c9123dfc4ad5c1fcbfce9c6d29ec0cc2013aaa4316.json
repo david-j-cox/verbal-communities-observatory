@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Reading Fluency and Comprehension Interventions\", \"definition\": \"Behavioral interventions to improve oral reading fluency and comprehension in struggling readers, including repeated reading, computer-based programs such as Headsprout, Direct Instruction, and reinforcement, for children, adults, and learners with autism or disabilities.\", \"distinct_from_neighbours\": \"Centers on connected-text fluency and comprehension outcomes, unlike combined reading-and-writing literacy instruction, isolated sight-word and spelling acquisition, or math and college course performance.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1644,
+  "output": 193
+ },
+ "generated_utc": "2026-10-10T19:12:40+00:00"
+}

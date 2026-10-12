@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Training and Coaching Teachers\",\"definition\":\"Research on training, coaching, consultation, and performance feedback that improves teachers' and paraeducators' classroom practices, such as behavior-specific praise, instructional accuracy, data collection, and classroom management.\",\"distinct_from_neighbours\":\"Targets changing teacher behavior itself, whereas neighbours target student behavior through instructional strategies, school-wide group contingencies, or classroom management games for disruption.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1411,
+  "output": 160
+ },
+ "generated_utc": "2026-10-10T19:05:42+00:00"
+}

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 186
+Key terms: resurgence, renewal, basic translational, translational research
+
+Titles closest to the topic's center, conference presentations:
+- Basic and Applied Investigations of Resurgence: A Translational Approach to Demonstrating and Mitigating Relapse
+- Basic and Translational Investigations of Resurgence and Renewal
+- Recent Translational and Applied Research on Renewal and Resurgence
+- Current Research on Resurgence and Other Relapse Phenomena
+- Basic, Translational, and Reverse-Translational Research on Resurgence and Reinstatement
+- Recent Translational Research on Effects of Parameters of Reinforcement on Resurgence
+- Research Examining Strategies to Mitigate Resurgence
+- Recent Basic and Translational Research Evaluating the Effects of Baseline and Treatment Duration on Resurgence
+- Basic and Translational Research of Variables That Contribute to Resurgence
+- Recent Advancements in Resurgence: Basic, Applied, and Translational Findings
+
+Titles closest to the topic's center, journal articles:
+- A systematic review of enhanced resurgence paradigms
+- Resurgence with and without an alternative response
+- Resurgence Following Higher or Lower Quality Alternative Reinforcement
+- A retrospective analysis of the relation between resurgence and renewal of behavior targeted for reduction
+- Further evaluation of effects of response effort on resurgence.
+- Effects of Response Effort on Resurgence
+- Introduction to the Special Section on Resurgence
+- A Comprehensive Systematic Review of Procedures and Analyses Used in Basic and Preclinical Studies of Resurgence, 1970–2020
+- Examination of clinical variables affecting resurgence: A reanalysis of 46 applications
+- Stimuli previously associated with reinforcement mitigate resurgence
+
+NEIGHBOURING TOPIC 112 (similarity 0.70)
+Key terms: treatment relapse, change relapse, mitigation, translational research
+- Translational and Applied Research on Response Relapse
+- Recent Evaluations of Relapse Procedures in Applied and Basic Research
+- Recent Applied and Translational Research on Treatment Relapse
+
+NEIGHBOURING TOPIC 7 (similarity 0.59)
+Key terms: reinforcement alternative, alternative reinforcement, alternative behavior, differential reinforcement
+- Resurgence following differential reinforcement of alternative behavior implemented with and without extinction
+- Noncontingent reinforcement without extinction plus differential reinforcement of alternative behavior during treatment of problem behavior
+- Concurrent schedules of differential reinforcement of alternative behavior in the treatment of problem behavior without extinction
+
+NEIGHBOURING TOPIC 122 (similarity 0.58)
+Key terms: resistance extinction, fixed, operant, reinforcement
+- Early extinction effects following intermittent reinforcement: Little evidence of extinction bursts
+- The extinction burst: Effects of reinforcement magnitude
+- The extinction burst: Effects of alternative reinforcement magnitude

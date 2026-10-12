@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 50
+Key terms: communication training, functional communication, following functional, schedule thinning
+
+Titles closest to the topic's center, conference presentations:
+- A Look at Functional Communication Training: Persistence, Schedule Thinning, and Without Extinction
+- Adaptations of Functional Communication Training With Multiple Schedules
+- Functional Communication Training
+- Advances in Functional Communication Training
+- Recent Advances in Methods to Improve Functional Communication Training
+- Reducing Problem Behavior With Functional Communication Training: Two Case Studies
+- Functional Communication Training and Schedule Thinning: Current Advances and Methodological Refinements
+- Current Research on Refinements to Functional Communication Training Programs
+- A Continuum of Evaluations of Functional Communication Training: From the Small to the Large Scale
+- Advancements in Functional Communication Training: Translational Research and Clinical Applications
+
+Titles closest to the topic's center, journal articles:
+- Functional communication training: From efficacy to effectiveness
+- Renewal during functional communication training
+- A comparison of existing and novel communication responses used during functional communication training
+- Exploring factors that influence the efficacy of functional communication training
+- Reinforcement schedule thinning following functional communication training: A systematic review
+- Using Chained or Tandem Schedules With Functional Communication Training: A Systematic Review
+- A preliminary investigation on improving functional communication training by mitigating resurgence of destructive behavior
+- Evaluating competing activities to enhance functional communication training during reinforcement schedule thinning
+- Reinforcement‐schedule thinning practices during functional communication training: A survey of behavior analysts
+- Schedule Thinning Following Functional Communication Training: Effects of Chained and Multiple Schedules
+
+NEIGHBOURING TOPIC 88 (similarity 0.69)
+Key terms: augmentative, conversation, communication, presentation
+- Using behavioral skills training to establish extended conversational exchanges.
+- Advances in Teaching and Assessing Conversation Skills With Adults
+- Advances in Teaching Conversation Skills
+
+NEIGHBOURING TOPIC 81 (similarity 0.65)
+Key terms: behavioral skills, skills training, using behavioral, staff
+- Recent Research on the Varied Applications of Behavioral Skills Training
+- Recent Advancements and Applications in Behavioral Skills Training
+- Recent Applications of Behavioral Skills Training
+
+NEIGHBOURING TOPIC 17 (similarity 0.65)
+Key terms: nonverbal, speech, intraverbal, verbal behavior
+- Verbal Stimulus Control and the Intraverbal Relation
+- Emergent Relations between Discriminative Stimuli, Responses, and Consequences in Intraverbals
+- Verbal-Like Effects of Nonverbal Stimuli

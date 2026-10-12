@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 81
+Key terms: behavioral skills, skills training, using behavioral, staff
+
+Titles closest to the topic's center, conference presentations:
+- Recent Research on the Varied Applications of Behavioral Skills Training
+- Recent Advancements and Applications in Behavioral Skills Training
+- Recent Applications of Behavioral Skills Training
+- Novel Applications of Behavioral Skills Training
+- Applications of Behavioral Skills Training in Real World Contexts: Closing the Research-to-Practice
+- Clinical Applications of Behavior Skills Training Across a Variety of Contexts
+- Behavioral Skills Training: A Comparison of Four Pre-Service Training Models
+- Considerations in Maintenance and Generalization Following Behavior Skills Training for Behavior Intervention and Teaching Procedures
+- Training Applied Behavior Analytic Skills Using Advanced Technologies
+- Advancing Behavioral Competence Through Behavioral Skills Training (BST): Empirical and Conceptual Analyses Across Contexts
+
+Titles closest to the topic's center, journal articles:
+- Behavioral skills training component analyses: A systematicreview.
+- Use of Behavioral Skills Training with Teachers: A Systematic Review
+- Training human service staff to implement behavioral skills training using a video‐based intervention
+- Training behavioral technicians to implement naturalistic behavioral interventions using behavioral skills training
+- Scaling Up Behavioral Skills Training: Effectiveness of Large-Scale and Multiskill Trainings
+- Unrestricted Learning Opportunities for Trainees in Behavior Analysis: A Survey of Current Practices
+- Training behavior analysts to conduct functional analyses using a remote group behavioral skills training package
+- Pre‐service teacher‐delivered behavioral skills training: A pyramidal training approach
+- Behavioral Skills Training for Implementation of Components of Skill‐Based Treatment: Effectiveness and Social Validity
+- Evaluating a Web‐Based Training to Teach Behavior Analysis Students to Implement Behavioral Skills Training
+
+NEIGHBOURING TOPIC 77 (similarity 0.82)
+Key terms: graduate training, undergraduate, training behavior, training programs
+- Issues Regarding Graduate Training in Behavior Analysis: Curriculum Content
+- Saving the World With Behavior Analysis: One Undergraduate Student at a Time
+- Essential Readings for Undergraduate Students in Behavior Analysis: A Survey of Behavior Analytic Faculty and Practitioners
+
+NEIGHBOURING TOPIC 196 (similarity 0.79)
+Key terms: skill acquisition, skills, training, performance
+- Recent Research in Skill Acquisition
+- Skill Acquisition Learning Arrangements: How the Little Things Can Make a Big Difference
+- Efficacy and Efficiency in Skill Acquisition: Novel Approaches to Measurement and Procedural Refinement
+
+NEIGHBOURING TOPIC 31 (similarity 0.79)
+Key terms: teaching behavior, higher education, schools, students
+- Applied Behavior Analysis in Educational Settings
+- When Applied Behavior Analysis Goes to School: Lessons Learned From the Field
+- Improving Classroom Behavior Support Through Applied Behavior Analysis

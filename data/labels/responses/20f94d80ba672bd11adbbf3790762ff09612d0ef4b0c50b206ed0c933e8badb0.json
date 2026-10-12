@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Teaching Mands and Requesting\",\"definition\":\"Procedures for teaching mands, including mands for information, using motivating operations, response modalities such as sign, picture exchange, and speech-generating devices, and promoting mand generalization and variability.\",\"distinct_from_neighbours\":\"Focuses specifically on the mand and its training, unlike general skill acquisition research, broad verbal behavior research, or intraverbal and verbal stimulus control studies.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1224,
+  "output": 154
+ },
+ "generated_utc": "2026-10-10T19:13:43+00:00"
+}

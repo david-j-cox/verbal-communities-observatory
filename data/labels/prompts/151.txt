@@ -1,0 +1,42 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 151
+Key terms: feeder, dispenser, liquid, pellet
+
+Titles closest to the topic's center, conference presentations:
+- Providing Feeding Services in a Service Desert
+- Practical Strategies for Addressing Low Utilization and Dosage Fulfillment
+- Intakes: What Are We Missing?
+
+Titles closest to the topic's center, journal articles:
+- Measuring ramp use in guinea pigs ( Cavia porcellus )
+- Brief Experimental Evaluation of Nonremoval of the Cup to Increase Water Consumption
+- Reinforcer efficacy of grain for horses
+- The role of re‐presentation in the treatment of liquid expulsion
+- The Selection of Different Interlocked Behavioral Contingencies and Maintenance of Common Pool Resources: The Case of the Production of Açaí Berries in the Brazilian Amazon
+
+NEIGHBOURING TOPIC 49 (similarity 0.61)
+Key terms: food selectivity, presentation, fixed, schedules
+- Delay Gadients to Food Among Different Schedule-Induced Behaviors
+- Comparing Simultaneous and Sequential Food Presentation to Increase Consumption of Novel Target Foods
+- Frequency and Magnitude of Reinforcement in Multiple Schedules: Short Component Durations Show Sensitivity to Frequency Higher than to Duration of Access to Food
+
+NEIGHBOURING TOPIC 134 (similarity 0.52)
+Key terms: electrodes, rat, shock, simple
+- The rodent electronic nicotine delivery system: Apparatus for voluntary nose‐only e‐cigarette aerosol inhalation
+- Advances in Technology for the Operant Laboratory
+- Challenging the FDA Ban on Electrical Stimulation Devices
+
+NEIGHBOURING TOPIC 192 (similarity 0.49)
+Key terms: pigeons, pecking, key peck, shock
+- Effects of a Reinforcement Schedule Controlling Energy of Pigeons’ Pecking Response
+- An analysis of coordinated responding of pigeons
+- Sensitivity to Pre- and Post-Reinforcer Delays in Pigeons

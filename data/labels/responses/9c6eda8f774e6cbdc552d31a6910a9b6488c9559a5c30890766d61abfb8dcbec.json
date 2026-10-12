@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Treatment Relapse and Its Mitigation\",\"definition\":\"Basic, translational, and applied research on the return of behavior after successful treatment, covering its prevalence, laboratory models, theoretical accounts, and practical strategies for making behavioral treatments more durable.\",\"distinct_from_neighbours\":\"Addresses relapse broadly across forms and mitigation strategies, unlike the neighbouring topic on resurgence and renewal paradigms, general treatment integrity and acceptability, or substance abuse and addiction.\"}",
+ "usage": {
+  "input": 1387,
+  "output": 179
+ },
+ "generated_utc": "2026-10-10T17:56:17+00:00"
+}

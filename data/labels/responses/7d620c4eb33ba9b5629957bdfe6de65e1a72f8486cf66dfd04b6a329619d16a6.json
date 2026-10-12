@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Functional Communication Training and Schedule Thinning\",\"definition\":\"Research on functional communication training to replace problem behavior, including reinforcement schedule thinning with multiple or chained schedules, persistence, resurgence and renewal, and refinements that improve treatment efficacy and effectiveness.\",\"distinct_from_neighbours\":\"Focuses on communication responses as replacements for problem behavior, unlike conversation-skill teaching, behavioral skills training of staff, or verbal stimulus control and intraverbal relations.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1325,
+  "output": 179
+ },
+ "generated_utc": "2026-10-10T19:06:45+00:00"
+}

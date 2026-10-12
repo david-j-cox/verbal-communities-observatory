@@ -1,0 +1,48 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 75
+Key terms: panic, anxiety, cognitive-behavioral, exposure
+
+Titles closest to the topic's center, conference presentations:
+- Being Part of the Solution: Antecedent Interventions for Students With Anxiety-Related Behaviors
+- Broadening the Lens of ABA: Understanding and Treating Psychopathic, Callous and Unemotional, and Anxious Behaviors
+- Should/Could BCBAs Intervene for Anxiety and Stress-Related Behavior Among Individuals With Autism Spectrum Disorder?
+- The Effectiveness of Mindfulness Interventions in Non-Clinical Settings
+
+Titles closest to the topic's center, journal articles:
+- Refining the Analysis of Mechanism–Outcome Relationships for Anxiety Treatment: A Preliminary Investigation Using Mixed Models
+- Brief Therapist-Guided Exposure Treatment of Panic Attacks: A Pilot Study
+- Meaning in life buffers the impact of experiential avoidance on anxiety
+- A Contextual Behavior Science Framework for Understanding How Behavioral Flexibility Relates to Anxiety
+- Evaluating ACT Processes in Relation to Outcome in Self-Help Treatment for Anxiety-Related Problems
+- Merging Our Understanding of Anxiety and Exposure: Using Inhibitory Learning to Target Anxiety Sensitivity in Exposure Therapy
+- Effects of Brief Acceptance and Cognitive Reappraisal Interventions on Experiential Avoidance in Socially Anxious Individuals: A Preliminary Investigation
+- Renewal of fear and avoidance in humans to escalating threat: Implications for translational research on anxiety disorders
+- Exploring an Implicit Measure of Acceptance and Experiential Avoidance of Anxiety
+- Related to Anxiety: Arbitrarily Applicable Relational Responding and Experimental Psychopathology Research on Fear and Avoidance
+
+NEIGHBOURING TOPIC 187 (similarity 0.80)
+Key terms: obsessive-compulsive, phobia, tourette, exposure
+- The “how” of exposures: Examining the relationship between exposure parameters and outcomes in obsessive-compulsive disorder
+- That Was Easy! Expectancy Violations During Exposure and Response Prevention for Childhood Obsessive-Compulsive Disorder
+- Obsessive beliefs, experiential avoidance, and cognitive fusion as predictors of obsessive-compulsive disorder symptom dimensions
+
+NEIGHBOURING TOPIC 114 (similarity 0.71)
+Key terms: depression, depressed, behavioral activation, anxiety
+- Beyond symptom severity: The differential impact of distress tolerance and reward responsiveness on quality of life in depressed and non-depressed individuals
+- Functional Analytic Psychotherapy Enhanced Behavioral Activation for Depression: A Concurrent and Non-Concurrent Between-Participants Study
+- Verbal Behavior and Depression
+
+NEIGHBOURING TOPIC 1 (similarity 0.64)
+Key terms: psychiatric, inpatient, mental health, patients
+- Adaptation Process of Social Cognition and Interaction Training (SCIT) in an Indian Context for Persons with Schizophrenia
+- Cognitive Remediation to Facilitate Independent Living in Persons With Serious Mental Illness
+- A psychological flexibility model of medication adherence in psychotic-spectrum disorders

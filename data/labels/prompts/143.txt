@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 143
+Key terms: behavior modification, change, new, getting
+
+Titles closest to the topic's center, conference presentations:
+- Toward an Understanding and Application of Necessary Components of Written Behavior Plans
+- Disrupting Established Operant Behavior
+- The Way Forward: Behavior Analysis and the Contingencies of Inclusion
+- Technically Flexible: Using Basic Behavioral Procedures to Detect Areas of Psychological Flexibility and Inflexibility
+- Ready, Set, GOAL! Applications of Goal Setting and Performance Feedback across Populations, Behaviors, and Settings
+- Demystifying the Motivating Operation
+- Behavioral Selection Theory: A Formal Approach
+- Issues of Fidelity and Precision When Scaling and Disseminating Behavioral Principles
+- Evaluation of Local Behavior Dependence in Continuous and Discontinuous Environments
+- Values-Based Programming and Dismantling Ableism in Behavior Analysis
+
+Titles closest to the topic's center, journal articles:
+- Analysis of precursors to multiply controlled problem behavior: A replication
+- Comparing methods of evaluating sensitivity to common establishing operations and bias toward challenging behavior
+- Getting a New Sequence of Behaviors to Occur With Behavior Chaining
+- Defining, Measuring, and Recording Target Behavior
+- Using data-driven processes to clarify behavioral function: A case example.
+- Methodological improvements to a Procedure for Rapidly Establishing Steady‐State Behavior
+- Replicability and randomization test logic in behavior analysis
+- Getting a New Behavior to Occur With Shaping
+- Beyond the breakpoint: reinstatement, renewal, and resurgence of ratio‐strained behavior
+- Process Safety Behavioral Systems: Behaviors Interlock in Complex Metacontingencies
+
+NEIGHBOURING TOPIC 199 (similarity 0.81)
+Key terms: evolutionary, behavior dynamics, theory, human
+- What Evolutionary Theory Tells Us About Behavior
+- On the current status of the evolutionary theory of behavior dynamics
+- Systems, Groups, and the Evolution of Behavior Science
+
+NEIGHBOURING TOPIC 135 (similarity 0.78)
+Key terms: science
+- On the Dimensions of Behavior Analysis
+- Theoretical Issues in Behavior Analysis
+- Basic research in behavior analysis.
+
+NEIGHBOURING TOPIC 185 (similarity 0.78)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability

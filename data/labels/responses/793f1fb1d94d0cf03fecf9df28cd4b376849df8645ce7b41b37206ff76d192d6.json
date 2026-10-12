@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Sight Word and Spelling Instruction\",\"definition\":\"Studies teaching individual word reading and spelling, comparing procedures such as incremental rehearsal, prompt delays, picture-text prompts, cover-copy-compare, and mastery criteria for word acquisition and maintenance, often with students with learning disabilities.\",\"distinct_from_neighbours\":\"Targets acquisition of isolated sight words and spellings, unlike connected-text reading fluency and comprehension, foreign-language learning, or broad literacy curricula and reading-writing assessment.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1314,
+  "output": 190
+ },
+ "generated_utc": "2026-10-10T19:13:10+00:00"
+}

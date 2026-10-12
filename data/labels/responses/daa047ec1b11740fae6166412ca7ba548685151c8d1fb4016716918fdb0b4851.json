@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Learning in Nontraditional Animal Species\",\"definition\":\"Basic research and reviews on conditioning, choice, discrimination, and punishment in fish, invertebrates, birds, and other uncommon species, plus comparative questions about animal learning across species.\",\"distinct_from_neighbours\":\"Focuses on basic learning in uncommon species such as zebrafish, bees, and planaria, not on applied training of dogs and other animals, primate studies, or pigeon research.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1429,
+  "output": 160
+ },
+ "generated_utc": "2026-10-10T19:10:28+00:00"
+}

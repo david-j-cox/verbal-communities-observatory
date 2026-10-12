@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavior Analysis as a Science\",\"definition\":\"Broad conceptual, theoretical, and methodological reflections on behavior analysis as a whole: its defining dimensions, scientific identity, links between basic and applied research, quantitative approaches, history, and future directions.\",\"distinct_from_neighbours\":\"Addresses the whole discipline's scientific and theoretical foundations, not specifically the applied field's status, qualitative research methods, or evolutionary theories of behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1252,
+  "output": 163
+ },
+ "generated_utc": "2026-10-10T19:10:50+00:00"
+}

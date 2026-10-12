@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Autism: Social Reinforcement and Response Variability\", \"definition\": \"Research on how reinforcement arrangements shape the social, play, and varied responding of children with autism. It covers social interaction as a reinforcer, pairing procedures, lag and token schedules, and activity schedules.\", \"distinct_from_neighbours\": \"Focuses on reinforcement processes, social reinforcer value, and schedules that produce variable responding. It is not about general intervention outcomes, intraverbal and vocal training, or video-modeling-based social skills instruction.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1549,
+  "output": 535
+ },
+ "generated_utc": "2026-10-10T19:13:29+00:00"
+}

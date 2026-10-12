@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Functional Behavior Assessment Methods and Practice\",\"definition\":\"Research and discussion on how functional behavior assessments are designed, compared, validated, taught and implemented, including practical functional assessment models, brief and indirect methods, school-based use, and practitioner training.\",\"distinct_from_neighbours\":\"Covers functional assessment as a whole process and its uptake in practice, unlike the neighbour on experimental functional analysis procedures, broad problem-behavior treatment advances, or clinical behavior analysis and psychotherapy.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1633,
+  "output": 183
+ },
+ "generated_utc": "2026-10-10T19:07:38+00:00"
+}

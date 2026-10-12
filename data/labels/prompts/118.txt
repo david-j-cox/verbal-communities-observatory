@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 118
+Key terms: schools, educational, student, public
+
+Titles closest to the topic's center, conference presentations:
+- Advancements in Group Contingencies in School Settings
+- PDS: Cultivating Student Repertoires to Produce Societal Change: Why Are We Not Teaching People to Save the World?
+- Current Research on Group Contingencies in Education
+- Recent Applications of Group Contingencies in School Settings
+- We’re Not Too Cool for School: How to Establish and Maintain School- and Community-Based Practicums
+- Empowering Educators: Strategies for School-Based Interventions
+- How It Started, How It's Going: Reducing Restraints at an Exceptional Student Education Center School
+- Improving Student Behavioral Outcomes Through Interdisciplinary Collaboration in Public Schools
+- A Scientific Approach to Inclusion in the Elementary School Setting: The CABAS® Accelerated Independent Learner Model of Instruction
+- Current Issues in Education
+
+Titles closest to the topic's center, journal articles:
+- Evaluation of a Novel Independent Group Contingency in an Alternative School
+- A Systematic Review of Group Contingencies in Alternative Education Settings
+- Use of synthesized analysis and informed treatment to promote school reintegration
+- A Preliminary Demonstration of a Dependent Group Contingency in Alternative Education
+- Building a More Effective, Equitable, and Compassionate Educational System: The Role of Direct Instruction
+- Fostering Educational Success: Program Description and Descriptive Pilot Study
+- Leaning Further into the Education and Better Treatment of Children in Schools: An Editorial
+- Exploring Issues of Generalization and Maintenance in Training Instructional Aides in a Public School Setting
+- Exploring Solutions to Address Students' Social Competencies to Facilitate School Success: A Usability and Feasibility Study
+- Behavior Analysis and Equity in Public Education: An Abolitionist Approach
+
+NEIGHBOURING TOPIC 27 (similarity 0.78)
+Key terms: teacher, classroom, education, teaching
+- Evidence Based Practices for Improving Teacher Performance
+- Supporting Educator Effectiveness: Measurement, Coaching, and Technology
+- Involving Classroom Teachers in School-Based Interventions
+
+NEIGHBOURING TOPIC 19 (similarity 0.76)
+Key terms: recycling, college, classroom, group
+- Interdependent Group Contingencies Reduce Disruption in Alternative High School Classrooms
+- Gamification and Group Contingencies in the College Classroom
+- Reducing Electricity Use on Campus: The Use of Prompts, Feedback, and Goal Setting to Decrease Excessive Classroom Lighting
+
+NEIGHBOURING TOPIC 141 (similarity 0.73)
+Key terms: math, fluency, course, student
+- Improving Learning in Higher Education: Fluency, Oral Quizzes, Reducing Procrastination, and Weekly Quizzes
+- Improving Students’ Academic Performance
+- A Comparison of Escalating Versus Fixed Reinforcement Schedules on Undergraduate Quiz Taking

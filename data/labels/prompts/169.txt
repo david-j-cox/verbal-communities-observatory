@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 169
+Key terms: analysis verbal, verbal behavior
+
+Titles closest to the topic's center, conference presentations:
+- Basic Research on Verbal Behavior
+- Advances in Verbal Behavior
+- Syntheses of Verbal Behavior Research
+- Advances in Verbal Behavior Research and Practice
+- Recent Advances in Verbal Behavior Research
+- son, Ph.D. The Shape of Verbal Behavior to Come: New Metrics and Applications
+- Establishing Emerging and Complex Verbal Behavior
+- Trends in Verbal Behavior Research
+- Conceptual and Empirical Approaches to Complex Verbal Behavior
+- Advanced Verbal Behavior
+
+Titles closest to the topic's center, journal articles:
+- The current status of the experimental analysis of verbal behavior.
+- Reflections on Verbal Behavior at
+- An annotated bibliography of verbal behavior articles published outside of The Analysis of Verbal Behavior: 2016
+- An Annotated Bibliography of Verbal Behavior Articles Published Outside of The Analysis of Verbal Behavior: 2015
+- The Analysis of Whose Verbal Behavior?
+- Defining Verbal Behavior: Two Conflicting Approaches
+- A Multiscale View of Verbal Behavior
+- Fruits of Consensus: Continued Improvement in the Analysis of Verbal Behavior
+- A systematic review of derived verbal behavior research
+- The Duplic and Codic: the Importance of a Consistent Taxonomy of Verbal Behavior
+
+NEIGHBOURING TOPIC 17 (similarity 0.87)
+Key terms: nonverbal, speech, intraverbal, verbal behavior
+- Verbal Stimulus Control and the Intraverbal Relation
+- Emergent Relations between Discriminative Stimuli, Responses, and Consequences in Intraverbals
+- Verbal-Like Effects of Nonverbal Stimuli
+
+NEIGHBOURING TOPIC 11 (similarity 0.76)
+Key terms: language, verbal, operant, words
+- Advancing Evaluations on the Emergence and Acquisition of Various Verbal Operants
+- Toward a Behavioral Interpretation of English Grammar
+- Correspondence of Verbal Reports: An Experimental Analysis
+
+NEIGHBOURING TOPIC 185 (similarity 0.70)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability

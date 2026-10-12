@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Attention-Deficit/Hyperactivity Disorder Interventions\",\"definition\":\"Research on children, adolescents, and college students with attention-deficit/hyperactivity disorder or its symptoms. It covers parent training, school-based on-task and self-monitoring interventions, social skills, medication, and delay and effort discounting.\",\"distinct_from_neighbours\":\"Defined by an attention-deficit/hyperactivity disorder population, unlike general pediatric and early intervention work, classwide classroom management and the Good Behavior Game, or older intellectual disability research.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1584,
+  "output": 194
+ },
+ "generated_utc": "2026-10-10T19:10:15+00:00"
+}

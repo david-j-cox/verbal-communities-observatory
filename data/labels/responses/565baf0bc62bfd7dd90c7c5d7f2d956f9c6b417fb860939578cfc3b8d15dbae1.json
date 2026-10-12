@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Increasing Children's Physical Activity\",\"definition\":\"Assessment and intervention research on increasing moderate-to-vigorous physical activity in children, including those with developmental disabilities, using reinforcement, adult attention, peers, goal setting, feedback, and activity-context manipulations.\",\"distinct_from_neighbours\":\"Focuses on children's physical activity levels, unlike the adult exercise and health focus of 191 and the general pediatric treatment, care, and early intervention work in 133 and 155.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1485,
+  "output": 172
+ },
+ "generated_utc": "2026-10-10T19:07:02+00:00"
+}

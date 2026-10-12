@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Radical Behaviorism as Philosophy\",\"definition\":\"Work explaining, defending, and teaching radical behaviorism as the philosophy of science underlying behavior analysis, including its treatment of private events, ontology, values, verbal behavior, and historical development.\",\"distinct_from_neighbours\":\"Centers specifically on radical behaviorism's tenets, unlike broader surveys of behaviorism's varieties and methodological behaviorism, behavioral accounts of creativity and complex behavior, or evolutionary theories of behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1201,
+  "output": 184
+ },
+ "generated_utc": "2026-10-10T19:12:55+00:00"
+}

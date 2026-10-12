@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Avoidance Learning and Experiential Avoidance\",\n\"definition\": \"Basic and translational research on avoidance behavior, including free-operant and shock avoidance, derived transfer of fear and avoidance functions, experiential avoidance measurement, and related aversive control of impulsive choice and delay aversion.\",\n\"distinct_from_neighbours\": \"Centers on avoidance processes themselves, not on treating escape-maintained problem behavior, conditioned reinforcement and suppression procedures, or behavioral contrast, momentum and variability in operant responding.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1662,
+  "output": 192
+ },
+ "generated_utc": "2026-10-11T00:38:07+00:00"
+}

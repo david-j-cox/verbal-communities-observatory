@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Interpretations of Creativity and Aesthetics\",\"definition\":\"Conceptual and theoretical work offering behavioral accounts of creativity, art, aesthetic responses, emotion, values, and embodied or field-based views of psychological events, including how behavior analysis relates to other disciplines.\",\"distinct_from_neighbours\":\"Unlike broader debates on behaviorism's history and varieties, operant contrast and variability research, or theory-of-mind analyses, this topic interprets creativity, aesthetics, and complex experience behaviorally.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1418,
+  "output": 191
+ },
+ "generated_utc": "2026-10-10T19:06:52+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Assessment and Treatment of Sleep Problems\",\"definition\":\"Measuring, assessing, and treating sleep problems such as night waking, co-sleeping, and poor sleep hygiene, mostly in children with autism or developmental disabilities, including safe infant sleep and sleep's effects on challenging behavior.\",\"distinct_from_neighbours\":\"Focuses specifically on sleep as the target behavior, whereas neighbours cover general pediatric healthcare applications, broad autism intervention outcomes, or applied behavior analysis services for autism generally.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1934,
+  "output": 670
+ },
+ "generated_utc": "2026-10-10T19:07:33+00:00"
+}

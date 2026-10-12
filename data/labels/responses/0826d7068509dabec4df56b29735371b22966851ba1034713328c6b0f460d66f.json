@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Gerontology and Dementia Care\",\"definition\":\"Behavior-analytic assessment and intervention for older adults with dementia or neurocognitive disorders, addressing memory and language deficits, activity engagement, self-care retention, challenging behavior, and caregiver-delivered supports.\",\"distinct_from_neighbours\":\"Focuses specifically on aging and dementia-related cognitive decline, unlike general caregiver training, broad behavioral intervention programs, or challenging behavior in developmental disabilities.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1583,
+  "output": 180
+ },
+ "generated_utc": "2026-10-10T19:09:02+00:00"
+}

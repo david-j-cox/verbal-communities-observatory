@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Behavioral approaches to literacy instruction\",\"definition\": \"Applying behavior analysis to teaching reading and writing in schools and at home, including conditioned reinforcement for reading, verbal developmental cusps, emergent relations, literacy assessment, and science-of-reading integration.\",\"distinct_from_neighbours\": \"Covers broad reading and writing repertoires and literacy programs, not specifically oral fluency and comprehension measures, spelling and sight-word acquisition, or general instructional methods like direct instruction.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1661,
+  "output": 178
+ },
+ "generated_utc": "2026-10-10T19:09:41+00:00"
+}

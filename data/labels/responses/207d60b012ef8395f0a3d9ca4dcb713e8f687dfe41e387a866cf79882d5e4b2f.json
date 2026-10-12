@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Sexual Behavior Research and Intervention\",\n\"definition\": \"Behavior-analytic assessment, treatment, and study of sexual behavior, including inappropriate or illegal sexual behavior, arousal and partner-preference assessment, sexual risk discounting, sex education, and ethics of sexuality-related interventions.\",\n\"distinct_from_neighbours\": \"Focuses on sexual behavior and sexuality itself, not women's representation in the field, general or residential behavioral intervention programs, or assessment and treatment of aggression.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1639,
+  "output": 184
+ },
+ "generated_utc": "2026-10-10T19:11:05+00:00"
+}

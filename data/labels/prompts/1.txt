@@ -1,0 +1,48 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 1
+Key terms: psychiatric, inpatient, mental health, patients
+
+Titles closest to the topic's center, conference presentations:
+- Treating Complex Clients Into Adulthood: Incorporating Mental Health and Behavioral Health Services
+- Toward a Constructional Approach to Mental Health: Applying Nonlinear Contingency Analysis in Practice
+- Ford Responding to Potential Suicidal and Homicidal Ideation of ABA Patients in a Pediatric Setting via Psychology Collaboration Referral System
+- The Use of Endophenotypes to Further Our Understanding of Psychiatric Genetics
+
+Titles closest to the topic's center, journal articles:
+- Adaptation Process of Social Cognition and Interaction Training (SCIT) in an Indian Context for Persons with Schizophrenia
+- Cognitive Remediation to Facilitate Independent Living in Persons With Serious Mental Illness
+- A psychological flexibility model of medication adherence in psychotic-spectrum disorders
+- Implementation Study of “Building Resilience,” Including Positive Psychology Interventions and Positive Emotion Regulation Training in Patients With Severe Mental Illness in an Adult Outpatient Psychiatric Mental Health Setting: An Exploratory Clinical Trial
+- Supporting employers and their employees with mental hEalth conditions to remain eNgaged and producTive at wORk (MENTOR): A feasibility randomised controlled trial
+- Development of a Single-Session, Transdiagnostic Preventive Intervention for Young Adults at Risk for Emotional Disorders
+- Recovery through affiliation: A compassionate approach to schizophrenia and schizoaffective disorder (COMPASS)
+- Examining Effectiveness of Group Cognitive-Behavioral Therapy for Externalizing and Internalizing Disorders in Urban Schools
+- Third wave interventions for adolescents with mental health disorders: A systematic review with meta-analysis
+- On the efficacy of mindfulness, defusion, and behavioral skills training on job interviewing skills in dually-diagnosed adults with developmental disorders
+
+NEIGHBOURING TOPIC 114 (similarity 0.75)
+Key terms: depression, depressed, behavioral activation, anxiety
+- Beyond symptom severity: The differential impact of distress tolerance and reward responsiveness on quality of life in depressed and non-depressed individuals
+- Functional Analytic Psychotherapy Enhanced Behavioral Activation for Depression: A Concurrent and Non-Concurrent Between-Participants Study
+- Verbal Behavior and Depression
+
+NEIGHBOURING TOPIC 105 (similarity 0.74)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 15 (similarity 0.73)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis

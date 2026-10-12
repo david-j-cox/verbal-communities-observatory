@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Improving Academic Performance in Math and College Courses\",\"definition\":\"Behavioral interventions to raise student academic outcomes, including math fact fluency, brief experimental analysis, and college course quizzes, grade contingencies, guided notes, and interteaching to improve exam and assignment performance.\",\"distinct_from_neighbours\":\"Targets measured academic achievement such as quiz scores and math fluency, rather than classroom on-task behavior, named instructional packages like Direct Instruction or precision teaching, or teacher training.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1516,
+  "output": 179
+ },
+ "generated_utc": "2026-10-10T19:11:09+00:00"
+}

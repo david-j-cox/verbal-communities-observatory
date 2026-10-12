@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 161
+Key terms: animal behavior, dogs, animals, training
+
+Titles closest to the topic's center, conference presentations:
+- Applied Animal Behavior: Research
+- Applied Animal Behavior: Theory
+- Novel Methodological Considerations in Applied Animal Behavior
+- Decreasing Canine Problem Behavior in the Animal Shelter Environment
+- Unleashing Applied Animal Behavior: Dissemination of Behavioral Science Through Practice
+- Recent Advances in Canine Behavior Analysis: The Roles of Social Reinforcement and Context on Learning
+- Historical Perspectives of Applied Animal Behavior Analysis: Past, Present, and Future
+- Applied Behavior Analysis With Companion Dogs: Functional Analysis and Preference Assessments
+- Unleashing Applied Animal Behavior: Dissemination of Behavioral Science Through Practice Part Two
+- Fido, No! Using Principles From Behavior Analysis to Investigate Canine Undesired Behavior , Owner Training, and Interventions
+
+Titles closest to the topic's center, journal articles:
+- Experimental analysis of canine behavior and cognition: Introduction to the special issue
+- The Journal of the Experimental Analysis of Behavior announces a special issue on the topic of: Experimental Analysis of Canine Behavior and Cognition
+- Functional analysis and treatment of problem behavior by domesticated canines
+- Strengthening the research–practice loop in applied animal behavior: Introduction to the special issue
+- Evaluating the work of applied animal behaviorists as applied behavior analysis.
+- Social interaction can function as a reinforcer for dogs: Effects of stimulus duration and session parameters
+- Assessing human attention as a reinforcer for dog behavior.
+- Grounding applied animal behavior practices in the experimental analysis of behavior
+- Testing the limits of behavior analysis: A review of Frans de Waal's Are we smart enough to know how smart animals are?
+- Applied behavior analysis and the zoo: Forthman and Ogden (1992) thirty years later
+
+NEIGHBOURING TOPIC 128 (similarity 0.71)
+Key terms: fish, species, conditioning, operant
+- Behavioral Interference Between Species
+- Spatial Behavior and Conditioning in Orange Head Cockroaches
+- The Behavior of (Other) Organisms: Considerations for Nontraditional Animal Research
+
+NEIGHBOURING TOPIC 109 (similarity 0.64)
+Key terms: monkeys, rhesus, chimpanzee, squirrel
+- Negative Behavioral Contrast in Capuchin Monkeys (Sapajus sp.)
+- The Effect of Signaling Reinforcement in Capuchin Monkeys: Extension of the Gambling Paradigm
+- Acquisition and maintenance of delayed matching‐to‐sample in tufted capuchin monkeys
+
+NEIGHBOURING TOPIC 5 (similarity 0.64)
+Key terms: journal experimental, abstracts, analysis human, analysis behavior
+- The experimental analysis of behavior: Whence and thence?
+- Society for the Experimental Analysis of Behavior Call for Applications 2021
+- The futures of experimental analysis of behavior.

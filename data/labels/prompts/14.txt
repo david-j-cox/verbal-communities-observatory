@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 14
+Key terms: covid-, pandemic, telehealth, hiv
+
+Titles closest to the topic's center, conference presentations:
+- Insurance-Funded Applied Behavior Analysis Intervention Amidst the COVID-19 Pandemic: Telehealth and Learner Outcomes
+- Recent Advances and Applications of Telehealth in Applied Behavior Analysis During the COVID-19 Pandemic
+- Navigating Telepractice During the Pandemic: Problem Resolution to Promote Access to Intervention at the Individual, Small Group, and Systemic Level
+- Increasing Compliance With COVID-19-Related Preventative Health Measures
+- Advancements in Telehealth Treatments of Aberrant Behavior and Virtual Supervision During the COVID-19 Pandemic
+- The Power of Telehealth for Continuing ABA-Based Interventions: An Indian Organization’s Responseto COVID-19
+- Increasing Parent Engagement in ABA Therapy During COVID-19 Telehealth Services
+- Updates on Early Intensive Behavioral Intervention in the Pandemic Era: Analyzing Group and Individual Outcomes
+- Integrating Principles of Behavior Change and Public Health to Change Habits and Combat the Challenges of the COVID-19 Pandemic
+- Reassessing ABA Practice and Acceptance During COVID-19: Where Does Your Organization Stand?
+
+Titles closest to the topic's center, journal articles:
+- Rapid Conversion from Clinic to Telehealth Behavioral Services During the COVID-19 Pandemic
+- Reopening the Doors to Center-Based ABA Services: Clinical and Safety Protocols During COVID-19
+- Experiences of service providers in the expedited delivery of ABA therapy via telehealth during the COVID-19 pandemic: Reflections and considerations for the future.
+- Rethinking Essential Services in the Wake of the COVID-19 Health Crisis
+- Exploring the relationships between rule-governed behavior and adherence to guidelines aiming to reduce the spread of COVID-19
+- Facing pandemic challenges: Helping health care professionals cope.
+- A University-Based Social Services Parent-Training Model: A Telehealth Adaptation During the COVID-19 Pandemic
+- The effects of transition to technician‐delivered telehealth ABA treatment during the COVID ‐19 crisis: A preliminary analysis
+- A Proposed Process for Risk Mitigation During the COVID-19 Pandemic
+- Transitioning ABA Services From in Clinic to Telehealth: Case Study of an Indian Organization’s Response to COVID-19 Lockdown
+
+NEIGHBOURING TOPIC 198 (similarity 0.64)
+Key terms: care, services, clinical, treatment
+- Putting the Analysis Back Into Clinical Practice: Data-Based Decisions to Improve Lives
+- An Attorney and a BCBA Walked Into a Symposium: Clinical Best Practices and the Law
+- Evidence based and intensity specific services in the integrated care setting: Ethical considerations for a developing field.
+
+NEIGHBOURING TOPIC 105 (similarity 0.56)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 116 (similarity 0.53)
+Key terms: telehealth, services, disorder, training
+- Developing and Delivering Behavioral Interventions Through Telehealth
+- Integrating Telehealth into Behavior Analytic Practice
+- Training Individuals to Implement Applied Behavior Analytic Procedures via Telehealth: A Systematic Review of the Literature

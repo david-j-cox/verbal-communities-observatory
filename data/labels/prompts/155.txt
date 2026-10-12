@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 155
+Key terms: parent, children, care, early
+
+Titles closest to the topic's center, conference presentations:
+- Using Pre-Treatment Screening and Assessments to Improve the Safety and Care of Children
+- Efficacy and Effectiveness of Different Models of Early Childhood Developmental Behavioral Interventions: Possible Hope for Low- and Mid-Income Countries
+- Applications of Public Health: Teaching Infant and Child Safety to Caregivers and Community Members
+- Evaluating Strategies for Improving Early Infant Care
+- School-Based Systems and Procedures for Addressing Early Childhood Development and Anxiety Disorders
+- Evaluating Effectiveness of STEAM Workshops on Preschool Children With and Without Disabilities: Experiences During COVID-19 Pandemic
+- Assessment and Intervention for Underserved Youth Populations
+- A Public Health Approach to Early Learning
+- Pilot Studies for Establishing Evidence-Based Treatment for Youths With ASD in Korea
+- Improving Staff’s Implementation of Evidence-Based Practices in Juvenile Justice, Residential, and Childcare Facilities
+
+Titles closest to the topic's center, journal articles:
+- Developing Procedures to Improve Therapist–Child Rapport in Early Intervention
+- Implementation of interventions informed by precursor functional analyses with young children: A replication
+- Evaluation of the effects of the Online and Applied System for Intervention Skills (OASIS) with parents of children with ASD using a randomized waitlist control trial.
+- Systematic Review of Procedures and Outcomes of Choice-Based Interventions with Children
+- Teaching an Infant to Request Help
+- Curbing Our Enthusiasm: An Analysis of the Check-In/Check-Out Literature Using the Council for Exceptional Children’s Evidence-Based Practice Standards
+- Using Peer-Mediated Literacy-Based Behavioral Interventions to Increase First Aid Safety Skills in Students With Developmental Disabilities
+- Effects of a Multi-component Decoding Intervention for At-risk First Graders
+- Evaluating the Use of Alternative Seating with Kindergarteners at Risk for Emotional and Behavioral Disorders
+- The Impact of Integrated Support and Context on Treatment Implementation and Child Outcomes Following Behavioral Consultation
+
+NEIGHBOURING TOPIC 133 (similarity 0.83)
+Key terms: child, disorders, treatment, assessment
+- Practical Considerations and Applications of Behavior Analysis to Working With Children in Healthcare Settings
+- Dissemination of Behavior Analysis to the Pediatric Community
+- Quality of Early Intensive Behavioral Intervention as a Predictor of Children's Outcome
+
+NEIGHBOURING TOPIC 189 (similarity 0.80)
+Key terms: preschool children, preschoolers, skills, development
+- Behavior Analysis Goes to Preschool: Strategies for Increasing Critical Skills in Young Children
+- Preschool life skills: Recent advancements and future directions
+- Descriptive Analysis of Preschool Social Interactions
+
+NEIGHBOURING TOPIC 3 (similarity 0.80)
+Key terms: parent training, training parents, behavioral parent, behavioral skills
+- Overcoming Barriers to Parent Training
+- Current Research for Training Parents, Educators, and Direct-Care Staff to Implement Behavioral Assessment and Treatment
+- Evaluating Behavioral Skills Training as an Evidence-Based Practice When Training Parents to Intervene with Their Children

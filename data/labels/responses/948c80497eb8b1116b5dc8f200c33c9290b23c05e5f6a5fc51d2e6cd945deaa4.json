@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"First and Second Language Acquisition\",\"definition\":\"Behavioral accounts of how children acquire a first language, plus research teaching foreign or second languages through tact and listener instruction and testing for emergent intraverbal and bilingual repertoires.\",\"distinct_from_neighbours\":\"Focuses on whole-language development and foreign-language learning, not the analysis of particular verbal operants, intraverbal stimulus control, or teaching sight words and spelling.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1471,
+  "output": 155
+ },
+ "generated_utc": "2026-10-10T19:12:46+00:00"
+}

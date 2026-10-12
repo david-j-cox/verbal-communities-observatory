@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 107
+Key terms: data collection, recording, clinical, reliability
+
+Titles closest to the topic's center, conference presentations:
+- Issues in Data Collection and Analysis
+- Advancements in Data Collection, Measurement, and Related Training Practices
+- A Multidisciplinary Approach to Data Science
+- Business Intelligence 101: Moving Beyond Excel Charts and Tables
+- Using Practical Automated Clinical Data Analysis Tools to Get the Most From Your Assessment Data
+- Moving To Electronic Data Collection: Lessons Learned and Tips From Four Organizations
+- Accountability Through Data Collection: Narrowing the Bridge Between Science and Practice
+- From Chaos to Clarity: Using Data to Drive Organizational Decision Making
+- Can I See Your Notes?: Exploring Perspectives on Data Collection and Note Taking Across Contexts
+- Important Uses of Clinical Outcome Data
+
+Titles closest to the topic's center, journal articles:
+- How Can Single-Case Data Be Analyzed? Software Resources, Tutorial, and Reflections on Analysis
+- Reliability, Validity, and Usability of Data Extraction Programs for Single-Case Research Designs
+- Description and Validation of a Computerized Behavioral Data Program: “BDataPro”
+- Single-Case Data Analysis: A Practitioner Guide for Accurate and Reliable Decisions
+- A Component Analysis of an Electronic Data Collection Package
+- On the Use and Benefits of Electronic Data Collection Systems: A Tutorial on Countee
+- Performance management and maintenance of data recording by educational care providers.
+- Factors Impacting Data Reliability: Rate and Total Behaviors
+- Evaluating the Feasibility of Methods of Live Data Collection for Sociability Assessments
+- The consecutive controlled case series: Design, data‐analytics, and reporting methods supporting the study of generality
+
+NEIGHBOURING TOPIC 138 (similarity 0.58)
+Key terms: interobserver, agreement, reliability, contingency
+- On the Evidence for Interactive Effects During and Following Synthesized Contingency Assessments
+- Adaptations of the interview‐informed synthesized contingency analysis
+- Does analysis brevity result in loss of control? A consecutive case series of 26 single‐session interview‐informed synthesized contingency analyses
+
+NEIGHBOURING TOPIC 180 (similarity 0.58)
+Key terms: visual analysis, graphs, microsoft excel, inspection
+- A Visual Aid and Objective Rule Encompassing the Data Features of Visual Analysis
+- Enhancing Pre-service Teachers’ Visual Analysis Skills for Single-Case Graphs: the Role of Trend and Intervention Effect
+- Systematic Protocols for the Visual Analysis of Single-Case Research Data
+
+NEIGHBOURING TOPIC 166 (similarity 0.53)
+Key terms: time sampling, momentary time, interval recording, partial interval
+- Quantifying false positives in simulated events using partial interval recording and momentary time sampling with dual‐criteria methods
+- Minimizing and Reporting Momentary Time-Sampling Measurement Error in Single-Case Research
+- The frequency profile: An informative method for graphing the behavior of individuals post hoc or in real time.

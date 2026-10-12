@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "```json\n{\n  \"label\": \"Mixed Research Tools and Performance Studies\",\n  \"definition\": \"A loosely related mix of work. It includes laboratory instrumentation and programming, simulations of schedule feedback functions, and small-N power and measurement tutorials, alongside varied basic and applied studies of performance.\",\n  \"distinct_from_neighbours\": \"Unlike the focused neighbours on generalization models, variable-interval responding and timing, or concurrent-schedule choice, this topic mixes methodological tools with heterogeneous applied and basic performance studies.\"\n}\n```",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1344,
+  "output": 493
+ },
+ "generated_utc": "2026-10-10T19:08:18+00:00"
+}

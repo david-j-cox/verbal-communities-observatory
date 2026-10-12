@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Safety Skills and Behavior-Based Safety\",\"definition\": \"Teaching children and other learners to respond safely to hazards such as guns, dangerous stimuli and car restraints, plus behavior-based safety processes for preventing injuries in workplaces and process industries.\",\"distinct_from_neighbours\": \"Covers safety broadly, from child safety skills to occupational safety, unlike the driving and traffic focus, child compliance with instructions, or behavioral skills training applied across varied skills.\"}",
+ "usage": {
+  "input": 1422,
+  "output": 168
+ },
+ "generated_utc": "2026-10-10T17:56:04+00:00"
+}

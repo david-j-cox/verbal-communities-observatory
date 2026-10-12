@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Accounts of Mind and Thought\",\"definition\":\"Conceptual and experimental behavior-analytic treatments of mentalistic phenomena such as theory of mind, consciousness, thinking, self-talk, perspective taking, implicit cognition, and self-referential thoughts.\",\"distinct_from_neighbours\":\"Focuses on mind, consciousness, and private thought, not creativity and complex behavior, derived relational responding as such, or the behavior and culture of science.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1337,
+  "output": 166
+ },
+ "generated_utc": "2026-10-10T19:07:04+00:00"
+}

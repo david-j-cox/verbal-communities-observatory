@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavior Analysis in Schools and College Teaching\",\"definition\":\"Work on applying behavior analysis in school and classroom settings, and on how behavior analysis itself is taught in higher education, including teaching its history and instructional design.\",\"distinct_from_neighbours\":\"Focuses on school practice and college classroom teaching rather than graduate or undergraduate program curricula, the field's theoretical and scientific dimensions, or the general state of applied behavior analysis.\"}",
+ "usage": {
+  "input": 1335,
+  "output": 158
+ },
+ "generated_utc": "2026-10-10T17:55:48+00:00"
+}

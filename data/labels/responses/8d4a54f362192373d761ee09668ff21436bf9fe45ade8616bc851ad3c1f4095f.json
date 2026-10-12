@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Discontinuous and Automated Behavior Measurement\",\"definition\":\"Methods for measuring and recording behavior, including error and bias in momentary time sampling and partial-interval recording, and automated tracking with motion sensors, 3D cameras, and machine learning.\",\"distinct_from_neighbours\":\"Concerns the accuracy of measurement systems themselves, not timing and schedule effects on behavior, operant variability and response units, or recording hardware such as cumulative recorders and electronic data collection.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1286,
+  "output": 170
+ },
+ "generated_utc": "2026-10-10T19:12:26+00:00"
+}

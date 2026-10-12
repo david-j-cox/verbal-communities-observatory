@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Training Caregivers, Staff, and Autistic Adults\",\"definition\":\"Studies of behavioral skills training and technology-based or brief training programs that teach parents and staff to deliver autism interventions, and that teach vocational, interview, and social skills to autistic adolescents and adults.\",\"distinct_from_neighbours\":\"Focuses on training the adults who deliver interventions and on teaching job-related skills to older autistic individuals, not on skill-acquisition procedures, social skills teaching, or intervention outcomes for young children.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1564,
+  "output": 180
+ },
+ "generated_utc": "2026-10-11T00:37:32+00:00"
+}

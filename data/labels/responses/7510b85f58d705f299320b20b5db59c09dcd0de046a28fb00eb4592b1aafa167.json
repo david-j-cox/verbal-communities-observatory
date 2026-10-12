@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Treatment of Aggression and Destructive Behavior\",\"definition\":\"Research on functional analysis, function-based treatment, safety, and relapse (such as resurgence after treatment) for aggression and other destructive behavior, including synthesized contingencies, noncontingent reinforcement, schedule thinning, and protective equipment.\",\"distinct_from_neighbours\":\"Focuses specifically on aggression and destructive behavior in applied settings, unlike broad overviews of problem-behavior treatment or basic laboratory work on operant reinforcement, response–reinforcer relations, and behavioral variability.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1820,
+  "output": 691
+ },
+ "generated_utc": "2026-10-10T19:06:05+00:00"
+}

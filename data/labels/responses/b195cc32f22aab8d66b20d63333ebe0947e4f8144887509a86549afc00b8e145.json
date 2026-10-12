@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Assessing and Treating Severe Problem Behavior\",\n\"definition\": \"Research and practice on assessing and treating severe or difficult-to-treat problem behavior, including noncontingent reinforcement, competing stimuli, schedule thinning, treatment durability, practitioner training, and surveys of current practice.\",\n\"distinct_from_neighbours\": \"Covers the full assessment-to-treatment process for severe problem behavior, whereas neighbours address functional analysis methods specifically, general behavioral intervention programs, or clinical behavior analysis and psychotherapy.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1467,
+  "output": 196
+ },
+ "generated_utc": "2026-10-10T19:12:14+00:00"
+}

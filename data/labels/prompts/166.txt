@@ -1,0 +1,46 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 166
+Key terms: time sampling, momentary time, interval recording, partial interval
+
+Titles closest to the topic's center, conference presentations:
+- Automatic Measurement of Behavior Using Inertial Measurement Units
+- A System for Real-Time 3D Tracking of Operant Behavior
+
+Titles closest to the topic's center, journal articles:
+- Quantifying false positives in simulated events using partial interval recording and momentary time sampling with dual‐criteria methods
+- Minimizing and Reporting Momentary Time-Sampling Measurement Error in Single-Case Research
+- The frequency profile: An informative method for graphing the behavior of individuals post hoc or in real time.
+- mLearning Versus Paper and Pencil Practice for Telling Time: Impact for Attention and Accuracy
+- Machine learning to detect schedules using spatiotemporal data of behavior: A proof of concept
+- Automated measurement of repetitive behavior using the Microsoft Kinect: a proof of concept
+- A system for the real‐time tracking of operant behavior as an application of 3D camera
+- Partial-Interval Recording and Estimates of Duration in Meta-analyses: Insights from Self-Monitoring Research
+- A Systematic Review of Pliance, Tracking, and Augmenting
+- Employing a Repeated Time Series Design to Evaluate Waiting Periods on Firearm Homicide and Suicide Rates
+
+NEIGHBOURING TOPIC 26 (similarity 0.69)
+Key terms: interval schedules, fixed interval, timing, multiple schedules
+- Effects of signaling on temporal control of behavior in response‐initiated fixed intervals
+- Investigations of Schedule-Induced Behavior: Pausing, Escape, and Polydipsia
+- Understanding Disruptive Effects of Stimuli Correlated With Schedules of Positive Reinforcement
+
+NEIGHBOURING TOPIC 9 (similarity 0.69)
+Key terms: contrast, observing, variability, operant
+- A Comparison of Stimulus Set Sizes: Systematic Replication with Operant Analysis Acquisition Criteria
+- The Effect of Multiple Possibilities to Respond over Operant Variability.
+- Bouts, Pauses, and Units of Operant Performance: A Primer
+
+NEIGHBOURING TOPIC 74 (similarity 0.60)
+Key terms: cumulative recorder, paper, recording, tape
+- A Comparison of Electronic and Pen‐And‐Paper Recording in ABA Sessions
+- Practical, Inexpensive, and Easy-to-Program USB Interfacing: Recording and Control of External Equipment
+- Functional and Practical Applications of the Picture Exchange Communication System

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Women and Gender in Behavior Analysis\",\"definition\":\"Work examining women's representation, participation, leadership and career barriers within behavior analysis, plus behavior-analytic accounts of sexism, feminist issues, gender, and gender and sexual minorities.\",\"distinct_from_neighbours\":\"Focuses on gender equity and women's standing in the field, not qualitative research methods, the professional development of behavior analysts generally, or graduate and undergraduate training programs.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1528,
+  "output": 161
+ },
+ "generated_utc": "2026-10-10T19:08:39+00:00"
+}

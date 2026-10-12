@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Pediatric Feeding Disorder Assessment and Treatment\",\"definition\": \"Broad work on assessing and treating pediatric feeding disorders, including overviews, reviews, training, reinforcement and physical guidance procedures, packing, relapse, treatment dropout, and efficiency of intensive feeding treatment.\",\"distinct_from_neighbours\": \"Covers pediatric feeding disorders as a whole field, rather than food selectivity in autism, extinction-based treatment of food refusal, or functional analysis of inappropriate mealtime behavior.\"}",
+ "usage": {
+  "input": 1523,
+  "output": 191
+ },
+ "generated_utc": "2026-10-10T17:56:06+00:00"
+}

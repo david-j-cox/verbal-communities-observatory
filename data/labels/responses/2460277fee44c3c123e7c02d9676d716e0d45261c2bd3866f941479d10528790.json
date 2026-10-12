@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Memory, Remembering, and Forgetting\",\"definition\":\"Behavioral, comparative, and neuro-operant analyses of memory: recall, recognition, memory span, forgetting functions, and animal list memory, plus related cognition, aging and dementia, and memory rehabilitation.\",\"distinct_from_neighbours\":\"Focuses on remembering and forgetting as the subject, not general operant organization and stability, stimulus equivalence class formation itself, or competing stimulus assessments for applied problem behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1498,
+  "output": 175
+ },
+ "generated_utc": "2026-10-10T19:07:57+00:00"
+}

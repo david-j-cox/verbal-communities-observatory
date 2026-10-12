@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "```json\n{\n  \"label\": \"Reflective Essays with Figurative Titles\",\n  \"definition\": \"Opinion pieces, personal reflections, career profiles of influential behavior analysts, and commentaries on the field, recognizable by short, idiomatic or playful titles that signal little specific technical or empirical content.\",\n  \"distinct_from_neighbours\": \"Unlike philosophical book reviews, memorial obituaries, or work on definitions and introductions, these are informal reflective or commentary pieces united mainly by their figurative, attention-grabbing titles.\"\n}\n```",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1126,
+  "output": 428
+ },
+ "generated_utc": "2026-10-11T01:32:19+00:00"
+}

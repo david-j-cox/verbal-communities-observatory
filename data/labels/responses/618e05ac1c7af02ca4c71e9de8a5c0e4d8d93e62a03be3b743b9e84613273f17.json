@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Refining Skill Acquisition Procedures in Autism\",\"definition\":\"Research comparing and refining instructional procedure variables for teaching autistic learners, such as reinforcement arrangements, error correction, prompting, stimulus set size, intertrial interval, and instructional format, to improve acquisition efficiency and maintenance.\",\"distinct_from_neighbours\":\"Focuses on procedural parameters of instruction itself, not training parents or caregivers, teaching social skills specifically, or addressing repetitive behavior and reinforcer schedules beyond skill teaching.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1624,
+  "output": 195
+ },
+ "generated_utc": "2026-10-11T00:38:18+00:00"
+}

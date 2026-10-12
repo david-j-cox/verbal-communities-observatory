@@ -1,0 +1,52 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 44
+Key terms: token economies, token economy, token reinforcement, effects token
+
+Titles closest to the topic's center, conference presentations:
+- Token Economies: Recent Advances in Applied Research and Implications for Practice
+- Evaluations and Applications of Token Economies
+- Use-Inspired Research on Token Economies
+- Token Reinforcement: An Examination of Token Function and Application
+- Current Research in Token Reinforcement
+- Empirical Evaluations of the Reinforcing Efficacy of Tokens
+- Does Your Token Economy Suck?
+- Response Persistence: Token Economies, Overjustification, and Behavioral Momentum
+
+Titles closest to the topic's center, journal articles:
+- Token Economies
+- Efficacy of and preference for reinforcement and response cost in token economies
+- Token economies: Evidence‐based recommendations for practitioners
+- Token Economy: A Systematic Review of Procedural Descriptions
+- An assessment of token value and effectiveness: A replication
+- The Effects of Token Economy Menu Manipulations on Token Demand
+- Extending Token Economy Systems with the Operant Demand Framework
+- Evaluation of Manualized Instruction to Train Staff to Implement a Token Economy
+- An analysis of the value of token reinforcement using a multiple‐schedule assessment
+- Token reinforcement: Translational research and application
+
+NEIGHBOURING TOPIC 57 (similarity 0.60)
+Key terms: behavioral economics
+- Behavioral Economics: Implications for Research and Practice
+- Advances in Behavioral Economics
+- Behavioral Economics: Novel Applications to Basic and Applied Research
+
+NEIGHBOURING TOPIC 97 (similarity 0.52)
+Key terms: operant demand, economic demand, behavioral economic, price
+- Novel Applications of Commodity Purchase Tasks in Operant Demand Analyses
+- Current Directions in Behavioral Economic Approaches to Demand
+- Advances in Operant Demand Analysis: Toward Best Practice for Demand Assessment and Quantification
+
+NEIGHBOURING TOPIC 171 (similarity 0.46)
+Key terms: negative reinforcement, positive, contingencies
+- Increasing Behavior With Conditioned Reinforcement
+- Increasing a Behavior With Positive Reinforcement
+- Selection, Reinforcement, and Behavior

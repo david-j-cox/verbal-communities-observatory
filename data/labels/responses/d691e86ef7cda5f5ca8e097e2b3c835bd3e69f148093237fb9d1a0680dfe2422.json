@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Matching Law and Choice Allocation\",\"definition\":\"Work on the matching law and generalized matching law: theoretical models, statistical estimation methods, and applications describing how responding is allocated among alternatives in laboratory, sports, games, clinical, and big-data settings.\",\"distinct_from_neighbours\":\"Concerns quantitative choice and the allocation of behavior relative to reinforcement, not the matching-to-sample procedure, equivalence relations, or equivalence class formation, which share only the word 'matching.'\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1360,
+  "output": 177
+ },
+ "generated_utc": "2026-10-10T19:11:28+00:00"
+}

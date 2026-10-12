@@ -1,0 +1,53 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 59
+Key terms: physical activity, activity children, increase physical, activity young
+
+Titles closest to the topic's center, conference presentations:
+- Evaluating and Increasing Physical Activity in Children
+- Recent Research on Increasing Children’s Physical Activity
+- Assessing and Increasing Physical Activity in Typically-Developing Children
+- Taking the Next Steps: Targeting Physical Activity Levels in Adults and Children
+- Increasing Physical Activity in Individuals With and Without Developmental Disabilities
+- Interventions to Increase Physical Activity in Individuals With and Without Developmental Disabilities
+- Strategies to Increase Physical Activity in Children and Adults With Intellectual Disabilities and Autism
+- Using Behavior Analytic Interventions to Increase Physical Activity and Decrease Maladaptive Behaviors in Children and Adults
+- Promoting Physical Fitness in Adults With Developmental Disabilities: A Behavior Analytic Approach to Improving Exercise and Nutrition in an Independent Supported Living Center
+
+Titles closest to the topic's center, journal articles:
+- Promoting physical activity among school-age children using feedback, goal setting, and rewards.
+- The Opportunity to Choose the Activity Context Does Not Increase Moderate-to-Vigorous Physical Activity Exhibited by Preschool Children
+- Identifying Beneficial Physical Activity During School Recess: Utility and Feasibility of the Fitbit
+- Adult attention and interaction can increase moderate‐to‐vigorous physical activity in young children
+- Physical activity in children: An evaluation of an individualized heart rate assessment.
+- Variables Influencing Physical Activity for Children With Developmental Disabilities Who Exhibit Problem Behavior
+- Context influences preference for and level of physical activity of adolescents with intellectual and developmental disabilities
+- The Effects of Peer Presence on Variables Maintaining Moderate-to-Vigorous Physical Activity in Children
+- Evaluating adult interaction during the Step It UP! game to increase physical activity in children
+- Incentivizing physical activity using token reinforcement with preschool children
+
+NEIGHBOURING TOPIC 191 (similarity 0.81)
+Key terms: physical activity, exercise, health, adults
+- Recent Research in Assessing and Increasing Physical Activity
+- Innovative Approaches to Promoting and Measuring Physical Activity
+- Increasing Leisure and Physical Activity Engagement
+
+NEIGHBOURING TOPIC 133 (similarity 0.64)
+Key terms: child, disorders, treatment, assessment
+- Practical Considerations and Applications of Behavior Analysis to Working With Children in Healthcare Settings
+- Dissemination of Behavior Analysis to the Pediatric Community
+- Quality of Early Intensive Behavioral Intervention as a Predictor of Children's Outcome
+
+NEIGHBOURING TOPIC 155 (similarity 0.63)
+Key terms: parent, children, care, early
+- Developing Procedures to Improve Therapist–Child Rapport in Early Intervention
+- Using Pre-Treatment Screening and Assessments to Improve the Safety and Care of Children
+- Implementation of interventions informed by precursor functional analyses with young children: A replication

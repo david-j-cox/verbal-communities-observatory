@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 148
+Key terms: speech-generating, children autism, autism spectrum, autistic
+
+Titles closest to the topic's center, conference presentations:
+- Evaluating Procedures for Teaching Children With Autism to Communicate Using Speech-Generating Devices
+- Recent Advances in Teaching Social and Communication Skills to Individuals With Autism Spectrum Disorder
+- Advances in Teaching Young Adults With Autism Spectrum Disorder (ASD) Advanced Conversational Skills
+- Further Evaluations of Teaching Verbal Operants to Children With Autism
+- Establishing and Refining Language Skills in Children With Autism
+- The Power of Language for Children With Autism Spectrum Disorder: Increasing Play and Social Skills
+- Comparisons and Innovations in Teaching Verbal Behavior to Children With Autism Spectrum Disorder
+- Advances in Functional Communication Training to Treat Challenging Behavior in Children With Autism Spectrum Disorders
+- Using Instructive Feedback to Teach Verbal Operants to Children With Autism Spectrum Disorder
+- Strategies for Developing Spontaneous and Social Language in Individuals With Autism
+
+Titles closest to the topic's center, journal articles:
+- Feasibility and Preliminary Efficacy of Direct Instruction for Individuals With Autism Utilizing Speech-Generating Devices
+- Enhancing Instruction via Instructive Feedback for a Child With Autism Using a Speech-Generating Device
+- Teaching conversational speech to children with autism spectrum disorder using text‐message prompting
+- Outcomes of a practical approach for improving conversation skills in adults with autism
+- Using Instructive Feedback to Expand Second Language of Children with Autism Spectrum Disorder
+- Paraeducator Implementation of a Communication Intervention for Individuals with Significant Autism
+- Instructive feedback to expand listener skills in a second language in children with autism spectrum disorder
+- The Use of Prompts and Precision Teaching to Address Speech Sound Disorders in a 17-Year-Old Girl With Autism
+- A Review of Language Development Protocols for Individuals with Autism
+- Efficacy and social validity of procedures for improving conversational skills of college students with autism
+
+NEIGHBOURING TOPIC 13 (similarity 0.91)
+Key terms: children autism, teaching children, video modeling, skills children
+- Teaching Social Skills to Children With Autism and Related Disorders
+- Teaching Social Skills to Individuals With Autism Spectrum Disorders
+- Teaching Social Skills Repertoires to Children With Autism
+
+NEIGHBOURING TOPIC 46 (similarity 0.91)
+Key terms: children autism, vocal, autistic, autism spectrum
+- Acquisition and generalization of divergent intraverbal responses in children diagnosed with autism spectrum disorder
+- Using intraverbal prompts to increase divergent intraverbal responses by a child with autism
+- Effects of response‐contingent stimulus pairing on vocalizations of nonverbal children with autism
+
+NEIGHBOURING TOPIC 162 (similarity 0.86)
+Key terms: children autism, learners autism, skill acquisition, autism spectrum
+- Advancing and Refining Skill Acquisition Procedures for Young Children With Autism
+- Recent Research on Skill Acquisition With Children With Autism
+- Enhancing the Efficiency of Instructional Procedures for Children With Autism Spectrum Disorders

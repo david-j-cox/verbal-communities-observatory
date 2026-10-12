@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Treating Escape-Maintained Problem Behavior\",\"definition\":\"Applied research on assessing and reducing problem behavior maintained by escape from tasks or demands, comparing interventions such as noncontingent reinforcement, reinforcer type and arrangement, and alternatives to escape extinction.\",\"distinct_from_neighbours\":\"Focuses on clinical treatment of escape-maintained problem behavior, unlike basic research on free-operant avoidance, general alternative-reinforcement treatments without extinction, or basic response–reinforcer relations.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1310,
+  "output": 189
+ },
+ "generated_utc": "2026-10-10T19:10:53+00:00"
+}

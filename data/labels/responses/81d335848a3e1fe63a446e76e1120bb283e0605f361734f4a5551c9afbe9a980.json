@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "```json\n{\n  \"label\": \"Synthesized Contingency Analyses and Procedural Fidelity\",\n  \"definition\": \"Work on interview-informed synthesized contingency analyses of problem behavior, alongside measurement quality: procedural fidelity errors, interobserver agreement, contingency strength, assent measurement, and error-correction and contingency management procedures.\",\n  \"distinct_from_neighbours\": \"Centers on synthesized functional analysis and how fidelity and agreement are measured, not treatment acceptability in clinical practice, single-case design methodology, or basic response-rate and persistence research.\"\n}\n```",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1409,
+  "output": 447
+ },
+ "generated_utc": "2026-10-10T19:10:59+00:00"
+}

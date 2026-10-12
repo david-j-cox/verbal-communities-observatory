@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 48
+Key terms: bidirectional naming, incidental, children, instruction
+
+Titles closest to the topic's center, conference presentations:
+- An Analysis of the Components of Bidirectional Naming, the Naming Experiences to Occasion the Incidental Acquisition of Language and Protocols to Induce Bidirectional and Complex Naming Repertoires
+- Collaborating in the Study of Naming and Incidental Naming
+- Sources and Outcomes of Bi-Directional Naming
+- Bidirectional Naming and Derived Relations With Arbitrary/Non-Arbitrary and Familiar/Unfamiliar Stimuli
+- Incidental Naming in Children and Adults: Conceptual, Procedural and Empirical Issues
+- Bi-Directional Naming: Perspectives From Four Laboratories
+- Correspondence Between Relational Responding and Bidirectional Naming as a Verbal Developmental Cusp
+- Naming and Stimulus Class Formation in Children and Adults
+- Bidirectional Naming and Problem Solving
+- Variables Affecting Bidirectional Naming
+
+Titles closest to the topic's center, journal articles:
+- Three contextual cues and their influence on naming in children
+- Common and Intraverbal Bidirectional Naming
+- Descriptive Analyses of Relations among Bidirectional Naming, Arbitrary, and Nonarbitrary Relations
+- Acquisition of Incidental Bidirectional Naming: Isolating the Effects of Probing and Mixed-Operant Instruction
+- The Establishment of Incidental Bidirectional Naming through Multiple Exemplar Instruction: a Systematic Replication
+- Deconstructing Common Bidirectional Naming: A Proposed Classification Framework
+- The role of bidirectional naming in the emergence of analogical relations in children
+- Nonsimultaneous stimulus presentations and their role in listener naming
+- Emergence of Naming Relations and Intraverbals after Auditory Stimulus Pairing: Effects of Probing the Listening Skill First
+- Performance of younger and older adults on a bidirectional naming assessment
+
+NEIGHBOURING TOPIC 11 (similarity 0.64)
+Key terms: language, verbal, operant, words
+- Advancing Evaluations on the Emergence and Acquisition of Various Verbal Operants
+- Toward a Behavioral Interpretation of English Grammar
+- Correspondence of Verbal Reports: An Experimental Analysis
+
+NEIGHBOURING TOPIC 172 (similarity 0.58)
+Key terms: foreign language, language acquisition, repertoires, instruction
+- The Social and Cognitive Foundations of Language Acquisition
+- Learning a foreign language: Effects of tact and listener instruction on the emergence of bidirectional intraverbals
+- Humans Learn Language Through Observation: A Verbal Behavior Development Account of Language Acquisition
+
+NEIGHBOURING TOPIC 181 (similarity 0.57)
+Key terms: spelling, sight, word, reading
+- Brief and Extended Experimental Analyses of Spelling Deficits
+- Effects of stimulus disparity on acquisition of sight word sets: Manipulation of initial letter
+- An Evaluation of Strategic Incremental Rehearsal on Sight Word Acquisition Among Students with Specific Learning Disabilities in Reading

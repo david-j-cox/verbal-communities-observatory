@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Preschool and Early Childhood Development\",\"definition\":\"Behavioral research and practice in preschool and early childhood settings: teaching life, social, and readiness skills, preventing emerging problem behavior, infant operant learning, and coaching preschool teachers and parents.\",\"distinct_from_neighbours\":\"Centres on typical and special-needs preschool settings and developmental skill-building, not pediatric clinical treatment, clinic-based early intervention care, or K-12 classroom disruption management.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1452,
+  "output": 168
+ },
+ "generated_utc": "2026-10-10T19:13:31+00:00"
+}

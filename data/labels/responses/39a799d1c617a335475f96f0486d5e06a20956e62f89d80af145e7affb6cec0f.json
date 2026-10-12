@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Evolutionary and Selectionist Theories of Behavior\",\"definition\":\"Work applying evolutionary and selectionist thinking to behavior, especially McDowell's evolutionary theory of behavior dynamics, computational artificial organisms, developmental systems approaches, and conceptual accounts of how behavior evolves and develops.\",\"distinct_from_neighbours\":\"Centers on evolutionary and selectionist theory and computational models of behavior, rather than empirical operant phenomena like contrast and momentum, the experimental analysis field's history, or general conceptual dimensions of behavior science.\"}",
+ "usage": {
+  "input": 1334,
+  "output": 202
+ },
+ "generated_utc": "2026-10-10T17:56:46+00:00"
+}

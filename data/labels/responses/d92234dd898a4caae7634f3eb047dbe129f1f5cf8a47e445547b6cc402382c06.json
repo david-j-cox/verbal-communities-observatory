@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "```json\n{\n  \"label\": \"Good Behavior Game and Play Skills\",\n  \"definition\": \"Research on the Good Behavior Game, including its components, variations, feedback, and group contingencies, alongside behavioral methods for teaching play, pretend play, and social play skills to children.\",\n  \"distinct_from_neighbours\": \"It centres on the Good Behavior Game and on play as a teaching target, not on broader classroom management, general instructional strategies, or preschool skill development.\"\n}\n```",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1333,
+  "output": 247
+ },
+ "generated_utc": "2026-10-10T19:05:45+00:00"
+}

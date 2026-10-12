@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 12
+Key terms: reinforcement choice, conditioned reinforcement, delay, humans
+
+Titles closest to the topic's center, conference presentations:
+- Renewal in Choice Behavior: Effect of Reinforcement Rate
+- Tests of an Indifference Rule in Variable-Delay and Double-Reward Choice Procedures with Humans
+- Reinforcement, Information and Choice
+- Impulsive Choice: Induced Behavior and Reinforcement Window
+- Therapeutic Choices, Skill Acquisition, and Negative Reinforcement in Contexts of Aversive Stimuli and Delayed Consequences
+- The Neuroeconomics of Reinforcement and Choice: From Dopamine to Decision-Making
+- Social Foraging, Sunk Costs, and Aversive Control of Impulsivity: Understanding Human Choice Through Different Experimental Approaches
+- The Effects of the Ratio of Smaller-Sooner and Larger-Later Delays in an Impulsive Choice Task
+- Preference Reversals in Delayed Gratification
+- Effects of Non-Contingent Aversive Visual Stimulation on Choice Behavior
+
+Titles closest to the topic's center, journal articles:
+- An evaluation of methods for studying the effects of conditioned reinforcement on human choice
+- Tests of an indifference rule in variable‐delay and double‐reward choice procedures with humans
+- Influence of amount and delay of reward on choice and response rate: A free‐operant, multiple‐schedule analogue of a discrete‐trial procedure
+- The Δ–∑ hypothesis: How contrast and reinforcement rate combine to generate suboptimal choice
+- Modeling choice across time: Effects of response–reinforcer discriminability
+- Reinforcement uncertainty enhances preference for choice in humans
+- On the generality of preference for contingent reinforcement
+- Testing the Δ‐∑ hypothesis in the suboptimal choice task: Same delta with different probabilities of reinforcement
+- Children's preference for mixed‐ versus fixed‐ratio schedules of reinforcement: A translational study of risky choice
+- Rule following as choice: The role of reinforcement rate and rule accuracy on rule‐following behavior
+
+NEIGHBOURING TOPIC 171 (similarity 0.84)
+Key terms: negative reinforcement, positive, contingencies
+- Increasing Behavior With Conditioned Reinforcement
+- Increasing a Behavior With Positive Reinforcement
+- Selection, Reinforcement, and Behavior
+
+NEIGHBOURING TOPIC 99 (similarity 0.83)
+Key terms: choice, preference, model
+- Behavior Analytic Perspectives on Choice
+- A model of changeover behavior in two‐alternative choice
+- A Model of Changeover Behavior in Two-Alternative Choice
+
+NEIGHBOURING TOPIC 130 (similarity 0.81)
+Key terms: delayed reinforcement, delays, fixed, interval
+- Progressive Delay of Reinforcement: Effects on Response Rate, Post-Reinforcement Pause, and Response Induction
+- Factors and Procedures Pertaining to Delays to Reinforcement: Translational and Applied Evaluations
+- Response duration is sensitive to both immediate and delayed reinforcement

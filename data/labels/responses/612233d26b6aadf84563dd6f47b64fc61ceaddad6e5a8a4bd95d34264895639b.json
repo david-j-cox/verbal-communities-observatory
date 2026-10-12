@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Pigeon visual discrimination and cognition\",\"definition\":\"Laboratory studies of how pigeons discriminate visual, numerical and relational stimuli, form categories, use memory and transfer stimulus control, including touchscreen and tracking apparatus for studying these processes.\",\"distinct_from_neighbours\":\"Focuses on stimulus control and cognitive processes in pigeons, unlike neighbours on key-peck response properties and schedules, matching-to-sample and inference by exclusion, or choice and reinforcer preference.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1348,
+  "output": 181
+ },
+ "generated_utc": "2026-10-10T19:05:06+00:00"
+}

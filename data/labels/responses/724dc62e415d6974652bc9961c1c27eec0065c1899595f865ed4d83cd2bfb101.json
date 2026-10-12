@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Verbal Behavior Field Overviews and Taxonomy\",\"definition\":\"Broad overviews of verbal behavior as a research area: symposia on recent advances and trends, annotated bibliographies, systematic reviews, reflections on the field's status, and debates over defining and classifying verbal operants.\",\"distinct_from_neighbours\":\"Surveys and conceptualizes the verbal behavior field as a whole, rather than studying specific relations such as intraverbals, acquisition of particular verbal operants, or nonverbal operant phenomena like behavioral contrast.\"}",
+ "usage": {
+  "input": 1319,
+  "output": 193
+ },
+ "generated_utc": "2026-10-10T17:56:39+00:00"
+}

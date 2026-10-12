@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 158
+Key terms: treatment acceptability, alternating, treatment integrity, treatments
+
+Titles closest to the topic's center, conference presentations:
+- Treatment Fidelity: Evaluation of Error Types and Mitigation Strategies
+- Clinical Interventions in Treatment
+- Practical Issues in Treatment
+- The Use of Concurrent Operant Assessments to Inform Treatment Decisions
+- Measuring and Evaluating Treatment Integrity
+- Recent Advancements in Treatment Integrity Assessment and Intervention
+- Alternating Treatments Designs: Interpretation Errors and Solutions
+- Treatment Resistant Behavior: Procedures and Perceptions
+- Skill Based Treatment (SBT): On the effectiveness and Social Validity of scaling Effective Treatments
+- Advancements in Trial-Based Intensive Intervention
+
+Titles closest to the topic's center, journal articles:
+- Applications of operant demand to treatment selection I: Characterizing demand for evidence‐based practices
+- Discrepancies between treatment preference and effectiveness
+- Isolating the Unique Effects of the Unified Protocol Treatment Modules Using Single Case Experimental Design
+- Quantitative Techniques and Graphical Representations for Interpreting Results from Alternating Treatment Design
+- A Review of Published Studies Involving Parametric Manipulations of Treatment Integrity
+- Renewed behavior produced by context change and its implications for treatment maintenance: A review
+- Assessing the Use of Treatment Fidelity Checks in Clinical Practice: A Survey and Analysis
+- Effects of treatment‐integrity failures on a response‐cost procedure
+- Further evaluation of treatment integrity for response interruption and redirection
+- A Preliminary Study in Applying the Function-Based Intervention Decision Model in Consultation to Increase Treatment Integrity
+
+NEIGHBOURING TOPIC 105 (similarity 0.72)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 198 (similarity 0.69)
+Key terms: care, services, clinical, treatment
+- Putting the Analysis Back Into Clinical Practice: Data-Based Decisions to Improve Lives
+- An Attorney and a BCBA Walked Into a Symposium: Clinical Best Practices and the Law
+- Evidence based and intensity specific services in the integrated care setting: Ethical considerations for a developing field.
+
+NEIGHBOURING TOPIC 15 (similarity 0.67)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis

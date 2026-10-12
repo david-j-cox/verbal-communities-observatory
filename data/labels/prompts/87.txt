@@ -1,0 +1,49 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 87
+Key terms: vocal stereotypy, stuttering, vocalizations, interruption redirection
+
+Titles closest to the topic's center, conference presentations:
+- Recent Research and Social Implications for Vocal and Augmentative and Alternative Communication Language Interventions
+- Vocal Behaviour During Transition From PECS to a Speech Generating Device: Impact of Teaching Strategies and Voice Output
+- Intervening in Infancy to Address Persistent Weaknesses in Vocal Repertoires in Down Syndrome
+- You Do Then I Do: Teaching Motor Imitation and Vocal Emulation Responses to Toddlers
+- We’re Not Always Screaming for Attention: Considerations for Suicidal Behaviors and Bizarre Vocalizations
+
+Titles closest to the topic's center, journal articles:
+- Effects of toy removal and number of demands on vocal stereotypy during response interruption and redirection
+- A comparison of response interruption and redirection and competing items on vocal stereotypy and appropriate vocalizations
+- Further evaluation of treatments for vocal stereotypy: Response interruption and redirection and response cost
+- The effects of noncontingent music and response interruption and redirection on vocal stereotypy
+- The stability of function of automatically reinforced vocal stereotypy over time
+- Generalization of response interruption and redirection procedure with vocal stereotypy
+- The Effects of Vocal Stereotypy on Secondary Target Acquisition
+- An evaluation of the effects of response interruption redirection and matched stimulation on vocal stereotypy
+- Trial-Based Functional Analysis Informs Treatment for Vocal Scripting
+- The Impact of Extinction for Alternative Responding on Vocal Behavior
+
+NEIGHBOURING TOPIC 17 (similarity 0.78)
+Key terms: nonverbal, speech, intraverbal, verbal behavior
+- Verbal Stimulus Control and the Intraverbal Relation
+- Emergent Relations between Discriminative Stimuli, Responses, and Consequences in Intraverbals
+- Verbal-Like Effects of Nonverbal Stimuli
+
+NEIGHBOURING TOPIC 40 (similarity 0.70)
+Key terms: auditory, control responding, location, intensity
+- Relativity in Hearing and Stimulus Discrimination
+- Emergence of auditory–visual discrimination and tacts through exclusionary responding
+- Teaching the Function of Auditory Stimuli Using Secondary Target Instruction
+
+NEIGHBOURING TOPIC 46 (similarity 0.64)
+Key terms: children autism, vocal, autistic, autism spectrum
+- Acquisition and generalization of divergent intraverbal responses in children diagnosed with autism spectrum disorder
+- Using intraverbal prompts to increase divergent intraverbal responses by a child with autism
+- Effects of response‐contingent stimulus pairing on vocalizations of nonverbal children with autism

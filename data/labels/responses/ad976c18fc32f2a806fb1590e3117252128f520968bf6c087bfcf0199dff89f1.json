@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Differential Reinforcement and Treatment Relapse\",\"definition\":\"Research on differential reinforcement procedures (alternative, other, low-rate behavior), with or without extinction, for reducing problem behavior, and on resulting persistence, resurgence, and renewal in basic and applied studies.\",\"distinct_from_neighbours\":\"Focuses on differential reinforcement as a behavior-reduction treatment and later relapse, rather than general response–reinforcer relations, basic positive and negative reinforcement, or reinforcement delays.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1608,
+  "output": 182
+ },
+ "generated_utc": "2026-10-10T19:04:28+00:00"
+}

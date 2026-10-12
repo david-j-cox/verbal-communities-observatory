@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Adults With Intellectual Disability, Historical Terminology\",\n\"definition\": \"Behavior-analytic work on adults described with the outdated diagnostic term \\\"mentally retarded\\\". The topic is identified mainly by that terminology, and no recent titles sit at its center.\",\n\"distinct_from_neighbours\": \"It concerns adults under the outdated label. A sibling topic covers children under that label, and the others use modern disability terms for challenging behavior or school instruction.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 840,
+  "output": 390
+ },
+ "generated_utc": "2026-10-10T19:13:59+00:00"
+}

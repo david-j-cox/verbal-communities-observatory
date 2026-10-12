@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 51
+Key terms: preference assessment, stimulus preference, assessments, evaluating
+
+Titles closest to the topic's center, conference presentations:
+- Current Issues and Directions Regarding Stimulus Preference Assessments: Implications for Research and Practice
+- An Exploration of Novel Considerations and Directions in Preference Assessments Research
+- Advancements in Preference Assessment Research
+- Advances in Preference Assessment Procedures
+- Further Advancements in Preference Assessment Research
+- Recent Advances in Preference Assessments
+- Refinements of Established Preference Assessment Procedures
+- Advances in Preference Assessment Implementation and Training
+- Advances in Stimulus Preference Assessments: Evaluating Attention and Problem Behavior
+- Emerging Technologies and Alternative Modalities of Preference Assessment
+
+Titles closest to the topic's center, journal articles:
+- Preference for social stimuli: A comparison of stimulus modes used in preference assessments
+- A comparison of preference‐assessment methods
+- A review of methods of assessing preference for social stimuli
+- Evaluating two iterations of a paired stimulus preference assessment
+- The Effects of Remote Instructions, Rehearsal, and Feedback on Preference Assessment Implementation
+- Correspondence Between Preference Assessment Outcomes and Stimulus Reinforcer Value for Social Interactions
+- Evaluation of Free-operant Preference Assessment: Outcomes of Varying Session Duration and Problem Behavior
+- Comparing paired‐stimulus and multiple‐stimulus concurrent‐chains preference assessments: Consistency, correspondence, and efficiency
+- The multiple‐stimulus‐without‐replacement preference assessment tool and its predictive validity
+- A Comparison of Two Procedures for Assessing Preference in a Classroom Setting
+
+NEIGHBOURING TOPIC 99 (similarity 0.72)
+Key terms: choice, preference, model
+- Behavior Analytic Perspectives on Choice
+- A model of changeover behavior in two‐alternative choice
+- A Model of Changeover Behavior in Two-Alternative Choice
+
+NEIGHBOURING TOPIC 159 (similarity 0.71)
+Key terms: preference reinforcer, reinforcers, choice, relative
+- Advances in Preference and Reinforcer Assessment Research
+- New Developments in Preference and Reinforcer Assessment Research
+- A preference analysis of reinforcer variation and choice
+
+NEIGHBOURING TOPIC 32 (similarity 0.68)
+Key terms: competing stimulus, attention, task, assessment
+- Initial outcomes of an augmented competing stimulus assessment
+- Further Evaluations of Competing Stimulus Assessments and the Effects of Competition on On-Task Behavior
+- Competing Stimulus Assessments: Procedural Modifications to Improve Effectiveness and Efficiency

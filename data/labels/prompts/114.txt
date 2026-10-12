@@ -1,0 +1,50 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 114
+Key terms: depression, depressed, behavioral activation, anxiety
+
+Titles closest to the topic's center, conference presentations:
+- Verbal Behavior and Depression
+- Treating Depression to Reduce Behavioral Risk Factors for Cardiovascular Disease: A Preventive Behavioral Medicine Perspective
+- Brief Behavioral Therapy for Anxiety and Depression: Developing Efficient Interventions for Pediatric Care
+- ABA Revisited: Understanding and Treating Psychopathic, Callous and Unemotional, Depressed and Anxious Behaviors
+- Rethinking Mental Health: A “Post-Internal” Analysis of the Behaviours and Contexts Found in “Mental Health” Symptoms, the DSM, and Psychological Therapies
+- Exploring the Clinical Utility of Indices of Happiness and Unhappiness as Quality-of-Life Indicators
+
+Titles closest to the topic's center, journal articles:
+- Beyond symptom severity: The differential impact of distress tolerance and reward responsiveness on quality of life in depressed and non-depressed individuals
+- Functional Analytic Psychotherapy Enhanced Behavioral Activation for Depression: A Concurrent and Non-Concurrent Between-Participants Study
+- Upregulating Positive Affectivity in the Transdiagnostic Treatment of Emotional Disorders: A Randomized Pilot Study
+- Psychological Disorders Treated by Behavioral and Cognitive-Behavioral Therapies
+- Estimating the effect of basic behavioral processes (access to reinforcers and experiential avoidance) on emotional disorders as transdiagnostic variables: A systematic review
+- A Behavioral Economic Model of Help-Seeking for Depression
+- Examining the structure of distress tolerance: Are behavioral and self-report indicators assessing the same construct?
+- A Comprehensive Evaluation of Equivalence Classes in Adults with High and Low levels of Self-Reported Depressive Symptoms
+- Competence and adherence in an acceptance and values-based intervention: Effects on treatment outcome and early changes in depression
+- Psilocybin-assisted therapy of major depressive disorder using Acceptance and Commitment Therapy as a therapeutic frame
+
+NEIGHBOURING TOPIC 1 (similarity 0.75)
+Key terms: psychiatric, inpatient, mental health, patients
+- Adaptation Process of Social Cognition and Interaction Training (SCIT) in an Indian Context for Persons with Schizophrenia
+- Cognitive Remediation to Facilitate Independent Living in Persons With Serious Mental Illness
+- A psychological flexibility model of medication adherence in psychotic-spectrum disorders
+
+NEIGHBOURING TOPIC 75 (similarity 0.71)
+Key terms: panic, anxiety, cognitive-behavioral, exposure
+- Refining the Analysis of Mechanism–Outcome Relationships for Anxiety Treatment: A Preliminary Investigation Using Mixed Models
+- Brief Therapist-Guided Exposure Treatment of Panic Attacks: A Pilot Study
+- Meaning in life buffers the impact of experiential avoidance on anxiety
+
+NEIGHBOURING TOPIC 15 (similarity 0.70)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis

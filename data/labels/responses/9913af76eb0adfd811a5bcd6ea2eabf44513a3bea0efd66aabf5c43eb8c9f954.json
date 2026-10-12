@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Cultural Responsiveness in Behavior Analysis\",\"definition\":\"Work on cultural responsiveness, competence, and humility in behavior-analytic practice, research, training, and mentorship, including adapting services and materials for clients and families from diverse cultural backgrounds.\",\"distinct_from_neighbours\":\"Centres on culturally responsive service delivery and practitioner training, not qualitative research methods, systemic racism and justice interventions, or creativity and complex behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1514,
+  "output": 163
+ },
+ "generated_utc": "2026-10-10T19:06:07+00:00"
+}

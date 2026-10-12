@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Collaboration and Bridging Research With Practice\",\"definition\": \"Work on interdisciplinary and interprofessional collaboration, community-engaged partnerships, and practitioners conducting or integrating research, including equity in research and closing gaps between researchers and applied practitioners.\",\"distinct_from_neighbours\": \"Centers on working partnerships across professions and between researchers and practitioners, not individual career development, public dissemination and social media, or qualitative research methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1476,
+  "output": 157
+ },
+ "generated_utc": "2026-10-10T19:13:46+00:00"
+}

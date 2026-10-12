@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Assessment and Treatment of Stereotypy\",\"definition\":\"Research on assessing and reducing stereotypy, mostly motor and automatically maintained, in autistic individuals, using competing stimuli, redirection, response blocking, noncontingent reinforcement, skill-based and parent-implemented interventions.\",\"distinct_from_neighbours\":\"Covers stereotypy broadly, especially motor forms, unlike the vocal-stereotypy topic, the topic on competing stimulus assessment methods, and the topic on auditory stimulus discrimination.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1472,
+  "output": 190
+ },
+ "generated_utc": "2026-10-10T19:13:13+00:00"
+}

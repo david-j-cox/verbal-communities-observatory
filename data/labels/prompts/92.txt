@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 92
+Key terms: women behavior, participation women, gender, role
+
+Titles closest to the topic's center, conference presentations:
+- An Exploration of Behavior Analytic Accounts of Feminist and Gender Issues
+- Barriers to Career Growth for Women in Behavior Analysis
+- Are Women Academics Receiving Fair Treatment in Behavior Analysis
+- Exploring the Impacts of Gender and Motherhood on Behavior Analysts, and Evaluating Possible Mitigation Strategies
+- Diversity and the Society for the Quantitative Analysis of Behavior: Analysis of Presenter Gender and Affiliation
+- Women in Leadership: Breaking Glass Ceilings and Transforming Organizations Through Behavioral Science
+- Behavior Analysis in Service of Gender and Sexual Minorities: State of the Field
+- Professional Development Series: Female Leadership in Behavioral Science: Challenges, Opportunities and Future Directions
+- Doing Gender: Behavioral Assessment of Implicit and Explicit Gender(ing)
+- Life as a Behavior Analytic Entrepreneur: Experiences of Founding Females
+
+Titles closest to the topic's center, journal articles:
+- Women in Behavior Analysis: A Review of the Literature
+- Participation of Women in Behavior Analysis Research: Some Recent and Relevant Data
+- Representation of women in behavior analysis: An empirical analysis.
+- Excuse Me, I’m Speaking: Analysis of Women’s Representation as Keynote and Invited Speakers in Behavior Analysis
+- The Future Is Female (and Behavior Analysis): A Behavioral Account of Sexism and How Behavior Analysis Is Simultaneously Part of the Problem and Solution
+- Empowering women to forge a path in behavior analysis.
+- Lifting the voices of leaders: Contemporary women in behavior analysis.
+- A reflection on lifting the voices of leaders: Contemporary women in behavior analysis.
+- Participation of Women in the Journal of Organizational Behavior Management : An Update and Extension
+- The Women in Behavior Analysis Hall of Fame: Description and 2021 Inductees
+
+NEIGHBOURING TOPIC 82 (similarity 0.68)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 10 (similarity 0.67)
+Key terms: analyst, professional, public, training
+- The Special Issue on the Education of Behavior Analysts: Common Themes
+- Behavior Analysts in the Making
+- A Behavior Analyst’s Journey
+
+NEIGHBOURING TOPIC 77 (similarity 0.63)
+Key terms: graduate training, undergraduate, training behavior, training programs
+- Issues Regarding Graduate Training in Behavior Analysis: Curriculum Content
+- Saving the World With Behavior Analysis: One Undergraduate Student at a Time
+- Essential Readings for Undergraduate Students in Behavior Analysis: A Survey of Behavior Analytic Faculty and Practitioners

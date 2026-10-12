@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Varieties, History, and Theory of Behaviorism\",\"definition\": \"Conceptual and historical scholarship on the diverse forms of behaviorism, including interbehavioral, theoretical, methodological, and culturo-behavioral views, and on their philosophy of science and relation to psychology.\",\"distinct_from_neighbours\": \"Surveys many behaviorisms and their history broadly, not radical behaviorism's foundations specifically, interpretations of creativity and complex behavior, or evolutionary theories of behavior dynamics.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1473,
+  "output": 393
+ },
+ "generated_utc": "2026-10-10T19:10:36+00:00"
+}

@@ -1,0 +1,49 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 187
+Key terms: obsessive-compulsive, phobia, tourette, exposure
+
+Titles closest to the topic's center, conference presentations:
+- Research Gaps and Ethical Considerations in Literature on Obsessive-Compulsive Behavior in Autism
+- Autism and Obsessive-Compulsive Disorder: Advancements in Assessment and Treatment
+- Misophonia: A Conditioned Respondent Behavior Disorder
+- Theory and Practice of Misophonia: A Multisensory Conditioned Respondent Behavior Disorder
+- Behavioral Treatments for Epilepsy in Developing Nations
+
+Titles closest to the topic's center, journal articles:
+- The “how” of exposures: Examining the relationship between exposure parameters and outcomes in obsessive-compulsive disorder
+- That Was Easy! Expectancy Violations During Exposure and Response Prevention for Childhood Obsessive-Compulsive Disorder
+- Obsessive beliefs, experiential avoidance, and cognitive fusion as predictors of obsessive-compulsive disorder symptom dimensions
+- An evaluation of modified exposure therapy for a child diagnosed with obsessive compulsive disorder and pervasive developmental disorder–not otherwise specified.
+- Obsessive–compulsive behaviors in autism spectrum disorder: Behavior analytic conceptual frameworks.
+- Psychological flexibility and inflexibility in obsessive-compulsive symptom dimensions, disability, and quality of life: An online longitudinal study
+- Physiological, behavioral, and self-report outcomes of acceptance- and regulation-based exposure for intrusive thoughts
+- Acceptance and Commitment Therapy for obsessive compulsive disorder in a Brazilian context: Treatment of three cases
+- A Preliminary Examination of Acceptance and Commitment Therapy Versus Exposure and Response Prevention for Patients with Obsessive-Compulsive Disorder on an Optimal Dose of SSRIs: A Randomized Controlled Trial in Iran
+- Remediating rigid rule-following in subclinical obsessive-compulsive disorder using a brief mindfulness task: A case-control pilot study
+
+NEIGHBOURING TOPIC 75 (similarity 0.80)
+Key terms: panic, anxiety, cognitive-behavioral, exposure
+- Refining the Analysis of Mechanism–Outcome Relationships for Anxiety Treatment: A Preliminary Investigation Using Mixed Models
+- Brief Therapist-Guided Exposure Treatment of Panic Attacks: A Pilot Study
+- Meaning in life buffers the impact of experiential avoidance on anxiety
+
+NEIGHBOURING TOPIC 98 (similarity 0.72)
+Key terms: avoidance behavior, operant avoidance, free operant, stimulus
+- Behavioral variability as avoidance behavior
+- Effects of the Shock-Shock Interval on the Punishment of Avoidance Responding
+- The effects of warned loss magnitude and timeout duration on human avoidance behavior
+
+NEIGHBOURING TOPIC 185 (similarity 0.67)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 77
+Key terms: graduate training, undergraduate, training behavior, training programs
+
+Titles closest to the topic's center, conference presentations:
+- Issues Regarding Graduate Training in Behavior Analysis: Curriculum Content
+- Saving the World With Behavior Analysis: One Undergraduate Student at a Time
+- A Synthesis Model of Graduate Training in Behavior Analysis
+- Issues Regarding Graduate Training in Behavior Analysis: Practicum and Supervision
+- Behavior Analytic Instruction in Higher Education
+- Great Together: Three Models of Interdisciplinary Graduate Training in Applied Behavior Analysis
+- Behavioral Instruction: Useful Applications for Teaching Graduate Students
+- Teaching Students to Think Like Behavior Analysts: A Discussion on Teaching Philosophy, Theory, and Conceptual Issues to Students of Behavior Analysis
+- An International Model for Education in Behavior Science and Application
+- Equity in Graduate Programs in Behavior Analysis
+
+Titles closest to the topic's center, journal articles:
+- Essential Readings for Undergraduate Students in Behavior Analysis: A Survey of Behavior Analytic Faculty and Practitioners
+- Conceptualization and Development of the Behavior Analysis Programs at the Florida Institute of Technology
+- Frequently Assigned Readings in Behavior Analysis Graduate Training Programs
+- Experimental Analysis of Behavior Readings Assigned by Accredited Master’s Degree Programs in Behavior Analysis
+- Incorporating the Portable Operant Research and Teaching Laboratory into Undergraduate Introduction to Behavior Analysis Courses
+- A Constructional Approach to the Use of Behavior Change Projects in Undergraduate Behavior Analysis Courses
+- Casting a Wider Net: an Analysis of Scholarly Contributions of Behavior Analysis Graduate Program Faculty
+- A Model for Training Science-Based Practitioners in Behavior Analysis
+- The State of Teaching Philosophy in Behavior Analysis Training Programs
+- Bridging science and practice: A clinical faculty perspective in behavior analysis.
+
+NEIGHBOURING TOPIC 31 (similarity 0.90)
+Key terms: teaching behavior, higher education, schools, students
+- Applied Behavior Analysis in Educational Settings
+- When Applied Behavior Analysis Goes to School: Lessons Learned From the Field
+- Improving Classroom Behavior Support Through Applied Behavior Analysis
+
+NEIGHBOURING TOPIC 10 (similarity 0.84)
+Key terms: analyst, professional, public, training
+- The Special Issue on the Education of Behavior Analysts: Common Themes
+- Behavior Analysts in the Making
+- A Behavior Analyst’s Journey
+
+NEIGHBOURING TOPIC 82 (similarity 0.83)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation

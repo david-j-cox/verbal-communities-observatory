@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Reinforcement schedules from laboratory to practice\",\"definition\": \"Work spanning basic and applied study of reinforcement schedules, including concurrent-schedule performance, changeover delays, and melioration, alongside multiple, lag, and response-independent schedules used clinically, often by parents, to reduce challenging behavior.\",\"distinct_from_neighbours\": \"Broader and more translational than neighbours on variable-interval response rates, fixed-interval timing and schedule-induced behavior, or concurrent-chains choice theory, bridging laboratory schedule findings with applied interventions.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1260,
+  "output": 365
+ },
+ "generated_utc": "2026-10-10T19:04:25+00:00"
+}

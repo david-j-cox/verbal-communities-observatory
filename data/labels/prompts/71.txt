@@ -1,0 +1,41 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 71
+Key terms: antecedent control, joint control
+
+Titles closest to the topic's center, conference presentations:
+- Procedural Implications of the Concept of Joint Control: Research Review, Applied Research and a Tutorial
+- Recent Joint Control Research
+- Recent Research Trends and Applications of Joint Control
+
+Titles closest to the topic's center, journal articles:
+- Antecedent Control
+- On Intraverbal Control and the Definition of the Intraverbal
+- The selective action of Cfunc control
+- The nervous system as a solution for implementing closed negative feedback control loops
+
+NEIGHBOURING TOPIC 69 (similarity 0.64)
+Key terms: stimulus control, stimuli, reinforcement, response
+- Stimulus Control in Humans
+- Stimulus control depends on the subjective value of the outcome
+- Stimulus Control: Testing the Boundaries
+
+NEIGHBOURING TOPIC 103 (similarity 0.64)
+Key terms: self control, self-control, aversive, choice
+- Current Research on Self Control
+- Toward a Unifying Account of Impulsivity and the Development of Self-Control
+- Assessment and treatment of self‐control with aversive events
+
+NEIGHBOURING TOPIC 62 (similarity 0.56)
+Key terms: conditioned suppression, conditioned reinforcement, operant conditioning, signal detection
+- Conditioned Reinforcement: the Effectiveness of Stimulus—Stimulus Pairing and Operant Discrimination Procedures
+- Blocking of Stimulus Control and Conditioned Reinforcement
+- Bridging the Conditioned Reinforcement Gap: Translational and Applied Research on Altering and Evaluating Stimulus Function

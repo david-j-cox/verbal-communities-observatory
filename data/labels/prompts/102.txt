@@ -1,0 +1,53 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 102
+Key terms: gambling, gamblers, pathological, slot
+
+Titles closest to the topic's center, conference presentations:
+- Experimental Analysis of Gambling
+- Advances in the Behavior Analysis of Gambling
+- Risky Business: An Experimental Analysis of Gambling
+- Developing and Evaluating Behavioral Models of Gambling Behavior: Implications for the Prevention and Treatment of Disordered Gambling
+- A ‘Reel’ Problem: The Influence of Verbal and Contextual Variables on Gambling Behavior and Reducing the Negative Influence of Disordered Gambling
+- The Effects of Near-Win Rate on the Choice between Two Gambling Situations in Rats
+- Preference and Persistence of Gambling Behavior as a Result of Changes in Volatility
+- Rats are Optimal in a Procedure Analogue to Human Gambling Behavior
+- Sports Gambling in the Modern Era: Examining the Psychological Mechanisms of America's Most Accessible Form of Gambling
+- Pigeons Hit the Slots: Modeling Gambling Behavior in a Token Economy
+
+Titles closest to the topic's center, journal articles:
+- Symbolic generalization of the near-miss in simulated slot-machine gambling.
+- Decreasing influence of arbitrarily applicable verbal relations of recreational gamblers: A randomized controlled trial
+- A Functional Analytic Approach to Understanding Disordered Gambling
+- Neurological evidence of acceptance and commitment therapy effectiveness in college-age gamblers
+- Contingency Enhances Sensitivity to Loss in a Gambling Task with Diminishing Returns
+- Gambling to escape: A systematic review of the relationship between avoidant emotion regulation/coping strategies and gambling severity
+- Risky Business: Increasing Risky Betting Through Rule-Governed Behavior
+- Further Effects of Lottery Odds on Responding
+- Transfers of stimulus function during roulette wagering
+
+NEIGHBOURING TOPIC 12 (similarity 0.58)
+Key terms: reinforcement choice, conditioned reinforcement, delay, humans
+- Renewal in Choice Behavior: Effect of Reinforcement Rate
+- An evaluation of methods for studying the effects of conditioned reinforcement on human choice
+- Tests of an Indifference Rule in Variable-Delay and Double-Reward Choice Procedures with Humans
+
+NEIGHBOURING TOPIC 57 (similarity 0.57)
+Key terms: behavioral economics
+- Behavioral Economics: Implications for Research and Practice
+- Advances in Behavioral Economics
+- Behavioral Economics: Novel Applications to Basic and Applied Research
+
+NEIGHBOURING TOPIC 99 (similarity 0.54)
+Key terms: choice, preference, model
+- Behavior Analytic Perspectives on Choice
+- A model of changeover behavior in two‐alternative choice
+- A Model of Changeover Behavior in Two-Alternative Choice

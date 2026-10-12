@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 142
+Key terms: amphetamine, polydipsia, drug, schedule induced
+
+Titles closest to the topic's center, conference presentations:
+- Twin Peaks: Effects of d-Amphetamine on Mixed Peak-Interval Schedules in Pigeons
+- Choice Between Drug and Non-Drug Reinforcers: Effects of Delay Discounting, Drug Cues, and Pharmacological Interventions
+- Choices in Situations of Time-Based Diminishing Returns: Effects of Methylphenidate on "Impulsive" Behavior
+- Using Conditioned Place Preference to Study Drug Conditioning in Humans
+- Fixed-Interval Intervention Dose-Response Effects on Impulsive Choices
+- Cannabis Dose-Effects Across Routes of Administration: Subjective, Performance, and Pharmacokinetic Differences
+- The Effects of Escalated Fentanyl Intake on Decision-making Dynamics
+- Behavioral and Biological Mechanisms of Intravenous Fentanyl Use and Withdrawal When Xylazine is Used as an Adulterant
+- The Effects of Serotonergic Hallucinogens on Interval Timing Behavior of Mice
+- Polydipsia and Delay Discounting in Two Rodent Models of ADHD
+
+Titles closest to the topic's center, journal articles:
+- Effects of methylphenidate on sensitivity to reinforcement delay, magnitude, and probability: Implications for impulsive and risky choice
+- Purchase task sensitivity to drug and nondrug reinforcers in opioid‐agonist treatment patients
+- Polydrug abuse: Choice between drugs as a function of concurrent nonindependent ratio sizes
+- Application of dose‐addition analyses to characterize the abuse‐related effects of drug mixtures
+- Laboratory Measures of Aggression in Methadone Patients Pre- and Postdose
+- Behavioral pharmacology of the odor span task: Effects of flunitrazepam, ketamine, methamphetamine and methylphenidate
+- Drug versus non‐drug behaviors: A dual‐reward model of sex differences and neurobiological mechanisms in rats
+- Effects of Naloxone and Caffeine on Responding under a Progressive-Duration Schedule of Food Delivery
+- A review of the neuropharmacological profile of schedule‐induced polydipsia
+- Comparing fixed‐amount and progressive‐amount DRO Schedules for tic suppression in youth with chronic tic disorders
+
+NEIGHBOURING TOPIC 0 (similarity 0.81)
+Key terms: cocaine, rhesus, monkeys, abstinence
+- Clinical neuropharmacology of cocaine reinforcement: A narrative review of human laboratory self‐administration studies
+- Abstinence from Cocaine Impairs Behavioral Inhibition and Alters Neural Activity in the Prelimbic Cortex
+- The Effects of Treatment Duration on Resurgence of Cocaine Seeking
+
+NEIGHBOURING TOPIC 91 (similarity 0.78)
+Key terms: behavioral pharmacology, psychotropic, drugs, medication
+- The discipline of behavioral pharmacology.
+- Behavioral Pharmacology of Prescription Drugs: The Good, the Bad, and the Ugly
+- Behavioral Pharmacology: Red Herrings and Big Fish
+
+NEIGHBOURING TOPIC 26 (similarity 0.66)
+Key terms: interval schedules, fixed interval, timing, multiple schedules
+- Effects of signaling on temporal control of behavior in response‐initiated fixed intervals
+- Investigations of Schedule-Induced Behavior: Pausing, Escape, and Polydipsia
+- Understanding Disruptive Effects of Stimuli Correlated With Schedules of Positive Reinforcement

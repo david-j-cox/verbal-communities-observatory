@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Staff Training and Performance Management\",\"definition\":\"Research on training, supervising, and managing direct-care and human service staff, including pyramidal and remote training, performance feedback, self-monitoring, performance diagnostics, and reactivity in implementer fidelity, in residential and applied settings.\",\"distinct_from_neighbours\":\"Covers organizational staff training and ongoing performance management broadly, not behavioral skills training specifically, supervision of trainees seeking certification, or skill acquisition procedures for clients.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1463,
+  "output": 174
+ },
+ "generated_utc": "2026-10-10T19:06:18+00:00"
+}

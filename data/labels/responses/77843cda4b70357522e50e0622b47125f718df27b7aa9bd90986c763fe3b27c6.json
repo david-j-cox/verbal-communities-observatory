@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "```json\n{\n  \"label\": \"Behavior Analysis in School Systems\",\n  \"definition\": \"Applying behavior analysis in elementary, secondary, and alternative schools, including group contingencies, school-based interventions, restraint reduction, school reintegration, inclusion models, practicum development, and system-level concerns such as equity and educational reform.\",\n  \"distinct_from_neighbours\": \"Focuses on schools as settings and systems, unlike neighbours on teacher training and coaching, college classroom and campus sustainability contingencies, or higher-education academic performance.\"\n}\n```",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1719,
+  "output": 558
+ },
+ "generated_utc": "2026-10-10T19:09:56+00:00"
+}

@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Student and Early-Career Professional Development\",\"definition\":\"Guidance on building careers in behavior analysis, including academic job searches, graduate training and coursework, supervision relationships, conference navigation, and expanding practice into new areas after graduation.\",\"distinct_from_neighbours\":\"Focuses on the professional growth and graduate preparation of behavior analysts themselves, not school-based interventions, interdisciplinary collaboration and advocacy, or skill acquisition procedures for clients.\"}",
+ "usage": {
+  "input": 1700,
+  "output": 284
+ },
+ "generated_utc": "2026-10-10T17:57:53+00:00"
+}

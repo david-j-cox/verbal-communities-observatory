@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Joint, Antecedent, and Contextual Control\",\"definition\":\"Conceptual and applied work on control of behavior by multiple or contextual antecedents, especially joint control, intraverbal and contextual-function control, and control-system accounts such as feedback loops.\",\"distinct_from_neighbours\":\"Focuses on joint control and conceptual analyses of control types, not general stimulus control research, self-control and impulsive choice, or conditioned reinforcement and stimulus-function pairing.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 944,
+  "output": 166
+ },
+ "generated_utc": "2026-10-10T19:07:36+00:00"
+}

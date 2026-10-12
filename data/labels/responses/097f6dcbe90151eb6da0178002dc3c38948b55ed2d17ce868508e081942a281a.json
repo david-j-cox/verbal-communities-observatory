@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Self, Well-Being, and Psychological Flexibility\",\"definition\":\"Work on the behavioral self and well-being, including self-care, mindfulness, self-compassion, self-as-context and self-discrimination measures, experiential avoidance, and compassionate, person-centered clinical practice drawing on contextual behavioral approaches.\",\"distinct_from_neighbours\":\"Focuses on self-related processes and well-being rather than creativity and complex behavior, self-control and impulsive choice, or behavioral accounts of theory of mind.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1483,
+  "output": 182
+ },
+ "generated_utc": "2026-10-10T19:07:21+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Driving, Traffic, and Pedestrian Safety Behavior\",\"definition\":\"Applied and quantitative analyses of road-user behavior, including driver yielding at crosswalks, in-street sign treatments, seat belt use, following distance, texting while driving, eco-driving feedback, and parking compliance.\",\"distinct_from_neighbours\":\"Focuses on drivers, pedestrians, and traffic settings, unlike teaching general safety skills to children, disseminating behavior science, or broad behavior-modification and behavior-plan issues.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1369,
+  "output": 186
+ },
+ "generated_utc": "2026-10-10T19:13:05+00:00"
+}

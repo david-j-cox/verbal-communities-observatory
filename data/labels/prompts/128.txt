@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 128
+Key terms: fish, species, conditioning, operant
+
+Titles closest to the topic's center, conference presentations:
+- Behavioral Interference Between Species
+- Spatial Behavior and Conditioning in Orange Head Cockroaches
+- The Behavior of (Other) Organisms: Considerations for Nontraditional Animal Research
+- Stimulus Learning in Zebrafish
+- Why Do Captive Animals Perform Abnormal Repetitive Behaviors?
+- Darkness and End-of-Session Stimuli as Positive Reinforcers for Raphael Catfish on Fixed-Ratio Schedules
+- ott, Ph.D. Why Animals Fight? Using Principles From Behavioral Ecology to Understand Aggression
+- Those Bugs Can Do What? Exploring the Learning Abilities of Invertebrates
+- Serial Pattern Learning in Animals
+- Intelligent Behaviour of Animals and Plants
+
+Titles closest to the topic's center, journal articles:
+- Zebrafish choice behavior is sensitive to reinforcer rate, immediacy, and magnitude ratios
+- Response acquisition by zebrafish ( Danio rerio ) with delayed reinforcement
+- Predator videos and electric shock function as punishers for zebrafish ( Danio rerio )
+- Simple discrimination in stingless bees ( Melipona quadrifasciata ): Probing for select‐ and reject‐stimulus control
+- Extinction in Free‐Ranging Aves in Competition with Sciurus carolinensis
+- Conditional same/different concept learning in the short-beaked echidna ( Tachyglossus aculeatus )
+- An Inconvenient Truth: Some Neglected Issues in Invertebrate Learning
+- Prompting Sidman Avoidance Behavior in Betta splendens
+- Behavioral Research with Planaria
+- The sunk cost effect across species: A review of persistence in a course of action due to prior investment
+
+NEIGHBOURING TOPIC 161 (similarity 0.71)
+Key terms: animal behavior, dogs, animals, training
+- Applied Animal Behavior: Research
+- Applied Animal Behavior: Theory
+- Novel Methodological Considerations in Applied Animal Behavior
+
+NEIGHBOURING TOPIC 109 (similarity 0.69)
+Key terms: monkeys, rhesus, chimpanzee, squirrel
+- Negative Behavioral Contrast in Capuchin Monkeys (Sapajus sp.)
+- The Effect of Signaling Reinforcement in Capuchin Monkeys: Extension of the Gambling Paradigm
+- Acquisition and maintenance of delayed matching‐to‐sample in tufted capuchin monkeys
+
+NEIGHBOURING TOPIC 192 (similarity 0.67)
+Key terms: pigeons, pecking, key peck, shock
+- Effects of a Reinforcement Schedule Controlling Energy of Pigeons’ Pecking Response
+- An analysis of coordinated responding of pigeons
+- Sensitivity to Pre- and Post-Reinforcer Delays in Pigeons

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 110
+Key terms: social media, consumer, dissemination, science
+
+Titles closest to the topic's center, conference presentations:
+- Considerations to Effective Dissemination of Behavior Science
+- Spread the Word! An Overview of Some Current Interdisciplinary Applications of Behavior Analytic Dissemination
+- What if Behavior Analysts Ran Facebook?: Using Behavioral Principles to Study and Improve Social Media Interactions
+- BehaviorPreneur: Creating Value and Differentiating Your Business
+- Improving Behavioral Services With Technological Advancements
+- Expanding the World’s Collective Wisdom of Behavioral Science through Dissemination
+- Building a Coalition to Amplify the Impact of Behavioral Science
+- Consumer Behavior Analysis: Health, Technology and Behavior Science
+- The Impact of Behavior Analysis Jargon on Dissemination: Increasing the Accessibility of Our Terminology
+- Reasoning From Basic Principles: Translating Behavioral Research Into Large Scale Applications
+
+Titles closest to the topic's center, journal articles:
+- Behavioral Methods in Community Settings: A Neglected or a Vital Force?
+- Behavior Science Contributions to Public Policy: an Introduction to the Special Section
+- Behavior Analysis and the Delivery of Services in Austria: A Call for Dissemination
+- Comprehensive Contextual Solutions for Behavioral Challenges: Observations from the Social Sciences Minus Their Mentalisms
+- Tutorial: Applying Machine Learning in Behavioral Research
+- Commitment, Collaboration, and Problem Resolution to Promote and Sustain Access to Multifaceted Applied Behavior-Analytic Services Utilizing Telepractice
+- The Promises and Possibilities of Artificial Intelligence in the Delivery of Behavior Analytic Services
+- An Editorial on Revitalizing Behavioral Community Psychology: Where Are We Going Now?
+- Behavioral community psychology in the Amazon rainforest: Suggestions for when behavior analysts meet alterity
+- Identifying Trends in the Open-Access Behavior Analytic Literature via Computational Analyses (I): Simple Descriptions of Text
+
+NEIGHBOURING TOPIC 82 (similarity 0.87)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 135 (similarity 0.84)
+Key terms: science
+- On the Dimensions of Behavior Analysis
+- Theoretical Issues in Behavior Analysis
+- Basic research in behavior analysis.
+
+NEIGHBOURING TOPIC 37 (similarity 0.81)
+Key terms: analysis aba
+- Applied Behavior Analysis: Past, Present, and Future
+- The importance of analysis in applied behavior analysis.
+- Behavior Analysis as an Applied Field: Concerns and Solutions

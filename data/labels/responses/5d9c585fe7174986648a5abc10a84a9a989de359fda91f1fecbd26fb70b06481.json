@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Operant choice and reinforcement in rodents\",\"definition\":\"Laboratory studies of rats and mice examining operant responding, schedules of reinforcement, delay discounting and intertemporal choice, foraging, cooperation, social preference, aversive consequences, and relapse phenomena such as reinstatement and renewal.\",\"distinct_from_neighbours\":\"Unlike the rat discrimination topic, it centres on choice, motivation and reinforcement rather than stimulus control; it studies rodents, not monkeys, and is empirical rather than species-general theory.\"}",
+ "usage": {
+  "input": 1810,
+  "output": 191
+ },
+ "generated_utc": "2026-10-10T17:57:41+00:00"
+}

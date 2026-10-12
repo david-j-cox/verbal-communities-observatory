@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Variability, Persistence, and Contrast\",\"definition\":\"Basic and translational experimental analyses of operant behavior dynamics: reinforced variability, behavioral momentum and persistence, resurgence and relapse, behavioral contrast, transient changes, and goal-directed versus habitual responding.\",\"distinct_from_neighbours\":\"Centers on experimental studies of variability, persistence, and contrast in operant responding, not evolutionary theories of behavior dynamics, response–reinforcer dependency effects, or behavioral interpretations of creativity.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1378,
+  "output": 194
+ },
+ "generated_utc": "2026-10-10T19:13:18+00:00"
+}

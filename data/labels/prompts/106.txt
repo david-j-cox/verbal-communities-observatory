@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 106
+Key terms: equivalence based, precision teaching, based instruction, students
+
+Titles closest to the topic's center, conference presentations:
+- Conceptual and Technical Issues in Instruction
+- Making Learning Work: Evolving and Evidenced-Based Methods in Generative and Efficient Instruction
+- The Elements of Effective Instruction
+- Assessment, Instruction, and Precision Teaching With the Morningside Model of Generative Instruction
+- Boardwork: An Instructional Tool for Bridging Explicit Instruction to Fluency
+- Variables Affecting Equivalence-Based Instruction and Conceptual Learning
+- Recent Innovations in the Use of Equivalence-Based Instruction
+- Direct Instruction: Challenges and Future Directions
+- Classroom Management, Coaching, and Precision Teaching With the Morningside Model of Generative Instruction
+- Fluency Based Instruction in University Settings
+
+Titles closest to the topic's center, journal articles:
+- Features of Direct Instruction: Interactive Lessons
+- Dissemination of Direct Instruction: Ponder These while Pursuing That
+- Instruction consisting of a rule and set of examples and nonexamples reliably teaches concepts
+- A comparison of individual and group equivalence‐based instruction delivered via Canvas
+- Measuring Explicit Instruction Using Classroom Observations of Student–Teacher Interactions (COSTI)
+- Efficiency of equivalence‐based instruction: A laboratory evaluation
+- Teaching Appropriate Feedback Reception Skills Using Computer-based Instruction: A Systematic Replication
+- Adventures in Direct Instruction Implementation: The Devil Is in the Details
+- Comparing Equivalence‐Based Instruction to a PowerPoint Video Lecture to Teach Differential Reinforcement Descriptors to College Students
+- Translational evaluation of training structures in equivalence‐based instruction
+
+NEIGHBOURING TOPIC 141 (similarity 0.81)
+Key terms: math, fluency, course, student
+- Improving Learning in Higher Education: Fluency, Oral Quizzes, Reducing Procrastination, and Weekly Quizzes
+- Improving Students’ Academic Performance
+- A Comparison of Escalating Versus Fixed Reinforcement Schedules on Undergraduate Quiz Taking
+
+NEIGHBOURING TOPIC 22 (similarity 0.79)
+Key terms: classroom, student, teacher, instructional
+- Interventions for Instruction Following and On-Task Behavior
+- Effects of High-Probability Instructional Sequences as a Programmed Consequence
+- Instructional Strategies That Promote Independent Responding and Reduce Dependence on Prompts
+
+NEIGHBOURING TOPIC 196 (similarity 0.77)
+Key terms: skill acquisition, skills, training, performance
+- Recent Research in Skill Acquisition
+- Skill Acquisition Learning Arrangements: How the Little Things Can Make a Big Difference
+- Efficacy and Efficiency in Skill Acquisition: Novel Approaches to Measurement and Procedural Refinement

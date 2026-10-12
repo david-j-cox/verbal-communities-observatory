@@ -1,0 +1,52 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 130
+Key terms: delayed reinforcement, delays, fixed, interval
+
+Titles closest to the topic's center, conference presentations:
+- Progressive Delay of Reinforcement: Effects on Response Rate, Post-Reinforcement Pause, and Response Induction
+- Factors and Procedures Pertaining to Delays to Reinforcement: Translational and Applied Evaluations
+- The Effect of Response Rate, Reinforcement Schedules, and Stimulus-Reinforcer Relations on Response Patterns During Extinction and Delays to Reinforcement
+- On the Behavioral Economics of Reinforcer Delays
+- Skill-Based Approaches Toward Teaching Children to Tolerate Delays to Reinforcement
+- Context Modulates Sensitivities to Sunk Time and Delay to Reinforcement
+- Response Initiation Improves Acquisition But Does Not Protect From Changes in Motivation in a Switch Timing Task
+- The Timing Property of Adjunctive Behaviours Depends on Inter-Reinforcement Interval Length
+
+Titles closest to the topic's center, journal articles:
+- Response duration is sensitive to both immediate and delayed reinforcement
+- Behavioral effects of delayed timeouts from reinforcement
+- Response Force in Conjugate Schedules of Reinforcement
+- The Effects of Signaled Delays on the Effectiveness of Differential Reinforcement of Other Behavior (DRO) Reinforcement Systems
+- Contingency tracking during unsignaled delayed reinforcement: Effects of delay duration and d ‐amphetamine
+- Effects of signaled and unsignaled delays of reinforcement on response maintenance in zebrafish ( Danio rerio )
+- A translational comparison of contingency‐based progressive delay procedures and their effects on contextually appropriate behavior
+- Discriminative stimuli promote the efficacy of delay tolerance training.
+- A comparison of imitation training using concurrent versus delayed prompting.
+- Constant Time Delay and System of Least Prompts: Efficiency and Child Preference
+
+NEIGHBOURING TOPIC 177 (similarity 0.89)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change
+
+NEIGHBOURING TOPIC 38 (similarity 0.88)
+Key terms: interval schedules, schedules reinforcement, variable interval, fixed interval
+- Responding Under Variable- and Cyclic-Interval Schedules of reinforcement
+- Translational and Applied Studies on Schedules and Parameters of Reinforcement
+- Theory of reinforcement schedules
+
+NEIGHBOURING TOPIC 7 (similarity 0.85)
+Key terms: reinforcement alternative, alternative reinforcement, alternative behavior, differential reinforcement
+- Resurgence following differential reinforcement of alternative behavior implemented with and without extinction
+- Noncontingent reinforcement without extinction plus differential reinforcement of alternative behavior during treatment of problem behavior
+- Concurrent schedules of differential reinforcement of alternative behavior in the treatment of problem behavior without extinction

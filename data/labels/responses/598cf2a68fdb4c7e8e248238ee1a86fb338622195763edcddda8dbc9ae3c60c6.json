@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Single-Case Design Methodology and Meta-Analysis\",\"definition\":\"Methods for designing, analyzing, appraising, and synthesizing single-case experimental research, including effect size measures, multilevel modeling, autocorrelation, replication and consistency assessment, research practices, and systematic reviews.\",\"distinct_from_neighbours\":\"Focuses on general research design and quantitative synthesis of single-case data, not on functional or synthesized contingency analyses, interobserver agreement, or treatment fidelity and acceptability.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1483,
+  "output": 181
+ },
+ "generated_utc": "2026-10-10T19:07:23+00:00"
+}

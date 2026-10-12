@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Interpretation of Language and Grammar\",\"definition\":\"Conceptual and interpretive analyses of language as verbal behavior: grammar, translation, rhetoric, verbal correspondence, terminology, and how verbal operants such as echoics and tacts organize everyday and technical language.\",\"distinct_from_neighbours\":\"Interprets natural language phenomena conceptually, unlike neighbours on foreign-language acquisition, broad overviews of verbal behavior research, or experimental analyses of intraverbal stimulus control.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1438,
+  "output": 185
+ },
+ "generated_utc": "2026-10-10T19:04:39+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Social and Play Skills in Autism\",\"definition\":\"Procedures such as video modeling, instructive feedback, and scripts for teaching children with autism social initiations, play, manding for information or help, and responsiveness to others during interaction.\",\"distinct_from_neighbours\":\"Targets social and play repertoires specifically, unlike general skill-acquisition procedures, speech-generating device communication, or training parents and caregivers to deliver instruction.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1758,
+  "output": 605
+ },
+ "generated_utc": "2026-10-11T00:37:43+00:00"
+}

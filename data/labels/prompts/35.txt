@@ -1,0 +1,51 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 35
+Key terms: destructive, aggression, aggressive, attention
+
+Titles closest to the topic's center, conference presentations:
+- An Evaluation of Individual and Synthesized Reinforcement Contingencies During the Assessment and Treatment of Destructive Behavior
+- Real World Effects of Psychopharmacological Intervention Discontinuation on Destructive Behavior Frequency Amidst Comprehensive Behavioral Treatment
+- Functional Analysis of Severe Behavior: Disentangling Antecedents, Consequences, and Injury Risk
+- Improving Safety-Related Behavior of Employees and Caregivers During Episodes of Aggression
+- Methods of Quantifying and Mitigating Severe Aggressive Outbursts in Inpatient and Emergency Department Settings
+- Individualized Functional Analysis Conditions and Function-Based Treatment for High-Intensity, Low- Frequency Disruptive Behavior
+- Teaching Toleration of Unpleasant Stimuli Related to Health and Safety using Shaping and Synthesized Reinforcement
+
+Titles closest to the topic's center, journal articles:
+- Evaluating the effects of physical reactions on aggression via concurrent‐operant analyses
+- Assessment and treatment of aggressive behavior maintained by access to physical attention.
+- Effects of Noncontingent Reinforcement on the Persistence and Resurgence of Mild Aggression
+- Assessment and Treatment of Aggression During Public Outings
+- Effects of therapist‐worn protective equipment during functional analysis of aggression
+- A preliminary evaluation of treatment duration on the resurgence of destructive behavior
+- Further evaluation of treatment duration on the resurgence of destructive behavior
+- Evaluation of schedule thinning following treatment for aggression maintained by access to higher level restrictive and repetitive behavior
+- Evaluating Preference for Functional and Nonfunctional Stimuli in the Treatment of Destructive Behavior
+- A multi-sample investigation of psychological flexibility processes and reactive and proactive functions of aggression
+
+NEIGHBOURING TOPIC 160 (similarity 0.76)
+Key terms: treatment challenging, severe challenging, challenging behavior, assessment treatment
+- Advances in Assessment and Intervention for Difficult-to-Treat Problem Behavior
+- Synthesizing Research on the Assessment and Treatment of Problem Behavior
+- From Research to Practice: Current Procedural Advances in the Assessment and Treatment of Problem Behavior
+
+NEIGHBOURING TOPIC 185 (similarity 0.75)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability
+
+NEIGHBOURING TOPIC 177 (similarity 0.73)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 147
+Key terms: children autism, autistic, autism spectrum, spectrum disorder
+
+Titles closest to the topic's center, conference presentations:
+- Evaluating Interventions for the Treatment of Autism
+- Early Intervention for Children With Autism; Outcomes Short and Long Term
+- Differential Effectiveness of Early Behavioral Intervention Among Young Children With Autism Spectrum Disorders
+- Keeping What Works and Looking to Improve: Early Intervention in Autism Spectrum Disorder
+- Research Synthesis of Behavioral Interventions for People With Autism: Strategies to Maximize Social Impact
+- Evaluation of Various Models for Autism Treatment
+- Caring for Children With Autism: Approaches to Establishing and Maintaining Treatment Implementation Skills
+- Data-Driven Autism Interventions Implemented by Parents
+- Further Evolutions of Behavioral Treatment of Autism: Alternatives to Traditional Intervention Approaches
+- Effective School-Based Interventions for Individuals With Autism Spectrum Disorder
+
+Titles closest to the topic's center, journal articles:
+- A convergent review of interventions for school-age children with autism spectrum disorder.
+- Interventions Benefitting Young Autistic Children
+- Sustainability of Early Intensive Behavioral Intervention for Children With Autism Spectrum Disorder in a Community Setting
+- A Comparison Controlled Study Examining Outcome for Children With Autism Receiving Intensive Behavioral Intervention (IBI)
+- Advances in School-Based Interventions for Students With Autism Spectrum Disorder: Introduction to the Special Issue
+- Randomized-controlled trial examining differing content of ABA therapy delivered to autistic children
+- Follow-Up of Children With Autism Spectrum Disorder 1 Year After Early Behavioral Intervention
+- Beyond Trial Counts: Considerations for Measuring Play and Engagement During Early Intervention for Autistic Children
+- Evaluation of a rapport‐building intervention for early interventionists working with children on the autism spectrum
+- The Use of Evaluation in Treatment Programs for Children with Autism
+
+NEIGHBOURING TOPIC 131 (similarity 0.91)
+Key terms: autism, autistic, spectrum, disorder
+- Addressing the Needs of Children With Autism Across Social, Academic, and Behavioral Domains
+- Supporting Autistic Individuals Into Adulthood
+- Addressing the Unique Social Needs of Individuals With High-Functioning Autism
+
+NEIGHBOURING TOPIC 188 (similarity 0.90)
+Key terms: children autism, activity schedules, autism spectrum, autistic
+- Addressing Restricted and Repetitive Behavior and Social Deficits in Individuals With Autism
+- A comparison of token and tandem schedules of reinforcement on response patterns for adolescents with autism
+- Social and Nonsocial Stimuli as Reinforcers for the Behavior of Children With Autism Spectrum Disorders and Typically Developing Children
+
+NEIGHBOURING TOPIC 152 (similarity 0.90)
+Key terms: analysis autism, autistic, autism spectrum, children autism
+- Have We Forgotten Our Roots? Applied Behavior Analysis and the Assessment and Treatment of Significant Behavioral Challenges in Adults With Autism and other Intellectual Disabilities
+- Beyond Autism: Applied Behavior Analysis for All
+- The Autism Society Applied Behavior Analysis (ABA) Commission: Making Informed Decisions

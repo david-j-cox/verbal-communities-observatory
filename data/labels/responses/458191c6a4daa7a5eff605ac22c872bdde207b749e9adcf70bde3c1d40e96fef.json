@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Communication and Technology Supports in Disabilities\",\"definition\":\"Work on augmentative and alternative communication, mobile and portable technology, and prompting strategies that build communication, social interaction, and independence for people with developmental, intellectual, or multiple disabilities.\",\"distinct_from_neighbours\":\"Focuses on communication systems and assistive technology rather than challenging behavior assessment (43), school-based academic instruction (117), or sign language and braille for sensory impairments (65).\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1730,
+  "output": 165
+ },
+ "generated_utc": "2026-10-10T19:13:15+00:00"
+}

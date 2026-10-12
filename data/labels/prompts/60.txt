@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 60
+Key terms: safety belt, belt use, safety skills, behavioral safety
+
+Titles closest to the topic's center, conference presentations:
+- Using Behavior Analytic Strategies to Promote Safety Skills
+- Advances in Interventions for Teaching Safety Skills
+- Save the Children: Efficient Ways to Teach Safety Skills
+- Behavioral Safety: The Requirements for a Successful Behavior-Based Safety Process
+- Expanding Behavioral Safety to New Areas
+- New Developments in Behavior-Based Safety
+- Current Trends and Advances in Research on Safety Skills Training
+- Safety Behavior at Variety Situations Such as Workplace and Academic Community Applying Behavior-Based Safety
+- New Developments in Behavioral Safety
+- Recent Advancements in Training Procedures to Teach Safety Skills
+
+Titles closest to the topic's center, journal articles:
+- Teaching Safety Skills to Children: A Discussion of Critical Features and Practice Recommendations
+- Behavior-based safety 2022: today’s evidence
+- A Survey of Safety Skills Training Used by Behavior Analysts in Practice
+- A Review of the Literature on Safety Response Training
+- Behavior-based safety with paramedics
+- The influence of video prompting with embedded safety checks to teach child passenger safety restraint skills
+- Using Behavioral Skills Training and Equivalence-Based Instruction to Teach Children Safe Responding to Dangerous Stimuli: A Proof of Concept
+- Complacency in Process Safety: A Behavior Analysis Toward Prevention Strategies
+- Process Safety: Another Opportunity to Translate Behavior Analysis into Evidence-Based Practices of Grave Societal Value
+- Effects of Behavioral Skills Training on the Stimulus Control of Gun Safety Responding
+
+NEIGHBOURING TOPIC 179 (similarity 0.64)
+Key terms: seat belt, belt use, driving, drivers
+- Quantitative Analysis of Behavior Goes Out to the Street: Car Drivers' Choice Between Obey or Violate a Traffic Rule
+- The effects of pedestrian gestures on driver yielding at crosswalks: A systematic replication
+- Bringing Behavior-Analytic Theory to Eco-driving Research: Verbal Rules Mediate the Effectiveness of Feedback for Professional and Civilian Drivers
+
+NEIGHBOURING TOPIC 176 (similarity 0.62)
+Key terms: compliance training, instructions, child, high
+- Assessment and Treatment of Compliance Problems in Children
+- The effects of errorless compliance training on children in home and school settings
+- Children’s Compliance Function and Subjective Reinforcement Value
+
+NEIGHBOURING TOPIC 81 (similarity 0.60)
+Key terms: behavioral skills, skills training, using behavioral, staff
+- Recent Research on the Varied Applications of Behavioral Skills Training
+- Recent Advancements and Applications in Behavioral Skills Training
+- Recent Applications of Behavioral Skills Training

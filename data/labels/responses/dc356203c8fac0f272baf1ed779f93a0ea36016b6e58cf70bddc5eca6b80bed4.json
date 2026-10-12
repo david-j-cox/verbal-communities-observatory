@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"COVID-19 Pandemic Service Adaptations\",\"definition\": \"Work on how behavior-analytic services responded to the COVID-19 pandemic, including rapid shifts to telehealth, clinic reopening and safety protocols, and promoting compliance with public-health preventive measures.\",\"distinct_from_neighbours\": \"Defined by the COVID-19 pandemic context, unlike general telehealth delivery and training, broad clinical practice and decision-making, or long-term behavioral intervention programs.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1684,
+  "output": 172
+ },
+ "generated_utc": "2026-10-11T00:37:45+00:00"
+}

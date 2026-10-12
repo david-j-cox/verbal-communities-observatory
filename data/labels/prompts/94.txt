@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 94
+Key terms: ptsd, trauma-informed care, posttraumatic stress, stress disorder
+
+Titles closest to the topic's center, conference presentations:
+- From Theory to Practice: Incorporating Trauma-Informed Care Into the Assessment and Treatment of Problem Behavior
+- On Incorporating Trauma-Informed Care into Applied Behavior Analytic Research and Practice
+- Trauma Informed Care: Through the Lens of Applied Behavior Analysis
+- Trauma-Informed Care and Behavior Analysis: It's More Than Just Awareness
+- Trauma-Informed Care in Applied Behavior Analysis (ABA)
+- Trauma-Informed Practice in Applied Behavior Analysis
+- Trauma Informed Applied Behavior Analysis (ABA): Practical Tools and Skills for Treatment Planning and Implementation
+- Applied Behavior Analysis (ABA) and Trauma Informed Care - Ensuring the Well-Being of Our Clients
+- What Applied Behavior Analysis Has to Offer Trauma Assessment and Intervention
+- Integrating Applied Behavior Analysis (ABA) Into the Trauma-Informed Care Framework: Developing a Trauma-Informed ABA Model for Practitioners
+
+Titles closest to the topic's center, journal articles:
+- Advancing a Research Agenda for Trauma-informed Care in Behavior Analysis
+- Facilitating Greater Understanding of Trauma-Informed Care in Applied Behavior Analysis: An Introduction to the Special Issue
+- Behavior Analysts’ Training and Practice Regarding Trauma-Informed Care
+- Toward trauma‐informed applications of behavior analysis
+- A survey of the applications of trauma-informed commitments to functional analyses.
+- Clinical research on behavioral activation as treatment for post‐traumatic stress disorder: A brief review and meta‐analysis
+- Trauma-Informed Paraeducator Training in the United States
+- Are Function-Based Interventions for Students with Emotional/Behavioral Disorders Trauma Informed? A Systematic Review
+- Posttraumatic stress symptom severity and functional impairment in a trauma-exposed sample: A preliminary examination into the moderating role of valued living
+- Trauma-Informed Care (TIC) of Persons with Intellectual and Developmental Disabilities: A Pilot Survey of Board Certified Behavior Analysts at a Human Services Organization
+
+NEIGHBOURING TOPIC 25 (similarity 0.65)
+Key terms: brain injury, injury rehabilitation, injured, acquired brain
+- Brain Injury: Review of Behavior Analytic Interventions and a Case Demonstration
+- Behavior Intervention in Brain Injury Rehabilitation Settings
+- Behavior Analytic Intervention for Behavior Disorders in Individuals With Brain Injuries
+
+NEIGHBOURING TOPIC 1 (similarity 0.64)
+Key terms: psychiatric, inpatient, mental health, patients
+- Adaptation Process of Social Cognition and Interaction Training (SCIT) in an Indian Context for Persons with Schizophrenia
+- Cognitive Remediation to Facilitate Independent Living in Persons With Serious Mental Illness
+- A psychological flexibility model of medication adherence in psychotic-spectrum disorders
+
+NEIGHBOURING TOPIC 121 (similarity 0.64)
+Key terms: self injury, self-injury, treatment self, restraint
+- Establishing inhibitory stimulus control of automatically maintained self-injury.
+- Interventions for Automatically Reinforced Self-Injury: Current Knowledge and Future Directions
+- Examining the Presence, Frequency, and Associated Characteristics of Nonsuicidal Self-Injury by Proxy: Initial Validation of the Nonsuicidal Self-Injury by Proxy Questionnaire (NSSIBPQ)

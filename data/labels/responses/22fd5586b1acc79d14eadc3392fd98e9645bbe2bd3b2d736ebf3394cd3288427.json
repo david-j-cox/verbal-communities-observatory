@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Social Validity Assessment and Trends\",\"definition\":\"Work examining how behavior analysts measure the acceptability, importance, and satisfaction of goals, procedures, and outcomes for consumers and stakeholders, including reviews of social validity reporting trends and questionnaire development.\",\"distinct_from_neighbours\":\"Focuses on stakeholder acceptability of interventions and research, not qualitative research methodology, the analysis of social or cooperative behavior, or teaching social skills to children.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1495,
+  "output": 168
+ },
+ "generated_utc": "2026-10-10T19:13:02+00:00"
+}

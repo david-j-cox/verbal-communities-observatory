@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Skills Training Applications\",\"definition\":\"Research on behavioral skills training (instruction, modeling, rehearsal, and feedback) used to teach staff, teachers, technicians, and students to implement behavior-analytic procedures, including component analyses, remote, video, and large-scale formats.\",\"distinct_from_neighbours\":\"Centers on one training package for teaching procedural implementation, unlike neighbours on academic training programs and curricula, client skill acquisition, or behavior analysis in schools.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1508,
+  "output": 174
+ },
+ "generated_utc": "2026-10-11T00:37:57+00:00"
+}

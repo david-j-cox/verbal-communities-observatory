@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 113
+Key terms: video feedback, video modeling, using video, feedback improve
+
+Titles closest to the topic's center, conference presentations:
+- Some Extensions and Additions to Video Modeling Practices: Advances in Intervention and Training
+- Recent Developments of Video-Based Instruction to Staff Train and to Teach Exercise and Personal Care Skills
+- Recent Research on Video Modeling Interventions to Teach Daily Living Skills
+- Effectiveness of Video-Based Instruction to Support Parents, Teachers, and Learners With Disabilities in Applied Settings
+- Using Technology to Enhance Teaching and Learning: Benefits of Video-Based Instruction
+- Randhawa Learning to Connect: Cultivating Interpersonal Skills in ABA Trainees Through Video Modeling
+- One Step at a Time: Video Prompts as a Tool to Boost Daily Living and Employment Outcomes
+- Collaborative Professionalism in Practice: Cultivating Interpersonal Skills Through Video Modeling
+- Using Video Modeling to Teach Face Covering to Individuals With Down Syndrome
+- Graphic Display and Analysis of Acquisition and Performance Behaviors
+
+Titles closest to the topic's center, journal articles:
+- Training Supervisors to Provide Performance Feedback Using Video Modeling with Voiceover Instructions
+- Training Future Teachers to Conduct Trial‐Based Functional Analyses Using Virtual Video Modeling and Video Feedback
+- Training supervisors to provide performance feedback using video modeling with voiceover instructions: A replication
+- Video Modeling Training Effects on Types of Attention Delivered by Educational Care-Providers
+- Examining the Effects of Video Modeling and Prompts to Teach Activities of Daily Living Skills
+- Behavior Skills Training with Voice-Over Video Modeling
+- Evaluating video modeling and video modeling with video feedback to enhance the performance of competitive dancers
+- Teaching Caregivers to Use Graduated Guidance Using Video Modeling
+- The effects of video feedback on running form
+- Comparing teaching with tactile guidance with video modeling with self‐evaluative video feedback to train medical skills
+
+NEIGHBOURING TOPIC 196 (similarity 0.62)
+Key terms: skill acquisition, skills, training, performance
+- Recent Research in Skill Acquisition
+- Skill Acquisition Learning Arrangements: How the Little Things Can Make a Big Difference
+- Efficacy and Efficiency in Skill Acquisition: Novel Approaches to Measurement and Procedural Refinement
+
+NEIGHBOURING TOPIC 88 (similarity 0.62)
+Key terms: augmentative, conversation, communication, presentation
+- Using behavioral skills training to establish extended conversational exchanges.
+- Advances in Teaching and Assessing Conversation Skills With Adults
+- Advances in Teaching Conversation Skills
+
+NEIGHBOURING TOPIC 81 (similarity 0.62)
+Key terms: behavioral skills, skills training, using behavioral, staff
+- Recent Research on the Varied Applications of Behavioral Skills Training
+- Recent Advancements and Applications in Behavioral Skills Training
+- Recent Applications of Behavioral Skills Training

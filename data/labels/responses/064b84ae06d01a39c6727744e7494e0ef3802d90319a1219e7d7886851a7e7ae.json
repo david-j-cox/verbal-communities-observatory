@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Experimental Behavior Analysis as a Discipline\",\"definition\":\"Work on the experimental analysis of behavior as a discipline, covering its history, future directions, reproducibility, laboratory methods and technology, links to physiology and neuroscience, and its professional society and journal.\",\"distinct_from_neighbours\":\"Concerns the laboratory research tradition and its infrastructure, not evolutionary behavior-dynamics theory, the general dimensions of behavior analysis as a science, or specific operant phenomena like momentum and contrast.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1738,
+  "output": 382
+ },
+ "generated_utc": "2026-10-11T01:31:58+00:00"
+}

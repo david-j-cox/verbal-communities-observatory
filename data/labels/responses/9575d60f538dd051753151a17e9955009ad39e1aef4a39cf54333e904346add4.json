@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Conditional Discrimination Training Procedures\",\"definition\": \"Research on establishing simple and conditional discriminations, examining training sequences, prompting, fading, errorless learning, stimulus disparity, and discriminability and bias as they affect acquisition and the emergence of untrained discriminations.\",\"distinct_from_neighbours\": \"Focuses on procedures and variables for teaching discriminations, unlike equivalence-class formation theory, conditioned reinforcement and suppression, or general stimulus control boundaries and outcome value.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1537,
+  "output": 181
+ },
+ "generated_utc": "2026-10-10T19:06:35+00:00"
+}

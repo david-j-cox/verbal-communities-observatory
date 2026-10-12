@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 34
+Key terms: aba services, framework, abai, settings
+
+Titles closest to the topic's center, conference presentations:
+- Bringing ABA to the World: Changes Across Cultures, Borders, and Disciplines
+- ABA Profession
+- Legal/Policy Developments and ABA Practice
+- An Update on the BACB and the Infrastructure of the ABA Profession
+- ABA in Community and Public Health Settings
+- Walker Leveraging Your ABA Association – Lessons and Perspectives for all ABA Practitioners
+- Effectiveness and Efficacy of Several Different Applications of ABA Intervention Across Two Countries
+- and Recent Trends in ABA Regulation and Advocacy
+- Measuring What Matters: Practitioner- Informed Refinement of the ABA Program Evaluation Form
+- Evidence-Based Practice for ABA Practitioners: Strategies, Ethical Obligations, and Challenges
+
+Titles closest to the topic's center, journal articles:
+- Ethical and Regulatory Investigations in ABA: A Qualitative Analysis of Practitioner Responses and Outcomes
+- A Review of Behavior-Analytic Articles that Cite a Source of Misinformation about ABA
+- Acceptance: A Research Overview and Application of This Core ACT Process in ABA
+- The Challenges Associated with Changing Practice: Barriers to Implementing Naturalistic Developmental Behavioral Interventions in ABA Settings
+- Animal-assisted Interventions as an Adjunct to ABA Services: Clinician Practices and Perceptions
+- Necessity and Opportunity: the 1-Year Master’s ABA Program at Auburn University
+- Initiatives to Address Diversity, Equity, and Inclusion Within a Higher Education ABA Department
+- Creating and Sharing Digital ABA Instructional Activities: A Practical Tutorial
+- The Student Should Help the Teacher: a View From 30 Years as an ABA Trainer
+- Exploring the Effects of Soft Skill Training among ABA Practitioners: A Systematic Review
+
+NEIGHBOURING TOPIC 198 (similarity 0.55)
+Key terms: care, services, clinical, treatment
+- Putting the Analysis Back Into Clinical Practice: Data-Based Decisions to Improve Lives
+- An Attorney and a BCBA Walked Into a Symposium: Clinical Best Practices and the Law
+- Evidence based and intensity specific services in the integrated care setting: Ethical considerations for a developing field.
+
+NEIGHBOURING TOPIC 194 (similarity 0.54)
+Key terms: collaboration, practice
+- For the Love of this Field: Advocating and Collaborating with a United Purpose
+- Outside the Box: Better Outcomes Through Collaboration
+- Mind the Gap Lunch—Engage with Authors and Researchers to Innovate and Evolve Your Practices WHAT'S THIS?
+
+NEIGHBOURING TOPIC 4 (similarity 0.53)
+Key terms: autism service, autism spectrum, spectrum disorder, children autism
+- Defining and Measuring Meaningful Outcomes in ABA Services for Autism Spectrum Disorders
+- Alliance for Scientific Autism Intervention: System Components and Outcome Data from High-Quality Service Delivery Organizations
+- Current Trends in the Assessment of Treatment Outcomes of Behavioral Services for Autism and Other Developmental Disabilities

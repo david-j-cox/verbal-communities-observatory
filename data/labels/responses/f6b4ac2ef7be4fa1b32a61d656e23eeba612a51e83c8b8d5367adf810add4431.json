@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Sensory Impairment, Braille, and Sign Language\",\n\"definition\": \"Teaching communication and literacy to learners who are deaf, blind, or deafblind. Work covers braille, sign language, and auditory skills, using prompting, matching-to-sample, and equivalence-based instruction, including with sighted or hearing learners.\",\n\"distinct_from_neighbours\": \"Centres on sensory impairments and their specific modalities (braille, sign, cochlear implants), rather than communication systems, academics, or life skills for people with intellectual or multiple developmental disabilities generally.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1433,
+  "output": 198
+ },
+ "generated_utc": "2026-10-10T19:07:15+00:00"
+}

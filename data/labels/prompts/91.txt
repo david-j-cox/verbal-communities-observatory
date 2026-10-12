@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 91
+Key terms: behavioral pharmacology, psychotropic, drugs, medication
+
+Titles closest to the topic's center, conference presentations:
+- Behavioral Pharmacology of Prescription Drugs: The Good, the Bad, and the Ugly
+- Behavioral Pharmacology: Red Herrings and Big Fish
+- Examining the Use and Effects of Psychotropic Medications Within the Field of Behavior Analysis
+- Back to the Lab: Human Behavioral Pharmacology Methods, Outcomes and Meanings
+- Examining the Effects of Medication on Behavioral Assessment and Treatment
+- The Elephant in the Room: Addressing Psychotropic Medications When Assessing Behavior
+- A Transdisciplinary Approach to Behavioral Dysfunction: A Behavior-Analytic Account of Pharmacological Interventions
+- Behavior Analytic Approaches to Understanding the Effects of Psychotropic Medication on Challenging Behavior
+- Psychotropic Medication and Applied Behavior Analysis
+- Mixed Behavioral and Pharmacological Interventions: Prevention, Policy, Ethics, and Practice.
+
+Titles closest to the topic's center, journal articles:
+- The discipline of behavioral pharmacology.
+- The behavioral pharmacology of prescription drugs: Their role in problem behavior and skill acquisition.
+- Laboratory notes from behavioral pharmacologists and trainees: Considerations for the discipline.
+- A Brief Introduction to Human Behavioral Pharmacology: Methods, Design Considerations and Ethics
+- Further analysis of psychotropic medication and severe problem behavior
+- Long‐term functional stability of problem behavior exposed to psychotropic medications
+- Instant Behavioral Pharmacology: How to Conduct a Multiple-Baseline Experiment with Animals in under an Hour
+- Demonstrating an Analyses of Clinical Data Evaluating Psychotropic Medication Reductions and the ACHIEVE! Program in Adolescents with Severe Problem Behavior
+- Behavioral pharmacology contributions to regulation of drug and tobacco products by the Food and Drug Administration.
+- Status and future directions of preclinical behavioral pharmacology in tobacco regulatory science.
+
+NEIGHBOURING TOPIC 142 (similarity 0.78)
+Key terms: amphetamine, polydipsia, drug, schedule induced
+- Twin Peaks: Effects of d-Amphetamine on Mixed Peak-Interval Schedules in Pigeons
+- Choice Between Drug and Non-Drug Reinforcers: Effects of Delay Discounting, Drug Cues, and Pharmacological Interventions
+- Effects of methylphenidate on sensitivity to reinforcement delay, magnitude, and probability: Implications for impulsive and risky choice
+
+NEIGHBOURING TOPIC 15 (similarity 0.73)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis
+
+NEIGHBOURING TOPIC 105 (similarity 0.73)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 37
+Key terms: analysis aba
+
+Titles closest to the topic's center, conference presentations:
+- Applied Behavior Analysis: Past, Present, and Future
+- Behavior Analysis as an Applied Field: Concerns and Solutions
+- Methodological Considerations in Applied Behavior Analysis Practice and Research
+- Methodological Research in Applied Behavior Analysis
+- Applied Behavior Analysis for Everyone: Exploring Additional Avenues
+- The Diversity of Applied Behavior Analysis in Practical Settings
+- Current Issues in Applied Behavior Analysis
+- Starting an Applied Behavior Analysis Practice
+- Walden Two and Beyond: Expanding the Scope of Applied Behavior Analysis
+- Exploring the Versatility of Applied Behavior Analysis
+
+Titles closest to the topic's center, journal articles:
+- The importance of analysis in applied behavior analysis.
+- Advancing the Large-Scale Implementation of Applied Behavior Analysis
+- Applied Behavior Analysis: Definitional Difficulties
+- International Development of Applied Behavior Analysis as a Profession
+- In Defense of Applied Behavior Analysis and Evidence-Based Practice
+- The Virginia Applied Behavior Analysis Consortium: Preparing Behavior Analysts Using a Collaborative Model
+- Toward a Data-based Approach to the Selection of Applied Behavior Analysis Program Characteristics
+- Teaching the History of Applied Behavior Analysis
+- Increasing cultural understanding and diversity in applied behavior analysis.
+- Current Dimensions of Applied Behavior Analysis in Mainland China: A Review of 20 Years of Research
+
+NEIGHBOURING TOPIC 135 (similarity 0.90)
+Key terms: science
+- On the Dimensions of Behavior Analysis
+- Theoretical Issues in Behavior Analysis
+- Basic research in behavior analysis.
+
+NEIGHBOURING TOPIC 82 (similarity 0.88)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 31 (similarity 0.83)
+Key terms: teaching behavior, higher education, schools, students
+- Applied Behavior Analysis in Educational Settings
+- When Applied Behavior Analysis Goes to School: Lessons Learned From the Field
+- Improving Classroom Behavior Support Through Applied Behavior Analysis

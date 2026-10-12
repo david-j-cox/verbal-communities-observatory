@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Gambling Behavior and Disordered Gambling\",\"definition\":\"Experimental, verbal-relational, and clinical analyses of gambling, including near-miss effects, slot machine and roulette simulations, animal gambling models, rule-governed risky betting, and acceptance-based treatment of disordered gambling.\",\"distinct_from_neighbours\":\"Focuses specifically on gambling and its treatment, rather than general reinforcement choice and conditioned reinforcement, broad behavioral economics, or quantitative models of choice and preference.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1400,
+  "output": 183
+ },
+ "generated_utc": "2026-10-11T00:38:10+00:00"
+}

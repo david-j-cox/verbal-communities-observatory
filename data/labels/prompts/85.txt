@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 85
+Key terms: social skills, skills training, peer, children
+
+Titles closest to the topic's center, conference presentations:
+- Social Skills Training: We Can Do Better
+- Recent Research on Behavioral Social Skills Interventions
+- Fostering Essential Social Skills: Strategies for Assessment and Intervention
+- Strategies for Establishing Meaningful Social Skills Through Manualized Intervention Programs
+- Social Skills Interventions Within an Outpatient Clinic
+- Teaching Social-Emotional Skills
+- Social Skills Groups: How to Support a Growing Need for Group Behavior Analytic Therapy
+- Factors to Consider When Teaching Social Skills to Neurodivergent People
+- Teaching Social Behavior
+- Building Social Inclusion: The Effects of an Instructional Readiness Procedure for Young Adults With Severe Problem Behavior
+
+Titles closest to the topic's center, journal articles:
+- Parent‐implemented behavioral skills training of social skills
+- Evaluating Behavioral Skills Training and In Situ Training to Teach Game‐Related Social Skills
+- Effects of PEERS ® Social Skills Training on Young Adults with Intellectual and Developmental Disabilities During College
+- Exploring the Moderating Effects of Cognitive Abilities on Social Competence Intervention Outcomes
+- A Brief Social Skills Intervention to Reduce Challenging Classroom Behavior
+- Peer-Supported Inclusive Social Skills Instruction for Elementary Students with Emotional and Behavioral Disorders
+- The Effects of Social Skills Interventions for Students With EBD and ASD: A Single-Case Meta-Analysis
+- Component Analysis of a Peer Training Program for Teaching Social Responsiveness to Neurotypical Preschoolers
+- Further analysis of a methodology for establishing the social validity of targeted conversation skills.
+- Guidelines for Facilitating Direct Instruction of Generalized Social Behavior: Teaching the General Case
+
+NEIGHBOURING TOPIC 81 (similarity 0.73)
+Key terms: behavioral skills, skills training, using behavioral, staff
+- Recent Research on the Varied Applications of Behavioral Skills Training
+- Recent Advancements and Applications in Behavioral Skills Training
+- Recent Applications of Behavioral Skills Training
+
+NEIGHBOURING TOPIC 178 (similarity 0.72)
+Key terms: social validity, trends, assessments
+- Social Validity and Contemporary Applied Behavior Analysis
+- A systematic review of social‐validity assessments in the Journal of Applied Behavior Analysis : 2010–2020
+- Recent Research on Social Validity: How Are We Doing?
+
+NEIGHBOURING TOPIC 149 (similarity 0.70)
+Key terms: classroom behavior, good behavior, behavior game, disruptive
+- Recent Research on School-Based Behavioral Interventions
+- Improving Classroom Behavior in Children With Problem Behavior
+- Preventing Disruptive Behavior via Classroom Management

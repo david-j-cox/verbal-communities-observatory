@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 64
+Key terms: cooperation, social behavior, human
+
+Titles closest to the topic's center, conference presentations:
+- Some Considerations in the Analysis of Social Behavior
+- It Takes Two to Tango: Analyses of Social Behavior
+- Building the Good Life: Behavioral Foundations of Social Connection, Community, and Cooperation
+- Why It Takes Two to Tango: The Investigation of Variables Controlling Social Operants
+- Advances in the Analysis Social Behavior: Induction, Behavioral Ecology, and Cultural Analysis
+- Cooperation, Altruism, and Social Reinforcement: Current Trends in the Experimental Analysis of Social Behavior
+- Towards an Integration of Social Behavior, Metacontingencies and Systems Analysis: Theoretical, Research, and Applied Implications
+- Impacting Others and the Home We Share: Psychological Flexibility, Prosocial Behavior, and Ecological Behavior
+- Evaluating the Relative Effects of Socially Mediated Consequences and Extending the Utility of Sociability Assessments
+- Conversations, Sharing, and Friendships: Understanding and Facilitating Social Behavior
+
+Titles closest to the topic's center, journal articles:
+- Observing How Groups Shape Individual Behavior: The Importance of Group Social Exchanges of Both Resources and Social Activities
+- Interpersonal and Group Contingencies
+- A Commentary on “Observing How Groups Shape Individual Behavior”: Scope, Precision and Scientific Aims
+- Increasing social time allocation and concomitant effects on mands, item engagement, and rigid or repetitive behavior
+- The Effects of Social Labels on the Allocation of Resources among Equivalent Stimuli: An Extended Replication
+- Unmasking social functions: Outcomes from a retrospective consecutive case series of 19 applications
+- The Will to Fight: Aversion-Induced Aggression and the Role of Motivation in Intergroup Conflicts
+- Social Distance and Delay Exert Multiple Control over Altruistic Choices
+- Evaluating the function of social interaction using time allocation as a dependent measure: A replication and extension
+- A Risk-Reduction Model of Sharing: Role of Social Stimuli and Inequity
+
+NEIGHBOURING TOPIC 53 (similarity 0.73)
+Key terms: creativity, psychology, psychological, science
+- Complex Behavior and Behavioral Artistry
+- Behavioral contrast: Research and areas for investigation
+- Behavioral Interpretations of Creativity
+
+NEIGHBOURING TOPIC 178 (similarity 0.73)
+Key terms: social validity, trends, assessments
+- Social Validity and Contemporary Applied Behavior Analysis
+- A systematic review of social‐validity assessments in the Journal of Applied Behavior Analysis : 2010–2020
+- Recent Research on Social Validity: How Are We Doing?
+
+NEIGHBOURING TOPIC 110 (similarity 0.72)
+Key terms: social media, consumer, dissemination, science
+- Considerations to Effective Dissemination of Behavior Science
+- Spread the Word! An Overview of Some Current Interdisciplinary Applications of Behavior Analytic Dissemination
+- What if Behavior Analysts Ran Facebook?: Using Behavioral Principles to Study and Improve Social Media Interactions

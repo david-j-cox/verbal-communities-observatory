@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Professional Roles of Behavior Analysts\",\"definition\":\"Work on who behavior analysts are and what they do: professional development and identity, collaboration with other professions, roles in healthcare and public policy, advocacy, writing, and dissemination beyond the field.\",\"distinct_from_neighbours\":\"Focuses on behavior analysts' broad professional identity, collaboration and advocacy, rather than credentialing and licensure, academic training programs and curricula, or qualitative research methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1539,
+  "output": 164
+ },
+ "generated_utc": "2026-10-11T00:37:35+00:00"
+}

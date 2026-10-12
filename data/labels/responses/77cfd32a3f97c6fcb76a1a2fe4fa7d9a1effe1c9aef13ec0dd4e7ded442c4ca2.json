@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "```json\n{\n  \"label\": \"Food as Reinforcer in Choice Research\",\n  \"definition\": \"Studies of food as a reinforcer: schedule performance, delay and probability discounting, preference, demand, and cue reactivity in humans and nonhumans, plus some procedural refinements for increasing consumption of novel foods.\",\n  \"distinct_from_neighbours\": \"It centers on food's reinforcing properties in basic and translational choice and schedule research, not on clinical treatment of mealtime behavior, pediatric food refusal, or food selectivity in autism.\"\n}\n```",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1569,
+  "output": 492
+ },
+ "generated_utc": "2026-10-10T19:06:42+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Discrete Trial Teaching Implementation and Refinement\",\"definition\":\"Research on discrete trial teaching, especially training staff and students to implement it with fidelity, data collection and mastery criteria, error correction, and comparisons of procedural variations to improve learning efficiency.\",\"distinct_from_neighbours\":\"Centres specifically on the discrete trial format and its implementation, unlike broader equivalence-based, precision, or direct instruction, general skill acquisition arrangements, or higher-education fluency and quizzing work.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1481,
+  "output": 180
+ },
+ "generated_utc": "2026-10-10T19:08:42+00:00"
+}

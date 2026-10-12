@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 167
+Key terms: stimulus relations, formation, stimulus equivalence, stimulus generalization
+
+Titles closest to the topic's center, conference presentations:
+- Some Important Variables for the Formation of Stimulus Equivalence Classes
+- Conceptual and Experimental Topics in the Formation of Stimulus Equivalence
+- Stimulus Equivalence: Conceptual and Experimental Issues
+- . Stimulus Equivalence Formation and Additional Measures
+- Procedural Variations for the Establishment of Stimulus Control and the Formation of Equivalence Classes
+- Advances in the Experimental Analysis of Stimulus Equivalence and Class Formation
+- Stimulus Equivalence and Transfer of Functions: Basic and Translational Research
+- Variables and Measurements That Are Important to Take Into Consideration in Stimulus Equivalence Research
+- Stimulus Equivalence: From Conceptual Issues to Translational Research
+- Theoretical and Experimental Aspects of Emergent Stimulus Relations
+
+Titles closest to the topic's center, journal articles:
+- Maintenance of Stimulus Equivalence Classes: A Bibliographic Review
+- Equivalence relations and the contextual control of multiple derived stimulus functions
+- Mediated Generalization and Stimulus Equivalence
+- Effects of Immediate Tests on the Long-Term Maintenance of Stimulus Equivalence Classes
+- Electrophysiological analysis of stimulus variables in equivalence relations
+- Sources of Stimulus Control in Tests for Emergent Stimulus Relations
+- Establishment and Maintenance of Stimulus Classes Following Equivalence-Based and Comprehensive Training
+- An Evaluation of Two Stimulus Equivalence Training Sequences on the Emergence of Novel Intraverbals
+- The Role of Meaningful Stimuli in Large Stimulus Classes
+- Discrimination of highly similar stimuli as members of different equivalence classes
+
+NEIGHBOURING TOPIC 69 (similarity 0.87)
+Key terms: stimulus control, stimuli, reinforcement, response
+- Stimulus Control in Humans
+- Stimulus control depends on the subjective value of the outcome
+- Stimulus Control: Testing the Boundaries
+
+NEIGHBOURING TOPIC 9 (similarity 0.79)
+Key terms: contrast, observing, variability, operant
+- A Comparison of Stimulus Set Sizes: Systematic Replication with Operant Analysis Acquisition Criteria
+- The Effect of Multiple Possibilities to Respond over Operant Variability.
+- Bouts, Pauses, and Units of Operant Performance: A Primer
+
+NEIGHBOURING TOPIC 32 (similarity 0.77)
+Key terms: competing stimulus, attention, task, assessment
+- Initial outcomes of an augmented competing stimulus assessment
+- Further Evaluations of Competing Stimulus Assessments and the Effects of Competition on On-Task Behavior
+- Competing Stimulus Assessments: Procedural Modifications to Improve Effectiveness and Efficiency

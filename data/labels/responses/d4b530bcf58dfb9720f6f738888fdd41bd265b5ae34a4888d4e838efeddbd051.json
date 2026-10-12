@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Treating Pediatric Food Refusal\",\"definition\": \"Behavioral treatment of children's food refusal and selectivity, including escape extinction, extinction bursts, alternatives without escape extinction, multicomponent packages, treatment integrity, and community or telehealth delivery.\",\"distinct_from_neighbours\": \"Centers on treating active food refusal, not functional analysis of mealtime behavior, basic food-schedule research and food-presentation methods, or broad assessment-and-treatment overviews of pediatric feeding disorders.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1416,
+  "output": 183
+ },
+ "generated_utc": "2026-10-10T19:05:35+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Short Generic and Introductory Titles\",\n\"definition\": \"Works with brief, generic titles giving little topical detail, such as introductions, essays on definitions, service delivery models, areas of application, and regulation, spanning conceptual, professional, and applied subjects.\",\n\"distinct_from_neighbours\": \"Grouped by terse, nonspecific titles rather than shared subject matter, unlike neighbours on historical and philosophical book reviews, tributes and personal reflections, or behavioral accounts of theory of mind.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 922,
+  "output": 178
+ },
+ "generated_utc": "2026-10-11T01:32:09+00:00"
+}

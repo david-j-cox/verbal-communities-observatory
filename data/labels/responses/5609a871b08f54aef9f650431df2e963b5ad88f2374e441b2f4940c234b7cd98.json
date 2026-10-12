@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Private Events and Covert Behavior\",\"definition\": \"Conceptual and experimental work on private events such as thoughts, feelings, imagining, and covert problem solving, including how radical behaviorism treats them and methods like tacting and drug discrimination for studying them.\",\"distinct_from_neighbours\": \"Centers on private, covert behavior specifically, not social behavior and cooperation, broader behaviorist philosophy and history, or behavioral accounts of theory of mind.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1178,
+  "output": 160
+ },
+ "generated_utc": "2026-10-10T19:08:59+00:00"
+}

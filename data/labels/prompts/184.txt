@@ -1,0 +1,53 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 184
+Key terms: profound multiple, multiple disabilities, developmental disabilities, persons
+
+Titles closest to the topic's center, conference presentations:
+- Evaluating Augmentative and Alternative Communication Systems for Individuals with Developmental Disabilities
+- Current Research on Communication Modality Assessments for Individuals With Development Disabilities
+- Further Evaluation of Critical Aspects of Augmentative and Alternative Communication for Individuals With Developmental Disabilities
+- Assessment and Treatment Considerations for Children With Developmental Disabilities Who Are Candidates for Augmentative and Alternative Communication Systems
+- Supporting Social Interactions for Children With Developmental Disabilities and Their Peers
+- Self-Instructing With Mobile Technology for Individuals With Intellectual Disability: Training to Use the Technology, Implementation, and Efficiency
+- We Have an App for That! Technology to Enhance Independence in Young Adults With Disabilities
+- The Evolution of Technology for Individuals With Disabilities: Uses of Advanced Portable Devices to Teach Students and Train Staff
+- Increasing Mask-Wearing in Individuals With Developmental Disabilities: We've Got You Covered!
+
+Titles closest to the topic's center, journal articles:
+- Teaching Adults with Neurodevelopmental Disabilities to Interact Successfully with Others in a Virtual Format
+- A Program Based on Common Technology to Support Communication Exchanges and Leisure in People With Intellectual and Other Disabilities
+- Increasing Communication for Students with Visual Impairments and Developmental Disabilities
+- Snack Talk: Effects of a Naturalistic Visual Communication Support on Increasing Conversation Engagement for Adults with Disabilities
+- Utilizing PEAK Relational Training System to Teach Visual, Gustatory, and Auditory Relations to Adults with Developmental Disabilities
+- Young adults with intellectual and other developmental disabilities acquire vocational skills with video prompting
+- The Use of a Behavior Chain Interruption Strategy to Teach Mands for Help with an Adult with Intellectual Disability and Deaf-Blindness
+- Effectiveness of Simultaneous Prompting in Ensuring Independent Living Skills in Young People with Multiple Disabilities
+- Comparing Computer-Based Sight-Word Interventions in Students with Intellectual Disability: Self-Determined Versus Fixed Response Intervals
+- A replication of extended implementation and social interaction during the Step it UP ! Game for adults with disabilities
+
+NEIGHBOURING TOPIC 43 (similarity 0.87)
+Key terms: persons developmental, intellectual developmental, individuals developmental, developmental disabilities
+- Innovations in the Assessment of Challenging Behavior for Individuals With Developmental Disabilities
+- Practical Applications in Assessing and Treating Common Challenging Behavior for Individuals Diagnosed With Intellectual and Developmental Disabilities
+- Expanding Behavior Analysis to Promote Better Outcomes for Persons With Disabilities
+
+NEIGHBOURING TOPIC 117 (similarity 0.87)
+Key terms: handicapped, intellectual developmental, intellectual disabilities, developmental disabilities
+- Educator-Implemented Interventions for Students With Developmental Disabilities in the School Setting
+- Teaching Academic Content and Communication Skills to Students With Intellectual and Developmental Disabilities
+- Teaching Academic and Functional Life Skills to Young Adults With Intellectual Disabilities
+
+NEIGHBOURING TOPIC 65 (similarity 0.79)
+Key terms: braille, deaf, sign language, children
+- Using Constant Time Delay to Teach Sight Words to Students Identified as Deafblind
+- How Children Learn Early Communicative Gestures
+- Comparing stimulus equivalence‐based instruction to self‐study of videos to teach examples of sign language to adults

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Schedule-Induced Drinking and Alcohol Seeking\", \"definition\": \"Research on schedule-induced (adjunctive) drinking in rats, along with alcohol and ethanol self-administration, choice, demand, resurgence of alcohol seeking, and alcohol-related behavior in humans.\", \"distinct_from_neighbours\": \"It centers on drinking: schedule-induced water and ethanol consumption and alcohol seeking. Neighbours address smoking and general substance abuse, cocaine self-administration, or stimulant drug effects on timing and choice.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1958,
+  "output": 693
+ },
+ "generated_utc": "2026-10-10T18:23:33+00:00"
+}

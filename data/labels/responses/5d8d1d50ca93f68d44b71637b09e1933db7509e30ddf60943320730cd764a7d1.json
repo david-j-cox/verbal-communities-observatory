@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Relational Frame Theory: Conceptual Developments\",\"definition\":\"Theoretical overviews, conceptual updates, and critiques of relational frame theory as an account of human language and cognition, including comparisons with verbal behavior development theory, naming, Skinner, and neuroscience.\",\"distinct_from_neighbours\":\"Focuses on relational frame theory as a theory, its status, history, and future, rather than experimental studies of derived relational responding, equivalence relations, or theory of mind.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1487,
+  "output": 167
+ },
+ "generated_utc": "2026-10-10T19:05:57+00:00"
+}

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 45
+Key terms: response rate, responding, interruption, redirection
+
+Titles closest to the topic's center, conference presentations:
+- Recent Applied and Translational Research on Response Persistence
+- Recent Investigations of Response Effort in Relation to: Delay Discounting, Response Difficulty, and Extinction and Resurgence
+- Examining Response Interruption and Redirection Methods
+- Predictable Changes in Relative Immediacy Alter Within-session Response Patterns
+- Response Limitations: How Depletion and Replenishment Cliffs affect Waiting
+- Further Examination of Response Blocking and Redirection to Reduce Automatically Maintained Problem Behavior
+- The Force Awakens: Clarifying the Role of Response Effort
+- Spatially Separated Response Sequences are Organized in Functional Bouts
+- Feedback Accuracy: Gathering, Delivering, and Its Effect on Performance
+- Recent Evaluations of Timeout Procedures in Basic and Applied Research
+
+Titles closest to the topic's center, journal articles:
+- An Irreversible Effect of Response Cost on Human Fixed-Interval Responding
+- An analysis of procedures that affect response variability
+- The role of task preference in the effectiveness of response interruption and redirection
+- Response interruption and redirection: A scoping review of its procedural permutations and participant pools.
+- Preliminary Outcomes From a Brief Response Blocking Assessment
+- Resurgence Following Response Cost in a Human-Operant Procedure
+- An analysis of treatment integrity of response interruption and redirection
+- Effects of correct versus incorrect response feedback on work performance
+- Lag-lag schedules in response variability research and programming: A feasibility study.
+- Recent research on response disequilibrium theory: A concise review
+
+NEIGHBOURING TOPIC 177 (similarity 0.77)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change
+
+NEIGHBOURING TOPIC 130 (similarity 0.74)
+Key terms: delayed reinforcement, delays, fixed, interval
+- Progressive Delay of Reinforcement: Effects on Response Rate, Post-Reinforcement Pause, and Response Induction
+- Factors and Procedures Pertaining to Delays to Reinforcement: Translational and Applied Evaluations
+- Response duration is sensitive to both immediate and delayed reinforcement
+
+NEIGHBOURING TOPIC 26 (similarity 0.71)
+Key terms: interval schedules, fixed interval, timing, multiple schedules
+- Effects of signaling on temporal control of behavior in response‐initiated fixed intervals
+- Investigations of Schedule-Induced Behavior: Pausing, Escape, and Polydipsia
+- Understanding Disruptive Effects of Stimuli Correlated With Schedules of Positive Reinforcement

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 66
+Key terms: ethics, ethical, code, practice
+
+Titles closest to the topic's center, conference presentations:
+- Applied and Theoretical Explorations of Ethics in Behavior Analysis
+- Questionable Ethical Practices: Ways to Solve Them and Get Back on the Ethical Path
+- Ethics in Behavior Analytic Practice and Public Policy
+- Diving Beneath the Surface of the Ethics Codes: Exploring Ethical Issues in Applied Behavior Analysis (ABA) Practice
+- Ethical Decision-Making in Applied Behavior Analysis Practitioners: Models, Behavior, and Organizational Culture
+- An Evaluation of Ethical Decision Making
+- Ethical Behavior Analysis: A Guide to Being an Evidence Based Practitioner
+- Applying the New Ethics Code for Behavior Analysts Across a Variety of Service Locations: Addressing Cultural Needs and Institutional Challenges
+- Ethical Behavior Analysis: A Guide to Being an Evidence-Based Practitioner
+- The Complexities of Ethical Decision Making
+
+Titles closest to the topic's center, journal articles:
+- Examination of Ethical Decision-Making Models Across Disciplines: Common Elements and Application to the Field of Behavior Analysis
+- How Behavior Analysts Make Ethical Decisions: A Qualitative Study
+- Research Ethics for Behavior Analysts in Practice
+- Disseminating Ethical Applied Behavior Analysis within a Human-Service Organization: A Tutorial
+- When Rules Are Not Enough: Developing Principles to Guide Ethical Conduct
+- A Survey of Ethics‐Related Training Within Behavior Analysis
+- Ethical Behavior Analysis: Evidence-Based Practice as a Framework for Ethical Decision Making
+- The Unique Challenge of Articulating the Behavior Analysts’ Ethical Obligations and the Case of Punishment
+- Ethical Issues
+- Toward Collapsing the Is-Ought Distinction: An Introduction to the Special Issue on Data-Informed Ethics in Behavior Analysis
+
+NEIGHBOURING TOPIC 150 (similarity 0.64)
+Key terms: certified behavior, board certified, certification, behavior analyst
+- Licensure of Behavior Analysts: Ethical Considerations, Lessons Learned, and Next Steps
+- An Update on the Behavior Analyst Certification Board
+- What makes a good board certified behavior analyst? Employer opinions of newly credentialed behavior analysts.
+
+NEIGHBOURING TOPIC 82 (similarity 0.63)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 18 (similarity 0.58)
+Key terms: racism, justice, human, social
+- Why So Racist? A Function-Based and Organizational Assessment and Interventions for Policing
+- Leading the Charge: A Look Inside the Behavior Analysis in Practice Emergency Series of Publications on Systemic Racism and Police Brutality
+- Behavior Analysis and Restorative Justice: Birds of a Feather?

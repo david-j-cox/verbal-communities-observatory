@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Extinction Processes and Extinction Bursts\",\"definition\":\"Basic and applied research on extinction itself: extinction bursts, resistance to extinction, response loss during operant and Pavlovian extinction, extinction cues and reminders, and how prior reinforcement conditions shape extinction effects.\",\"distinct_from_neighbours\":\"Centers on extinction as the process studied, unlike alternative-reinforcement treatments for problem behavior, avoidance and aversive-control research, or conditioning studies in nontraditional species.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1435,
+  "output": 180
+ },
+ "generated_utc": "2026-10-10T19:10:12+00:00"
+}

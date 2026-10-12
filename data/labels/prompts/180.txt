@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 180
+Key terms: visual analysis, graphs, microsoft excel, inspection
+
+Titles closest to the topic's center, conference presentations:
+- Issues in the Visual Analysis of Single-Case Research Data
+- A Crisis in Visual Analysis: Examining Current Analytical Practices in ABAB and Multielement Designs
+- Confirming Visual Analysis When Presenting Single-Case Experiments to Group Design Audiences
+- Recent Research on Teaching Graph Construction and Visual Analysis
+- I Can See Clearly Now: Interpreting Data Using Structured Visual Inspection
+- Multidimensional Visual Analyses: Performance Mapping of Verbal Behavior using Permutated Radar Charts
+- Teaching Graphing: A Discussion of the Past and Present With Suggestions for the Future
+- Applications of Signal Detection Theory to Visual Analysis of Functional Analyses
+- Visual Management Systems in the Workplace
+- Using Treatment Packages and Component Analyses to Teach University Students Graphing and Citation Formatting
+
+Titles closest to the topic's center, journal articles:
+- A Visual Aid and Objective Rule Encompassing the Data Features of Visual Analysis
+- Enhancing Pre-service Teachers’ Visual Analysis Skills for Single-Case Graphs: the Role of Trend and Intervention Effect
+- Systematic Protocols for the Visual Analysis of Single-Case Research Data
+- Evaluation of Computer-Based Training to Teach Adults Visual Analysis Skills of Baseline-Treatment Graphs
+- Using equivalence‐based instruction to teach the visual analysis of graphs
+- Comparing computer‐based training and lecture formats to teach visual analysis of baseline‐treatment graphs
+- The Effects of Single-Case Design Graph Manipulation on Visual Analyst Decisions: A Replication
+- An Analysis of the Effect of Graph Construction Disclaimers on Visual Analysis
+- Consistent Visual Analysis of Multielement Data: A Preliminary Evaluation
+- An exploration of the interrater agreement of visual analysis with and without context
+
+NEIGHBOURING TOPIC 107 (similarity 0.58)
+Key terms: data collection, recording, clinical, reliability
+- How Can Single-Case Data Be Analyzed? Software Resources, Tutorial, and Reflections on Analysis
+- Reliability, Validity, and Usability of Data Extraction Programs for Single-Case Research Designs
+- Issues in Data Collection and Analysis
+
+NEIGHBOURING TOPIC 68 (similarity 0.51)
+Key terms: single-case experimental, experimental designs, single-case designs, single-subject
+- Questionable and Improved Research Practices in Single-Case Experimental Design: Initial Investigation and Findings
+- Single‐case experimental designs: Characteristics, changes, and challenges
+- Introduction to the Special Section: Translating Advanced Quantitative Techniques for Single-Case Experimental Design Data
+
+NEIGHBOURING TOPIC 144 (similarity 0.48)
+Key terms: analysis outcomes, functional analyses, functional analysis, methodology
+- A descriptive assessment of trial‐based functional analysis research
+- Modifications and Adaptions to Functional Analysis Procedures: Evaluation of Safety, Validity, and Procedural Fidelity
+- Concurrent validity of Open‐Ended Functional Assessment Interviews with functional analysis

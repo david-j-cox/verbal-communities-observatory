@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 171
+Key terms: negative reinforcement, positive, contingencies
+
+Titles closest to the topic's center, conference presentations:
+- Selection, Reinforcement, and Behavior
+- Evaluating Components and Variables Associated With the Treatment of Problem Behavior Maintained by Negative Reinforcement
+- Mathematical Principles of Reinforcement: A Panel with Discussion
+- Positive Reinforcement: Not Always “Positive”
+- Induction Versus Reinforcement and the Molar View of Behavior
+- Persistence of Target Behavior in the Presence of Additional Contingent Reinforcement
+- Social Reinforcement: Basic Findings and Applications
+- Comparative Analyses on Preference for and Efficacy of Reinforcement Arrangements
+- Accumulated and Distributed Reinforcement Arrangements: Further Comparisons in Multiple Contexts
+- Non-compliance and Subjective Reinforcement Value
+
+Titles closest to the topic's center, journal articles:
+- Increasing Behavior With Conditioned Reinforcement
+- Increasing a Behavior With Positive Reinforcement
+- Avoidance, induction, and the illusion of reinforcement
+- Effects of Signaled Positive Reinforcement on Problem Behavior Maintained by Negative Reinforcement
+- Motivating Operations and Negative Reinforcement
+- Functional analysis patterns of automatic reinforcement: A review and component analysis of treatment effects
+- Comparing positive and negative reinforcement: A fantasy experiment
+- Persistent Rule-Following in the Face of Reversed Reinforcement Contingencies: The Differential Impact of Direct Versus Derived Rules
+- Want to see more behavior? Consider institutional-level positive reinforcement
+- Dynamic Interactions between Induction and Reinforcement in the Organization of Behavior
+
+NEIGHBOURING TOPIC 7 (similarity 0.89)
+Key terms: reinforcement alternative, alternative reinforcement, alternative behavior, differential reinforcement
+- Resurgence following differential reinforcement of alternative behavior implemented with and without extinction
+- Noncontingent reinforcement without extinction plus differential reinforcement of alternative behavior during treatment of problem behavior
+- Concurrent schedules of differential reinforcement of alternative behavior in the treatment of problem behavior without extinction
+
+NEIGHBOURING TOPIC 177 (similarity 0.88)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change
+
+NEIGHBOURING TOPIC 12 (similarity 0.84)
+Key terms: reinforcement choice, conditioned reinforcement, delay, humans
+- Renewal in Choice Behavior: Effect of Reinforcement Rate
+- An evaluation of methods for studying the effects of conditioned reinforcement on human choice
+- Tests of an Indifference Rule in Variable-Delay and Double-Reward Choice Procedures with Humans

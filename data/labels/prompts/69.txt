@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 69
+Key terms: stimulus control, stimuli, reinforcement, response
+
+Titles closest to the topic's center, conference presentations:
+- Stimulus Control in Humans
+- Stimulus Control: Testing the Boundaries
+- Innovative Procedures in the Study of Stimulus Control
+- An Evaluation of Basic and Applied Procedural Modifications to Enhance Stimulus Control
+- Considering Discrimination Ability: Assessment of Stimulus Control in Early Intensive Behavioral Intervention
+- Making the Treatment Work! Recent Updates in Stimulus Selection as Reinforcers and Response Persistences
+- A quantitative model of temporal joint stimulus control
+- The Efficacy of Stimulus Control Technologies to Increase Skill Acquisition
+- From the Learner’s View: Methods to Assess and Produce Coherent Stimulus Control Topographies
+- Observing for, and Control by, FR 1 Correlated Stimuli
+
+Titles closest to the topic's center, journal articles:
+- Stimulus control depends on the subjective value of the outcome
+- Stimulus control of a social operant
+- A method to establish stimulus control and compliance with instructions
+- Developing and demonstrating inhibitory stimulus control over repetitive behavior
+- Divided stimulus control depends on differential and nondifferential reinforcement: Testing a quantitative model
+- Stimulus control of habits: Evidence for both stimulus specificity and devaluation insensitivity in a dual‐response task
+- Motivating operations and stimulus control
+- Changing the Stimulus Control of a Behavior With Fading
+- Evaluating the Effects of Compound Stimuli on Stimulus Control during Match-to-Sample Procedures
+- Effects of Successive and Simultaneous Stimulus Presentations on Absolute and Relational Stimulus Control in Adult Humans
+
+NEIGHBOURING TOPIC 167 (similarity 0.87)
+Key terms: stimulus relations, formation, stimulus equivalence, stimulus generalization
+- Some Important Variables for the Formation of Stimulus Equivalence Classes
+- Conceptual and Experimental Topics in the Formation of Stimulus Equivalence
+- Stimulus Equivalence: Conceptual and Experimental Issues
+
+NEIGHBOURING TOPIC 62 (similarity 0.82)
+Key terms: conditioned suppression, conditioned reinforcement, operant conditioning, signal detection
+- Conditioned Reinforcement: the Effectiveness of Stimulus—Stimulus Pairing and Operant Discrimination Procedures
+- Blocking of Stimulus Control and Conditioned Reinforcement
+- Bridging the Conditioned Reinforcement Gap: Translational and Applied Research on Altering and Evaluating Stimulus Function
+
+NEIGHBOURING TOPIC 32 (similarity 0.80)
+Key terms: competing stimulus, attention, task, assessment
+- Initial outcomes of an augmented competing stimulus assessment
+- Further Evaluations of Competing Stimulus Assessments and the Effects of Competition on On-Task Behavior
+- Competing Stimulus Assessments: Procedural Modifications to Improve Effectiveness and Efficiency

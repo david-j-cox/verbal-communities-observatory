@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 129
+Key terms: skinner, verbal behavior
+
+Titles closest to the topic's center, conference presentations:
+- Theoretical Advancements in Skinner’s Analysis of Verbal Behavior
+- Toward a Behavioral Analysis of B. F. Skinner’s Philosophical Discourse
+- The Science of Skinner’s Analysis of Verbal Behavior: Theory and Basic Research
+- Skinnerian Themes in Psychology
+- Walden Two: An Analysis of Behavioral Concepts in Skinner's Novel
+- The Science of Skinner’s Analysis of Verbal Behavior: Basic and Translational Research
+- Skinner’s Pragmatic Science and Engineering of Behavior Change
+- The Absolute Beginnings of B. F. Skinner's Theory of Operant Behavior
+- Misconceptions: Perspectives on Skinner From Cognitive and Humanistic Perspectives
+- Discriminative Stimuli and B. F. Skinner
+
+Titles closest to the topic's center, journal articles:
+- Who, What, and When: Skinner’s Critiques of Neuroscience and His Main Targets
+- Precurrent Behavior in B. F. Skinner’s Writings: A Contextual Analysis
+- The Functional Independence of Skinner's Verbal Operants: Conceptual and Applied Implications
+- Meeting of minds: Skinner and Michotte at the International Congress of Psychology, Stockholm, 1951
+- Darwinism, radical behaviorism, and the role of variation in Skinnerian explaining behavior.
+- Scientific Premises and Social Proposals in B. F. Skinner Between 1953 and 1960
+- Equity and Diversity in Behavior Analysis: Lessons From Skinner (1945)
+- Skinner’s First Publication?
+- Empirical Evaluations of Skinner’s Analysis of Problem Solving
+- In Skinner's Early Footsteps: Analyzing Verbal Behavior in Large Published Corpora
+
+NEIGHBOURING TOPIC 132 (similarity 0.72)
+Key terms: behaviorism, psychology, science
+- Current Diversification of Behaviorism
+- Methodological Behaviorism: Historical Origins of a Problematic Concept (1923–1973)
+- The Role of Theory in Behavior Analysis: A Response to Unfinished Business, Travis Thompson’s Review of Staddon's New Behaviorism (2nd edition)
+
+NEIGHBOURING TOPIC 53 (similarity 0.68)
+Key terms: creativity, psychology, psychological, science
+- Complex Behavior and Behavioral Artistry
+- Behavioral contrast: Research and areas for investigation
+- Behavioral Interpretations of Creativity
+
+NEIGHBOURING TOPIC 185 (similarity 0.63)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability

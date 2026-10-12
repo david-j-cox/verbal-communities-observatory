@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Climate Change and Proenvironmental Behavior\",\"definition\":\"Applying behavior analysis to environmental sustainability, including climate change, conservation of water and shared resources, reducing emissions, community interventions, and calls for the field to act on ecological problems.\",\"distinct_from_neighbours\":\"Focuses on environmental and climate-related behavior change, not on spreading behavior science through media, qualitative research methods, or professional collaboration and advocacy within the field.\"}",
+ "usage": {
+  "input": 1525,
+  "output": 158
+ },
+ "generated_utc": "2026-10-10T17:56:13+00:00"
+}

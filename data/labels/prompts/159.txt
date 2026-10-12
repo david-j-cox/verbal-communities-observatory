@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 159
+Key terms: preference reinforcer, reinforcers, choice, relative
+
+Titles closest to the topic's center, conference presentations:
+- Advances in Preference and Reinforcer Assessment Research
+- New Developments in Preference and Reinforcer Assessment Research
+- Novel Applications of Preference and Reinforcer Assessment Methodologies
+- Factors Influencing Preference and Reinforcer Assessment Outcomes
+- Preferred, Reinforcing, or Both? Recent Advancements in Preference and Reinforcer Assessments
+- Displacement and Diverse Applications of Preference and Reinforcer Assessments
+- Characterizing Reinforcer Pathologies Using Behavioral Economic Demand
+- From Multiple Stimulus Without Replacement (MSWO) to Synchronous Reinforcement: Validity, Efficiency, and Application of Preference and Reinforcer Assessment
+- Effects of the Response Requirement on Rats’ Choice Between Probabilistic Reinforcers
+- Establishing Praise and Visual Stimuli as Conditioned Reinforcers: Basic, Bridge, and Applied Research
+
+Titles closest to the topic's center, journal articles:
+- A preference analysis of reinforcer variation and choice
+- Further evaluation of the use of preference categories to identify novel reinforcers: A systematic replication
+- Choosing among multiple alternatives: Relative and overall reinforcer rates
+- Arranging response requirements and the distribution of reinforcers: A brief review of preference and performance outcomes
+- How do reinforcers affect choice? Preference pulses after responses and reinforcers
+- Shifting preferences for choice‐making opportunities through histories of differential reinforcer quality
+- Evaluating Preference and Performance in Accumulated versus Distributed Response–Reinforcer Arrangements
+- Relative preference for distinct reinforcers maintaining destructive behavior
+- On the Identification and Use of Social versus Nonsocial Reinforcers: A Review of Research Practices
+- Control by reinforcers across time and space: A review of recent choice research
+
+NEIGHBOURING TOPIC 80 (similarity 0.92)
+Key terms: conditioned reinforcers, magnitude, schedules, multiple
+- Advancements in the Selection of Effective Reinforcers
+- A systematic review of procedures for establishing conditioned reinforcers
+- On the Current Utility and Exploratory Implications of Reinforcer Assessments
+
+NEIGHBOURING TOPIC 12 (similarity 0.77)
+Key terms: reinforcement choice, conditioned reinforcement, delay, humans
+- Renewal in Choice Behavior: Effect of Reinforcement Rate
+- An evaluation of methods for studying the effects of conditioned reinforcement on human choice
+- Tests of an Indifference Rule in Variable-Delay and Double-Reward Choice Procedures with Humans
+
+NEIGHBOURING TOPIC 177 (similarity 0.77)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change

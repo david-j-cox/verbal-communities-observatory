@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Reinforcer Delay and Uncertainty in Choice\",\"definition\":\"Experimental and translational studies of how reinforcer delay, rate, probability, and conditioned reinforcers shape choice, including impulsive, risky, and suboptimal choice and preference for choice, often with human participants.\",\"distinct_from_neighbours\":\"Unlike general reinforcement principles, quantitative models of choice allocation and changeover, or delay effects on single-response rates, this topic examines how specific reinforcer parameters bias preference between alternatives.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1760,
+  "output": 698
+ },
+ "generated_utc": "2026-10-10T19:04:48+00:00"
+}

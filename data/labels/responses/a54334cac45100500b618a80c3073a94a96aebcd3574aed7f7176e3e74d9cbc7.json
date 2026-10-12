@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Response–Reinforcer Relations and Response Persistence\",\"definition\": \"Basic and translational research on how the relation between responses and reinforcers, such as dependency, correlation, signaling and rate, shapes response rate, variability, persistence, and resistance to change, including behavioral momentum theory.\",\"distinct_from_neighbours\": \"Centers on response–reinforcer contingency and response strength or persistence, not alternative-behavior treatments and resurgence, delay-of-reinforcement effects, or general introductions to positive, negative, and conditioned reinforcement.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1529,
+  "output": 192
+ },
+ "generated_utc": "2026-10-10T19:13:00+00:00"
+}

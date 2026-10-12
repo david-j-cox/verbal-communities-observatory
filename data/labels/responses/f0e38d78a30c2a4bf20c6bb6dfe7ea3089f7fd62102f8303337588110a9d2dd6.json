@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Auditory Stimulus Control and Discrimination\",\"definition\": \"Research on how sounds and spoken stimuli come to control behavior, including listener and auditory–visual discriminations, auditory equivalence classes, echoics, auditory feedback, hearing voices, and noise-related problem behavior.\",\"distinct_from_neighbours\": \"Centers on the auditory modality, unlike general stimulus control or equivalence-class formation, and on hearing and discriminating sounds rather than reducing vocal stereotypy or stuttering.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1305,
+  "output": 181
+ },
+ "generated_utc": "2026-10-10T19:06:14+00:00"
+}

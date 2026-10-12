@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 154
+Key terms: olfactory, rats, discrimination, contrast
+
+Titles closest to the topic's center, conference presentations:
+- Conditional Discrimination in Rats: The Role of Response Topography
+- Determinants of Temporal or Stimulus Control in Humans and Rats
+- Mice Can Learn a Complex Instrumental Olfactory Patterning Task
+- Effects of Social Isolation and Familiarity on Responding for Social Olfactory Stimuli in Female Rats
+- Target Odor Detection in Mice: The Benefit of Training with Multiple Background Odors
+- Smells Like Stimulus Control Across Continents: Odor-Sniffing Giant African Rats and Shelter Dogs
+- Prevalence reduction in flash rate discrimination training decreases stimulus generalization in rats
+- Leveraging Olfaction to Study Innate Behavior in the Mouse
+- Using Pavlovian Sign-tracking to Increase Self-control in Rats
+- Elemental and Configural Odor Discrimination in the APP/PS1 Mouse, an Animal Model of Alzheimer’s Disease
+
+Titles closest to the topic's center, journal articles:
+- Functional equivalence classes in rats: Repeated olfactory discrimination reversals and delayed stimulus probes
+- An investigation of stimulus prevalence effects in rats
+- Functional equivalence and class expansion in rats using olfactory stimuli
+- Successive incrementing non‐matching‐to‐samples in rats: An automated version of the odor span task
+- Transfer of a novel discriminative function across functional stimulus class members in rats
+- Preliminary Evidence of Relational Same/Different Discrimination of Simultaneously Presented Visual Stimuli in Rats: a Pilot Study
+- A free‐operant olfactory choice procedure to assess preference for social and nonsocial scents in female rats
+- Using sign tracking to experimentally increase self‐control in rats
+- Reinstatement and a resurgence‐like effect in an odor‐signaled multiple schedule in rats
+- An Exploration of Individual and Collective Reversal Learning in Rats
+
+NEIGHBOURING TOPIC 58 (similarity 0.82)
+Key terms: behavior rats, food, conditioning, operant
+- Operant Conditioning of Rats
+- When Do Rats Wait for More Food? An Investigation of Reinforcer Accumulation
+- Effects of a spatially separated operant requirement on bouts of responding in rats
+
+NEIGHBOURING TOPIC 69 (similarity 0.70)
+Key terms: stimulus control, stimuli, reinforcement, response
+- Stimulus Control in Humans
+- Stimulus control depends on the subjective value of the outcome
+- Stimulus Control: Testing the Boundaries
+
+NEIGHBOURING TOPIC 167 (similarity 0.69)
+Key terms: stimulus relations, formation, stimulus equivalence, stimulus generalization
+- Some Important Variables for the Formation of Stimulus Equivalence Classes
+- Conceptual and Experimental Topics in the Formation of Stimulus Equivalence
+- Stimulus Equivalence: Conceptual and Experimental Issues

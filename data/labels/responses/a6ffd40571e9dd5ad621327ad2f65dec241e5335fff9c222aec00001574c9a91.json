@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Pigeon Choice, Preference, and Reinforcement Schedules\",\"definition\":\"Laboratory studies of pigeons' (and some rats') choice and preference under reinforcement schedules, including risky and suboptimal choice, discounting, sunk costs, token economies, timing, and resurgence.\",\"distinct_from_neighbours\":\"Centers on choice and preference among reinforcement alternatives, unlike neighbours on key-peck response properties, visual discrimination and memory, or matching-to-sample and inference tasks.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1491,
+  "output": 180
+ },
+ "generated_utc": "2026-10-10T19:08:47+00:00"
+}

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 27
+Key terms: teacher, classroom, education, teaching
+
+Titles closest to the topic's center, conference presentations:
+- Evidence Based Practices for Improving Teacher Performance
+- Supporting Educator Effectiveness: Measurement, Coaching, and Technology
+- Involving Classroom Teachers in School-Based Interventions
+- Why Are Teachers Doing This: Assessing Social Validity and Instructional Challenges
+- Teacher Training
+- Effects of Teacher Training on Performance and Satisfaction
+- Using ABA to Improve Teacher Effectiveness
+- Teaching Future Teachers How to Be Effective Teachers
+- Beyond Special Education: Using Behavioral Tactics to Teach Academic Contents in General Education Settings
+- Improving Classroom Management Through Consultation
+
+Titles closest to the topic's center, journal articles:
+- Increasing positive and decreasing negative teacher responses to student behavior through training and feedback.
+- The Teacher Performance Rate and Accuracy Measure as a Teacher Training Intervention
+- Changing What Teachers Say Changes What They Do: Increasing Their Specific Praise of Student Behavior
+- Effects of Teacher-Implemented Coaching to Increase the Accuracy of Data Collected by Paraeducators
+- High school teachers’ maintained and generalized behavior-specific praise following in situ training.
+- Targeted and Intensive Consultation for Increasing Head Start and Elementary Teachers’ Behavior-Specific Praise
+- The Effects of Observing Others Versus Self-Observation on Teacher Accuracy in Presenting Learn Unit Instruction
+- An Examination of the Association Between Teacher’s Instructional Practices and School-Wide Disciplinary and Academic Outcomes
+- A Systematic Review of Goal Setting and Performance Feedback to Improve Teacher Practice
+- The Teaching Interaction Procedure as a Staff Training Tool
+
+NEIGHBOURING TOPIC 22 (similarity 0.78)
+Key terms: classroom, student, teacher, instructional
+- Interventions for Instruction Following and On-Task Behavior
+- Effects of High-Probability Instructional Sequences as a Programmed Consequence
+- Instructional Strategies That Promote Independent Responding and Reduce Dependence on Prompts
+
+NEIGHBOURING TOPIC 118 (similarity 0.78)
+Key terms: schools, educational, student, public
+- Advancements in Group Contingencies in School Settings
+- PDS: Cultivating Student Repertoires to Produce Societal Change: Why Are We Not Teaching People to Save the World?
+- Evaluation of a Novel Independent Group Contingency in an Alternative School
+
+NEIGHBOURING TOPIC 149 (similarity 0.77)
+Key terms: classroom behavior, good behavior, behavior game, disruptive
+- Recent Research on School-Based Behavioral Interventions
+- Improving Classroom Behavior in Children With Problem Behavior
+- Preventing Disruptive Behavior via Classroom Management

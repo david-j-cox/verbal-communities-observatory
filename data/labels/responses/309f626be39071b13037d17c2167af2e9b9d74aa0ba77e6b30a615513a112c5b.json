@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Toilet Training and Bathroom Hygiene\",\"definition\":\"Behavior-analytic procedures for teaching urinary and bowel continence, self-initiated toileting, and related hygiene skills such as wiping and handwashing, often with children with autism and caregiver or practitioner implementation.\",\"distinct_from_neighbours\":\"Targets continence and bathroom self-care skills, not habit behaviors like nail biting or skin picking, general early-intervention care and rapport, or compliance with instructions.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1395,
+  "output": 171
+ },
+ "generated_utc": "2026-10-10T19:12:22+00:00"
+}

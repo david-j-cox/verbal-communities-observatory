@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Compassionate Care in Behavior Analysis\",\"definition\":\"Conceptual analyses, definitions, measurement, and training of compassion and compassionate care in behavior-analytic practice. This includes therapeutic relationships with caregivers, graduate training, and organizational approaches to embedding compassion.\",\"distinct_from_neighbours\":\"Focuses on compassion toward clients and caregivers as a professional repertoire, not practitioner self-care and mindfulness, general caregiver training methods, or clinical behavior analysis and psychotherapy.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1710,
+  "output": 187
+ },
+ "generated_utc": "2026-10-10T19:07:59+00:00"
+}

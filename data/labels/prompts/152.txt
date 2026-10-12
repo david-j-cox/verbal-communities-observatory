@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 152
+Key terms: analysis autism, autistic, autism spectrum, children autism
+
+Titles closest to the topic's center, conference presentations:
+- Have We Forgotten Our Roots? Applied Behavior Analysis and the Assessment and Treatment of Significant Behavioral Challenges in Adults With Autism and other Intellectual Disabilities
+- Beyond Autism: Applied Behavior Analysis for All
+- The Autism Society Applied Behavior Analysis (ABA) Commission: Making Informed Decisions
+- Beyond Intervention: How Behavior Analysis Can Contribute to an Understanding of Autism Spectrum Disorder
+- Realizing the Potential of Applied Behavior Analysis to Improve Outcomes in Adolescents and Young Adults With Autism
+- Responding to Recent Critiques of Applied Behavior Analysis (ABA): Behavior Analyst and an Autistic Adult’s Perspectives
+- The Science of Applied Behavior Analysis: Broadening the Research Base to Answer Real Life Questions About Autism
+- Intervention Recommendations: Applied Behavior Analysis (ABA) for Autism
+- Enhancing Autism Interventions: Expanding Applied Behavior Analysis (ABA) Interventions From Research to Community-Based Practice
+- Professional Development Series: Applied Behavior Analysis Outside of Autism
+
+Titles closest to the topic's center, journal articles:
+- Behavior Analysts' Use of Treatments for Individuals with Autism: Trends within the Field
+- Behavior Analysts' Use of and Beliefs in Treatments for People with Autism: A 5‐Year Follow‐up
+- Applied Behavior Analysis in Children and Youth with Autism Spectrum Disorders: A Scoping Review
+- Evaluating the effectiveness of two models of applied behavior analysis in a community-based setting for children with autism spectrum disorder.
+- Variation in Behavior Analysts’ Treatment Intensity Recommendations for Patients with Autism Spectrum Disorder
+- Behavior analysts' perceptions of the population specificity or comprehensiveness of autism treatments
+- A Collaborative Continuum of Care between Applied Behavior Analysis and Outpatient Psychiatry for Children with Autism Spectrum Disorder
+- Assessment and treatment of problem behavior occasioned by variable‐sequence transitions for children with autism
+- Navigating a Managed Care Peer Review: Guidance for Clinicians Using Applied Behavior Analysis in the Treatment of Children on the Autism Spectrum
+- Navigating the Transition: Behavior Analysts’ Insights on Supporting Autistic Children Moving From Intensive Behavior Intervention to Public School
+
+NEIGHBOURING TOPIC 147 (similarity 0.90)
+Key terms: children autism, autistic, autism spectrum, spectrum disorder
+- Evaluating Interventions for the Treatment of Autism
+- A convergent review of interventions for school-age children with autism spectrum disorder.
+- Early Intervention for Children With Autism; Outcomes Short and Long Term
+
+NEIGHBOURING TOPIC 131 (similarity 0.88)
+Key terms: autism, autistic, spectrum, disorder
+- Addressing the Needs of Children With Autism Across Social, Academic, and Behavioral Domains
+- Supporting Autistic Individuals Into Adulthood
+- Addressing the Unique Social Needs of Individuals With High-Functioning Autism
+
+NEIGHBOURING TOPIC 4 (similarity 0.87)
+Key terms: autism service, autism spectrum, spectrum disorder, children autism
+- Defining and Measuring Meaningful Outcomes in ABA Services for Autism Spectrum Disorders
+- Alliance for Scientific Autism Intervention: System Components and Outcome Data from High-Quality Service Delivery Organizations
+- Current Trends in the Assessment of Treatment Outcomes of Behavioral Services for Autism and Other Developmental Disabilities

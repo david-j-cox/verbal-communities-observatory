@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Variables affecting equivalence class formation\",\"definition\":\"Experimental research on training, testing, and stimulus variables, such as meaningful stimuli, preliminary training, limited hold, and match-to-sample alternatives, that influence whether and how stimulus equivalence classes form, merge, or expand.\",\"distinct_from_neighbours\":\"Focuses on specific procedural and stimulus variables that facilitate class formation, rather than contextual control and naturalistic derived relations, broad conceptual issues in equivalence, or acquisition of conditional discriminations.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1479,
+  "output": 190
+ },
+ "generated_utc": "2026-10-10T19:08:27+00:00"
+}

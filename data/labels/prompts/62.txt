@@ -1,0 +1,49 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 62
+Key terms: conditioned suppression, conditioned reinforcement, operant conditioning, signal detection
+
+Titles closest to the topic's center, conference presentations:
+- Bridging the Conditioned Reinforcement Gap: Translational and Applied Research on Altering and Evaluating Stimulus Function
+- Prospective and Retrospective Contingency in Operantly Conditioned Behavior
+- An Information and Arousal-Based Model of Conditioned Reinforcement
+- Conditioned Inhibition in Overexpectation: Adding Negative Values?
+- Respondent Conditioning Adaptive Neural Networks
+
+Titles closest to the topic's center, journal articles:
+- Conditioned Reinforcement: the Effectiveness of Stimulus—Stimulus Pairing and Operant Discrimination Procedures
+- Blocking of Stimulus Control and Conditioned Reinforcement
+- A Review of Backward Higher-Order Conditioning: Implications for a Pavlovian Conditioning Analysis of Stimulus Equivalence
+- Respondent (Classical, Pavlovian) Conditioning of Reflexive Behavior
+- Low occasion setter salience results in learning conditional stimulus partial reinforcement instead of occasion setting
+- Respondent and Operant Conditioning Together
+- Toward a Modern View of Pavlovian Conditioning in Applied Behavior Analysis
+- Does increasing absolute conditioned reinforcement rate improve sensitivity to relative conditioned reinforcement rate?
+- Pavlovian learning and conditioned reinforcement
+- A comparison of procedures for unpairing conditioned reflexive motivating operations
+
+NEIGHBOURING TOPIC 69 (similarity 0.82)
+Key terms: stimulus control, stimuli, reinforcement, response
+- Stimulus Control in Humans
+- Stimulus control depends on the subjective value of the outcome
+- Stimulus Control: Testing the Boundaries
+
+NEIGHBOURING TOPIC 177 (similarity 0.78)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change
+
+NEIGHBOURING TOPIC 167 (similarity 0.76)
+Key terms: stimulus relations, formation, stimulus equivalence, stimulus generalization
+- Some Important Variables for the Formation of Stimulus Equivalence Classes
+- Conceptual and Experimental Topics in the Formation of Stimulus Equivalence
+- Stimulus Equivalence: Conceptual and Experimental Issues

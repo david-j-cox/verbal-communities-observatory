@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 178
+Key terms: social validity, trends, assessments
+
+Titles closest to the topic's center, conference presentations:
+- Recent Research on Social Validity: How Are We Doing?
+- Trends and Applications of Social Validity Assessments
+- A Deeper Examination of Social Validity and its Role in Clinical Practice
+- Advances in Social Validity: Considerations for Assent and Percent Reduction in Challenging Behavior
+- In Consideration of Social Validity: Do Others Like What We Do, and Does It Matter?
+- Enhancing Social Validity in Applied Behavior Analysis: Interdisciplinary Strategies for Inclusive and Culturally Responsive Dissemination
+- Social Validity and Efficacy of Behavioral College Teaching Methods
+- Bridging the Gap: Strategies for Increasing Social Validity, Treatment Fidelity, and Interdisciplinary “Buy-In” in Clinical Settings
+- Trial-Based FAs That Yield Socially Valid Outcomes: Applying What We Know to How We Practice
+- Examining the Predictive Validity of the Implicit Relational Assessment Procedure: Three Mental Illness Stigma Studies
+
+Titles closest to the topic's center, journal articles:
+- Social Validity and Contemporary Applied Behavior Analysis
+- A systematic review of social‐validity assessments in the Journal of Applied Behavior Analysis : 2010–2020
+- Social Validity in Behavioral Research: A Selective Review
+- A concise review of social validity assessments during functional analyses of challenging behavior
+- On the Social Validity of Behavior-Analytic Communication: a Call for Research and Description of One Method
+- Thematic and textual analysis methods for developing social validity questionnaires in applied behavior analysis
+- A Systematic Review of Social Validity Trends in Behavior Analytic Research on Major Neurocognitive Disorder
+- A Descriptive Assessment of Social Validity Source, Timing, and Direct Consumer Inclusion in Behavior Analytic Research
+- Social validity assessment of behavior data recording among human services care providers
+- Revisiting the social validity of services rendered through a university‐based practicum addressing challenging behavior
+
+NEIGHBOURING TOPIC 82 (similarity 0.75)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 64 (similarity 0.73)
+Key terms: cooperation, social behavior, human
+- Some Considerations in the Analysis of Social Behavior
+- It Takes Two to Tango: Analyses of Social Behavior
+- Building the Good Life: Behavioral Foundations of Social Connection, Community, and Cooperation
+
+NEIGHBOURING TOPIC 85 (similarity 0.72)
+Key terms: social skills, skills training, peer, children
+- Social Skills Training: We Can Do Better
+- Recent Research on Behavioral Social Skills Interventions
+- Parent‐implemented behavioral skills training of social skills

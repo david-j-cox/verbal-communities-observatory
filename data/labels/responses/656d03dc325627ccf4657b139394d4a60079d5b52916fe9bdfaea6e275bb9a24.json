@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Bidirectional and Incidental Naming\",\"definition\":\"Research on bidirectional naming, the joining of listener and speaker responses to a word without direct teaching, covering its components, assessment, induction through multiple-exemplar or mixed-operant instruction, and links to derived relations.\",\"distinct_from_neighbours\":\"Focuses specifically on naming as a developmental capability, unlike broader verbal operant and grammar analyses, foreign-language instruction, or spelling and sight-word reading interventions.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1510,
+  "output": 172
+ },
+ "generated_utc": "2026-10-10T19:06:38+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Journal Publication Records and Contributor Tributes\",\"definition\":\"Articles reflecting on the field's journals themselves, including analyses of what and who they publish, citation records of influential contributors, thanks to long-serving contributors, and notes to readers on journal direction.\",\"distinct_from_neighbours\":\"Focuses on journals' published content and contributors, not on peer review and editorial acknowledgements, book reviews and historical scholarship, or personal reflections and commentaries.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 886,
+  "output": 161
+ },
+ "generated_utc": "2026-10-11T01:32:02+00:00"
+}

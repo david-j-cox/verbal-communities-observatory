@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 80
+Key terms: conditioned reinforcers, magnitude, schedules, multiple
+
+Titles closest to the topic's center, conference presentations:
+- Advancements in the Selection of Effective Reinforcers
+- On the Current Utility and Exploratory Implications of Reinforcer Assessments
+- Temporal Control: Effects of the Distribution of Reinforcers
+- Delivery of Conditioned Reinforcers Suppresses Resurgence
+- Procedures for Conditioning Stimuli as Automatic Reinforcers
+- Conditioned Reinforcement is Sensitive to Reinforcer Devaluation
+- Temporal function of the reinforcer on the organization of behavior
+- An Automated Task for Evaluating the Discriminative Effects of Reinforcers with Children
+- Establishing and Evaluating Conditioned Reinforcers With Individuals With Developmental Disabilities
+- 0 to 60: Establishing Conditioned Reinforcers and Inducing Observing Responses
+
+Titles closest to the topic's center, journal articles:
+- A systematic review of procedures for establishing conditioned reinforcers
+- Parametric analysis of delayed primary and conditioned reinforcers
+- The role of temporal intervals on reinforcer accumulation
+- Comparing clinician-reported hierarchies of relative reinforcer efficacy to reinforcer assessment hierarchies.
+- Discriminative properties of reinforcers modulate resurgence: A human‐operant demonstration
+- Discriminative Properties of Reinforcers Modulate Resurgence: Evidence from a Systematic Review
+- Using progressive ratio schedules to evaluate tokens as generalized conditioned reinforcers
+- The power of one reinforcer: The effect of a single reinforcer in the context of shaping
+- Control by past and present stimuli depends on the discriminated reinforcer differential
+- Does overall reinforcer rate affect discrimination of time‐based contingencies?
+
+NEIGHBOURING TOPIC 159 (similarity 0.92)
+Key terms: preference reinforcer, reinforcers, choice, relative
+- Advances in Preference and Reinforcer Assessment Research
+- New Developments in Preference and Reinforcer Assessment Research
+- A preference analysis of reinforcer variation and choice
+
+NEIGHBOURING TOPIC 177 (similarity 0.82)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change
+
+NEIGHBOURING TOPIC 7 (similarity 0.81)
+Key terms: reinforcement alternative, alternative reinforcement, alternative behavior, differential reinforcement
+- Resurgence following differential reinforcement of alternative behavior implemented with and without extinction
+- Noncontingent reinforcement without extinction plus differential reinforcement of alternative behavior during treatment of problem behavior
+- Concurrent schedules of differential reinforcement of alternative behavior in the treatment of problem behavior without extinction

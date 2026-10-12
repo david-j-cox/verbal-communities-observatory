@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"General Behavior Change Principles and Procedures\", \"definition\": \"Broad, mixed work on core behavior-change concepts and methods, including shaping, chaining, defining target behavior, motivating operations, behavior plans, functional analysis of problem behavior, and goal setting.\", \"distinct_from_neighbours\": \"It centers on practical concepts and procedures for producing behavior change, not evolutionary behavior theory, the scientific foundations of the field, or laboratory work on behavioral momentum and stability.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1370,
+  "output": 360
+ },
+ "generated_utc": "2026-10-10T19:11:22+00:00"
+}

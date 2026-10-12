@@ -1,0 +1,53 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 25
+Key terms: brain injury, injury rehabilitation, injured, acquired brain
+
+Titles closest to the topic's center, conference presentations:
+- Brain Injury: Review of Behavior Analytic Interventions and a Case Demonstration
+- Behavior Intervention in Brain Injury Rehabilitation Settings
+- Behavior Analytic Intervention for Behavior Disorders in Individuals With Brain Injuries
+- Application of Behavioral Interventions in Acquired Brain Injury Rehabilitation
+- We Are in This Together: Applications of Applied Behavior Strategies in Collaboration of Adults With Acquired Brain Injury
+- Brain Injury Rehabilitation and Applied Behavior Analysis: Recent Research on Delay Discounting, Language Assessment, Staff Training, and Program Evaluation
+- Demystifying the Brain Injury Rehabilitation Continuum of Care: More Settings for Behavior Analysts to Explore
+- Research and Practice in Brain Injury Rehabilitation
+- Brain Injury Intervention
+- Expanding Applied Behavior Analysis Research and Practice to Brain Injury Rehabilitation
+
+Titles closest to the topic's center, journal articles:
+- The rehabilitation of verbal operants following acquired brain injury
+- A Systematic Review of Direct Instruction for Individuals with Acquired Brain Injuries and Chronic Brain Disorders
+- Caring for someone with an acquired brain injury: The role of psychological flexibility
+- A Case Study Demonstration of Brief Experimental Analysis to Evaluate Writing Interventions for a Student with a Traumatic Brain Injury
+- Delay discounting in traumatic brain injury: A potential avenue for growth in experimental analysis.
+- Intraverbal Assessment for Persons with Aphasia or Other Acquired Brain Injury
+- How do people with acquired brain injury interpret the Valued Living Questionnaire? A cognitive interviewing study
+- Using Wearable Technology to Predict the Occurrence of Severe Behavior Problems among Neurodiverse Individuals: A Systematic Review
+- The Spinal Cord, Not to Be Forgotten: the Final Common Path for Development, Training and Recovery of Motor Function
+
+NEIGHBOURING TOPIC 121 (similarity 0.67)
+Key terms: self injury, self-injury, treatment self, restraint
+- Establishing inhibitory stimulus control of automatically maintained self-injury.
+- Interventions for Automatically Reinforced Self-Injury: Current Knowledge and Future Directions
+- Examining the Presence, Frequency, and Associated Characteristics of Nonsuicidal Self-Injury by Proxy: Initial Validation of the Nonsuicidal Self-Injury by Proxy Questionnaire (NSSIBPQ)
+
+NEIGHBOURING TOPIC 94 (similarity 0.65)
+Key terms: ptsd, trauma-informed care, posttraumatic stress, stress disorder
+- From Theory to Practice: Incorporating Trauma-Informed Care Into the Assessment and Treatment of Problem Behavior
+- On Incorporating Trauma-Informed Care into Applied Behavior Analytic Research and Practice
+- Advancing a Research Agenda for Trauma-informed Care in Behavior Analysis
+
+NEIGHBOURING TOPIC 43 (similarity 0.62)
+Key terms: persons developmental, intellectual developmental, individuals developmental, developmental disabilities
+- Innovations in the Assessment of Challenging Behavior for Individuals With Developmental Disabilities
+- Practical Applications in Assessing and Treating Common Challenging Behavior for Individuals Diagnosed With Intellectual and Developmental Disabilities
+- Expanding Behavior Analysis to Promote Better Outcomes for Persons With Disabilities

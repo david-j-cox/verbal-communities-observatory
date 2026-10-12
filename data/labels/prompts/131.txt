@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 131
+Key terms: autism, autistic, spectrum, disorder
+
+Titles closest to the topic's center, conference presentations:
+- Addressing the Needs of Children With Autism Across Social, Academic, and Behavioral Domains
+- Supporting Autistic Individuals Into Adulthood
+- Addressing the Unique Social Needs of Individuals With High-Functioning Autism
+- Enhancing Assent, Engagement, and Inclusion: Individualized Approaches for Supporting Autistic Youth in Educational and Research Settings
+- Social Validity and the Spectrum: Finding the Rhythm of Autism in the Heart of ABA
+- Enhancing Quality of Life for Adults With Autism Through Behavioral Supports
+- Towards a New Definition of Comprehensive Service: Socially Valid Behavior Analytic Supports for Autistic Teens, Adults, and Their Families
+- Current Issues in Autism Spectrum Disorder Intervention: Assent and Social Validity
+- The Contributing Citizen: Helping Adults With Autism Fit in the Working World
+- Empirical Studies for Understanding and Helping Persons With Autism and Developmental Disabilities in Korea
+
+Titles closest to the topic's center, journal articles:
+- The University of California at Los Angeles‐Young Autism Project: A systematic review of replication studies
+- It's Time to Play: Peer‐Mediated Intervention With a Student With Autism at Recess
+- The beginning of a friendship: Teaching individuals with autism to identify shared interests
+- Improving goals written for individuals with autism: Preliminary results on assessing meaningfulness and relevance to adulthood
+- The development and validation of The Social Referencing Observation Scale as a screening instrument for autism spectrum disorder
+- The Ethics of Actually Helping People: Targeting Skill Acquisition Goals That Promote Meaningful Outcomes for Individuals with Autism Spectrum Disorder
+- Measuring psychological flexibility in autistic adults: Examining the validity and reliability of the AAQ-II, BEAQ, and VQ
+- Missing from the Narrative: A Seven-Decade Scoping Review of the Inclusion of Black Autistic Women and Girls in Autism Research
+- A First-Stop Read for New Autism Caregivers and All Professionals: Review of Ala’i-Rosales and Heinkel-Wolfe’s Responsible and Responsive Parenting in Autism: Between Now and Dreams
+- Reinforcing the prospective remembering of children with autism spectrum disorder
+
+NEIGHBOURING TOPIC 147 (similarity 0.91)
+Key terms: children autism, autistic, autism spectrum, spectrum disorder
+- Evaluating Interventions for the Treatment of Autism
+- A convergent review of interventions for school-age children with autism spectrum disorder.
+- Early Intervention for Children With Autism; Outcomes Short and Long Term
+
+NEIGHBOURING TOPIC 4 (similarity 0.91)
+Key terms: autism service, autism spectrum, spectrum disorder, children autism
+- Defining and Measuring Meaningful Outcomes in ABA Services for Autism Spectrum Disorders
+- Alliance for Scientific Autism Intervention: System Components and Outcome Data from High-Quality Service Delivery Organizations
+- Current Trends in the Assessment of Treatment Outcomes of Behavioral Services for Autism and Other Developmental Disabilities
+
+NEIGHBOURING TOPIC 152 (similarity 0.88)
+Key terms: analysis autism, autistic, autism spectrum, children autism
+- Have We Forgotten Our Roots? Applied Behavior Analysis and the Assessment and Treatment of Significant Behavioral Challenges in Adults With Autism and other Intellectual Disabilities
+- Beyond Autism: Applied Behavior Analysis for All
+- The Autism Society Applied Behavior Analysis (ABA) Commission: Making Informed Decisions

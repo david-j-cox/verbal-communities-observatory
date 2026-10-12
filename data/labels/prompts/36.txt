@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 36
+Key terms: cultural responsiveness, culturally, culture, practices
+
+Titles closest to the topic's center, conference presentations:
+- Cultural Representation and Responsiveness in Behavior Analytic Research
+- Cultural Issues in Behavior Analysis Practice
+- Advancing Cultural Responsiveness in Behavior Analysis: Insights, Tools, and Strategies From Diverse Perspectives
+- Culture, Race, and Behavior Analysis
+- Culturally Responsive Behavior Analytic Practice: Conceptualization, Training, and Impact
+- Conceptual and Methodological Topics in Cultural Behavior Analysis
+- Cultural and Social Behavior in Behavioral Perspective
+- Evolving Cultural Responsiveness as a Behavior Analyst: Incorporating Cultural Competence and Humility into Practice
+- Cultural Responsiveness in Research and Mentorship Within Behavior Analysis
+- Behavior Analysis and Cultural Competence: Bridging Knowledge and Practice
+
+Titles closest to the topic's center, journal articles:
+- Cultural responsiveness in applied behavior analysis: Research and practice
+- Cultural responsiveness in applied behavior analysis: Self‐assessment
+- Inherent Tensions and Possibilities: Behavior Analysis and Cultural Responsiveness
+- Behavior Analysts’ Training and Practices Regarding Cultural Diversity: the Case for Culturally Competent Care
+- Navigating Cultural Differences During the Delivery of Behavior Analysis Services in Austria
+- Cultural Responsiveness Curriculum for Behavior Analysts: A Meaningful Step Toward Social Justice
+- Cultural Humility in the Practice of Applied Behavior Analysis
+- A Contextual Behavioral Framework for Enhancing Cultural Responsiveness in Behavioral Service Delivery for Latino Families
+- Review of Multiculturalism and Diversity in Applied Behavior Analysis , edited by Conners and Capell
+- Culturally Sensitive Behavior Intervention Materials: a Tutorial for Practicing Behavior Analysts
+
+NEIGHBOURING TOPIC 82 (similarity 0.73)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 18 (similarity 0.65)
+Key terms: racism, justice, human, social
+- Why So Racist? A Function-Based and Organizational Assessment and Interventions for Policing
+- Leading the Charge: A Look Inside the Behavior Analysis in Practice Emergency Series of Publications on Systemic Racism and Police Brutality
+- Behavior Analysis and Restorative Justice: Birds of a Feather?
+
+NEIGHBOURING TOPIC 53 (similarity 0.64)
+Key terms: creativity, psychology, psychological, science
+- Complex Behavior and Behavioral Artistry
+- Behavioral contrast: Research and areas for investigation
+- Behavioral Interpretations of Creativity

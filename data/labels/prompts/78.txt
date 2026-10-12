@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 78
+Key terms: memory, remembering, forgetting, brain
+
+Titles closest to the topic's center, conference presentations:
+- Behavior Analytic Approaches to the Concepts of “Mind” and Tonal Memory
+- Convergent Multiple Control and the Role of Verbal Behavior in Recall
+- Adaptive Memory: Remembering With a Stone-Age Brain
+- Episodic-like Memory: Effects of Aging, Behavioral Interventions, and Cholinergic Activity
+- How Much of Apparent Complex Cognition Can a Purely Behavioral Account Explain?
+- Associative Learning in Dementia: Implications for the Role of Verbal Strategies in Associative Learning
+- I Forgot the Name of this Talk: A Tutorial on Remembering
+- The Fiction of Memory
+- Bias for Information: Learning Mechanisms and Frontocortical Contributions
+- A Likelihood Ratio Model of Recognition Memory in the Real World
+
+Titles closest to the topic's center, journal articles:
+- The Simple Memory Span Experiment: A Behavioral Analysis
+- Direct remembering, mediated remembering, and atypical forgetting functions
+- Peter Urcuioli's lasting contribution: Animal memory research and an important model of stimulus class formation
+- Concurrent cognitive processes in rat serial pattern learning: II. Discrimination learning, rule learning, chunk length, and multiple-item memories
+- Time, Sleep, and Stimulus Equivalence-Based Relational Memory
+- Testing complex animal cognition: Concept learning, proactive interference, and list memory
+- Identity Matching and Stimulus Equivalence Learning Paradigms for Memory Rehabilitation of Explicit Memory Deficits: A Scoping Review
+- Olfactory stimulus control and the behavioral pharmacology of remembering.
+- Why study cognition in the wild (and how to test it)?
+- A Neuro-Operant Analysis of Mnemonic Recognition
+
+NEIGHBOURING TOPIC 185 (similarity 0.71)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability
+
+NEIGHBOURING TOPIC 167 (similarity 0.70)
+Key terms: stimulus relations, formation, stimulus equivalence, stimulus generalization
+- Some Important Variables for the Formation of Stimulus Equivalence Classes
+- Conceptual and Experimental Topics in the Formation of Stimulus Equivalence
+- Stimulus Equivalence: Conceptual and Experimental Issues
+
+NEIGHBOURING TOPIC 32 (similarity 0.70)
+Key terms: competing stimulus, attention, task, assessment
+- Initial outcomes of an augmented competing stimulus assessment
+- Further Evaluations of Competing Stimulus Assessments and the Effects of Competition on On-Task Behavior
+- Competing Stimulus Assessments: Procedural Modifications to Improve Effectiveness and Efficiency

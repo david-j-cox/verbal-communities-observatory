@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Delay and probability discounting\",\"definition\":\"Research on how delay, uncertainty, and social distance reduce the subjective value of outcomes, including discounting assessment methods, magnitude and framing effects, losses versus gains, and quantitative discounting models.\",\"distinct_from_neighbours\":\"Focuses on devaluation of delayed or uncertain outcomes, rather than conditioned reinforcement and reinforcement-rate effects on choice, behavioral economics broadly, or general models of preference and changeover.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1372,
+  "output": 174
+ },
+ "generated_utc": "2026-10-10T19:06:55+00:00"
+}

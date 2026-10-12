@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Peer Review and Editorial Process\",\n\"definition\": \"Work on how scholarly publishing operates: editors describing peer review, guidance on reviewing and responding to reviewer comments, preparing manuscripts, and editorial notes acknowledging reviewers, guest editors, and editorial boards.\",\n\"distinct_from_neighbours\": \"Focuses on the mechanics of manuscript review and editorial service, not tributes to individual scholars, book reviews and intellectual history, or analyses of particular journals' publication and citation records.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1165,
+  "output": 181
+ },
+ "generated_utc": "2026-10-11T01:32:11+00:00"
+}

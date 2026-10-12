@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 10
+Key terms: analyst, professional, public, training
+
+Titles closest to the topic's center, conference presentations:
+- Behavior Analysts in the Making
+- A Behavior Analyst’s Journey
+- Professional Collaboration Between Behavior Analysts and the Rest of the World: It’s Not So Tough
+- The Shaping of Behavior Analysts as Scientist Practitioners: A Symposium Sponsored by the Behavioral Development Special Interest Group (DEV SIG)
+- Behavior Analysts, Let's Write!
+- Roles of Behavior Analysts in Healthcare: Ranging Responsibilities but Steady Science
+- Behavior Analysts, Let’s Write!
+- Behavior Analysts and Psychotherapy: Examining Common Scientific Roots
+- Behavior Analysts and Public Advocacy: Lessons Learned, Pathways Forward
+- The Role of Behavior Analysts in Healthcare: How Clinicians Can Forge the Path Into Medicine
+
+Titles closest to the topic's center, journal articles:
+- The Special Issue on the Education of Behavior Analysts: Common Themes
+- Some Thoughts on Shaping Future Behavior Analysts: a Call to Stay True to Our Roots
+- The Perceptions and Experiences of Professionals Collaborating with Behavior Analysts
+- Towards a Meaningful Analysis of Behavior Analyst Preparation Programs
+- The Road to Licensure of Behavior Analysts in Texas: History and Lessons Learned
+- Professional Development of Behavior Analysts in Europe: A Snapshot for 21 Countries
+- Introducing LADER: A Structured Approach to Effective Professional Interactions for Behavior Analysts
+- Why We All Need to Shape the Profession of Behavior Analysis through Advocacy and How to Get Started
+- Behavior Analysis at a Macro Level: The Case for Behavior Analysts in Public Policy Work
+- Putting the power of behavior analysis in the hands of nonbehavioral professionals: Toward a blueprint for dissemination †
+
+NEIGHBOURING TOPIC 150 (similarity 0.91)
+Key terms: certified behavior, board certified, certification, behavior analyst
+- Licensure of Behavior Analysts: Ethical Considerations, Lessons Learned, and Next Steps
+- An Update on the Behavior Analyst Certification Board
+- What makes a good board certified behavior analyst? Employer opinions of newly credentialed behavior analysts.
+
+NEIGHBOURING TOPIC 77 (similarity 0.84)
+Key terms: graduate training, undergraduate, training behavior, training programs
+- Issues Regarding Graduate Training in Behavior Analysis: Curriculum Content
+- Saving the World With Behavior Analysis: One Undergraduate Student at a Time
+- Essential Readings for Undergraduate Students in Behavior Analysis: A Survey of Behavior Analytic Faculty and Practitioners
+
+NEIGHBOURING TOPIC 82 (similarity 0.83)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation

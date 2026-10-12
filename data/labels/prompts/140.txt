@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 140
+Key terms: sexual, arousal, treatment, assessment
+
+Titles closest to the topic's center, conference presentations:
+- “Problematic” in Sexual Behavior: Operational Definitions and Interventions
+- Sexual Behavior: Research and Practice SIG Symposium 2 of 3: Lessons Learned: Sex Research and the Science of Changing Sexual Behavior
+- Sexual Behavior Assessments and Sex Education
+- Sexuality, Sexual Behavior, and Psychological Flexibility
+- Behavioral Processes Underlying Sexual Risk Behavior: The Importance of Domain Specificity in Clinically Relevant Discounting Research
+- Research-Based Behavior Analytic Interventions for Sexual Behaviors: A Review of the Research and Implementation Procedures
+- Behavioral Issues Related to Marriage and Sexuality
+- PDS: Difficulties and Barriers to the Assessment and Treatment of Inappropriate Sexual Behavior
+- Ethics, Interventions, and Consultation in the Area of Sexuality
+- Sexual Behavior Delay Discounting Tasks and What They Can Teach Us
+
+Titles closest to the topic's center, journal articles:
+- A multiple‐stimulus‐without‐replacement assessment for sexual partners: Purchase task validation
+- Implicit and Explicit Attitudes Toward Mainstream and BDSM Sexual Practices and Their Relation to Interviewer Behavior: an Analogue Study
+- A multiple‐stimulus‐without‐replacement assessment for sexual partners: Test–retest stability
+- Editor's Note: Societal changes and expression of concern about Rekers and Lovaas' (1974) Behavioral Treatment of Deviant Sex‐Role Behaviors in a Male Child
+- The weight of harm: A Response to “Editor’s Note: Societal changes and expression of concern about Rekers and Lovaas’ (1974) Behavioral Treatment of Deviant Sex-Role Behaviors in a Male Child”
+- Behavioral economics and safe sex: Examining condom use decisions from a reinforcer pathology framework
+- Examination of sex-specific publication trends within the Journal of Contextual Behavioral Science between 2012 and 2017
+- Comparison of arousal and preference assessment outcomes for sex offenders with intellectual disabilities
+- A pilot study of acceptance and commitment therapy for sexual minorities experiencing work stress
+- Fluency and the Maintenance of Skills Related to Sex Laws for Individuals Adjudicated for Illegal Sexual Behavior
+
+NEIGHBOURING TOPIC 92 (similarity 0.61)
+Key terms: women behavior, participation women, gender, role
+- Women in Behavior Analysis: A Review of the Literature
+- Participation of Women in Behavior Analysis Research: Some Recent and Relevant Data
+- Representation of women in behavior analysis: An empirical analysis.
+
+NEIGHBOURING TOPIC 105 (similarity 0.56)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 35 (similarity 0.53)
+Key terms: destructive, aggression, aggressive, attention
+- Evaluating the effects of physical reactions on aggression via concurrent‐operant analyses
+- Assessment and treatment of aggressive behavior maintained by access to physical attention.
+- Effects of Noncontingent Reinforcement on the Persistence and Resurgence of Mild Aggression

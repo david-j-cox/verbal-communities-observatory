@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Social Behavior, Cooperation, and Altruism\",\"definition\":\"Experimental and applied analysis of social behavior: cooperation, sharing, altruism, group and interpersonal contingencies, intergroup aggression, and the reinforcing value of social interaction, including assessments of social functions and social time allocation.\",\"distinct_from_neighbours\":\"Concerns behavior between people and the contingencies controlling it, not creativity and complex behavior, stakeholder judgments of social validity, or disseminating behavior science through social media.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1524,
+  "output": 179
+ },
+ "generated_utc": "2026-10-10T19:07:13+00:00"
+}

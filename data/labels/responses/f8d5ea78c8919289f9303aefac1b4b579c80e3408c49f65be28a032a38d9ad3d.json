@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Family-Centered and Parent-Mediated Behavioral Services\",\"definition\":\"Work on involving parents and families in behavior-analytic assessment and treatment, including parent-mediated and family-centered service models, parent perspectives and emotional responses, parent well-being, and partnerships between practitioners and families.\",\"distinct_from_neighbours\":\"Centers on families' roles, perspectives, and well-being within services, rather than methods for training parents' skills, child assessment and treatment generally, or early-intervention care and rapport with young children.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1628,
+  "output": 180
+ },
+ "generated_utc": "2026-10-10T19:11:02+00:00"
+}

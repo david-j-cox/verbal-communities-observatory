@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presented and Published</title>
+<style>
+:root{
+  --bg:#ffffff; --ink:#111111; --muted:#555555; --faint:#8a8a8a; --rule:#dddddd;
+  --soft:#f5f5f3; --hl:#fdeced; --sel:#d62728; --ex:#1f5fa8; --pass:#2e6b34; --fail:#9c2a1d;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:15px/1.5 Georgia,'Times New Roman',serif}
+header{border-bottom:1px solid var(--rule);padding:14px 24px 0}
+header h1{font-size:19px;font-weight:normal;margin:0 0 4px}
+header p{margin:0 0 10px;color:var(--muted);font-size:13.5px;max-width:980px}
+nav.tabs{display:flex;gap:4px;flex-wrap:wrap}
+nav.tabs button{font:inherit;font-size:14.5px;background:none;border:1px solid var(--rule);
+  border-bottom:none;padding:7px 16px;cursor:pointer;color:var(--muted);margin-bottom:-1px;
+  border-radius:4px 4px 0 0}
+nav.tabs button.on{background:var(--bg);color:var(--ink);border-color:var(--rule);
+  border-bottom:1px solid var(--bg)}
+section.tab{display:none}
+section.tab.on{display:block}
+button.lnk{font:inherit;font-size:14px;background:none;border:1px solid var(--ink);padding:5px 12px;
+  cursor:pointer;border-radius:3px;color:var(--ink)}
+button.lnk:hover{background:var(--soft)}
+button.tl{font:inherit;background:none;border:none;padding:0;color:inherit;cursor:pointer;text-align:left}
+button.tl:hover{text-decoration:underline}
+.small{font-size:13px;color:var(--muted)}
+h2{font-size:18px;font-weight:normal;margin:0 0 8px}
+h3{font-size:15.5px;font-weight:normal;font-style:italic;margin:20px 0 6px}
+p{margin:0 0 10px}
+.prose{max-width:none}
+table{border-collapse:collapse;font-size:13.5px}
+th{font-weight:normal;text-align:left;border-bottom:1px solid var(--ink);padding:3px 12px 3px 0;vertical-align:bottom}
+td{padding:3px 12px 3px 0;vertical-align:top}
+tbody tr:last-child td{border-bottom:1px solid var(--ink)}
+thead tr:first-child th{border-top:1px solid var(--ink)}
+td.n,th.n{text-align:right;white-space:nowrap}
+.tblwrap{overflow-x:auto;margin:6px 0 10px}
+
+/* Method tab */
+#methods{padding:16px 24px 28px;max-width:1040px}
+.pick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:8px}
+.exbtn{font:inherit;font-size:13.5px;text-align:left;background:var(--bg);border:1px solid var(--rule);
+  border-radius:4px;padding:6px 11px;cursor:pointer;line-height:1.3}
+.exbtn{display:flex;flex-direction:column;justify-content:flex-start}
+.exbtn small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.exbtn.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.searchrow{position:relative;margin:4px 0 14px;max-width:620px}
+.searchrow input{width:100%;font:14px Georgia,serif;padding:6px 8px;border:1px solid #bbb}
+.hits{position:absolute;left:0;right:0;top:100%;background:var(--bg);border:1px solid #bbb;
+  border-top:none;max-height:300px;overflow:auto;z-index:5;display:none}
+.hits div{padding:5px 8px;font-size:13px;cursor:pointer;border-bottom:1px solid #f0f0f0}
+.hits div:hover{background:var(--soft)}
+.hits .src{color:var(--muted);font-size:12px}
+.steps{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--rule);margin-bottom:16px}
+.steps button{font:inherit;font-size:14px;background:none;border:none;padding:8px 14px 8px 0;
+  margin-right:6px;cursor:pointer;color:var(--faint);border-bottom:2px solid transparent;margin-bottom:-1px}
+.steps button.on{color:var(--ink);border-bottom-color:var(--ink)}
+.steps button span{display:inline-block;width:20px;height:20px;border-radius:50%;
+  border:1px solid currentColor;text-align:center;line-height:18px;font-size:12px;margin-right:6px}
+.current{border-left:3px solid var(--ink);background:var(--soft);padding:8px 14px;margin:0 0 16px}
+.current .t{font-size:16px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.titles{list-style:none;padding:0;margin:0}
+.titles li{padding:5px 0;border-bottom:1px solid #eee;font-size:13.5px}
+.titles li .src{display:block;color:var(--muted);font-size:12px}
+.kmwrap{position:relative;height:340px;max-width:620px;border:1px solid var(--rule);margin:8px 0}
+.kmwrap canvas,.cloudwrap canvas{width:100%;height:100%;display:block}
+.cloudwrap{position:relative;height:440px;border:1px solid var(--rule);margin:8px 0}
+.kmbtns{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 4px}
+.kmbtns button:disabled{opacity:.45;cursor:default}
+.flow{display:grid;grid-template-columns:1.4fr auto 0.8fr auto 1.4fr;gap:10px;align-items:stretch;margin:8px 0}
+.fbox{border:1px solid var(--rule);border-radius:4px;padding:10px 12px;font-size:14px;min-width:0}
+.fbox.mid{background:var(--soft);display:flex;flex-direction:column;justify-content:center}
+.fbox.out{border-color:var(--ink)}
+.fh{font-size:12.5px;color:var(--muted);text-transform:none;margin-bottom:6px}
+.farrow{align-self:center;font-size:22px;color:var(--faint)}
+.chip{display:inline-block;border:1px solid #bbb;border-radius:10px;padding:0 8px;font-size:13px;margin:2px 0}
+.nbg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.nbg .card{margin:0}
+details.prompt{margin:12px 0}
+details.prompt summary{cursor:pointer;color:var(--muted);font-size:13.5px}
+details.prompt pre{white-space:pre-wrap;font:12.5px/1.45 Menlo,Consolas,monospace;background:var(--soft);
+  padding:10px 12px;border-radius:4px;max-height:420px;overflow:auto}
+.gbar{display:flex;height:16px;max-width:620px;border:1px solid #999;margin:4px 0 6px}
+.gbar span{display:block;height:100%}
+.titles li.me{background:var(--hl);box-shadow:inset 3px 0 0 var(--sel);padding-left:8px}
+.foot{display:flex;justify-content:space-between;margin-top:22px;gap:10px;flex-wrap:wrap}
+.card{background:var(--soft);border-radius:4px;padding:12px 14px;margin:10px 0}
+.bchead{font-style:italic;margin:16px 0 6px}
+.bcrow{display:grid;grid-template-columns:52px 1fr;gap:10px;margin:0 0 10px}
+.bccos{text-align:right;font-size:14px;padding-top:6px}
+.bcmain{min-width:0}
+canvas.bc{width:100%;height:30px;display:block;border:1px solid var(--rule)}
+.bctitle{font-size:13.5px;margin-top:3px}
+.nbstrip{display:flex;flex-wrap:wrap;gap:3px;margin:8px 0 4px;max-width:620px}
+.nbstrip i{width:13px;height:13px;border-radius:50%;border:1.3px solid var(--ink);display:block}
+.nbstrip i.p{background:var(--ink)}
+.key{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--muted);margin:2px 0 6px}
+.key i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;
+  vertical-align:-1px;border:1.3px solid var(--ink)}
+.nblist{max-height:330px;overflow:auto;border:1px solid var(--rule);margin:8px 0}
+.nblist table{width:100%}
+.nblist td{border-bottom:1px solid #f0f0f0;font-size:13px}
+.nblist tbody tr:last-child td{border-bottom:1px solid #f0f0f0}
+.mk{display:inline-block;width:9px;height:9px;border-radius:50%;border:1.2px solid var(--ink);margin-right:2px}
+.mk.p{background:var(--ink)}
+.eq{font-size:14.5px;margin:6px 0;overflow-x:auto;white-space:nowrap}
+.check{border:1px solid var(--rule);border-radius:4px;padding:12px 14px;margin:10px 0;
+  display:grid;grid-template-columns:auto 1fr;gap:4px 14px}
+.check .num{font-size:22px;color:var(--faint);line-height:1.1}
+.check>div{min-width:0}
+.badge{display:inline-block;font-size:12.5px;padding:1px 8px;border-radius:10px;
+  border:1px solid currentColor;margin-left:6px;font-style:normal}
+.badge.pass{color:var(--pass)} .badge.fail{color:var(--fail)}
+.outcome{border-left:3px solid var(--ink);padding:8px 14px;margin:14px 0;background:var(--soft)}
+table.two td,table.two th{padding:6px 14px 6px 0}
+table.two td.me{outline:2px solid var(--sel);outline-offset:-2px}
+table.two td.fl{background:#eee}
+svg text{font-family:Georgia,'Times New Roman',serif}
+#tip{position:fixed;padding:5px 8px;background:var(--bg);border:1px solid #999;max-width:380px;
+  display:none;pointer-events:none;font-size:12.5px;z-index:9;line-height:1.35}
+
+/* Results tab */
+#results{padding:12px 24px 28px}
+#rgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#rgrid>div,#rlow>div,.cols>div{min-width:0}
+.pane{position:relative;height:500px;border:1px solid #eee}
+.pane canvas{width:100%;height:100%;display:block}
+.cap{font-size:13.5px;margin:0 0 4px}
+.cap b{font-weight:normal;font-size:15px}
+#rlow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+#det{font-size:13.5px;min-height:200px}
+#det .t{font-size:15.5px;margin-bottom:6px}
+#det table{margin:6px 0 10px}
+#det .flist{max-height:260px;overflow:auto;border:1px solid var(--rule);padding:4px 8px;margin:6px 0}
+#det .flist div{padding:3px 0;border-bottom:1px solid #f2f2f2;font-size:13px}
+#rq{width:100%;font:13.5px Georgia,serif;padding:6px 8px;border:1px solid #bbb;margin:0 0 6px}
+#glist{max-height:420px;overflow:auto;border:1px solid var(--rule)}
+#glist table{width:100%}
+#glist tr{cursor:pointer}
+#glist tr:hover td{background:#f6f6f6}
+#glist tr.on td{background:var(--hl)}
+#glist td{border-bottom:1px solid #f2f2f2;font-size:13px;padding:4px 8px 4px 6px}
+#glist th{padding:4px 8px 4px 6px;position:sticky;top:0;background:var(--bg)}
+#rhits div{padding:4px 6px;font-size:13px;cursor:pointer;border-bottom:1px solid #f2f2f2}
+#rhits div:hover{background:var(--soft)}
+
+/* Checks tab */
+#checks{padding:16px 24px 32px;max-width:1040px}
+#checks h2{margin-top:26px}
+#checks h2:first-child{margin-top:0}
+.chart{max-width:720px}
+#provenance{margin-top:28px}
+
+@media (max-width: 900px){
+  header{padding:12px 16px 0}
+  #methods,#results,#checks{padding-left:16px;padding-right:16px}
+  .cols,#rgrid,#rlow{grid-template-columns:1fr}
+  .pick{grid-template-columns:1fr 1fr}
+  .nbg{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr}
+  .farrow{transform:rotate(90deg);justify-self:center}
+  .pane{height:380px}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>What is presented and what is published: interactive supplement</h1>
+  <p>The Method tab follows one title through each step, using a worked example or any title you
+     search for. The Results tab shows every title and subject-area group, as in Figures 1 and 2.
+     The Checks tab reports the tests behind the approach.</p>
+  <nav class="tabs">
+    <button data-tab="methods" class="on">Method, worked through</button>
+    <button data-tab="results">Results</button>
+    <button data-tab="checks">Checks</button>
+  </nav>
+</header>
+
+<section id="methods" class="tab on">
+  <div class="pick" id="exrow"></div>
+  <div class="searchrow"><input id="mq" placeholder="Or search any title by a word or phrase" autocomplete="off">
+    <div class="hits" id="mhits"></div></div>
+  <div class="steps" id="steps"></div>
+  <div id="stepbody"></div>
+  <div class="foot">
+    <button class="lnk" id="prev">Back</button>
+    <button class="lnk" id="next">Next</button>
+  </div>
+</section>
+
+<section id="results" class="tab">
+  <div id="rgrid">
+    <div><div class="cap"><b>Figure 1</b>&nbsp; Every title, placed by its two measures</div>
+      <div class="pane"><canvas id="c1"></canvas></div></div>
+    <div><div class="cap"><b>Figure 2</b>&nbsp; Subject-area groups, shaded by the proportion of titles flagged</div>
+      <div class="pane"><canvas id="c2"></canvas></div></div>
+  </div>
+  <div id="rlow">
+    <div id="det"></div>
+    <div>
+      <input id="rq" placeholder="Find a title or a group" autocomplete="off">
+      <div id="rhits"></div>
+      <div id="glist"></div>
+    </div>
+  </div>
+</section>
+
+<section id="checks" class="tab"><div id="checkbody"></div>
+  <p class="small" id="provenance"></p></section>
+<div id="tip"></div>
+
+<script>
+const D = __DATA__;
+const M = D.meta, N = M.n, K = M.k;
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const fmt = (v, d = 0) => Number(v).toLocaleString('en-US', {minimumFractionDigits: d, maximumFractionDigits: d});
+const pct = (v, d = 0) => (100 * v).toFixed(d) + '%';
+const dec = (v, d = 2) => v.toFixed(d).replace(/^(-?)0\./, '$1.');
+const sgn = (v, d = 2) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+/* ---------------- decode ---------------- */
+function bytes(s) { const b = atob(s), a = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) a[i] = b.charCodeAt(i); return a; }
+const NN = new Uint16Array(bytes(D.nn).buffer), NNS = bytes(D.nns);
+const ART = new Uint16Array(bytes(D.art).buffer), ARTS = new Uint16Array(bytes(D.arts).buffer);
+const NA = ART.length / N;
+const SRC = ['ABAI', 'APBA', 'SQAB', 'General journals', 'Specialty journals'];
+const isP = i => D.src[i] < 3;
+const LOGIT = Math.log(M.pi / (1 - M.pi));
+const P = new Uint8Array(N), LOR = new Float64Array(N), LO = new Float64Array(N), SKEW = new Uint8Array(N), FLAG = new Uint8Array(N);
+for (let i = 0; i < N; i++) {
+  let p = 0; for (let r = 0; r < K; r++) p += isP(NN[i * K + r]) ? 1 : 0;
+  P[i] = p;
+  LOR[i] = Math.log((p + M.h) / (K - p + M.h)) - LOGIT;
+  LO[i] = LOR[i] - 1.96 * Math.sqrt(1 / (p + M.h) + 1 / (K - p + M.h));
+  SKEW[i] = LO[i] > 0 ? 1 : 0;
+  FLAG[i] = SKEW[i] && D.count[i] < M.cut ? 1 : 0;
+}
+let nFlag = 0; for (let i = 0; i < N; i++) nFlag += FLAG[i];
+if (nFlag !== M.n_flag) console.warn('flag count in page differs from the analysis', nFlag, M.n_flag);
+const minP = (() => { for (let p = 0; p <= K; p++) { const l = Math.log((p + M.h) / (K - p + M.h)) - LOGIT - 1.96 * Math.sqrt(1 / (p + M.h) + 1 / (K - p + M.h)); if (l > 0) return p; } })();
+const G = new Map(D.groups.map(g => [g.id, g]));
+const EX = D.examples, LET = ['A', 'B', 'C', 'D'];
+const exOf = i => EX.findIndex(e => e.i === i);
+const lower = D.titles.map(t => t.toLowerCase());
+const src = i => `${esc(D.venues[D.venue[i]])}, ${D.year[i]}`;
+const kindOf = i => FLAG[i] ? 'flagged' : SKEW[i] ? 'skewed_many' : (D.count[i] < M.cut ? 'few_not_skewed' : 'neither');
+const KIND = {
+  flagged: 'Flagged: presentation-heavy neighborhood, few closely related articles',
+  skewed_many: 'Not flagged: presentation-heavy neighborhood, many closely related articles',
+  few_not_skewed: 'Not flagged: few closely related articles, neighborhood not presentation-heavy',
+  neither: 'Not flagged: neither condition holds'};
+const shareOf = g => g.f / g.n;
+
+/* ---------------- tabs ---------------- */
+let tab = 'methods';
+function showTab(name) {
+  tab = name;
+  document.querySelectorAll('nav.tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === name));
+  document.querySelectorAll('section.tab').forEach(s => s.classList.toggle('on', s.id === name));
+  if (name === 'results') redrawResults(); else if (name === 'methods') renderStep(); else renderChecks();
+  window.scrollTo(0, 0);
+}
+document.querySelectorAll('nav.tabs button').forEach(b => b.onclick = () => showTab(b.dataset.tab));
+
+function setup(c) {
+  const r = c.getBoundingClientRect();
+  c.width = Math.max(1, r.width * devicePixelRatio); c.height = Math.max(1, r.height * devicePixelRatio);
+  const g = c.getContext('2d'); g.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+  return {g, w: r.width, h: r.height};
+}
+function haloText(g, s, x, y, color, align = 'left', size = 12.5) {
+  g.font = size + 'px Georgia,serif'; g.textAlign = align;
+  g.lineWidth = 3.5; g.strokeStyle = 'rgba(255,255,255,.92)'; g.strokeText(s, x, y);
+  g.fillStyle = color; g.fillText(s, x, y);
+}
+function search(q, max = 14) {
+  q = q.trim().toLowerCase(); if (q.length < 3) return [];
+  const out = []; for (let i = 0; i < N && out.length < max; i++) if (lower[i].includes(q)) out.push(i);
+  return out;
+}
+const tipEl = $('tip');
+function tip(ev, html) {
+  if (!html) { tipEl.style.display = 'none'; return; }
+  tipEl.style.display = 'block'; tipEl.innerHTML = html;
+  const x = Math.min(ev.clientX + 12, innerWidth - 390);
+  tipEl.style.left = x + 'px'; tipEl.style.top = (ev.clientY + 14) + 'px';
+}
+
+/* ---------------- Method tab ---------------- */
+const STEPS = ['Collect titles', 'Turn into numbers', 'Find 75 nearest', 'Count related articles',
+               'Combine conditions', 'Group and describe'];
+let cur = EX[0].i, step = 0, lastEx = 0;
+
+function setCurrent(i, toStep) {
+  cur = i; const k = exOf(i); if (k >= 0) lastEx = k;
+  if (toStep !== undefined) step = toStep;
+  if (tab !== 'methods') showTab('methods'); else renderStep();
+}
+function renderExRow() {
+  $('exrow').innerHTML = EX.map((e, k) => `<button class="exbtn${e.i === cur ? ' on' : ''}" data-k="${k}">
+    ${LET[k]}. ${esc(D.titles[e.i])}<small>${esc(KIND[e.kind])}</small></button>`).join('');
+  $('exrow').querySelectorAll('.exbtn').forEach(b => b.onclick = () => setCurrent(EX[+b.dataset.k].i));
+}
+$('mq').oninput = ev => {
+  const h = search(ev.target.value), box = $('mhits');
+  box.style.display = h.length ? 'block' : 'none';
+  box.innerHTML = h.map(i => `<div data-i="${i}">${esc(D.titles[i])}<br><span class="src">${src(i)}</span></div>`).join('');
+  box.querySelectorAll('div[data-i]').forEach(d => d.onclick = () => {
+    box.style.display = 'none'; $('mq').value = ''; setCurrent(+d.dataset.i, Math.max(step, 2));
+  });
+};
+document.addEventListener('click', ev => { if (!ev.target.closest('.searchrow')) $('mhits').style.display = 'none'; });
+
+function renderSteps() {
+  $('steps').innerHTML = STEPS.map((s, i) =>
+    `<button data-i="${i}" class="${i === step ? 'on' : ''}"><span>${i + 1}</span>${s}</button>`).join('');
+  $('steps').querySelectorAll('button').forEach(b => b.onclick = () => { step = +b.dataset.i; renderStep(); });
+  $('prev').style.visibility = step === 0 ? 'hidden' : 'visible';
+  $('next').textContent = step === STEPS.length - 1 ? 'See it in Figure 1' : 'Next: ' + STEPS[step + 1];
+}
+$('prev').onclick = () => { step = Math.max(0, step - 1); renderStep(); };
+$('next').onclick = () => { if (step === STEPS.length - 1) { goResults(cur); return; } step += 1; renderStep(); };
+
+function currentCard(i) {
+  const k = exOf(i);
+  return `<div class="current"><div class="small">${k >= 0 ? 'Worked example ' + LET[k] : 'Selected title'}
+    (${isP(i) ? 'presentation' : 'article'})</div><div class="t">${esc(D.titles[i])}</div>
+    <div class="small">${src(i)}</div></div>`;
+}
+function renderStep() {
+  renderSteps(); renderExRow();
+  const body = $('stepbody');
+  const html = [step1, step2, step3, step4, step5, step6][step](cur);
+  body.innerHTML = (step === 1 ? '' : currentCard(cur)) + html;
+  if (step === 0) $('reshuf').onclick = () => { sampleSeed++; renderStep(); };
+  if (step === 1) bindBars();
+  if (step === 2) bindNeighbors();
+  if (step === 3) bindArticles();
+  if (step === 4) $('toRes').onclick = () => goResults(cur);
+  if (step === 5) bindStep6();
+}
+
+let sampleSeed = 0;
+function sample(pred, n, seed) {
+  // A fixed draw for each title and seed, so the lists do not jump about on redraw.
+  const out = [], seen = new Set(); let k = 0;
+  while (out.length < n && k < 50000) {
+    const j = Math.floor((jit(k * 7919 + seed * 104729, 3) + 0.5) * N); k++;
+    if (!seen.has(j) && pred(j)) { seen.add(j); out.push(j); }
+  }
+  return out;
+}
+function step1(i) {
+  const seed = i + 31 * sampleSeed;
+  const pres = [...(isP(i) ? [i] : []), ...sample(j => isP(j) && j !== i, isP(i) ? 5 : 6, seed)];
+  const pub = [...(isP(i) ? [] : [i]), ...sample(j => !isP(j) && j !== i, isP(i) ? 6 : 5, seed + 1)];
+  const list = js => '<ul class="titles">' + js.map(j => `<li${j === i ? ' class="me"' : ''}>${esc(D.titles[j])}<span class="src">${src(j)}${j === i ? '; the selected title' : ''}</span></li>`).join('') + '</ul>';
+  return `<div class="prose"><h2>Step 1. Collect the titles</h2>
+  <p>We collected the titles of every research presentation in the ABAI, APBA, and SQAB
+  conference programs and every article in fourteen behavior-analysis journals (retrieved from
+  OpenAlex), ${M.window}. Each record holds the title, the venue, and the year.</p>
+  <p>Non-research items (e.g., award ceremonies, business meetings, journal front matter, and
+  memorials) were removed, leaving ${fmt(N)} titles: ${fmt(M.nP)} presentations and ${fmt(M.nA)}
+  articles. Below, the selected title appears beside titles drawn at random from each set.</p></div>
+  <div class="cols"><div><h3>Presented</h3>${list(pres)}</div><div><h3>Published</h3>${list(pub)}</div></div>
+  <p style="margin-top:10px"><button class="lnk" id="reshuf">Show other titles</button></p>
+  <div class="prose"><p>Nothing is grouped at this step. Step 2 turns each title into numbers that can be compared.</p></div>`;
+}
+let barsSorted = true;
+function stripEx() { const k = exOf(cur); return EX[k >= 0 ? k : lastEx]; }
+function step2() {
+  const e = stripEx(), k = EX.indexOf(e), a = e.vec[0];
+  const first = a.slice(0, 6).map(x => x.toFixed(3)).join(', ');
+  const row = (j, n) => `<div class="bcrow"><div class="bccos">${e.cos[n] === null ? '' : e.cos[n].toFixed(2)}</div>
+    <div class="bcmain"><canvas class="bc" data-n="${n}"></canvas>
+    <div class="bctitle">${esc(D.titles[j])}</div><div class="small">${src(j)}; ${isP(j) ? 'presentation' : 'article'}</div></div></div>`;
+  const note = exOf(cur) < 0 ? `<p class="small">Strips are available for the four worked examples only, so this step shows example
+    ${LET[k]}. Steps 3 to 5 use the title you selected.</p>` : '';
+  return currentCard(e.i) + `<div class="prose"><h2>Step 2. Turn each title into a list of numbers</h2>
+  ${note}
+  <p>A sentence-transformer model (${M.model}) converts each title into 384 numbers
+  ([${first}, and 378 more]). Titles with similar meanings receive similar numbers, even when
+  they share few words.</p>
+  <p>The similarity of two titles is the cosine similarity of their numbers, which runs from
+  about 0 for unrelated titles to 1 for titles with the same meaning. Two titles drawn at random
+  have a median similarity of ${dec(M.pair_median)}, and a title and its most similar title have
+  a median of ${dec(M.nn1)}.</p>
+  <p>Each strip shows a title's 384 numbers as bands (red positive, blue negative, pale near 0),
+  sorted by the top title's values. Similar titles repeat the top title's blue-to-red sweep. The
+  number at left is each title's similarity to the top title.</p></div>
+  <label class="small" style="cursor:pointer"><input type="checkbox" id="bctog" ${barsSorted ? '' : 'checked'}> Show original order</label>
+  <div class="bchead">The title</div>${row(e.strip[0], 0)}
+  <div class="bchead">Its ${e.strip.length - 2} most similar titles</div>
+  ${e.strip.slice(1, -1).map((j, n) => row(j, n + 1)).join('')}
+  <div class="bchead">A title drawn at random, for contrast</div>${row(e.strip[e.strip.length - 1], e.strip.length - 1)}`;
+}
+function bindBars() {
+  $('bctog').onchange = ev => { barsSorted = !ev.target.checked; drawBars(); };
+  drawBars();
+}
+function drawBars() {
+  const e = stripEx(), vecs = e.vec, order = [...vecs[0].keys()];
+  if (barsSorted) order.sort((i, j) => vecs[0][i] - vecs[0][j]);
+  const m = Math.max(...vecs.flat().map(Math.abs)) * 0.6;
+  document.querySelectorAll('canvas.bc').forEach(c => {
+    const v = vecs[+c.dataset.n], {g, w, h} = setup(c), bw = w / v.length;
+    order.forEach((k, i) => {
+      const x = Math.max(-1, Math.min(1, v[k] / m)), f = Math.abs(x);
+      const [r, gg, b] = x >= 0 ? [178, 24, 43] : [33, 102, 172];
+      const mix = c0 => Math.round(247 + (c0 - 247) * f);
+      g.fillStyle = `rgb(${mix(r)},${mix(gg)},${mix(b)})`;
+      g.fillRect(Math.floor(i * bw), 0, Math.ceil(bw) + 1, h);
+    });
+  });
+}
+
+function ciSvg(i) {
+  const W = 640, H = 70, lo = -3, hi = 3, x = v => 20 + (Math.max(lo, Math.min(hi, v)) - lo) / (hi - lo) * (W - 40);
+  const se = (LOR[i] - LO[i]) / 1.96, up = LOR[i] + 1.96 * se;
+  let ticks = ''; for (let v = lo; v <= hi; v++) ticks += `<line x1="${x(v)}" x2="${x(v)}" y1="44" y2="48" stroke="#111"/><text x="${x(v)}" y="62" font-size="12" text-anchor="middle">${v > 0 ? '+' + v : v < 0 ? '−' + (-v) : 0}</text>`;
+  const col = SKEW[i] ? 'var(--pass)' : 'var(--fail)';
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;max-width:${W}px">
+    <line x1="20" x2="${W - 20}" y1="44" y2="44" stroke="#111"/>${ticks}
+    <line x1="${x(0)}" x2="${x(0)}" y1="6" y2="44" stroke="#8c8c8c" stroke-dasharray="5 4"/>
+    <text x="${x(0) + 5}" y="14" font-size="11.5" fill="#666">0 = the corpus proportion of presentations</text>
+    <line x1="${x(LO[i])}" x2="${x(up)}" y1="28" y2="28" stroke="${col}" stroke-width="3"/>
+    <line x1="${x(LO[i])}" x2="${x(LO[i])}" y1="22" y2="34" stroke="${col}" stroke-width="2"/>
+    <line x1="${x(up)}" x2="${x(up)}" y1="22" y2="34" stroke="${col}" stroke-width="2"/>
+    <circle cx="${x(LOR[i])}" cy="28" r="5" fill="${col}"/></svg>`;
+}
+const badge = ok => ok ? '<span class="badge pass">holds</span>' : '<span class="badge fail">does not hold</span>';
+function step3(i) {
+  const p = P[i], h = M.h, nb = [];
+  for (let r = 0; r < K; r++) nb.push({j: NN[i * K + r], s: NNS[i * K + r] / 250});
+  return `<div class="prose"><h2>Step 3. Find the 75 nearest titles</h2>
+  <p>The 75 titles most similar to this one form its neighborhood. The first question is whether
+  presentations are more common in the neighborhood than in the corpus, where ${pct(M.pi, 1)} of
+  titles are presentations.</p></div>
+  <div class="key"><span><i style="background:#111"></i>Presentation</span><span><i></i>Article</span>
+    <span>Ordered from most to least similar</span></div>
+  <div class="nbstrip">${nb.map(n => `<i class="${isP(n.j) ? 'p' : ''}" title="${esc(D.titles[n.j])}"></i>`).join('')}</div>
+  <div class="card">
+    <div>${p} of the 75 neighbors are presentations (${pct(p / K)}), against ${pct(M.pi, 1)} in the corpus.
+      Similarity runs from ${dec(nb[0].s)} for the nearest neighbor to ${dec(nb[K - 1].s)} for the 75th.</div>
+    <h3 style="margin-top:12px">Is the difference larger than chance would produce?</h3>
+    <p class="small" style="margin:0 0 6px">The comparison is a log odds, with ${h} added to each count so that the value stays
+  finite when a count is 0 (the Haldane-Anscombe correction).</p>
+    <div class="eq">log odds = ln[(${p} + ${h}) / (${K - p} + ${h})] − ln[${M.pi.toFixed(3)} / ${(1 - M.pi).toFixed(3)}] = <u>${sgn(LOR[i])}</u></div>
+    <div class="eq">lower 95% bound = ${sgn(LOR[i])} − 1.96 × √(1/${p + h} + 1/${K - p + h}) = <u>${sgn(LO[i])}</u></div>
+    <p class="small" style="margin:6px 0 4px">A positive value means presentations are more common here than in the corpus. The
+      neighborhood counts as presentation-heavy when the lower bound is above 0, which takes at
+      least ${minP} presentations among the 75.</p>
+    ${ciSvg(i)}
+    <div>Presentation-heavy neighborhood ${badge(SKEW[i])}</div>
+  </div>
+  <h3>The 75 neighbors</h3>
+  <p class="small">Click a neighbor to follow it through the method instead.</p>
+  <div class="nblist"><table><thead><tr><th class="n">Rank</th><th class="n">Similarity</th><th></th><th>Title</th></tr></thead><tbody>
+  ${nb.map((n, r) => `<tr><td class="n">${r + 1}</td><td class="n">${dec(n.s)}</td><td><span class="mk ${isP(n.j) ? 'p' : ''}"></span></td>
+    <td><button class="tl" data-i="${n.j}">${esc(D.titles[n.j])}</button><br><span class="small">${src(n.j)}</span></td></tr>`).join('')}
+  </tbody></table></div>`;
+}
+function bindNeighbors() {
+  document.querySelectorAll('#stepbody button.tl').forEach(b => b.onclick = () => { setCurrent(+b.dataset.i); window.scrollTo(0, 0); });
+}
+
+function histSvg() {
+  const H = D.hist, W = 640, Ht = 150, l = 20, r = 20, t = 18, b = 34;
+  const lo = H.edges[0], hi = H.edges[H.edges.length - 1], x = v => l + (v - lo) / (hi - lo) * (W - l - r);
+  const mx = Math.max(...H.counts), y = c => Ht - b - c / mx * (Ht - t - b);
+  let bars = '';
+  H.counts.forEach((c, k) => { const x0 = x(H.edges[k]), x1 = x(H.edges[k + 1]); bars += `<rect x="${x0}" y="${y(c)}" width="${Math.max(0.5, x1 - x0 - 0.3)}" height="${Ht - b - y(c)}" fill="${H.edges[k] >= M.line - 1e-9 ? '#111' : '#bbb'}"/>`; });
+  let ticks = ''; [-0.2, 0, 0.2, 0.4, 0.6, 0.8, 1].forEach(v => { ticks += `<line x1="${x(v)}" x2="${x(v)}" y1="${Ht - b}" y2="${Ht - b + 4}" stroke="#111"/><text x="${x(v)}" y="${Ht - b + 17}" font-size="12" text-anchor="middle">${v === 0 ? '0' : dec(v, 1)}</text>`; });
+  return `<svg viewBox="0 0 ${W} ${Ht}" style="width:100%;max-width:${W}px">${bars}
+    <line x1="${l}" x2="${W - r}" y1="${Ht - b}" y2="${Ht - b}" stroke="#111"/>${ticks}
+    <line x1="${x(M.line)}" x2="${x(M.line)}" y1="${t - 8}" y2="${Ht - b}" stroke="#111" stroke-dasharray="5 4"/>
+    <text x="${x(M.line) - 6}" y="${t}" font-size="12" text-anchor="end">${dec(M.line, 3)}: 99th percentile</text>
+    <text x="${(W) / 2}" y="${Ht - 3}" font-size="12.5" text-anchor="middle">Similarity of a pair of titles</text></svg>`;
+}
+const CBINS = [[0, 0, '0'], [1, 4, '1–4'], [5, 9, '5–9'], [10, 24, '10–24'], [25, 49, '25–49'], [50, 99, '50–99'], [100, 249, '100–249'], [250, 1e9, '250+']];
+const CB = CBINS.map(([a, b]) => { let n = 0; for (let i = 0; i < N; i++) if (D.count[i] >= a && D.count[i] <= b) n++; return n; });
+function countSvg(i) {
+  const W = 640, Ht = 170, l = 20, t = 40, b = 34, bw = (W - 2 * l) / CBINS.length, mx = Math.max(...CB);
+  const me = CBINS.findIndex(([a, c]) => D.count[i] >= a && D.count[i] <= c);
+  let s = '';
+  CBINS.forEach(([, , lab], k) => {
+    const h = CB[k] / mx * (Ht - t - b), x0 = l + k * bw;
+    s += `<rect x="${x0 + 4}" y="${Ht - b - h}" width="${bw - 8}" height="${h}" fill="${k < 3 ? '#111' : '#bbb'}" ${k === me ? 'stroke="var(--sel)" stroke-width="3"' : ''}/>
+      <text x="${x0 + bw / 2}" y="${Ht - b + 16}" font-size="12" text-anchor="middle">${lab}</text>
+      <text x="${x0 + bw / 2}" y="${Ht - b - h - 5}" font-size="11.5" text-anchor="middle" fill="#555">${fmt(CB[k])}</text>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${Ht}" style="width:100%;max-width:${W}px">${s}
+    <line x1="${l}" x2="${W - l}" y1="${Ht - b}" y2="${Ht - b}" stroke="#111"/>
+    <line x1="${l + 3 * bw}" x2="${l + 3 * bw}" y1="6" y2="${Ht - b}" stroke="#111" stroke-dasharray="5 4"/>
+    <text x="${l + 3 * bw - 6}" y="14" font-size="12" text-anchor="end">fewer than ${M.cut}</text>
+    <text x="${W / 2}" y="${Ht - 3}" font-size="12.5" text-anchor="middle">Closely related articles per title (all ${fmt(N)} titles)</text></svg>`;
+}
+function step4(i) {
+  const c = D.count[i], arts = [];
+  for (let r = 0; r < NA; r++) arts.push({j: ART[i * NA + r], s: ARTS[i * NA + r] / 10000});
+  const shown = arts.filter(a => a.s >= M.line);
+  const near = shown.length ? shown : arts.slice(0, 3);
+  return `<div class="prose"><h2>Step 4. Count the closely related articles</h2>
+  <p>The second question is how much published work sits close to this title. An article
+  counts as closely related when it is more similar to the title than 99 of every 100 pairs of
+  titles in the corpus are to each other. Across all ${fmt(M.n_pairs)} pairs, that line falls at
+  ${dec(M.line, 3)} (dark bars below). An article does not count itself.</p></div>
+  ${histSvg()}
+  <div class="card"><div>This title has <u>${fmt(c)}</u> closely related article${c === 1 ? '' : 's'}.</div>
+    <p class="small" style="margin:4px 0 0">${c === 0 ? 'No article reaches the line. The nearest three articles are listed for comparison.' :
+      c > NA ? `The ${NA} most similar are listed; ${fmt(c - NA)} more are above the line.` : 'All of them are listed.'}</p>
+    <div class="nblist" style="max-height:none;background:var(--bg)"><table><thead><tr><th class="n">Similarity</th><th>Article</th></tr></thead><tbody>
+    ${near.map(a => `<tr><td class="n">${a.s.toFixed(3)}</td><td><button class="tl" data-i="${a.j}">${esc(D.titles[a.j])}</button><br><span class="small">${src(a.j)}</span></td></tr>`).join('')}
+    </tbody></table></div>
+    <div>Fewer than ${M.cut} closely related articles ${badge(c < M.cut)}</div></div>
+  <div class="prose"><p>The cut is fixed at ${M.cut}, so a title's result does not depend on other titles'
+  counts. The median title has ${M.count_median} closely related articles, and
+  ${pct(M.count_zero, 1)} have none. The red outline marks this title's bar.</p></div>
+  ${countSvg(i)}`;
+}
+function bindArticles() { bindNeighbors(); }
+
+function step5(i) {
+  const g = G.get(D.group[i]), c = D.count[i];
+  const cells = {11: 0, 10: 0, '01': 0, '00': 0};
+  for (let j = 0; j < N; j++) cells['' + SKEW[j] + (D.count[j] < M.cut ? 1 : 0)]++;
+  const me = '' + SKEW[i] + (c < M.cut ? 1 : 0);
+  const cell = key => `<td class="n ${key === '11' ? 'fl' : ''} ${key === me ? 'me' : ''}">${fmt(cells[key])}</td>`;
+  return `<div class="prose"><h2>Step 5. Combine the two conditions</h2>
+  <p>A title is flagged when both conditions hold. In plain terms, behavior analysts present
+  relatively often on subjects near this title, and little has been published close by.</p></div>
+  <div class="check"><div class="num">1</div><div>Presentation-heavy neighborhood ${badge(SKEW[i])}
+    <div class="small">${P[i]} of 75 neighbors are presentations; lower 95% bound of the log odds ${sgn(LO[i])}.</div></div></div>
+  <div class="check"><div class="num">2</div><div>Fewer than ${M.cut} closely related articles ${badge(c < M.cut)}
+    <div class="small">${fmt(c)} closely related article${c === 1 ? '' : 's'}.</div></div></div>
+  <div class="outcome"><div style="font-size:16px">${esc(KIND[kindOf(i)])}</div>
+    <p class="small" style="margin:6px 0 8px">All ${fmt(N)} titles by the two conditions. Flagged titles are in the shaded cell, and
+    the red outline marks this title's cell.</p>
+    <div class="tblwrap"><table class="two"><thead><tr><th></th><th class="n">Fewer than ${M.cut} closely related articles</th><th class="n">${M.cut} or more</th></tr></thead>
+    <tbody><tr><td>Presentation-heavy neighborhood</td>${cell('11')}${cell('10')}</tr>
+    <tr><td>Not presentation-heavy</td>${cell('01')}${cell('00')}</tr></tbody></table></div>
+    <button class="lnk" id="toRes">Show this title in Figure 1</button></div>
+  <div class="prose"><p class="small">The two conditions are nearly unrelated (Spearman correlation between a
+  title's proportion of presentations among its neighbors and its count of closely related articles = ${dec(M.rho_skew_count)}).
+  Step 6 describes how the flagged titles were summarized by subject.</p></div>`;
+}
+
+function step6(i) {
+  const g = G.get(D.group[i]), mp = g.map;
+  const nbLab = mp.ids.slice(1).map(id => G.get(id).label);
+  const tl = arr => '<ul class="titles">' + arr.map(t => `<li>${esc(t)}</li>`).join('') + '</ul>';
+  const fl = g.f, nf = g.n - g.f;
+  return `<div class="prose"><h2>Step 6. Group the titles and describe each group</h2>
+  <p>To report results by subject, titles were sorted into 200 groups and each group was described
+  by a language model. The groups play no part in any title's flag.</p></div>
+
+  <h3>How k-means forms groups</h3>
+  <p class="small">K-means repeats two moves until nothing changes. Click through them on made-up
+  points in two dimensions; the analysis did the same with ${fmt(N)} titles in 384.</p>
+  <div class="kmwrap"><canvas id="km"></canvas></div>
+  <div class="kmbtns"><button class="lnk" id="kmStep"></button>
+    <button class="lnk" id="kmRun">Run to the end</button>
+    <button class="lnk" id="kmReset">New starting centers</button>
+    <span class="small" id="kmInfo"></span></div>
+
+  <h3>This title's group beside its three nearest groups</h3>
+  <p class="small">Every title in the four groups, flattened to two dimensions (principal
+  components), so distances are approximate. Hover for a title.</p>
+  <div class="key"><span><i style="background:#111"></i>${esc(g.label)} (${g.n} titles)</span>
+    ${nbLab.map((l, k) => `<span><i style="${GSTY[k + 1]}"></i>${esc(l)}</span>`).join('')}
+    <span><i style="background:#fff;border:2px solid var(--ex)"></i>Given to the model</span>
+    <span><i style="background:#fff;border:2px solid var(--sel)"></i>Selected title</span>
+    <span>+ group center</span></div>
+  <div class="cloudwrap"><canvas id="gcloud"></canvas></div>
+
+  <h3>From group to label</h3>
+  <div class="flow">
+    <div class="fbox"><div class="fh">Given to the model</div>
+      <div><i>Key terms</i><br>${g.terms.split(', ').map(t => `<span class="chip">${esc(t)}</span>`).join(' ')}</div>
+      <div style="margin-top:8px"><i>${g.inP.length + g.inA.length} titles closest to the center</i>
+        <span class="small">(ringed in blue above)</span></div>
+      <div style="margin-top:8px"><i>Three nearest groups</i>, with their key terms and three titles each</div>
+      <details class="prompt"><summary>Show these titles</summary>
+        <div class="small" style="margin-top:6px">Presented</div>${tl(g.inP)}
+        <div class="small" style="margin-top:6px">Published</div>${tl(g.inA)}</details>
+      <details class="prompt"><summary>Show the full prompt</summary><pre>${esc(D.prompt_head + g.prompt)}</pre></details></div>
+    <div class="farrow">→</div>
+    <div class="fbox mid"><div class="fh">${esc(M.namer)}</div>
+      <div class="small">What does this group cover, and what separates it from its neighbors?</div></div>
+    <div class="farrow">→</div>
+    <div class="fbox out"><div class="fh">Returned</div>
+      <div style="font-size:16.5px">${esc(g.label)}</div>
+      <p style="margin:6px 0 4px">${esc(g.def)}</p>
+      <p class="small" style="margin:0">Unlike its neighbors: ${esc(g.distinct)}</p></div>
+  </div>
+
+  <h3>How the group is used</h3>
+  <div class="gbar"><span style="width:${100 * fl / g.n}%;background:#111"></span><span style="width:${100 * nf / g.n}%;background:#ddd"></span></div>
+  <p>${fl} of the group's ${g.n} titles are flagged (proportion ${dec(fl / g.n)}). The selected title's
+  own flag comes from Steps 3 to 5.</p>
+  <button class="lnk" id="toGrp">Show this group in Figure 2</button>`;
+}
+const GSTY = ['background:#111', 'background:#8a8a8a;border-color:#8a8a8a', 'background:#fff;border-color:#555', 'background:#d0d0d0;border-color:#aaa'];
+const GFILL = ['#111', '#8a8a8a', '#fff', '#d0d0d0'], GEDGE = ['#111', '#8a8a8a', '#555', '#aaa'];
+
+/* k-means demonstration on made-up points (seeded, so every visit starts the same way) */
+const KM = (() => {
+  let seed = 7; const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+  const gauss = () => Math.sqrt(-2 * Math.log(rnd() + 1e-12)) * Math.cos(2 * Math.PI * rnd());
+  const blobs = [[-2, -1.2], [1.8, -1.6], [-0.3, 1.9], [2.4, 1.6]], pts = [];
+  blobs.forEach(([x, y]) => { for (let k = 0; k < 30; k++) pts.push([x + 0.75 * gauss(), y + 0.75 * gauss()]); });
+  const st = {pts, cen: [], trail: [], asg: null, phase: 0, round: 0, changed: null, done: false, start: 0};
+  st.reset = () => {
+    st.start += 1; seed = 1000 + st.start * 97;
+    const pick = new Set(); while (pick.size < 4) pick.add(Math.floor(rnd() * pts.length));
+    st.cen = [...pick].map(k => pts[k].slice()); st.trail = st.cen.map(c => [c.slice()]);
+    st.asg = null; st.phase = 0; st.round = 0; st.changed = null; st.done = false;
+  };
+  st.step = () => {
+    if (st.done) return;
+    if (st.phase === 0) {
+      const a = pts.map(p => { let b = 0, bd = 1e9; st.cen.forEach((c, k) => { const d = (p[0] - c[0]) ** 2 + (p[1] - c[1]) ** 2; if (d < bd) { bd = d; b = k; } }); return b; });
+      st.changed = st.asg ? a.filter((v, k) => v !== st.asg[k]).length : pts.length;
+      st.asg = a; st.round += 1; st.phase = 1;
+      if (st.round > 1 && st.changed === 0) st.done = true;
+    } else {
+      st.cen = st.cen.map((c, k) => { const m = pts.filter((_, j) => st.asg[j] === k); return m.length ? [m.reduce((s, p) => s + p[0], 0) / m.length, m.reduce((s, p) => s + p[1], 0) / m.length] : c; });
+      st.cen.forEach((c, k) => st.trail[k].push(c.slice())); st.phase = 0;
+    }
+  };
+  st.reset();
+  return st;
+})();
+function drawKM() {
+  const c = $('km'); if (!c) return;
+  const S = setup(c), g = S.g, pad = 16, xr = [-4.5, 5], yr = [-4, 4.2];
+  const k = Math.min((S.w - 2 * pad) / (xr[1] - xr[0]), (S.h - 2 * pad) / (yr[1] - yr[0]));
+  const ox = (S.w - k * (xr[1] - xr[0])) / 2, oy = (S.h - k * (yr[1] - yr[0])) / 2;
+  const sx = v => ox + (v - xr[0]) * k, sy = v => S.h - oy - (v - yr[0]) * k;
+  g.clearRect(0, 0, S.w, S.h);
+  KM.pts.forEach((p, j) => {
+    const a = KM.asg ? KM.asg[j] : -1;
+    g.beginPath(); g.arc(sx(p[0]), sy(p[1]), 4, 0, 7);
+    g.fillStyle = a < 0 ? '#fff' : GFILL[a]; g.fill(); g.lineWidth = 1; g.strokeStyle = a < 0 ? '#999' : GEDGE[a]; g.stroke();
+  });
+  KM.trail.forEach(tr => { if (tr.length < 2) return; g.save(); g.setLineDash([3, 3]); g.strokeStyle = '#999'; g.beginPath();
+    tr.forEach((c, j) => j ? g.lineTo(sx(c[0]), sy(c[1])) : g.moveTo(sx(c[0]), sy(c[1]))); g.stroke(); g.restore(); });
+  KM.cen.forEach((c, j) => { const x = sx(c[0]), y = sy(c[1]), s = 8;
+    g.strokeStyle = '#fff'; g.lineWidth = 6; g.beginPath(); g.moveTo(x - s, y); g.lineTo(x + s, y); g.moveTo(x, y - s); g.lineTo(x, y + s); g.stroke();
+    g.strokeStyle = css('--sel'); g.lineWidth = 2.5; g.beginPath(); g.moveTo(x - s, y); g.lineTo(x + s, y); g.moveTo(x, y - s); g.lineTo(x, y + s); g.stroke(); });
+  $('kmStep').textContent = KM.done ? 'Finished' : (KM.phase === 0 ? 'Assign each point to its nearest center' : 'Move each center to the middle of its points');
+  $('kmStep').disabled = KM.done;
+  $('kmInfo').textContent = KM.asg === null ? 'Four starting centers (red crosses), placed on random points.' :
+    KM.done ? `Finished after ${KM.round} rounds: no point changed group.` :
+    `Round ${KM.round}: ${KM.changed} point${KM.changed === 1 ? '' : 's'} ${KM.round === 1 ? 'assigned' : 'changed group'}.`;
+}
+let gHov = null;
+function drawGroupCloud() {
+  const c = $('gcloud'); if (!c) return;
+  const g0 = G.get(D.group[cur]), mp = g0.map, S = setup(c), g = S.g, pad = 18;
+  const xs = mp.x.concat(mp.c.map(v => v[0])), ys = mp.y.concat(mp.c.map(v => v[1]));
+  const xr = [Math.min(...xs), Math.max(...xs)], yr = [Math.min(...ys), Math.max(...ys)];
+  const k = Math.min((S.w - 2 * pad) / (xr[1] - xr[0]), (S.h - 2 * pad) / (yr[1] - yr[0]));
+  const ox = (S.w - k * (xr[1] - xr[0])) / 2, oy = (S.h - k * (yr[1] - yr[0])) / 2;
+  const sx = v => ox + (v - xr[0]) * k, sy = v => S.h - oy - (v - yr[0]) * k;
+  const central = new Set(mp.central);
+  g.clearRect(0, 0, S.w, S.h); mp._s = [];
+  const order = mp.s.map((s, j) => j).sort((a, b) => mp.s[b] - mp.s[a]);
+  order.forEach(j => { const x = sx(mp.x[j]), y = sy(mp.y[j]), s = mp.s[j]; mp._s[j] = [x, y];
+    g.beginPath(); g.arc(x, y, s === 0 ? 3.6 : 3.2, 0, 7); g.fillStyle = GFILL[s]; g.fill(); g.lineWidth = 1; g.strokeStyle = GEDGE[s]; g.stroke(); });
+  order.forEach(j => { if (!central.has(mp.i[j])) return; const [x, y] = mp._s[j];
+    g.beginPath(); g.arc(x, y, 6.5, 0, 7); g.strokeStyle = css('--ex'); g.lineWidth = 1.8; g.stroke(); });
+  mp.c.forEach((c, j) => { const x = sx(c[0]), y = sy(c[1]), s = 8;
+    g.strokeStyle = '#fff'; g.lineWidth = 6; g.beginPath(); g.moveTo(x - s, y); g.lineTo(x + s, y); g.moveTo(x, y - s); g.lineTo(x, y + s); g.stroke();
+    g.strokeStyle = j === 0 ? '#111' : '#777'; g.lineWidth = 2.5; g.beginPath(); g.moveTo(x - s, y); g.lineTo(x + s, y); g.moveTo(x, y - s); g.lineTo(x, y + s); g.stroke(); });
+  const me = mp.i.indexOf(cur);
+  if (me >= 0) { const [x, y] = mp._s[me]; ring(g, x, y, 3); }
+  if (gHov !== null) { const [x, y] = mp._s[gHov]; g.beginPath(); g.arc(x, y, 7, 0, 7); g.strokeStyle = '#111'; g.lineWidth = 1.5; g.stroke(); }
+}
+function bindStep6() {
+  $('toGrp').onclick = () => { showTab('results'); selectGroup(D.group[cur]); };
+  $('kmStep').onclick = () => { KM.step(); drawKM(); };
+  $('kmRun').onclick = () => { let n = 0; while (!KM.done && n++ < 200) KM.step(); drawKM(); };
+  $('kmReset').onclick = () => { KM.reset(); drawKM(); };
+  const c = $('gcloud'), mp = G.get(D.group[cur]).map;
+  c.onmousemove = ev => {
+    const r = c.getBoundingClientRect(), mx = ev.clientX - r.left, my = ev.clientY - r.top;
+    let best = null, bd = 8; mp._s.forEach((q, j) => { const d = Math.hypot(q[0] - mx, q[1] - my); if (d < bd) { bd = d; best = j; } });
+    if (best !== gHov) { gHov = best; drawGroupCloud(); }
+    tip(ev, best === null ? null : `${esc(D.titles[mp.i[best]])}<br><span class="small">${src(mp.i[best])}; ${esc(G.get(mp.ids[mp.s[best]]).label)}</span>`);
+  };
+  c.onmouseleave = () => { gHov = null; drawGroupCloud(); tip(null); };
+  drawKM(); drawGroupCloud();
+}
+
+/* ---------------- Results tab ---------------- */
+let sel = null, selG = null, hov = null, hovG = null;
+const jit = (i, s) => { const v = Math.sin((i + 1) * 12.9898 + s * 78.233) * 43758.5453; return v - Math.floor(v) - 0.5; };
+const symlog = c => c <= 1 ? c : 1 + Math.log10(c);
+let maxCount = 0; for (let i = 0; i < N; i++) maxCount = Math.max(maxCount, D.count[i]);
+const X1 = new Float64Array(N), Y1 = new Float64Array(N);
+for (let i = 0; i < N; i++) { X1[i] = LOR[i] + jit(i, 1) * 0.05; Y1[i] = symlog(D.count[i]) + jit(i, 2) * 0.06; }
+const F1 = {xr: [Math.min(...X1) - 0.1, Math.max(...X1) + 0.1], yr: [-0.12, symlog(maxCount) + 0.15]};
+const F2 = {xr: (() => { const v = D.groups.map(g => g.x); const a = Math.min(...v), b = Math.max(...v), p = (b - a) * .08; return [a - p, b + p]; })(),
+            yr: (() => { const v = D.groups.map(g => g.y); const a = Math.min(...v), b = Math.max(...v), p = (b - a) * .08; return [a - p, b + p]; })()};
+const grey = s => { const v = Math.round(255 - Math.min(1, s) * 225); return `rgb(${v},${v},${v})`; };
+const gR = g => Math.max(2.5, Math.sqrt(g.n) * 0.85);
+
+function axes(S, pad, xticks, yticks, xlab, ylab, sx, sy) {
+  const g = S.g; g.strokeStyle = '#111'; g.lineWidth = 1; g.beginPath();
+  g.moveTo(pad.l, pad.t); g.lineTo(pad.l, S.h - pad.b); g.lineTo(S.w - pad.r, S.h - pad.b); g.stroke();
+  g.fillStyle = '#111'; g.font = '12px Georgia,serif';
+  xticks.forEach(([v, lab]) => { const x = sx(v); g.beginPath(); g.moveTo(x, S.h - pad.b); g.lineTo(x, S.h - pad.b + 4); g.stroke(); g.textAlign = 'center'; g.fillText(lab, x, S.h - pad.b + 16); });
+  yticks.forEach(([v, lab]) => { const y = sy(v); g.beginPath(); g.moveTo(pad.l - 4, y); g.lineTo(pad.l, y); g.stroke(); g.textAlign = 'right'; g.fillText(lab, pad.l - 7, y + 4); });
+  g.font = '13px Georgia,serif'; g.textAlign = 'center';
+  g.fillText(xlab, pad.l + (S.w - pad.l - pad.r) / 2, S.h - 8);
+  g.save(); g.translate(14, pad.t + (S.h - pad.t - pad.b) / 2); g.rotate(-Math.PI / 2); g.fillText(ylab, 0, 0); g.restore();
+}
+function dashed(g, x1, y1, x2, y2) { g.save(); g.setLineDash([6, 5]); g.strokeStyle = '#8c8c8c'; g.lineWidth = 1; g.beginPath(); g.moveTo(x1, y1); g.lineTo(x2, y2); g.stroke(); g.restore(); }
+function ring(g, x, y, r) {
+  g.beginPath(); g.arc(x, y, r + 5, 0, 7); g.strokeStyle = 'rgba(214,39,40,0.28)'; g.lineWidth = 7; g.stroke();
+  g.beginPath(); g.arc(x, y, r + 5, 0, 7); g.strokeStyle = css('--sel'); g.lineWidth = 2.4; g.stroke();
+}
+
+const C1 = {c: $('c1')}, C2 = {c: $('c2')};
+function drawF1() {
+  const S = setup(C1.c), g = S.g, pad = {l: 56, r: 14, t: 14, b: 44};
+  const sx = v => pad.l + (v - F1.xr[0]) / (F1.xr[1] - F1.xr[0]) * (S.w - pad.l - pad.r);
+  const sy = v => S.h - pad.b - (v - F1.yr[0]) / (F1.yr[1] - F1.yr[0]) * (S.h - pad.t - pad.b);
+  Object.assign(C1, {sx, sy});
+  g.clearRect(0, 0, S.w, S.h);
+  const xt = []; for (let v = Math.ceil(F1.xr[0]); v <= F1.xr[1]; v++) xt.push([v, v > 0 ? '+' + v : v < 0 ? '−' + (-v) : '0']);
+  axes(S, pad, xt, [[0, '0'], [1, '1'], [2, '10'], [3, '100'], [4, '1,000']].filter(([v]) => v <= F1.yr[1]),
+       'Presentation log odds among the 75 nearest titles', 'Closely related articles', sx, sy);
+  dashed(g, sx(0), pad.t, sx(0), S.h - pad.b); dashed(g, pad.l, sy(symlog(M.cut - 0.5)), S.w - pad.r, sy(symlog(M.cut - 0.5)));
+  const dim = selG !== null;
+  for (let pass = 0; pass < 2; pass++) for (let i = 0; i < N; i++) {
+    if ((FLAG[i] ? 1 : 0) !== pass) continue;
+    const inG = dim && D.group[i] === selG;
+    g.globalAlpha = dim && !inG ? 0.25 : 1;
+    g.beginPath(); g.arc(sx(X1[i]), sy(Y1[i]), inG ? 2.6 : 1.7, 0, 7);
+    g.fillStyle = FLAG[i] ? '#111' : (inG ? '#777' : '#c2c2c2'); g.fill();
+  }
+  g.globalAlpha = 1;
+  EX.forEach((e, k) => { const x = sx(X1[e.i]), y = sy(Y1[e.i]);
+    g.beginPath(); g.arc(x, y, 5, 0, 7); g.strokeStyle = css('--ex'); g.lineWidth = 1.8; g.stroke();
+    haloText(g, LET[k], x + 7, y - 6, css('--ex'), 'left', 13); });
+  if (hov !== null) { g.beginPath(); g.arc(sx(X1[hov]), sy(Y1[hov]), 5, 0, 7); g.strokeStyle = '#111'; g.lineWidth = 1.5; g.stroke(); }
+  if (sel !== null) ring(g, sx(X1[sel]), sy(Y1[sel]), 2);
+  g.font = '12px Georgia,serif'; g.fillStyle = '#555'; g.textAlign = 'right';
+  g.fillText(`Black: flagged (${fmt(M.n_flag)})`, S.w - pad.r, pad.t + 10);
+}
+function drawF2() {
+  const S = setup(C2.c), g = S.g, pad = {l: 16, r: 16, t: 16, b: 16};
+  const iw = S.w - pad.l - pad.r, ih = S.h - pad.t - pad.b;
+  const k = Math.min(iw / (F2.xr[1] - F2.xr[0]), ih / (F2.yr[1] - F2.yr[0]));
+  const ox = pad.l + (iw - k * (F2.xr[1] - F2.xr[0])) / 2, oy = pad.t + (ih - k * (F2.yr[1] - F2.yr[0])) / 2;
+  const sx = v => ox + (v - F2.xr[0]) * k, sy = v => S.h - oy - (v - F2.yr[0]) * k;
+  Object.assign(C2, {sx, sy});
+  g.clearRect(0, 0, S.w, S.h);
+  const order = D.groups.slice().sort((a, b) => b.n - a.n);
+  order.forEach(gr => { g.beginPath(); g.arc(sx(gr.x), sy(gr.y), gR(gr), 0, 7); g.fillStyle = grey(shareOf(gr)); g.fill();
+    g.lineWidth = hovG === gr.id ? 1.8 : 0.7; g.strokeStyle = hovG === gr.id ? '#111' : '#777'; g.stroke(); });
+  const curG = selG !== null ? selG : (sel !== null ? D.group[sel] : null);
+  if (curG !== null) { const gr = G.get(curG); ring(g, sx(gr.x), sy(gr.y), gR(gr)); }
+  // shading key
+  const kx = S.w - 150, ky = S.h - 34;
+  for (let s = 0; s <= 40; s++) { g.fillStyle = grey(s / 40); g.fillRect(kx + s * 3, ky, 3.2, 10); }
+  g.strokeStyle = '#777'; g.lineWidth = 0.7; g.strokeRect(kx, ky, 123, 10);
+  g.fillStyle = '#111'; g.font = '11.5px Georgia,serif'; g.textAlign = 'left'; g.fillText('0%', kx, ky + 23);
+  g.textAlign = 'right'; g.fillText('100% flagged', kx + 123, ky + 23);
+}
+function redrawResults() { if (tab !== 'results') return; drawF1(); drawF2(); }
+
+function hitF1(mx, my) {
+  let best = null, bd = 6; for (let i = 0; i < N; i++) { const d = Math.hypot(C1.sx(X1[i]) - mx, C1.sy(Y1[i]) - my); if (d < bd) { bd = d; best = i; } }
+  return best;
+}
+function hitF2(mx, my) {
+  let best = null, bd = 1e9; D.groups.forEach(gr => { const d = Math.hypot(C2.sx(gr.x) - mx, C2.sy(gr.y) - my); if (d < Math.max(6, gR(gr) + 2) && d < bd) { bd = d; best = gr.id; } });
+  return best;
+}
+C1.c.addEventListener('mousemove', ev => {
+  const r = C1.c.getBoundingClientRect(), i = hitF1(ev.clientX - r.left, ev.clientY - r.top);
+  if (i !== hov) { hov = i; drawF1(); }
+  tip(ev, i === null ? null : `${esc(D.titles[i])}<br><span class="small">${src(i)}; ${P[i]} of 75 neighbors presentations; ${fmt(D.count[i])} closely related articles</span>`);
+});
+C1.c.addEventListener('mouseleave', () => { hov = null; drawF1(); tip(null); });
+C1.c.addEventListener('click', ev => { const r = C1.c.getBoundingClientRect(), i = hitF1(ev.clientX - r.left, ev.clientY - r.top); if (i !== null) selectTitle(i); });
+C2.c.addEventListener('mousemove', ev => {
+  const r = C2.c.getBoundingClientRect(), id = hitF2(ev.clientX - r.left, ev.clientY - r.top);
+  if (id !== hovG) { hovG = id; drawF2(); }
+  tip(ev, id === null ? null : `${esc(G.get(id).label)}<br><span class="small">${G.get(id).n} titles; ${pct(shareOf(G.get(id)))} flagged</span>`);
+});
+C2.c.addEventListener('mouseleave', () => { hovG = null; drawF2(); tip(null); });
+C2.c.addEventListener('click', ev => { const r = C2.c.getBoundingClientRect(), id = hitF2(ev.clientX - r.left, ev.clientY - r.top); if (id !== null) selectGroup(id); });
+
+function selectTitle(i) { sel = i; selG = null; detail(); redrawResults(); groupList(); }
+function selectGroup(id) { selG = selG === id ? null : id; sel = null; detail(); redrawResults(); groupList(); }
+function detail() {
+  const d = $('det');
+  if (sel !== null) {
+    const i = sel, g = G.get(D.group[i]), k = exOf(i);
+    d.innerHTML = `<div class="small">${k >= 0 ? 'Worked example ' + LET[k] + '; ' : ''}${isP(i) ? 'presentation' : 'article'}</div>
+      <div class="t">${esc(D.titles[i])}</div><div class="small">${src(i)}</div>
+      <table><tbody><tr><td>Presentations among the 75 nearest titles</td><td class="n">${P[i]} (${pct(P[i] / K)})</td></tr>
+      <tr><td>Log odds [lower 95% bound]</td><td class="n">${sgn(LOR[i])} [${sgn(LO[i])}]</td></tr>
+      <tr><td>Closely related articles</td><td class="n">${fmt(D.count[i])}</td></tr>
+      <tr><td>Subject-area group</td><td><button class="tl" id="toG">${esc(g.label)}</button></td></tr></tbody></table>
+      <div>${esc(KIND[kindOf(i)])}</div><p style="margin-top:10px"><button class="lnk" id="toMeth">Walk this title through the method</button></p>`;
+    $('toMeth').onclick = () => setCurrent(i, 2); $('toG').onclick = () => selectGroup(g.id);
+    return;
+  }
+  if (selG !== null) {
+    const g = G.get(selG), fl = []; for (let i = 0; i < N; i++) if (D.group[i] === selG && FLAG[i]) fl.push(i);
+    d.innerHTML = `<div class="t">${esc(g.label)}</div><p class="small" style="margin:0 0 4px">${esc(g.def)}</p>
+      <table><tbody><tr><td>Presentations / articles</td><td class="n">${g.p} / ${g.a}</td></tr>
+      <tr><td>Flagged titles</td><td class="n">${g.f} of ${g.n} (${pct(shareOf(g))})</td></tr></tbody></table>
+      ${g.tested ? '' : `<p class="small">Fewer than ${M.min_titles} titles, so the paper does not summarize this group.</p>`}
+      <p class="small">Its titles are drawn darker in Figure 1. ${fl.length ? 'Flagged titles in the group:' : 'No titles in this group are flagged.'}</p>
+      ${fl.length ? `<div class="flist">${fl.map(i => `<div><button class="tl" data-i="${i}">${esc(D.titles[i])}</button> <span class="small">${src(i)}</span></div>`).join('')}</div>` : ''}
+      <p><button class="lnk" id="clrG">Clear the group</button></p>`;
+    d.querySelectorAll('.flist button.tl').forEach(b => b.onclick = () => selectTitle(+b.dataset.i));
+    $('clrG').onclick = () => selectGroup(selG);
+    return;
+  }
+  d.innerHTML = `<div class="t">Nothing selected</div><p class="small">Hover over a point to identify it, and click it for detail. In Figure 1, each point is a
+    title. The dashed lines mark a log odds of 0 and the cut of ${M.cut} closely related articles.
+    Flagged titles are black, and worked examples A to D are circled in blue. In Figure 2, each
+    point is a subject-area group, with similar groups closer together and area proportional to
+    the number of titles. Clicking a group highlights its titles in Figure 1. Groups only describe
+    the flagged titles; no title's flag depends on its group.</p>`;
+}
+let gq = '';
+function groupList() {
+  const rows = D.groups.filter(g => g.tested && (!gq || g.label.toLowerCase().includes(gq) || g.def.toLowerCase().includes(gq)))
+    .sort((a, b) => shareOf(b) - shareOf(a) || b.n - a.n);
+  const t2 = new Set(D.groups.filter(g => g.tested && shareOf(g) >= 0.25).map(g => g.id));
+  $('glist').innerHTML = `<table><thead><tr><th>Group (${M.n_tested} with ${M.min_titles}+ titles)</th><th class="n">Pres.</th><th class="n">Pub.</th><th class="n">Flagged</th></tr></thead><tbody>
+    ${rows.map(g => `<tr data-id="${g.id}" class="${g.id === selG ? 'on' : ''}"><td>${esc(g.label)}${t2.has(g.id) ? ' <span class="small">(Table 2)</span>' : ''}</td><td class="n">${g.p}</td><td class="n">${g.a}</td><td class="n">${pct(shareOf(g))}</td></tr>`).join('')}</tbody></table>`;
+  $('glist').querySelectorAll('tr[data-id]').forEach(r => r.onclick = () => selectGroup(+r.dataset.id));
+}
+$('rq').oninput = ev => {
+  gq = ev.target.value.trim().toLowerCase(); groupList();
+  const h = search(gq, 8);
+  $('rhits').innerHTML = h.length ? '<div class="small" style="cursor:default">Titles</div>' + h.map(i => `<div data-i="${i}">${esc(D.titles[i])} <span class="small">${src(i)}</span></div>`).join('') : '';
+  $('rhits').querySelectorAll('div[data-i]').forEach(d => d.onclick = () => selectTitle(+d.dataset.i));
+};
+function goResults(i) { showTab('results'); selectTitle(i); }
+
+/* ---------------- Checks tab ---------------- */
+function curveSvg() {
+  const C = D.curve, R = C.median.length, W = 680, H = 300, l = 52, r = 16, t = 14, b = 44;
+  const x = k => l + (k - 1) / (R - 1) * (W - l - r), y = v => H - b - (v - 0.3) / (0.95 - 0.3) * (H - t - b);
+  const band = C.p90.map((v, k) => `${x(k + 1)},${y(v)}`).join(' ') + ' ' + C.p10.map((v, k) => `${x(k + 1)},${y(v)}`).reverse().join(' ');
+  const med = C.median.map((v, k) => `${x(k + 1)},${y(v)}`).join(' ');
+  let ax = ''; [1, 50, 75, 100, 150, 200, 250, 300].filter(v => v <= R).forEach(v => { ax += `<line x1="${x(v)}" x2="${x(v)}" y1="${H - b}" y2="${H - b + 4}" stroke="#111"/><text x="${x(v)}" y="${H - b + 17}" font-size="12" text-anchor="middle">${v}</text>`; });
+  [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].forEach(v => { ax += `<line x1="${l - 4}" x2="${l}" y1="${y(v)}" y2="${y(v)}" stroke="#111"/><text x="${l - 7}" y="${y(v) + 4}" font-size="12" text-anchor="end">${dec(v, 1)}</text>`; });
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" style="width:100%">
+    <polygon points="${band}" fill="#e3e3e3"/><polyline points="${med}" fill="none" stroke="#111" stroke-width="2"/>
+    <line x1="${l}" x2="${W - r}" y1="${y(M.line)}" y2="${y(M.line)}" stroke="#8c8c8c" stroke-dasharray="5 4"/>
+    <text x="${W - r}" y="${y(M.line) - 5}" font-size="11.5" text-anchor="end" fill="#555">closely related line (${dec(M.line, 3)})</text>
+    <line x1="${x(75)}" x2="${x(75)}" y1="${t}" y2="${H - b}" stroke="#8c8c8c" stroke-dasharray="5 4"/>
+    <text x="${x(75) + 5}" y="${t + 10}" font-size="11.5" fill="#555">K = 75</text>
+    <line x1="${l}" x2="${l}" y1="${t}" y2="${H - b}" stroke="#111"/><line x1="${l}" x2="${W - r}" y1="${H - b}" y2="${H - b}" stroke="#111"/>${ax}
+    <text x="${l + (W - l - r) / 2}" y="${H - 6}" font-size="13" text-anchor="middle">Rank of the neighbor (1 = most similar title)</text>
+    <text transform="translate(14,${t + (H - t - b) / 2}) rotate(-90)" font-size="13" text-anchor="middle">Similarity to the title</text></svg>`;
+}
+const FRAME = {title: 'Original titles', framing: 'Opening phrase removed', framing_stop: 'Opening phrase and common words removed'};
+function renderChecks() {
+  const S = D.sens, lab = n => n === 1 ? 'None' : 'Fewer than ' + n;
+  const prim = S.find(s => s.k === K && s.n === M.cut), GS = D.group_screen;
+  const fr = D.framing, fo = fr.find(f => f.condition === 'framing');
+  $('checkbody').innerHTML = `<div class="prose">
+  <h2>How sharply do subjects separate?</h2>
+  <p>The method judges each title by its own neighbors without first sorting titles into
+  topics, because behavior-analytic titles do not fall into separate clumps. If they did, a
+  title's similarity to its neighbors would stay high through the members of its clump and then
+  drop at the clump's edge. The figure shows each title's similarity to its neighbors by rank. The
+  line is the median across all ${fmt(N)} titles, and the band runs from the 10th to the 90th
+  percentile.</p></div>
+  ${curveSvg()}
+  <div class="prose"><p>Similarity declines smoothly, with no rank at which it drops. Groups show the same thing.
+  When the 200 k-means groups were redrawn from seven other random starting points, agreement with
+  the original groups was ${dec(M.ari[0])} to ${dec(M.ari[2])} (adjusted Rand index, where 1 means
+  identical groups and 0 means chance). And ${pct(M.sil_neg)} of titles were, on average, more
+  similar to another group's titles than to their own (a negative silhouette). Because group
+  boundaries shift from run to run and many titles sit near one, the paper uses groups only to
+  describe what the flagged titles are about.</p>
+
+  <h2>Sensitivity to the two cuts</h2>
+  <p>The paper uses K = ${K} and fewer than ${M.cut} closely related articles (in italics).
+  The table shows flag rates under other choices and how many flags survive resampling (next
+  section).</p></div>
+  <div class="tblwrap"><table><thead><tr><th class="n">K</th><th>Closely related articles</th><th class="n">Titles flagged</th>
+    <th class="n">Presentations flagged</th><th class="n">Articles flagged</th><th class="n">Flags kept in 80% subsamples</th><th class="n">Jaccard</th></tr></thead>
+    <tbody>${S.map(s => `<tr${s === prim ? ' style="font-style:italic"' : ''}><td class="n">${s.k}</td><td>${lab(s.n)}</td><td class="n">${pct(s.all, 1)}</td>
+    <td class="n">${pct(s.pres, 1)}</td><td class="n">${pct(s.pub, 1)}</td><td class="n">${pct(s.kept)}</td><td class="n">${dec(s.jaccard)}</td></tr>`).join('')}</tbody></table></div>
+    <div class="prose"><h2>Would a replication flag the same titles?</h2>
+  <p>We drew ten random subsets of 80% of the titles and reran the screen within each,
+  recomputing the neighbors, the closely related line, and the counts. The cut was scaled to fewer
+  than ${0.8 * M.cut} because a subset holds 80% of the articles. Of the flagged titles that fell in
+  a subset, a median of ${pct(prim.kept)} were flagged again.</p>
+  <p>For comparison, we applied the same test to a screen that flags groups instead of titles.
+  In each of six random subsets, k-means sorted the titles into 200 groups (fit on 80% of the ABAI
+  and general-journal titles). A group was flagged when its titles were reliably more often
+  presentations than the corpus and its article count was at or below the median group's, and
+  every title in a flagged group was flagged.</p></div>
+  <div class="tblwrap"><table><thead><tr><th>Screen</th><th class="n">Titles kept</th><th class="n">Presentations kept</th><th class="n">Articles kept</th></tr></thead>
+    <tbody><tr><td>Each title judged by its own neighbors</td><td class="n">${pct(prim.kept)}</td><td class="n">${pct(prim.kept_pres)}</td><td class="n">${pct(prim.kept_pub)}</td></tr>
+    <tr><td>Each title judged by its group</td><td class="n">${pct(GS.retained)}</td><td class="n">${pct(GS.retained_pres)}</td><td class="n">${pct(GS.retained_pub)}</td></tr></tbody></table></div>
+
+  <div class="prose"><h2>Does the wording of a title drive its neighborhood?</h2>
+  <p>Presentations and articles tend to open differently (e.g., "Recent Advances in" for
+  presentations; "The Effects of" for articles). If those phrases pulled presentations toward one
+  another, part of a neighborhood's skew would reflect phrasing instead of subject. We removed a
+  leading phrase of this kind from ${fmt(fo.changed)} titles, embedded them again, and recomputed
+  every neighborhood. A second version also removed common words (e.g., "the," "of," "in").</p></div>
+  <div class="tblwrap"><table><thead><tr><th>Titles</th><th class="n">Presentation-heavy neighborhoods</th><th class="n">Correlation with original proportion of presentations</th><th class="n">Original presentation-heavy titles kept</th></tr></thead>
+    <tbody>${fr.map(f => `<tr><td>${FRAME[f.condition]}</td><td class="n">${pct(f.skewed)}</td><td class="n">${dec(f.rho)}</td><td class="n">${pct(f.kept)}</td></tr>`).join('')}</tbody></table></div>
+  <p class="small">Spearman correlations across titles. The common-word version changes titles far more and
+  shows how much the scores move under a large change in wording.</p>
+
+  <div class="prose"><h2>Does the subject-level summary depend on the groups?</h2>
+  <p>Table 2 and Figure 2 describe flagged titles by subject-area group. To check that this
+  description does not hinge on where the boundaries fall, we redrew the groups from seven other
+  random starting points and with 100 and 300 groups, then correlated (Spearman, across titles)
+  the proportion of flagged titles in each title's group under the original and redrawn groupings.</p></div>
+  <div class="tblwrap"><table><thead><tr><th>Closely related articles</th><th class="n">Median correlation</th><th class="n">Range</th></tr></thead>
+    <tbody>${D.group_stab.map(s => `<tr${s.n === M.cut ? ' style="font-style:italic"' : ''}><td>${lab(s.n)}</td><td class="n">${dec(s.median)}</td><td class="n">${dec(s.min)}–${dec(s.max)}</td></tr>`).join('')}</tbody></table></div>
+  <p class="small">The proportion for any single group should be read as approximate.</p>`;
+}
+
+addEventListener('resize', () => { if (tab === 'results') redrawResults(); else if (tab === 'methods' && step === 1) drawBars(); else if (tab === 'methods' && step === 5) { drawKM(); drawGroupCloud(); } });
+$('provenance').textContent = `Generated ${M.generated} by scripts/supplement_page.py from the primary analysis (${fmt(N)} titles, ${M.window}; ${M.model}; K = ${K}; closely related line ${M.line}; fewer than ${M.cut} closely related articles; subject-area group labels written by ${M.namer} and reviewed by the authors). ${M.software}.`;
+renderStep(); detail(); groupList();
+</script>
+</body>
+</html>

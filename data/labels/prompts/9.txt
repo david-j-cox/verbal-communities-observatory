@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 9
+Key terms: contrast, observing, variability, operant
+
+Titles closest to the topic's center, conference presentations:
+- The Effect of Multiple Possibilities to Respond over Operant Variability.
+- Persistence of Operant Responding: Some Basic and Translational Results
+- Recent Advances in the Study of Operant Variability
+- Spontaneous Recovery of Operant Variability
+- Eye Movements as Choices: A Time Allocation Analysis
+- Modification in Saccadic Amplitude Using a Visual Discriminative Task as a Reinforcer
+- Visual Exposure to Nature Expands Time and Space Perception and Reduces Delay Discounting
+- Effects of the Disarray of Binary Sequences on the Perception of Randomness
+- Maker Movement in the Operant Laboratory: Recording a Wide Range of Response Variation
+- Probing the Nonverbal Number Sense Using Visual Illusions
+
+Titles closest to the topic's center, journal articles:
+- A Comparison of Stimulus Set Sizes: Systematic Replication with Operant Analysis Acquisition Criteria
+- Bouts, Pauses, and Units of Operant Performance: A Primer
+- The classification and utility of the differential observing response.
+- Effects of time delay and requiring echoics on answering questions about visual stimuli
+- Teleological Properties of Operant Behavior
+- Video preferences and their relative reinforcing effects.
+- A Critical Review of the Support for Variability as an Operant Dimension
+- How a Daily Regimen of Operant Conditioning Might Explain the Power of the Search Engine Manipulation Effect (SEME)
+- Model‐based estimates for operant selection
+- Spatially extended instrumental responses are organized in functional bouts
+
+NEIGHBOURING TOPIC 69 (similarity 0.80)
+Key terms: stimulus control, stimuli, reinforcement, response
+- Stimulus Control in Humans
+- Stimulus control depends on the subjective value of the outcome
+- Stimulus Control: Testing the Boundaries
+
+NEIGHBOURING TOPIC 32 (similarity 0.79)
+Key terms: competing stimulus, attention, task, assessment
+- Initial outcomes of an augmented competing stimulus assessment
+- Further Evaluations of Competing Stimulus Assessments and the Effects of Competition on On-Task Behavior
+- Competing Stimulus Assessments: Procedural Modifications to Improve Effectiveness and Efficiency
+
+NEIGHBOURING TOPIC 167 (similarity 0.79)
+Key terms: stimulus relations, formation, stimulus equivalence, stimulus generalization
+- Some Important Variables for the Formation of Stimulus Equivalence Classes
+- Conceptual and Experimental Topics in the Formation of Stimulus Equivalence
+- Stimulus Equivalence: Conceptual and Experimental Issues

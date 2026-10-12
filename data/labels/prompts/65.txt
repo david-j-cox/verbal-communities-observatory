@@ -1,0 +1,48 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 65
+Key terms: braille, deaf, sign language, children
+
+Titles closest to the topic's center, conference presentations:
+- How Children Learn Early Communicative Gestures
+- Use of Response Prompting Procedures with Students Who Are Deafblind
+- Precision Teaching to Develop Key Word Sign Skills in Practitioners in Intellectual Disability Services
+- Comparison of Scoping and Systematic Review Methodology: Evidence Evaluation for Interventions for Children With Deafblindness
+- Acquisition of Joint Attention Skills in Children With Cortical Visual Impairment
+- Enhancing Deaf Children's Self-Advocacy Skills: Expanding Degrees of Freedom with Event-Based Learning using the L.I.F.E. Program
+- Enhancing Applied Practice With Basic Concepts, Contextualism, and Rejection of Blind Rule-Following
+
+Titles closest to the topic's center, journal articles:
+- Using Constant Time Delay to Teach Sight Words to Students Identified as Deafblind
+- Comparing stimulus equivalence‐based instruction to self‐study of videos to teach examples of sign language to adults
+- The Effects of an Accelerated Auditory Matching Protocol for Early Intervention Students
+- Assessing generative braille responding following training in a matching-to-sample format
+- Acquisition and generative responding following print‐to‐braille construction response training with sighted learners
+- A Comparison of Paired Kinesthetic Movements and With-in Stimulus Pictures on Literacy Skills Acquisition with Young Children
+- The Effects of an Accelerated Auditory Matching Protocol on Echoic Clarity with Preschoolers with Disabilities
+- Simultaneous Prompting to Teach Initial Listener Responses to a Child with Down Syndrome
+- Sentence comprehension and production in children with cochlear implants: Errorless procedures and equivalence‐based instruction
+- Enhancing word signing in hearing students with reading disorders using computer‐based learning trials
+
+NEIGHBOURING TOPIC 184 (similarity 0.79)
+Key terms: profound multiple, multiple disabilities, developmental disabilities, persons
+- Evaluating Augmentative and Alternative Communication Systems for Individuals with Developmental Disabilities
+- Current Research on Communication Modality Assessments for Individuals With Development Disabilities
+- Teaching Adults with Neurodevelopmental Disabilities to Interact Successfully with Others in a Virtual Format
+
+NEIGHBOURING TOPIC 2 (similarity 0.74)
+Key terms: retarded children, severely retarded, retardation, mentally retarded
+
+NEIGHBOURING TOPIC 117 (similarity 0.73)
+Key terms: handicapped, intellectual developmental, intellectual disabilities, developmental disabilities
+- Educator-Implemented Interventions for Students With Developmental Disabilities in the School Setting
+- Teaching Academic Content and Communication Skills to Students With Intellectual and Developmental Disabilities
+- Teaching Academic and Functional Life Skills to Young Adults With Intellectual Disabilities

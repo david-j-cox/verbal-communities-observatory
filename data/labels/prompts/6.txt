@@ -1,0 +1,48 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 6
+Key terms: concurrent schedules, schedule performance, multiple schedule, contrast
+
+Titles closest to the topic's center, conference presentations:
+- Challenges on the Timing of Schedule-Induced Behavior
+- The Copyist Model and Schedule Performance During and After the Changeover Delay in Concurrent Schedules
+- Factors That Enhance and Disrupt Timing Processes
+- Bringing the Lag Out of the Lab: Applied Lag Schedule Research
+
+Titles closest to the topic's center, journal articles:
+- Multiple schedules in practical application: Research trends and implications for future investigation
+- Are behaviors at one alternative in concurrent schedules independent of contingencies at the other alternative?
+- Comparing the effects of static and dynamic signals during multiple schedules
+- Schedule Performance as a Baseline for the Experimental Analysis of Coordinated Behavior: Same or Different Units of Analysis?
+- Rat choice in rapidly changing concurrent schedules
+- Parent‐implemented multiple schedules
+- Parent-Implemented Multiple Schedules to Decrease Challenging Behavior: An Extension
+- Bridging the gap between laboratory and applied research on response‐independent schedules
+- Dependent scheduling and evidence for melioration
+- K-Schedules Meet Precision Measurement: A Protocol for Intervention
+
+NEIGHBOURING TOPIC 111 (similarity 0.87)
+Key terms: concurrent variable, interval schedules, interval variable, variable interval
+- Explaining Performance on Interval and Ratio Schedules with a Molar View of Behavior
+- On the Constancy of the Rate of Responding under Variable-Interval Schedules
+- Timing in Variable Interval Schedules
+
+NEIGHBOURING TOPIC 26 (similarity 0.84)
+Key terms: interval schedules, fixed interval, timing, multiple schedules
+- Effects of signaling on temporal control of behavior in response‐initiated fixed intervals
+- Investigations of Schedule-Induced Behavior: Pausing, Escape, and Polydipsia
+- Understanding Disruptive Effects of Stimuli Correlated With Schedules of Positive Reinforcement
+
+NEIGHBOURING TOPIC 21 (similarity 0.81)
+Key terms: concurrent chains, concurrent schedules, terminal, ratio schedules
+- Toward a Comprehensive Theory of Choice in Concurrent Schedules of Reinforcement
+- Effects of schedule type and terminal‐link duration on choice in concurrent chains
+- Choice dynamics in concurrent ratio schedules of reinforcement

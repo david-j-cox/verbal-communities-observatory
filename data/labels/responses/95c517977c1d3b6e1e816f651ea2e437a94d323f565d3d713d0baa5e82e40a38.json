@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Data Recording Tools and Media\",\"definition\": \"Work on the physical and electronic means of recording behavior and session data, such as cumulative recorders, paper-and-pen versus electronic data collection, tape, and computer interfaces for recording equipment.\",\"distinct_from_neighbours\": \"Focuses on the recording media and devices themselves, not the accuracy of interval or time-sampling methods, custom circuitry for operant chambers, or ratio-schedule performance.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 994,
+  "output": 290
+ },
+ "generated_utc": "2026-10-10T19:07:42+00:00"
+}

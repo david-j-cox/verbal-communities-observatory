@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Matching-to-Sample Procedures and Mediation\",\"definition\":\"Research on matching-to-sample procedures, including delayed matching, how trials and stimuli are arranged, observing and precurrent responses, and whether covert verbal mediation or rehearsal supports accurate responding and emergent relations.\",\"distinct_from_neighbours\":\"Centers on the matching-to-sample task itself and its procedural variants, unlike the matching law of choice, general conditional discrimination training, or conceptual work on equivalence class formation.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1295,
+  "output": 178
+ },
+ "generated_utc": "2026-10-10T19:05:32+00:00"
+}

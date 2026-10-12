@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Visual Analysis and Graphing of Data\",\"definition\":\"Research on how single-case graphs are inspected, interpreted, and constructed, including structured visual-analysis protocols, interrater agreement, effects of graph features on judgments, and training people to graph and visually analyze data.\",\"distinct_from_neighbours\":\"Focuses on visual inspection and graph construction skills, not data collection, recording, and extraction tools, overall single-case design practices, or functional analysis methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1560,
+  "output": 162
+ },
+ "generated_utc": "2026-10-10T19:13:07+00:00"
+}

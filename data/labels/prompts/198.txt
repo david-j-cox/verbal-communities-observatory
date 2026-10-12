@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 198
+Key terms: care, services, clinical, treatment
+
+Titles closest to the topic's center, conference presentations:
+- Putting the Analysis Back Into Clinical Practice: Data-Based Decisions to Improve Lives
+- An Attorney and a BCBA Walked Into a Symposium: Clinical Best Practices and the Law
+- Navigating Service Delivery for Challenging Behavior in Outpatient Healthcare Settings
+- A Systems Approach to Training Clinicians and Increases in Clients’ Learning in Clinic Settings
+- Guidance for Clinicians on Navigating Peer Reviews and Appeals for Insurance-Funded ABA
+- Scaling Assent-Based Care: A Mentorship Model for a Tiered Clinical Framework
+- Code Compliant, Assessment, Treatment Planning, and Consent
+- the 3 floor foyer. rd Sponsored by: Beyond Billable Hours: Building Clinical KPI Strategies That Matter in ABA and Value-Based Care
+- Delivering Clinical Services With an Emphasis on Neuro-Affirming & Inclusive Approaches
+- Pairing with medical service providers: Getting on the sAme page, speaking the sAme ABC’s
+
+Titles closest to the topic's center, journal articles:
+- Evidence based and intensity specific services in the integrated care setting: Ethical considerations for a developing field.
+- Applying Techniques From Precision Medicine to Predict Challenging Behavior and Inform Clinical Resource Allocation
+- Developmental of a checklist of transdiagnostic therapeutic skills for use in general healthcare appointments
+- Incentivized collaborative care to disseminate and enhance contingency‐management services
+- Clinical Informed Consent and ABA
+- Conducting Translational Research in the Context of Patient Care
+- The clinician, the clinician-researcher, and the contextual behavioral science research agenda
+- Scalability of an ACT-Based strategy for improving well-being in health care providers: A mix-method and preliminary evaluation of efficacy
+- Common Practices used to Establish and Implement Token Economies in Clinical and Instructional Settings: A Survey of BACB Certificants
+- Transdiagnostic Treatment Personalization: The Feasibility of Ordering Unified Protocol Modules According to Patient Strengths and Weaknesses
+
+NEIGHBOURING TOPIC 158 (similarity 0.69)
+Key terms: treatment acceptability, alternating, treatment integrity, treatments
+- Treatment Fidelity: Evaluation of Error Types and Mitigation Strategies
+- Clinical Interventions in Treatment
+- Practical Issues in Treatment
+
+NEIGHBOURING TOPIC 15 (similarity 0.69)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis
+
+NEIGHBOURING TOPIC 105 (similarity 0.65)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia

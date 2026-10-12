@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 39
+Key terms: scientific, science, human, scientist
+
+Titles closest to the topic's center, conference presentations:
+- The Culture of Science
+- The Scientist Behavior, Behavior Analysis, Relational Framing: A Tree as a Metaphor for Keeping Alive the Functional Sap in Our Practices
+- The State of the Science: A Closer Look at Dissemination
+- The Trials and Tribulations of the International Growth of a Science
+- Should We Be Selling Out and Commercializing Our Science?: The Stories of PECs, PEAK, and Chartlytics
+- The Free Will -- Determinism Debate in Contemporary Science and Society: Analyses and Discussion of the Latest (Written) Words
+- The Place of the Human Subject in the 21st Century Operant Laboratory
+- What’s So Interbehavioral About Organismic Biology?
+- In Praise of Methodological Agnosticism
+- PDS: A Discussion of New Books on Modern Science and Technology, Social Media, and Longtermism
+
+Titles closest to the topic's center, journal articles:
+- The Language of Science
+- Methods matter: A review of Scientific Method: How Science Works, Fails to Work, and Pretends to Work by John Staddon , Routledge Press, 2018
+- Science in the Service of Humanity: The Astonishing Contributions of Siegfried Engelmann
+- Tony Nevin: The embrace of translational work by a basic scientist
+- Dr. Maria Antonia Padilla Vargas: Impact of a Career Devoted to the Analysis of Scientists’ Training and Scientific Practice from a Behavior Analytic Perspective
+- Stephenson’s Subjectivity as Naturalistic and Understood from a Scientific Perspective
+- Lessons worth repeating: Sidman's Tactics of Scientific Research
+- Subjectivity in the Human Sciences
+- Science Advocacy 101: Realizing the Benefits, Overcoming the Challenges
+- The Free Will: Determinism Debate in Contemporary Science and Society (Or: Why Are You Reading This Article?)
+
+NEIGHBOURING TOPIC 89 (similarity 0.74)
+Key terms: chomsky, books, thorndike, big
+- THE epistemologies of parsimony: A review of Ockham's razors: A user's manual by Elliott Sober
+- Generalizing from the Past, Choosing the Future
+- Murray Sidman: fostering progress through foundational choices
+
+NEIGHBOURING TOPIC 61 (similarity 0.70)
+Key terms: mind
+- A Behaviour Analysis of Theory of Mind: Conceptual and Applied Implications
+- A Verbal Behavior Analysis of Theory of Mind: Conceptual and Applied Implications
+- The Intact Mind and Why It Matters
+
+NEIGHBOURING TOPIC 132 (similarity 0.66)
+Key terms: behaviorism, psychology, science
+- Current Diversification of Behaviorism
+- Methodological Behaviorism: Historical Origins of a Problematic Concept (1923–1973)
+- The Role of Theory in Behavior Analysis: A Response to Unfinished Business, Travis Thompson’s Review of Staddon's New Behaviorism (2nd edition)

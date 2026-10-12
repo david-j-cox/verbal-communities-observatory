@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Field history, future directions, and reflections\",\"definition\":\"Broad reflective pieces on behavior analysis's past and future, including historical figures and anniversaries, international trends, book reviews, commentaries, and big-picture calls for systemic or societal change.\",\"distinct_from_neighbours\":\"Unlike topics on scientific culture and language, tributes to individual colleagues, or theory of mind, this topic covers retrospective and forward-looking overviews of the discipline's history and direction.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1234,
+  "output": 163
+ },
+ "generated_utc": "2026-10-11T01:32:05+00:00"
+}

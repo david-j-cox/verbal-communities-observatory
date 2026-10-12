@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavior Analysis as a Science\",\"definition\":\"Work on the nature, culture, methods, and dissemination of science and scientists' behavior, including scientific practice, advocacy, free will and determinism, subjectivity, and tributes to contributing scientists.\",\"distinct_from_neighbours\":\"Focuses on science itself, its practice, culture, and promotion, rather than parsimony and influential books, analyses of mind, or the history and varieties of behaviorism.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1467,
+  "output": 158
+ },
+ "generated_utc": "2026-10-11T01:32:00+00:00"
+}

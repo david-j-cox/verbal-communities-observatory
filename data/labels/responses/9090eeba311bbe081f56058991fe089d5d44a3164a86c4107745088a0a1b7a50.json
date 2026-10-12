@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Professional Ethics and Ethical Decision-Making\",\"definition\":\"Work on ethical conduct in behavior-analytic practice and research, including interpreting and applying the professional ethics code, models of ethical decision-making, ethics training, and ethical dilemmas such as punishment.\",\"distinct_from_neighbours\":\"Centers on ethical reasoning and conduct itself, not credentialing and licensure, qualitative research methods, or racism and social justice issues addressed in neighbouring topics.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1564,
+  "output": 169
+ },
+ "generated_utc": "2026-10-11T00:37:52+00:00"
+}

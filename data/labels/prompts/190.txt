@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 190
+Key terms: smoking, abstinence, addiction, substance abuse
+
+Titles closest to the topic's center, conference presentations:
+- Novel Behavioral Economic Approaches to Assessing and Treating Substance Abuse
+- Novel Behavioral Economic Approaches to Measuring Substance Abuse Severity and Motivating Change
+- Disseminating Behavioral Intervention for Drug Abuse Across the USA: A Behavior Analysis Story
+- Behaviorally Based Approaches to Changing Behaviors of Addictions and Recovery: A Symposium to Honor Sherman Yen, Ph.D.
+- Reliability and Validity of Behavioral Economic Measures in Addiction Research: A Comprehensive Review and Future Directions
+- Contingency Management in the Context of an Evolving Substance Use Landscape
+- Operant Conditioning to Combat Addiction, Unemployment, and Poverty
+- Translational Conceptualizations of Substance Use: Utility of Behavioral Choice Theories
+- Recent Findings in Behavioral Economics: Methodological Innovations, Schedule-Dependent Choice, and E-Cigarette Abuse Liability
+- Operant Conditioning to Address Poverty and Substance Use Disorders
+
+Titles closest to the topic's center, journal articles:
+- Behavioral Science and the Prevention of Adolescent Substance Abuse
+- Application of a Brief Incentive Treatment for Cigarette Smoking
+- Voucher-Based Contingency Management is Efficacious but Underutilized in Treating Addictions
+- Exploring the suitability of cannabis use with next‐day responsibilities: A behavioral‐economic and qualitative study
+- Validity of a Functional Assessment for Smoking Treatment Recommendations Questionnaire
+- Behavioral economic research in addiction as an area of growth for the experimental analysis of behavior.
+- Evolution of the substance use landscape: Implications for contingency management
+- The Utility of Operant Conditioning to Address Poverty and Drug Addiction
+- Experimental analysis of behavior and tobacco regulatory research on nicotine reduction
+- Using an Experimental Medicine Approach to Identify Novel Determinants of Addiction
+
+NEIGHBOURING TOPIC 0 (similarity 0.71)
+Key terms: cocaine, rhesus, monkeys, abstinence
+- Clinical neuropharmacology of cocaine reinforcement: A narrative review of human laboratory self‐administration studies
+- Abstinence from Cocaine Impairs Behavioral Inhibition and Alters Neural Activity in the Prelimbic Cortex
+- The Effects of Treatment Duration on Resurgence of Cocaine Seeking
+
+NEIGHBOURING TOPIC 91 (similarity 0.67)
+Key terms: behavioral pharmacology, psychotropic, drugs, medication
+- The discipline of behavioral pharmacology.
+- Behavioral Pharmacology of Prescription Drugs: The Good, the Bad, and the Ugly
+- Behavioral Pharmacology: Red Herrings and Big Fish
+
+NEIGHBOURING TOPIC 105 (similarity 0.67)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia

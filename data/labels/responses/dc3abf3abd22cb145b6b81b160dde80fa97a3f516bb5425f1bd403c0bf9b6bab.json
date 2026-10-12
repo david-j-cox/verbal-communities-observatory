@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Learning Models, Generalization, and Decision Making\",\"definition\":\"Theoretical and quantitative accounts of learning, including associative and timing models, generalization across stimulus dimensions, model selection methods, and decision making with graphed or time-series data.\",\"distinct_from_neighbours\":\"Focuses on formal learning and decision models and quantitative analysis, rather than equivalence class formation, operant variability and response units, or evolutionary theory of behavior dynamics.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1334,
+  "output": 159
+ },
+ "generated_utc": "2026-10-10T19:07:00+00:00"
+}

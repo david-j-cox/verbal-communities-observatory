@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 28
+Key terms: good behavior, behavior game, games, play
+
+Titles closest to the topic's center, conference presentations:
+- The Good Behavior Game: Examining Procedural Variations, Indirect Effects, Generalization, and Maintenance
+- Applications of The Good Behavior Game Across Procedural Variations and Student Populations
+- A Behavioral Approach to Targeting Play Skills
+- Recent Advancements in Evaluating and Improving Social Play Skills
+- Learning to Play the Behavioral Way
+- Playing and Pretending: A Behavioral Approach to Teaching Pretend Play
+- Evaluations of the Good Inclusion and Good Behavior Games
+- Roll for Initiative: Facilitating Social Skills and Peer Connection via Tabletop Roleplay Games
+- Learning to Play and Expanding Communication Skills: Important Targets for a School Setting
+- Learning to Play and Playing to Learn
+
+Titles closest to the topic's center, journal articles:
+- The Good Behavior Game: A brief review
+- Comparison of components of the Good Behavior Game in a preschool classroom
+- A practitioner’s guide to the good behavior game.
+- An evaluation of and preference for variations of the Good Behavior Game with students with autism
+- An evaluation of interdependent and independent group contingencies during the good behavior game
+- Direct and indirect effects of and preferences for feedback during the Good Behavior Game in elementary classes
+- Increasing the Engagement and Complexity of Block Play in Young Children
+- The Good Behavior Game in preschool classrooms: An evaluation of feedback
+- Effects of Systematically Removing Components of the Good Behavior Game in Preschool Classrooms
+- Comparing Versions of the Good Behavior Game
+
+NEIGHBOURING TOPIC 189 (similarity 0.72)
+Key terms: preschool children, preschoolers, skills, development
+- Behavior Analysis Goes to Preschool: Strategies for Increasing Critical Skills in Young Children
+- Preschool life skills: Recent advancements and future directions
+- Descriptive Analysis of Preschool Social Interactions
+
+NEIGHBOURING TOPIC 149 (similarity 0.69)
+Key terms: classroom behavior, good behavior, behavior game, disruptive
+- Recent Research on School-Based Behavioral Interventions
+- Improving Classroom Behavior in Children With Problem Behavior
+- Preventing Disruptive Behavior via Classroom Management
+
+NEIGHBOURING TOPIC 22 (similarity 0.69)
+Key terms: classroom, student, teacher, instructional
+- Interventions for Instruction Following and On-Task Behavior
+- Effects of High-Probability Instructional Sequences as a Programmed Consequence
+- Instructional Strategies That Promote Independent Responding and Reduce Dependence on Prompts

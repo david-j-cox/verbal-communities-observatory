@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 191
+Key terms: physical activity, exercise, health, adults
+
+Titles closest to the topic's center, conference presentations:
+- Recent Research in Assessing and Increasing Physical Activity
+- Innovative Approaches to Promoting and Measuring Physical Activity
+- Increasing Leisure and Physical Activity Engagement
+- Get Up and Move! Fusing Behavior Analysis and Technology to Increase Physical Activity
+- Exploring Novel Strategies Increasing and Assessing Physical Activity in Diverse Populations
+- Using Behavior Analytic Strategies to Reduce Sedentary Behavior, Increase Physical Activity, and Improve Dietary Behaviors
+- Diet and Exercise: Behavior-Analytic Interventions for All Ages
+- An Evaluation of Self-Monitoring for Increasing Physical Activity
+- Improving Healthy Eating and Physical Activity With Reinforcement, Goal Setting, Multiple Stimulus Exposure, and Gamification
+- Promoting Healthy Lifestyle Changes: Improving Eating Habits and Increasing Exercise and Time Spent Outdoors
+
+Titles closest to the topic's center, journal articles:
+- The Use of Self-Monitoring and Technology to Increase Physical Activity: A Review of the Literature
+- The Effects of a Video-Enhanced Schedule on Exercise Behavior
+- Evaluating the effectiveness of goal setting and textual feedback for increasing moderate‐intensity physical activity in adults
+- Evaluating the Effectiveness of Education, Feedback, & Task Clarification to Increase Workplace Physical Activity
+- Pilot study testing the effects of a multicomponent intervention for increasing moderate‐intensity physical exercise
+- Further evaluation of observational and mechanical measures of physical activity
+- Increasing physical activity in adults using self-tailored deposit contacts.
+- Effects of a behavioral coaching treatment package on physical activity and adherence.
+- Evaluating a Treatment Package to Increase Aerobic Activity in University Students
+- Can peer-tutored psychological flexibility training facilitate physical activity among adults with overweight?
+
+NEIGHBOURING TOPIC 59 (similarity 0.81)
+Key terms: physical activity, activity children, increase physical, activity young
+- Evaluating and Increasing Physical Activity in Children
+- Recent Research on Increasing Children’s Physical Activity
+- Assessing and Increasing Physical Activity in Typically-Developing Children
+
+NEIGHBOURING TOPIC 105 (similarity 0.64)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 84 (similarity 0.63)
+Key terms: football, sports performance, athletes, players
+- An analysis of feedback to enhance sports performance.
+- A review of behavioral interventions to enhance sports performance
+- Applied Behavior Analysis for Enhancing Sports Performance

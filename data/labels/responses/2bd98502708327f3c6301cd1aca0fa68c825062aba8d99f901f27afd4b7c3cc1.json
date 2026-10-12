@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Drug Effects on Choice and Timing\",\n\"definition\": \"Laboratory studies of how drugs such as stimulants, opioids, hallucinogens, and cannabis alter impulsive and risky choice, interval timing, schedule-induced drinking, and choice between drug and nondrug reinforcers.\",\n\"distinct_from_neighbours\": \"Unlike cocaine self-administration work, discipline-level behavioral pharmacology overviews, or non-drug timing research, it examines how varied drugs change specific choice, timing, and schedule-controlled behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1689,
+  "output": 194
+ },
+ "generated_utc": "2026-10-10T19:11:18+00:00"
+}

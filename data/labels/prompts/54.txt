@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 54
+Key terms: delay discounting, probability, choice, temporal
+
+Titles closest to the topic's center, conference presentations:
+- Recent Advances in the Study of Delay Discounting
+- Complexities and Discounting: Examining Complex Variables and Contexts in Delay Discounting
+- Delay Discounting: A Road With Multiple Implications
+- Social and Delay Discounting: Similarities, Differences and Interactions
+- Some Extensions and Additions to Current Delay Discounting Research
+- Recent Advances in Basic and Applied Research in Delay Discounting
+- Sometimes Shallow and Unsystematic: Examining the Qualitative Differences in Individual Delay Discounting
+- An Experimental Test of the Additive Utility Model of Delay Discounting
+- Delay Discounting and its Repair: Methodological Issues and Extension
+- The Magnitude Effect in Delay Discounting Research: It’s All About the Contrast
+
+Titles closest to the topic's center, journal articles:
+- Delay discounting of different outcomes: Review and theory
+- Perceived reward certainty in the assessment of delay discounting
+- Effects of economic context and reward amount on delay and probability discounting
+- Brief Assessments of Delay Discounting: Two-Amount Monetary Choice and Delayed Losses Questionnaires
+- The Effects of Obligatory and Preferential Frames on Delay Discounting
+- How Reinforcer Magnitude and Delay Interact in Delay Discounting: A Concatenated Choice Analysis
+- Recent Experience Affects Delay Discounting: Evidence across Temporal Framing, Signs, and Magnitudes
+- A discounting framework for trade‐offs between risk and delay
+- Human choices between variable and fixed rewards in hypothetical variable‐delay and double‐reward discounting procedures
+- Temporal framing and the hidden‐zero effect: rate‐dependent outcomes on delay discounting
+
+NEIGHBOURING TOPIC 12 (similarity 0.73)
+Key terms: reinforcement choice, conditioned reinforcement, delay, humans
+- Renewal in Choice Behavior: Effect of Reinforcement Rate
+- An evaluation of methods for studying the effects of conditioned reinforcement on human choice
+- Tests of an Indifference Rule in Variable-Delay and Double-Reward Choice Procedures with Humans
+
+NEIGHBOURING TOPIC 57 (similarity 0.65)
+Key terms: behavioral economics
+- Behavioral Economics: Implications for Research and Practice
+- Advances in Behavioral Economics
+- Behavioral Economics: Novel Applications to Basic and Applied Research
+
+NEIGHBOURING TOPIC 99 (similarity 0.63)
+Key terms: choice, preference, model
+- Behavior Analytic Perspectives on Choice
+- A model of changeover behavior in two‐alternative choice
+- A Model of Changeover Behavior in Two-Alternative Choice

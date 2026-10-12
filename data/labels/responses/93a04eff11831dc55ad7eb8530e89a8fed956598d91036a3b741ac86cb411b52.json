@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Assessment and Treatment of Pica\",\"definition\": \"Functional analysis, brief assessment, and treatment of pica (eating inedible items), using differential reinforcement, response blocking, response interruption and redirection, competing stimuli, and discard responses.\",\"distinct_from_neighbours\": \"Focuses specifically on ingestion of inedible items, unlike nail biting and skin picking habits, general treatment integrity and acceptability issues, or drug effects and schedule-induced drinking in laboratory research.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1071,
+  "output": 173
+ },
+ "generated_utc": "2026-10-10T19:06:57+00:00"
+}

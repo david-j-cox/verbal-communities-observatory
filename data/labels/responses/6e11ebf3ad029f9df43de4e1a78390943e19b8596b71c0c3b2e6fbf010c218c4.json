@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Electric Shock in Avoidance and Treatment\",\"definition\": \"Work on electric shock as an aversive stimulus, including how shock intensity affects avoidance responding and the ethics and policy of contingent skin shock as a treatment.\",\"distinct_from_neighbours\": \"It centres on electric shock and aversive control, whereas neighbouring topics study schedule timing, lever-press responding, and response–reinforcer relations under positive reinforcement.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 942,
+  "output": 262
+ },
+ "generated_utc": "2026-10-10T19:05:51+00:00"
+}

@@ -1,0 +1,51 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 96
+Key terms: tact training, tacts, tact instruction, tacting
+
+Titles closest to the topic's center, conference presentations:
+- Procedural Advances for Teaching Tacts and Intraverbals to Children With an Autism Spectrum Disorder
+- Variables Affecting Tact Acquisition and Outcomes of Tact Instruction
+- Teaching Tacts and Naming Relations in Children With Autism Spectrum Disorder
+- Variables Affecting the Acquisition of Tact, Listener Behavior, and Visual Discriminations
+- Explaining Emergent Tact Control
+- Teaching Tacts to Create Treatment Integrity: Principles Involved, Related Phenomena, Practical Considerations, and Some Data
+- A scoping review of participant history descriptions of TAVB
+
+Titles closest to the topic's center, journal articles:
+- A comparison of teaching tacts with and without background stimuli on acquisition and generality
+- The effect of brief delays to reinforcement on the acquisition of tacts in children with autism
+- The Effects of Reinforcing Tacting on the Recall of Children with Autism
+- The effect of variable delays to reinforcement on the acquisition of tacts in children with autism
+- Comparing procedures on the acquisition and generalization of tacts for children with autism spectrum disorder
+- A comparison of two teaching procedures to establish generalized intraverbal‐tacting in children with autism
+- A comparison of stimulus set size on tact training for children with autism spectrum disorder
+- Facilitating the emergence of intraverbal tacts in children with autism spectrum disorder: A preliminary analysis
+- A Comparison of Training Procedures on the Emergence of Intraverbal-Tacts
+- Teaching Tacts of Tactile Stimuli to Children With Autism Spectrum Disorder
+
+NEIGHBOURING TOPIC 46 (similarity 0.66)
+Key terms: children autism, vocal, autistic, autism spectrum
+- Acquisition and generalization of divergent intraverbal responses in children diagnosed with autism spectrum disorder
+- Using intraverbal prompts to increase divergent intraverbal responses by a child with autism
+- Effects of response‐contingent stimulus pairing on vocalizations of nonverbal children with autism
+
+NEIGHBOURING TOPIC 65 (similarity 0.66)
+Key terms: braille, deaf, sign language, children
+- Using Constant Time Delay to Teach Sight Words to Students Identified as Deafblind
+- How Children Learn Early Communicative Gestures
+- Comparing stimulus equivalence‐based instruction to self‐study of videos to teach examples of sign language to adults
+
+NEIGHBOURING TOPIC 162 (similarity 0.64)
+Key terms: children autism, learners autism, skill acquisition, autism spectrum
+- Advancing and Refining Skill Acquisition Procedures for Young Children With Autism
+- Recent Research on Skill Acquisition With Children With Autism
+- Enhancing the Efficiency of Instructional Procedures for Children With Autism Spectrum Disorders

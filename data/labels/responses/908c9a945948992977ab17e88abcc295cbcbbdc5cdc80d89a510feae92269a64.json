@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Acceptance and Commitment Therapy\",\"definition\":\"Research and practice on acceptance and commitment therapy and training, including its effectiveness, process and values measures, psychological flexibility, meta-analytic evidence, and adoption by behavior analysts in clinical, school, and community settings.\",\"distinct_from_neighbours\":\"Centres specifically on acceptance and commitment therapy, unlike broader clinical behavior analysis and psychotherapy, general intensive or health behavioral interventions, and depression-focused work such as behavioral activation.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1670,
+  "output": 186
+ },
+ "generated_utc": "2026-10-10T19:11:53+00:00"
+}

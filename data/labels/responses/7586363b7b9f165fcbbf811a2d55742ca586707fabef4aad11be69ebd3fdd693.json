@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Data Collection Systems and Analysis Tools\",\n\"definition\": \"Work on how behavioral data are recorded, managed, and analyzed in practice and research, including electronic data collection software, data reliability, training staff to record data, and using clinical and organizational data for decisions.\",\n\"distinct_from_neighbours\": \"Covers data collection systems, software, and data-based decision making broadly, rather than synthesized contingency analyses, visual inspection of graphs, or the measurement error of time-sampling and interval recording methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1505,
+  "output": 176
+ },
+ "generated_utc": "2026-10-10T19:09:17+00:00"
+}

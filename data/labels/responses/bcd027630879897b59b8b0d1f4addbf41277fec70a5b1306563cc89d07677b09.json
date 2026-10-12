@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Preference Assessment and Reinforcer Choice\",\"definition\":\"Research on identifying preferred stimuli and testing whether they function as reinforcers, and on how reinforcer quality, variation, rate, and response requirements shape relative preference and choice.\",\"distinct_from_neighbours\":\"Centers on preference assessment and relative preference among reinforcers, unlike establishing conditioned reinforcers and magnitude effects, delay and conditioned reinforcement in human choice, or response–reinforcer dependency.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1495,
+  "output": 175
+ },
+ "generated_utc": "2026-10-10T19:12:12+00:00"
+}

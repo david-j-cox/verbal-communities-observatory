@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Stimulus Equivalence Class Formation\",\"definition\":\"Conceptual, experimental, and translational research on how stimulus equivalence classes and other emergent stimulus relations form, are maintained, and transfer functions, including the procedural variables and measures that affect them.\",\"distinct_from_neighbours\":\"Focuses on emergent, untrained relations among stimuli in equivalence classes, not general stimulus control by reinforcement, operant variability and response patterning, or competing stimulus assessments.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1434,
+  "output": 169
+ },
+ "generated_utc": "2026-10-10T19:12:28+00:00"
+}

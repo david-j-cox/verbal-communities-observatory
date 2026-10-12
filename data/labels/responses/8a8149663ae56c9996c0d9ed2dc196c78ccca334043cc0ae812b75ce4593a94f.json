@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Schedules of Reinforcement and Performance\",\"definition\":\"Basic, translational, and applied research on how reinforcement schedules (interval, ratio, concurrent, multiple, low-rate, and time-based) shape response patterns, preference, and treatment effects, including quantitative and theoretical accounts of schedule performance.\",\"distinct_from_neighbours\":\"Covers schedule effects broadly, rather than reinforcement delay specifically, temporal control and schedule-induced pausing, or alternative-behavior reinforcement and resurgence in treating problem behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1527,
+  "output": 194
+ },
+ "generated_utc": "2026-10-10T19:06:10+00:00"
+}

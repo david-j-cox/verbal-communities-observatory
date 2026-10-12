@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 29
+Key terms: caregiver, infant, skills training, service
+
+Titles closest to the topic's center, conference presentations:
+- Advances in Caregiver Training and Caregiver-Implemented Interventions
+- Recent Findings and Future Directions for Caregiver Training: Increasing Effectiveness and Social Validity
+- Working With Caregivers in the Treatment of Behavior Problems: Methods, Barriers, and Considerations From Intake to Follow-Up
+- Recent Advancements in Caregiver Training for Behavior Analytic Services
+- Recent Advancements in Caregiver and Staff Training
+- Evaluating the Efficacy and Preference of Procedures to Train Caregivers in Compliance and Embedded-Teaching Strategies
+- Service Delivery Models for Caregiver-Mediated Interventions
+- Working With Caregivers: Challenges and Triumphs
+- Caregiver Training: An Integral Component of Behavior-Analytic Service Delivery
+- Beyond Barriers: Solutions to Enable Caregiver Consistency With Behavioral Interventions
+
+Titles closest to the topic's center, journal articles:
+- Caregiver involvement in applied behavior‐analytic research: A scoping review and discussion
+- Collaboratively Supporting Families: A Rapid Coaching Intervention for Caregivers
+- Best Practices: Caregiver Training Resources Derived From Remote Behavioral Service Delivery Within the Foster Care System
+- POWER: A Caregiver Implemented Mand Training Intervention
+- Generalization and maintenance of caregivers' effective instruction delivery following group behavioral skills training
+- The experiences of family caregiver and clinician facilitators implementing a co-delivered acceptance and commitment training (ACT) intervention
+- Feasibility and Acceptability of a Compressed Caregiver Training Program to Treat Child Behavior Problems
+- A Systematic Review of Caregiver-Implemented Functional Analyses
+- Adaptation of the research unit on behavioral interventions caregiver training program for remote group delivery: Preliminary analysis of clinical outcomes.
+- Evaluation of Real-Time Feedback to Train Caregivers to Conduct a Discrete-Trial Instruction Procedure
+
+NEIGHBOURING TOPIC 79 (similarity 0.65)
+Key terms: compassionate care, analysis aba, cultural, exploring
+- Strategies for Incorporating Compassionate Care in a Behavior Analysis Graduate Program
+- Behavior Analysis of Compassion and Compassionate Care
+- The Foundation and Evolution of Compassionate Care in Behavior Analysis: Advances in Understanding, Definition, Measurement, and Training
+
+NEIGHBOURING TOPIC 105 (similarity 0.65)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 198 (similarity 0.63)
+Key terms: care, services, clinical, treatment
+- Putting the Analysis Back Into Clinical Practice: Data-Based Decisions to Improve Lives
+- An Attorney and a BCBA Walked Into a Symposium: Clinical Best Practices and the Law
+- Evidence based and intensity specific services in the integrated care setting: Ethical considerations for a developing field.

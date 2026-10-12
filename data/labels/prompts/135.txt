@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 135
+Key terms: science
+
+Titles closest to the topic's center, conference presentations:
+- On the Dimensions of Behavior Analysis
+- Theoretical Issues in Behavior Analysis
+- Conceptual Issues in Behavior Analysis
+- The Eighth Dimension of Applied Behavior Analysis
+- Theoretical Issues in Behavior Analysis II
+- Extending the Reach of Behavior Analysis
+- Towards Higher Standards for the Practice of Behavior Analysis
+- Innovative Analytical Approaches in Behavior Analysis: From Basic to Applied Research
+- Advances in Behavior Analysis: Past, Present, and Future
+- The Heart of Behavior Analysis
+
+Titles closest to the topic's center, journal articles:
+- Basic research in behavior analysis.
+- Applied Quantitative Analysis of Behavior: What It Is, and Why We Care—Introduction to the Special Section
+- Review of An Introduction to Behavior Analysis by Gregory Madden, Derek Reed, and Florence DiGennaro Reed
+- Gradual Change Procedures in Behavior Analysis
+- A View on the Development and Current Situation of Behavior Analysis in Europe
+- The natural mathematics of behavior analysis
+- The Scientific Image in Behavior Analysis
+- Translating Behavior Analysis: a Spectrum Rather than a Road Map
+- The scientist/practitioner in behavior analysis: A case study
+- A place for statistics in behavior analysis.
+
+NEIGHBOURING TOPIC 37 (similarity 0.90)
+Key terms: analysis aba
+- Applied Behavior Analysis: Past, Present, and Future
+- The importance of analysis in applied behavior analysis.
+- Behavior Analysis as an Applied Field: Concerns and Solutions
+
+NEIGHBOURING TOPIC 82 (similarity 0.87)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 199 (similarity 0.84)
+Key terms: evolutionary, behavior dynamics, theory, human
+- What Evolutionary Theory Tells Us About Behavior
+- On the current status of the evolutionary theory of behavior dynamics
+- Systems, Groups, and the Evolution of Behavior Science

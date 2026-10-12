@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 132
+Key terms: behaviorism, psychology, science
+
+Titles closest to the topic's center, conference presentations:
+- Behaviorism in the Great Beyond: A Panel on the Dissemination of Behavioral Analysis
+- Philosophy of Science and the Quantitative Analysis of Behavior
+- Contradictions in the Ethics of Modern Behaviorism: The Case of Assent
+- Behavior: A Functional Reconsideration
+- From the Tyranny of the Few to Survival of All: Culturo-Behavior Science for All
+- Kantor's Contributions to the Science of Behavior - Back and Forth
+- Psychology as the Interdisciplinary Behaviorist Views It
+- Bridging Two Worlds: Radical Behaviorist Approaches to Investigating the Role of Brain Systems in Behavior
+- Behaviorism and the Mind of a Bee
+- Emerging Conceptual Underpinnings for Culturo-Behavior Science
+
+Titles closest to the topic's center, journal articles:
+- Current Diversification of Behaviorism
+- Methodological Behaviorism: Historical Origins of a Problematic Concept (1923–1973)
+- The Role of Theory in Behavior Analysis: A Response to Unfinished Business, Travis Thompson’s Review of Staddon's New Behaviorism (2nd edition)
+- On the “Strength” of Behavior
+- Guest Editorial: Reflections from the 8th Think Tank on Culturo-Behavior Science
+- The importance of a deeper knowledge of the history and theoretical foundations of behaviorism and behavior therapy: Part 2—1960–1985.
+- The importance of a deeper knowledge of the history and theoretical foundations of behaviorism and behavior therapy: Part 3–1986–2021.
+- Unfinished Business: J. E. R. Staddon’s The New Behaviorism, 2nd ed
+- A Radical Reformulation of Psychology as a Theory-Laden Experimental Science: A Review of Emilio Ribes-Iñesta’s The Scientific Study of Individual Behavior: An Introduction to the Theory of Psychology
+- Historically recontextualizing Sidman's Tactics : How behavior analysis avoided psychology's methodological Ouroboros
+
+NEIGHBOURING TOPIC 53 (similarity 0.84)
+Key terms: creativity, psychology, psychological, science
+- Complex Behavior and Behavioral Artistry
+- Behavioral contrast: Research and areas for investigation
+- Behavioral Interpretations of Creativity
+
+NEIGHBOURING TOPIC 199 (similarity 0.83)
+Key terms: evolutionary, behavior dynamics, theory, human
+- What Evolutionary Theory Tells Us About Behavior
+- On the current status of the evolutionary theory of behavior dynamics
+- Systems, Groups, and the Evolution of Behavior Science
+
+NEIGHBOURING TOPIC 175 (similarity 0.83)
+Key terms: radical behaviorism, foundations radical, conceptual foundations, psychology
+- The Status of Radical Behaviorism
+- Radical Behaviorism: A Primer for the Profession and the Person
+- Historical and Conceptual Changes in Methodological and Radical Behaviorism

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 72
+Key terms: practical functional, functional assessment, functional behavior, behavioral assessment
+
+Titles closest to the topic's center, conference presentations:
+- From Assessment to Action: Optimizing Functional Behavior Assessment Methodologies for Greater Efficacy
+- Taking a Deeper Dive: Investigations Into Functional Behavioral Assessment (FBA) Protocols and Procedures
+- Current Research in Behavioral Assessment
+- Predictive Validity of Brief Functional Assessment Methods
+- Functional Behavior Assessment: What Are We Teaching and What Are We Implementing?
+- A Constructional Approach to Functional Behavior Assessment
+- A Comprehensive Evaluation of a Practical Functional Assessment Model
+- Changing Educators’ Practices in Functional Behavior Assessment in Public School Settings
+- Predicting and Quantifying the Effects of Behavioral Assessment and Treatment Methods
+- Extensions of Practical Functional Assessment and Skills-Based Treatment: Updates on Training, Implementation, and Overcoming Barriers
+
+Titles closest to the topic's center, journal articles:
+- A comparative effectiveness trial of functional behavioral assessment methods
+- Clarifying the nature and purpose of behavioral assessment: A response to Newsome et al.
+- Ongoing, Explicit, and Direct Functional Assessment is a Necessary Component of ACT as Behavior Analysis: A Response to Tarbox et al. (2020)
+- Practitioner Perspectives on Hypothesis Testing Strategies in the Context of Functional Behavior Assessment
+- Considerations of Baseline Classroom Conditions in Conducting Functional Behavior Assessments in School Settings
+- Randomized controlled trial of seminar‐based training on accurate and general implementation of practical functional assessments
+- Comparing Functional Behavior Assessment-Based Interventions and Non-functional Behavior Assessment-Based Interventions: A Systematic Review of Outcomes and Methodological Quality of Studies
+- The Big Four: Functional Assessment Research Informs Preventative Behavior Analysis
+- Using Direct and Indirect Functional Assessments to Guide the Selection of Individualized Academic Interventions
+- Long‐term effectiveness and generality of practical functional assessment and skill‐based treatment
+
+NEIGHBOURING TOPIC 144 (similarity 0.76)
+Key terms: analysis outcomes, functional analyses, functional analysis, methodology
+- A descriptive assessment of trial‐based functional analysis research
+- Modifications and Adaptions to Functional Analysis Procedures: Evaluation of Safety, Validity, and Procedural Fidelity
+- Concurrent validity of Open‐Ended Functional Assessment Interviews with functional analysis
+
+NEIGHBOURING TOPIC 160 (similarity 0.74)
+Key terms: treatment challenging, severe challenging, challenging behavior, assessment treatment
+- Advances in Assessment and Intervention for Difficult-to-Treat Problem Behavior
+- Synthesizing Research on the Assessment and Treatment of Problem Behavior
+- From Research to Practice: Current Procedural Advances in the Assessment and Treatment of Problem Behavior
+
+NEIGHBOURING TOPIC 15 (similarity 0.73)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis

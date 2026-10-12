@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 112
+Key terms: treatment relapse, change relapse, mitigation, translational research
+
+Titles closest to the topic's center, conference presentations:
+- Translational and Applied Research on Response Relapse
+- Recent Evaluations of Relapse Procedures in Applied and Basic Research
+- Recent Applied and Translational Research on Treatment Relapse
+- Innovations and Advancements in Relapse Research
+- Treatment Relapse: A Panel With Discussion
+- Advancing Relapse Mitigation and Clinical Impact: Translational Research and Practical Recommendations
+- A Practitioner’s Guide to Mitigating Treatment Relapse
+- Novel Evaluations of Relapse-Mitigation in Clinical and Experimental Settings
+- Building Durable Behavioral Treatments: Advancements In and Discussions On Relapse Mitigation and Clinical Implications
+- Translational Research on Relapse: Renewal, Resurgence, and Reinstatement With Human and Non-Human Participants
+
+Titles closest to the topic's center, journal articles:
+- Understanding and Reacting to Relapse: Considerations for Practitioners
+- Relapse: An introduction
+- Delivering alternative reinforcement in a distinct context reduces its counter‐therapeutic effects on relapse
+- Relapse and its mitigation: Toward behavioral inoculation
+- Maintenance, Generalization, and Treatment Relapse: A Behavioral Momentum Analysis
+- Different criteria affect prevalence of relapse of behavior targeted for treatment
+- Laboratory models of treatment relapse and mitigation techniques.
+- The effects of discriminative stimuli on combined relapse: A preliminary human‐operant investigation
+- A Reinforcer Pathology perspective on relapse
+- On the scope and characteristics of relapse when treating severe destructive behavior
+
+NEIGHBOURING TOPIC 186 (similarity 0.70)
+Key terms: resurgence, renewal, basic translational, translational research
+- Basic and Applied Investigations of Resurgence: A Translational Approach to Demonstrating and Mitigating Relapse
+- Basic and Translational Investigations of Resurgence and Renewal
+- A systematic review of enhanced resurgence paradigms
+
+NEIGHBOURING TOPIC 158 (similarity 0.58)
+Key terms: treatment acceptability, alternating, treatment integrity, treatments
+- Treatment Fidelity: Evaluation of Error Types and Mitigation Strategies
+- Clinical Interventions in Treatment
+- Practical Issues in Treatment
+
+NEIGHBOURING TOPIC 190 (similarity 0.56)
+Key terms: smoking, abstinence, addiction, substance abuse
+- Novel Behavioral Economic Approaches to Assessing and Treating Substance Abuse
+- Behavioral Science and the Prevention of Adolescent Substance Abuse
+- Novel Behavioral Economic Approaches to Measuring Substance Abuse Severity and Motivating Change

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 17
+Key terms: nonverbal, speech, intraverbal, verbal behavior
+
+Titles closest to the topic's center, conference presentations:
+- Examining of Verbal Behavior Across Sources of Supplementary Stimulation
+- Examining Verbal Behavior Along Continua of Contextual Control
+- When One’s Listener and Speaker Behaviors Join – The Effects of a Rotated Protocol on Verbal Behavior Development Cusps
+- Multiple Exemplar Instruction and its Implications on Rate of Acquisition of Textual, Vocal, and Written Responses and Joint Stimulus Control
+- An Analysis of Oral Motor Prompting Procedures on Fluent Speaking Ability
+- The Acquisition of Verbal Behavior Using Handheld Speech Generating Devices: A Training Protocol
+- The “Little Voice in the Head”: Behavioral Views on Inner Speech and Its (F)utility
+- Behavioral and Verbal Behavioral Cusps:Research and Practical Applications
+- When Interviews are Unspeakable: Using the Constructional Questionnaire With Nonverbal as Well as Verbal Populations
+- Your Client Will Learn How to Learn When You Use Echoics to Shape Generative Verbal Behavior
+
+Titles closest to the topic's center, journal articles:
+- Verbal Stimulus Control and the Intraverbal Relation
+- Emergent Relations between Discriminative Stimuli, Responses, and Consequences in Intraverbals
+- Verbal-Like Effects of Nonverbal Stimuli
+- Control by Compound Antecedent Verbal Stimuli in the Intraverbal Relation
+- Comparing the Effect of Echoic and Listener Responding in the Development of Complex Intraverbals
+- Generalized Verbal Behavior Increases Following a Speaker Immersion Intervention
+- Systematic Review of Verbal Operants in Speech Generating Device Research from Skinner’s Analysis of Verbal Behavior
+- Emergence of verbal responses using instructive feedback: A replication and extension
+- Emergence of Intraverbals with Antonyms Derived From Relations with Verbal and Nonverbal Stimuli
+- A scoping review of empirical research on emergent intraverbal behavior
+
+NEIGHBOURING TOPIC 169 (similarity 0.87)
+Key terms: analysis verbal, verbal behavior
+- Basic Research on Verbal Behavior
+- Advances in Verbal Behavior
+- The current status of the experimental analysis of verbal behavior.
+
+NEIGHBOURING TOPIC 87 (similarity 0.78)
+Key terms: vocal stereotypy, stuttering, vocalizations, interruption redirection
+- Effects of toy removal and number of demands on vocal stereotypy during response interruption and redirection
+- A comparison of response interruption and redirection and competing items on vocal stereotypy and appropriate vocalizations
+- Further evaluation of treatments for vocal stereotypy: Response interruption and redirection and response cost
+
+NEIGHBOURING TOPIC 32 (similarity 0.76)
+Key terms: competing stimulus, attention, task, assessment
+- Initial outcomes of an augmented competing stimulus assessment
+- Further Evaluations of Competing Stimulus Assessments and the Effects of Competition on On-Task Behavior
+- Competing Stimulus Assessments: Procedural Modifications to Improve Effectiveness and Efficiency

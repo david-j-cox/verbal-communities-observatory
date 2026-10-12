@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 182
+Key terms: career, professional, graduate, success
+
+Titles closest to the topic's center, conference presentations:
+- Professional Development Series: Fame, Fortune, and Fixed-Interval Schedules: Promoting the Future of Basic and Translational Research in University Settings
+- Branching Out: Finding Success in Diverse Areas of Practice
+- Professional Development Series: The Language of Dissemination
+- Hello From the Other Side: Behaving Outside the Box to Maximize the Impact of Your Career
+- PDS: Preparing and Looking for Academic Positions
+- PDS: Gaining Professional Experience as an International Student
+- PDS: Returning to Academic Study From Professional Practice
+- Success in Academia: Developing Teaching and Service Repertoires
+- Expanding Our Scope of Competence: What We Can Learn From Other Fields
+- Finding Success After Graduation: Establishing Yourself in the First Few Years (3/3)
+
+Titles closest to the topic's center, journal articles:
+- Branching Out: Finding Success in New Areas of Practice
+- Maximizing the Conference Experience: Tips to Effectively Navigate Academic Conferences Early in Professional Careers
+- Designing Interprofessional Education Experiences to Cultivate Collaborative Repertoires in Graduate Students
+- Mastery Criteria and Maintenance: a Descriptive Analysis of Applied Research Procedures
+- Instructor as Subject: An Alternative to the Self-Management Project
+- Increasing Diversity Content in Graduate Coursework: A Pilot Investigation
+- A Commentary on the Student-Supervisor Relationship: a Shared Journey of Discovery
+- Using Gamification to Promote Accurate Data Entry of Practicum Experience Hours in Graduate Students
+- Abernathy, W. B. (2014). The liberated workplace: Transitioning to walden three . Atlanta, GA: Performance Management Publications
+- Teaching OBM: Considerations when building a graduate curriculum
+
+NEIGHBOURING TOPIC 118 (similarity 0.69)
+Key terms: schools, educational, student, public
+- Advancements in Group Contingencies in School Settings
+- PDS: Cultivating Student Repertoires to Produce Societal Change: Why Are We Not Teaching People to Save the World?
+- Evaluation of a Novel Independent Group Contingency in an Alternative School
+
+NEIGHBOURING TOPIC 194 (similarity 0.69)
+Key terms: collaboration, practice
+- For the Love of this Field: Advocating and Collaborating with a United Purpose
+- Outside the Box: Better Outcomes Through Collaboration
+- Mind the Gap Lunch—Engage with Authors and Researchers to Innovate and Evolve Your Practices WHAT'S THIS?
+
+NEIGHBOURING TOPIC 196 (similarity 0.64)
+Key terms: skill acquisition, skills, training, performance
+- Recent Research in Skill Acquisition
+- Skill Acquisition Learning Arrangements: How the Little Things Can Make a Big Difference
+- Efficacy and Efficiency in Skill Acquisition: Novel Approaches to Measurement and Procedural Refinement

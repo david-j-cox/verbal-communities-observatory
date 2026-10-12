@@ -1,0 +1,48 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 126
+Key terms: picking, mouthing, skin, habit
+
+Titles closest to the topic's center, conference presentations:
+- Reducing Risk, Building Replacements: Practical Tools for Assessing and Treating Mouthing and Pica Behavior
+- A Behavioral Approach to the Treatment of Aphasia: Scratching the Surface
+- From Virtual to Reality: Tablet-Based Interventions to Induce Preverbal Foundational Cusps
+- Recent Technological Advances and Extension Assessment and Treatment of Eye Contact
+
+Titles closest to the topic's center, journal articles:
+- Differential Reinforcement of Other Behaviour for the Reduction of Severe Nail Biting
+- An Electronic Bracelet for Self-Monitoring of Nail Biting in Habit Reversal Procedures
+- Using competing stimuli with an adult with stereotypic skin picking: A case study of assessment, treatment, and generalization
+- Developing a treatment for hand‐clapping maintained by automatic reinforcement using sensory analysis, noncontingent reinforcement, and thinning
+- The rooting reflex as an infant feeding cue
+- Reducing face touching through haptic feedback: A treatment evaluation against fomite‐mediated self‐infection
+- Using Functional Communication and Competing Stimuli to Gradually Increase the Distance of Transitions in the Treatment of Tangibly Maintained Elopement
+- Functional analysis and generalized treatment of disruptive behavior during dental exams
+- Tailoring of Painful Stimuli Used for Exploring Transfer of Function
+- Assessment of Chewing in Children With Down Syndrome
+
+NEIGHBOURING TOPIC 156 (similarity 0.62)
+Key terms: lever pressing, bar, pecking, key
+- Response–reinforcer contiguity versus response‐rate–reinforcer‐rate covariance in rats' lever pressing: Support for a multiscale view
+- Temporal Dynamics of Drinking and Operant Lever Pressing in the Presence and Absence of a Response-Reinforcer Contingency
+- Analysis of Short Lever-Press Durations in Rats Responding Under a Fixed-Duration Schedule
+
+NEIGHBOURING TOPIC 187 (similarity 0.61)
+Key terms: obsessive-compulsive, phobia, tourette, exposure
+- The “how” of exposures: Examining the relationship between exposure parameters and outcomes in obsessive-compulsive disorder
+- That Was Easy! Expectancy Violations During Exposure and Response Prevention for Childhood Obsessive-Compulsive Disorder
+- Obsessive beliefs, experiential avoidance, and cognitive fusion as predictors of obsessive-compulsive disorder symptom dimensions
+
+NEIGHBOURING TOPIC 35 (similarity 0.60)
+Key terms: destructive, aggression, aggressive, attention
+- Evaluating the effects of physical reactions on aggression via concurrent‐operant analyses
+- Assessment and treatment of aggressive behavior maintained by access to physical attention.
+- Effects of Noncontingent Reinforcement on the Persistence and Resurgence of Mild Aggression

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Resurgence of Previously Extinguished Behavior\",\"definition\":\"Basic, translational, and applied research on resurgence: the return of an extinguished response when alternative reinforcement is reduced or removed. It covers effects of reinforcer parameters, response effort, and treatment duration, plus mitigation strategies.\",\"distinct_from_neighbours\":\"Focuses specifically on resurgence, rather than relapse in general (renewal, reinstatement), designing alternative-reinforcement treatments for problem behavior, or extinction bursts and resistance to extinction.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1415,
+  "output": 192
+ },
+ "generated_utc": "2026-10-10T19:13:20+00:00"
+}

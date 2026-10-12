@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Nail Biting, Skin Picking, and Mouthing\",\"definition\":\"Assessment and treatment of body-focused repetitive behaviors such as nail biting, skin picking, face touching, and mouthing or pica, often automatically maintained, using competing stimuli, differential reinforcement, habit reversal, and feedback devices.\",\"distinct_from_neighbours\":\"Targets body-focused habits in applied settings, unlike laboratory lever-pressing research, exposure-based treatment of obsessive-compulsive and anxiety disorders, or socially maintained aggression.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1456,
+  "output": 196
+ },
+ "generated_utc": "2026-10-10T19:10:22+00:00"
+}

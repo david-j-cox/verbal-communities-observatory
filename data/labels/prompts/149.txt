@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 149
+Key terms: classroom behavior, good behavior, behavior game, disruptive
+
+Titles closest to the topic's center, conference presentations:
+- Recent Research on School-Based Behavioral Interventions
+- Improving Classroom Behavior in Children With Problem Behavior
+- Improving Classroom Behavior in Students With Problem Behavior
+- Recent Advances in Academic and Behavioral Interventions in the Classroom
+- Evaluations of Innovative Procedures Aimed at Improving Behavior in Classrooms and Clinical Settings
+- School Based Interventions to Decrease Challenging Behavior and Increase Social Skills
+- Outcomes of Behavioral Intervention in School Settings and Adolescence
+- Instruction-Based Interventions to Improve Students’ Academic and Social Behaviors
+- Prevent-Teach-Reinforce: A Function-Based Approach to Addressing Challenging Behavior in the Classroom Setting
+- A Panel Discussion on the Impact of School-Wide Positive Behavioral Interventions and Supports and Applied Behavior Analysis on Educational Systems
+
+Titles closest to the topic's center, journal articles:
+- Preventing Disruptive Behavior via Classroom Management
+- A comparison of variations of the good behavior game on disruptive and social behaviors in elementary school classrooms.
+- Noncontingent Reinforcement in After-School Settings to Decrease Classroom Disruptive Behavior for Students with Autism Spectrum Disorder
+- Using Class Pass Intervention to Decrease Disruptive Behavior in Young Children
+- Reducing Teacher Distress Through Implementation of the Good Behavior Game
+- Effects of Rules and Feedback on Classroom Behavior of Adolescents in a Residential Treatment Setting
+- A Review of Behavior-Based Interventions that Address Bullying, Aggressive, and Inappropriate Student Behavior during Recess
+- Effects of the good behavior game across classroom contexts
+- Effects of the Good Behavior Game on individual student behavior.
+- Effects of and preference for student‐ and teacher‐implemented good behavior game in early elementary classes
+
+NEIGHBOURING TOPIC 22 (similarity 0.84)
+Key terms: classroom, student, teacher, instructional
+- Interventions for Instruction Following and On-Task Behavior
+- Effects of High-Probability Instructional Sequences as a Programmed Consequence
+- Instructional Strategies That Promote Independent Responding and Reduce Dependence on Prompts
+
+NEIGHBOURING TOPIC 31 (similarity 0.82)
+Key terms: teaching behavior, higher education, schools, students
+- Applied Behavior Analysis in Educational Settings
+- When Applied Behavior Analysis Goes to School: Lessons Learned From the Field
+- Improving Classroom Behavior Support Through Applied Behavior Analysis
+
+NEIGHBOURING TOPIC 133 (similarity 0.79)
+Key terms: child, disorders, treatment, assessment
+- Practical Considerations and Applications of Behavior Analysis to Working With Children in Healthcare Settings
+- Dissemination of Behavior Analysis to the Pediatric Community
+- Quality of Early Intensive Behavioral Intervention as a Predictor of Children's Outcome

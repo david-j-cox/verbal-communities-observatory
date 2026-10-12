@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Pigeon Inference and Comparative Cognition\",\"definition\":\"Studies using pigeons as an avian model of complex cognition, such as inference by exclusion, numerical or distance effects in choice, and delayed matching-to-sample performance.\",\"distinct_from_neighbours\":\"Focuses on cognitive-style phenomena like exclusion and distance effects, rather than visual discrimination and stimulus control, key-peck response properties, or reinforcement-parameter choice and discounting.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 903,
+  "output": 166
+ },
+ "generated_utc": "2026-10-10T19:08:37+00:00"
+}

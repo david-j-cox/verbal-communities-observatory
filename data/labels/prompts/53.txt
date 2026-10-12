@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 53
+Key terms: creativity, psychology, psychological, science
+
+Titles closest to the topic's center, conference presentations:
+- Complex Behavior and Behavioral Artistry
+- Behavioral Interpretations of Creativity
+- “What” and “How” Psychology Could Be Related to Other Disciplines: An Interbehavioral Approach
+- Embodied Cognition in Theory and Practice: How Behavior Becomes Thought
+- Behavioral Analyses of Aesthetic Reactions
+- Some Empirical Investigations in Culturo-Behavioral Science at the University of North Texas
+- Context All the Way Down: Toward a Situated Behavior-Analytic Praxis
+- Relating to the World Around Us: A Contemporary Behavioral Exploration of Emotions, Environment, and Values
+- A Behavioral Analysis of Aesthetic Responses
+- Human Development in Psychological Perspective
+
+Titles closest to the topic's center, journal articles:
+- Behavioral contrast: Research and areas for investigation
+- Behavioral Functions of Aesthetics: Science and Art, Reason, and Emotion
+- Coal Is Not Black, Snow Is Not White, Food Is Not a Reinforcer: The Roles of Affordances and Dispositions in the Analysis of Behavior
+- Minding behavior
+- Psychological Events as Integrated Fields
+- A Behavioral Interpretation of Aesthetics
+- To Fail or Not to Fail? Implications of Extinction on Creativity and Problem-Solving Behavior
+- Kurt Salzinger - A Loss to Behavioral Science and to the World
+- What we want. A review of Beyond Pleasure and Pain ; How Motivation Works by E. Tory Higgins
+- Further evidence in support of psychological flexibility as a model of eudaimonic activity
+
+NEIGHBOURING TOPIC 132 (similarity 0.84)
+Key terms: behaviorism, psychology, science
+- Current Diversification of Behaviorism
+- Methodological Behaviorism: Historical Origins of a Problematic Concept (1923–1973)
+- The Role of Theory in Behavior Analysis: A Response to Unfinished Business, Travis Thompson’s Review of Staddon's New Behaviorism (2nd edition)
+
+NEIGHBOURING TOPIC 185 (similarity 0.81)
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Behavioral ephemera, difficult discriminations, and behavioral stability
+
+NEIGHBOURING TOPIC 61 (similarity 0.79)
+Key terms: mind
+- A Behaviour Analysis of Theory of Mind: Conceptual and Applied Implications
+- A Verbal Behavior Analysis of Theory of Mind: Conceptual and Applied Implications
+- The Intact Mind and Why It Matters

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Treatment Integrity, Selection, and Comparison\",\"definition\":\"Work on how faithfully behavioral treatments are implemented and how treatments are evaluated and chosen, including integrity errors, alternating treatments designs, treatment preference and acceptability, and maintenance of treatment effects.\",\"distinct_from_neighbours\":\"Focuses on implementation fidelity and methods for comparing and selecting treatments, rather than describing intervention programs, clinical service delivery and ethics, or clinical behavior analysis and psychotherapy.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1427,
+  "output": 185
+ },
+ "generated_utc": "2026-10-10T19:12:08+00:00"
+}

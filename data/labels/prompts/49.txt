@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 49
+Key terms: food selectivity, presentation, fixed, schedules
+
+Titles closest to the topic's center, conference presentations:
+- Delay Gadients to Food Among Different Schedule-Induced Behaviors
+- Frequency and Magnitude of Reinforcement in Multiple Schedules: Short Component Durations Show Sensitivity to Frequency Higher than to Duration of Access to Food
+- Measurement and Validation of Measures for Risky and Delayed Food and Monetary Choices
+- Explaining Performance on Ratio and Interval Schedules of Food Delivery
+- Food Probability, but not ITI, Affects Latency and Preference in a Discrete-Trials Discrimination Task
+- Advances in Behavioral Economics of Food Choice Among Humans and Non-humans
+- Effects of Mindful Eating and the Acquisition of Conditioned Food Cues
+- The Future of Feeding: Current Criticisms and Directions Forward
+- Diet-Induced Impulsivity: An Investigation of Bias and Sensitivity to Delay
+- The Impact of Caloric Densities on Demand for Food
+
+Titles closest to the topic's center, journal articles:
+- Comparing Simultaneous and Sequential Food Presentation to Increase Consumption of Novel Target Foods
+- A further refinement of procedures addressing food selectivity
+- Extent of food restriction affects probability but not delay‐based decision‐making
+- Assessing potential reinforcement‐like effects of brief stimuli unrelated to food reinforcers
+- Limits to preference and the sensitivity of choice to rate and amount of food
+- Food Cue Reactivity Meets the Reinforcer Pathology Model: Behavioral Economic Measures of Cue-Induced Changes in Food Reinforcer Efficacy
+- Matching, induction, and covariance with mixed response‐contingent food and noncontingent food
+- Treatment of food selectivity: An evaluation of video modeling of contingencies
+- Clinical evaluation of physical guidance procedures in the treatment of food selectivity
+- Stability of preference and reinforcing efficacy of edible, leisure, and social attention stimuli
+
+NEIGHBOURING TOPIC 120 (similarity 0.75)
+Key terms: inappropriate mealtime, nervosa, mealtime behavior, eating
+- An evaluation of trial‐based functional analyses of inappropriate mealtime behavior
+- A Comparison of Descriptive and Functional Analyses of Inappropriate Mealtime Behavior
+- Efficacy of functional analysis for informing behavioral treatment of inappropriate mealtime behavior: A systematic review and meta‐analysis
+
+NEIGHBOURING TOPIC 24 (similarity 0.75)
+Key terms: food refusal, treatment food, chronic food, pediatric food
+- Further examination of behavior during extinction‐based treatment of pediatric food refusal
+- Treating Food Refusal
+- Behavioral Interventions for Pediatric Food Refusal Maintain Effectiveness Despite Integrity Degradation: A Preliminary Demonstration
+
+NEIGHBOURING TOPIC 63 (similarity 0.68)
+Key terms: food selectivity, selectivity children, treatment food, edible
+- Treatment of Food Selectivity Among Individuals With Autism Spectrum Disorders
+- Randomized controlled trial of an applied behavior analytic intervention for food selectivity in children with autism spectrum disorder
+- Treating food selectivity as resistance to change in children with autism spectrum disorder

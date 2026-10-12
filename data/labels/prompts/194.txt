@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 194
+Key terms: collaboration, practice
+
+Titles closest to the topic's center, conference presentations:
+- Outside the Box: Better Outcomes Through Collaboration
+- Mind the Gap Lunch—Engage with Authors and Researchers to Innovate and Evolve Your Practices WHAT'S THIS?
+- Ethics of Effective Dissemination and Cross-Disciplinary Collaboration
+- Diversity, Inclusion, and Equity in Research and Practice: Where Are We Now and How Do We Move Forward?
+- We Did It Ourselves: Practitioner Experiences Undertaking Research
+- Approaches to Integrating Research and Practice in Applied Settings
+- Collaborating With Other Professionals: A Discussion of Opportunities and Approaches
+- Working Together Effectively Through Interdisciplinary Collaboration
+- Collaboration
+- Designing Purpose-Driven Organizations With 21st Century Technologies: How We Can Live More Connected Lives
+
+Titles closest to the topic's center, journal articles:
+- For the Love of this Field: Advocating and Collaborating with a United Purpose
+- Relations between Description and Experimentation in the Metacontingency Enterprise: An Interbehavioral Analysis
+- Overcoming Barriers to Applied Research: A Guide for Practitioners
+- A Reflection on Community Research and Action as an Evolving Practice
+- Tactics of just, equitable, diverse, and inclusive scientific research
+- Community-Engaged Scholarship: An Interpartner Approach for Collaborative Practice
+- 20 Years of Interteaching Research and Practice: A Tutorial for its Use in the Classroom
+- How can process-based researchers bridge the gap between individuals and groups? Discover the dynamic p-technique
+- The Dissemination Challenge: Practical solutions to make a difference
+- Interdisciplinary Collaboration Training: An Example of a Preservice Training Series
+
+NEIGHBOURING TOPIC 182 (similarity 0.69)
+Key terms: career, professional, graduate, success
+- Professional Development Series: Fame, Fortune, and Fixed-Interval Schedules: Promoting the Future of Basic and Translational Research in University Settings
+- Branching Out: Finding Success in New Areas of Practice
+- Branching Out: Finding Success in Diverse Areas of Practice
+
+NEIGHBOURING TOPIC 110 (similarity 0.65)
+Key terms: social media, consumer, dissemination, science
+- Considerations to Effective Dissemination of Behavior Science
+- Spread the Word! An Overview of Some Current Interdisciplinary Applications of Behavior Analytic Dissemination
+- What if Behavior Analysts Ran Facebook?: Using Behavioral Principles to Study and Improve Social Media Interactions
+
+NEIGHBOURING TOPIC 82 (similarity 0.65)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation

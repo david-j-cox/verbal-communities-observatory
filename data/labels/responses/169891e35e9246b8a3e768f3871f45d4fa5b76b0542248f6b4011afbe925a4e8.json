@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Trauma-Informed Care and Posttraumatic Stress\",\"definition\":\"Integrating trauma-informed care principles into behavior-analytic assessment, treatment, training, and research, plus behavioral approaches to posttraumatic stress symptoms such as behavioral activation and valued living.\",\"distinct_from_neighbours\":\"Focuses on trauma history and posttraumatic stress, not acquired brain injury rehabilitation, inpatient psychiatric or serious mental illness care, or treatment of self-injurious behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1723,
+  "output": 182
+ },
+ "generated_utc": "2026-10-11T00:38:04+00:00"
+}

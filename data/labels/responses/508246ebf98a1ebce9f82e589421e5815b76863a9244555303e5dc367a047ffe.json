@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Qualitative and Mixed Research Methods\",\"definition\":\"Work arguing for, guiding, and reflecting on the use of qualitative and mixed research methods to broaden behavior-analytic research and practice, including rigor, myths, lessons learned, and methodological diversity.\",\"distinct_from_neighbours\":\"Focuses specifically on qualitative and mixed research methodology, unlike broad reflections on applied behavior analysis's direction, theoretical dimensions of the science, or disseminating behavior science to the public.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1716,
+  "output": 666
+ },
+ "generated_utc": "2026-10-10T19:08:12+00:00"
+}

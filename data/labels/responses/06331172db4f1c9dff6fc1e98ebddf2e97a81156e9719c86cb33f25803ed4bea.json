@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Applied Animal Behavior With Dogs\",\"definition\": \"Applying behavior-analytic assessment and training to companion, shelter, and zoo animals, especially dogs, including functional analysis, social reinforcement, owner training, and treatment of problem behavior.\",\"distinct_from_neighbours\": \"Centers on applied work with domestic dogs and other managed animals, unlike basic conditioning research with nontraditional species, primate laboratory studies, or general experimental analysis of behavior.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1478,
+  "output": 167
+ },
+ "generated_utc": "2026-10-10T19:12:17+00:00"
+}

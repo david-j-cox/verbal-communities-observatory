@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 79
+Key terms: compassionate care, analysis aba, cultural, exploring
+
+Titles closest to the topic's center, conference presentations:
+- Behavior Analysis of Compassion and Compassionate Care
+- The Foundation and Evolution of Compassionate Care in Behavior Analysis: Advances in Understanding, Definition, Measurement, and Training
+- Putting Into Practice: Practical Strategies for Creating a Compassionate Context in Applied Behavior Analysis (ABA)
+- Training and Treating Wholeheartedly: Identifying a Role for Compassion Practices in the Profession of Behavior Analysis
+- Not Just a Buzzword: Conceptual Analyses and Practical Applications of Compassion in Behavior Analysis
+- Compassion-Focused Applied Behavior Analysis
+- n, Ph.D. Advocating for Compassionate Applied Behavior Analysis (ABA) Practice in Conversations With Caregivers and Colleagues
+- Toward a More Compassionate Implementation of Behavior Analysis
+- A Compassionate Care Framework: Honoring Dignity, Partnerships, and Diversity in Behavior Analysis
+- Bringing Applied Behavior Analysis (ABA) to Mind: Exploring Compassionate Mind Training From a Functional Behavior Analytic Lens
+
+Titles closest to the topic's center, journal articles:
+- Strategies for Incorporating Compassionate Care in a Behavior Analysis Graduate Program
+- Compassion: The Eighth Dimension of Applied Behavior Analysis
+- Compassionate Care in Behavior Analytic Treatment: Can Outcomes be Enhanced by Attending to Relationships with Caregivers?
+- Evolving Values, Expanding Contexts, and Centering Care: Introduction to the Special Issue on Compassion in Behavior Analysis
+- Compassionate Care, Cultural Humility, and Psychological Flexibility: Examining the Potential for Consilience in Applied Behavior Analysis
+- The Training Experiences of Behavior Analysts: Compassionate Care and Therapeutic Relationships with Caregivers
+- Teaching Compassion Skills to Students of Behavior Analysis: A Preliminary Investigation
+- Compassionate Care Training for Behavior Analysts to Support Caregiver Collaboration
+- Toward Compassion in the Assessment and Treatment of Severe Problem Behavior
+- Organizational Behavior Management Approaches to Advancing Compassionate Care in Research and Practice
+
+NEIGHBOURING TOPIC 67 (similarity 0.66)
+Key terms: self, practice, treatment, mindfulness
+- Self-Care and Wellbeing: Taking Care of Yourself so You Can Take Care of Others
+- Fostering Belonging Through Person-Centered Assessment, Strength-Based Treatment, and Compassionate, Assent-Based Practices
+- An Invitation to Act on the Value of Self-Care: Being a Whole Person in All That You Do
+
+NEIGHBOURING TOPIC 29 (similarity 0.65)
+Key terms: caregiver, infant, skills training, service
+- Advances in Caregiver Training and Caregiver-Implemented Interventions
+- Recent Findings and Future Directions for Caregiver Training: Increasing Effectiveness and Social Validity
+- Working With Caregivers in the Treatment of Behavior Problems: Methods, Barriers, and Considerations From Intake to Follow-Up
+
+NEIGHBOURING TOPIC 15 (similarity 0.63)
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis

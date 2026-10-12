@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 185
+Key terms: behavioral contrast, operant behavior, variability, reinforcement
+
+Titles closest to the topic's center, conference presentations:
+- The Momenta of Behavior: Disrupting the Organization of Operant Responses
+- Recent Developments in Behavioral Development and Behavior Variability
+- Behavior that Sticks: New Directions in Behavioral Persistence
+- Reinforced Behavioral Variability: Basic Research, Applications, and Theoretical Implications
+- Behavioral Variability: Reinforcement and Induction
+- Behavioral Persistence: Basic, Translational, and Clinical Studies
+- Transient Behavioral Changes: Theory, Data and Discussion
+- Behavioral Variability and Development: A Human Study
+- Persistence and Relapse of Operant Behavior: Experimental and Theoretical Analyses
+- The Bidirectional Operant as Behavioral Metamorphosis
+
+Titles closest to the topic's center, journal articles:
+- Announcing a special issue of the Journal of the Experimental Analysis of Behavior with emphasis on: Goal Direction and Habit in Operant Behavior
+- Behavioral ephemera, difficult discriminations, and behavioral stability
+- Persistence and relapse of reinforced behavioral variability
+- The temporal structure of goal‐directed and habitual operant behavior
+- An investigation of resurgence of reinforced behavioral variability in humans
+- Resurgence, behavioral contrast, and stimuli correlated with the absence of reinforcement
+- Stimulus generalization of behavioral history: Interspecies generality and persistence of generalization gradients
+- Understanding Operant Behavior: Still Experimental Analysis of the Three-Term Contingency
+- A Human-Operant Investigation of Preceding- and Following-Schedule Behavioral Contrast
+- Evaluating the effects of discriminability on behavioral persistence during and following time‐based reinforcement
+
+NEIGHBOURING TOPIC 199 (similarity 0.86)
+Key terms: evolutionary, behavior dynamics, theory, human
+- What Evolutionary Theory Tells Us About Behavior
+- On the current status of the evolutionary theory of behavior dynamics
+- Systems, Groups, and the Evolution of Behavior Science
+
+NEIGHBOURING TOPIC 177 (similarity 0.81)
+Key terms: response reinforcer, reinforcement, responding, operant
+- Behavioral control by the response–reinforcer correlation
+- The Reciprocal Relationship Between Response and Reinforcer: Three Evaluations of the Effects of Conjugate Reinforcement on Response Force
+- Response–reinforcer dependency and resistance to change
+
+NEIGHBOURING TOPIC 53 (similarity 0.81)
+Key terms: creativity, psychology, psychological, science
+- Complex Behavior and Behavioral Artistry
+- Behavioral contrast: Research and areas for investigation
+- Behavioral Interpretations of Creativity

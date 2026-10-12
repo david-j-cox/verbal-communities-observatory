@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Intervention Intensity, Quality, and Outcomes\",\"definition\":\"Research evaluating how comprehensive behavioral intervention programs, especially early intensive and low-intensity models, are delivered, including treatment intensity, quality, integrity, supervision, technology, and measurement of client outcomes.\",\"distinct_from_neighbours\":\"Focuses on program-level delivery and outcomes of behavioral intervention, not adult clinical behavior analysis or psychotherapy, functional assessment of problem behavior, or qualitative research methods.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1530,
+  "output": 190
+ },
+ "generated_utc": "2026-10-10T19:09:12+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Acquired Brain Injury Rehabilitation\",\"definition\":\"Behavior-analytic assessment and intervention for people with acquired or traumatic brain injury, including problem behavior, verbal and academic skill recovery, delay discounting, caregiver support, staff training, and rehabilitation service settings.\",\"distinct_from_neighbours\":\"Defined by neurological injury acquired after birth and rehabilitation care, not self-injurious behavior, psychological trauma and trauma-informed care, or lifelong developmental disabilities.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1694,
+  "output": 182
+ },
+ "generated_utc": "2026-10-10T19:05:37+00:00"
+}

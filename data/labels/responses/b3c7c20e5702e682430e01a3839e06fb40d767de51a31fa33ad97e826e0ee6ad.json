@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\": \"Assessment and Treatment of Rumination\",\"definition\": \"Assessment and treatment of rumination (repeated regurgitation and rechewing of food), often in individuals with autism, using satiation, noncontingent reinforcement, punishment, gum chewing, or self-administered interventions; includes some work on depressive rumination.\",\"distinct_from_neighbours\": \"Targets regurgitation-based rumination rather than food refusal or other inappropriate mealtime behavior, laboratory avoidance responding, or verbal and intraverbal stimulus control.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1096,
+  "output": 318
+ },
+ "generated_utc": "2026-10-10T19:13:51+00:00"
+}

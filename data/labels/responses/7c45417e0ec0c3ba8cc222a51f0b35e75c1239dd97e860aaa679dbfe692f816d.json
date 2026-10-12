@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Breathing and Respiratory Health Interventions\",\"definition\":\"Behavioral interventions targeting breathing and respiratory health, including diaphragmatic breathing training, adherence to positive airway pressure for sleep apnea, and reducing tracheostomy tube manipulation.\",\"distinct_from_neighbours\":\"Centres on breathing and airway-related behaviour and devices, unlike body-focused habits such as nail biting, exposure-based anxiety and panic treatment, or obsessive-compulsive and tic disorders.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1117,
+  "output": 181
+ },
+ "generated_utc": "2026-10-10T19:10:20+00:00"
+}

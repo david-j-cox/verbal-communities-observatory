@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Derived Relational Responding Research\",\"definition\":\"Experimental and translational studies of derived and arbitrarily applicable relational responding, including how such responding is trained, tested, and measured, with tools such as the Implicit Relational Assessment Procedure, and applied to complex language.\",\"distinct_from_neighbours\":\"Focuses on empirical training, testing, and measurement of relational responding itself, not relational frame theory's broad conceptual development, intraverbal stimulus control, or behavioral accounts of theory of mind.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1461,
+  "output": 177
+ },
+ "generated_utc": "2026-10-10T19:12:06+00:00"
+}

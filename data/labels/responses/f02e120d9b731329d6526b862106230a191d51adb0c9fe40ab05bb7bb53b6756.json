@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Applied Behavior Analysis as a Profession\",\"definition\":\"Work on applied behavior analysis as a field and profession: regulation, credentialing, advocacy, training programs, international growth, practitioner ethics and skills, and how services are delivered across settings.\",\"distinct_from_neighbours\":\"Focuses on the profession as a whole, not clinical decision-making and legal best practice in treatment, collaboration and advocacy among practitioners, or autism-specific service outcomes.\"}",
+ "usage": {
+  "input": 1549,
+  "output": 163
+ },
+ "generated_utc": "2026-10-10T17:55:50+00:00"
+}

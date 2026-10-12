@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Token Economies and Token Reinforcement\",\"definition\":\"Research and practice guidance on token economies: how tokens function as reinforcers, assessments of token value, exchange menus and response cost, staff training for implementation, and practitioner recommendations.\",\"distinct_from_neighbours\":\"Focuses specifically on token systems, whereas neighbours address behavioral economics broadly, demand analysis and purchase tasks generally, or positive, negative, and conditioned reinforcement without tokens.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1172,
+  "output": 167
+ },
+ "generated_utc": "2026-10-10T19:06:20+00:00"
+}

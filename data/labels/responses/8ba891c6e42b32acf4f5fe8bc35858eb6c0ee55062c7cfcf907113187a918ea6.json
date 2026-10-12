@@ -1,0 +1,9 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Behavioral Economics Applications and Policy\",\"definition\":\"Broad overviews and applications of behavioral economics to research, practice, public policy, health, sustainability, poverty, consumer behavior, and the economics of the behavior-analytic profession, such as fees and pay equity.\",\"distinct_from_neighbours\":\"Covers behavioral economics broadly and its policy and societal uses, not demand curves and purchase tasks specifically, quantitative choice models, or basic reinforcement processes.\"}",
+ "usage": {
+  "input": 1330,
+  "output": 168
+ },
+ "generated_utc": "2026-10-10T17:55:57+00:00"
+}

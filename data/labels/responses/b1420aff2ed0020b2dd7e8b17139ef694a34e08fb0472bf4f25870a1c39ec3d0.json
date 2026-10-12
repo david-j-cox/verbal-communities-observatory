@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Vocal Stereotypy and Vocal Repertoires\",\"definition\":\"Assessment and treatment of vocal stereotypy and scripting, mainly with response interruption and redirection, matched stimulation, or competing items, plus building vocal repertoires, including during augmentative communication use.\",\"distinct_from_neighbours\":\"Targets the form and reduction of problematic vocalizations and the expansion of basic vocal output, not intraverbal relations, auditory discrimination, or teaching divergent verbal responses to autistic children.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1371,
+  "output": 180
+ },
+ "generated_utc": "2026-10-10T19:08:29+00:00"
+}

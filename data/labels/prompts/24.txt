@@ -1,0 +1,48 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 24
+Key terms: food refusal, treatment food, chronic food, pediatric food
+
+Titles closest to the topic's center, conference presentations:
+- Treating Food Refusal
+- Current Strategies to Assess and Treat Multiple Topographies of Food Refusal
+- Behavioral Interventions Without Escape Extinction in the Treatment of Food Selectivity
+- In and Out: Contingency-Based Interventions for Addressing Food-Related Challenging Behavior
+- PDS: A Discussion of New Books on Science Denial, Matching Risks with Rewards, and Ultra-Processed Food
+
+Titles closest to the topic's center, journal articles:
+- Further examination of behavior during extinction‐based treatment of pediatric food refusal
+- Behavioral Interventions for Pediatric Food Refusal Maintain Effectiveness Despite Integrity Degradation: A Preliminary Demonstration
+- Examining extinction bursts in the treatment of pediatric food refusal
+- A comparison of two multicomponent treatment packages for food refusal
+- Treatment outcomes for children with chronic food refusal in a community behavioral health center
+- Treating Food Approval-Seeking Behavior: One Bite at a Time
+- A systematic literature review of antecedent and reinforcement‐based behavioral feeding interventions without the implementation of escape extinction
+- Treatment of Food Selectivity in a Child with Avoidant/Restrictive Food Intake Disorder Through Parent Teleconsultation
+- Comparing and intervening on behavioral demand for snack foods among justice‐involved adolescents: A preliminary translational analysis
+
+NEIGHBOURING TOPIC 120 (similarity 0.76)
+Key terms: inappropriate mealtime, nervosa, mealtime behavior, eating
+- An evaluation of trial‐based functional analyses of inappropriate mealtime behavior
+- A Comparison of Descriptive and Functional Analyses of Inappropriate Mealtime Behavior
+- Efficacy of functional analysis for informing behavioral treatment of inappropriate mealtime behavior: A systematic review and meta‐analysis
+
+NEIGHBOURING TOPIC 49 (similarity 0.75)
+Key terms: food selectivity, presentation, fixed, schedules
+- Delay Gadients to Food Among Different Schedule-Induced Behaviors
+- Comparing Simultaneous and Sequential Food Presentation to Increase Consumption of Novel Target Foods
+- Frequency and Magnitude of Reinforcement in Multiple Schedules: Short Component Durations Show Sensitivity to Frequency Higher than to Duration of Access to Food
+
+NEIGHBOURING TOPIC 73 (similarity 0.74)
+Key terms: pediatric feeding, feeding disorders, treatment pediatric, children feeding
+- Considerations Regarding the Assessment and Treatment of Pediatric Feeding Disorders
+- Advancements in the Assessment and Treatment of Pediatric Feeding Disorders
+- Introductory Assessment and Treatment of Pediatric Feeding Disorders

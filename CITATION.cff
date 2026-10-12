@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the article."
+title: "What is Presented and What is Published: replication code and data"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/david-j-cox/verbal-communities-observatory"
+url: "https://david-j-cox.github.io/verbal-communities-observatory/"
+authors:
+  - family-names: Cox
+    given-names: David J.
+    email: dcox@endicott.edu
+    affiliation: "Institute for Applied Behavioral Science, Endicott College"
+preferred-citation:
+  type: article
+  title: "What is Presented and What is Published: Comparing Topic Distributions Across Behavior-Analytic Conferences and Journals"
+  authors:
+    - family-names: Cox
+      given-names: David J.
+  journal: "Behavioral Interventions"
+  notes: "Manuscript under review."

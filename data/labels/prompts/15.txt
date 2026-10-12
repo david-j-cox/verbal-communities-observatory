@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 15
+Key terms: clinical behavior, psychotherapy, behavior therapy, health
+
+Titles closest to the topic's center, conference presentations:
+- Clinical Behavior Analysis: Extending the Field Beyond Intensive Treatment Settings
+- Expanding Horizons: Foundations, Challenges, and Progress of Clinical Behavior Analysis
+- Advances in Clinical Behavior Analysis
+- Clinical Behavior Analysis: Considerations in Characterizations, Applications, and Future Directions
+- Assessments for Developing Comprehensive Behavior Analytic Therapy Programs: Where’s the Research?
+- Development of Behavior Analytic Treatment Packages to Address Diverse Clinical Problems
+- Assessment and Applications in Clinical Behavior Analysis
+- Administering Assessments for Comprehensive Behavior Analytic Therapy Programs: Analyzing Practitioner Skills and Reliability
+- The Potential Symbiotic Relationship Between Behavior Analysis and Clinical Psychology
+- A Revival of Clinical Behavior Analysis: The Case of Functional Analytic Psychotherapy
+
+Titles closest to the topic's center, journal articles:
+- Addressing Medical Issues in Behavior Analytic Treatment
+- Therapeutic Relationships in Applied Behavior Analysis: Current Status and Future Directions
+- What are Values in Clinical Behavior Analysis?
+- Introduction to the special section on clinical and applied behavior analysis and ethics.
+- Introduction to the behavior consultation and therapy section.
+- Methods of Conceptual Research in Clinical Behavior Analysis
+- Treatment Integrity Reporting in Behavior Analysis in Practice 2008–2019
+- Barriers to Use of Experimental Analysis in Applied Behavior Analysis Clinical Practice
+- Murray Sidman's contributions to clinical behavior analysis
+- Treatment Manuals, Single-Subject Designs, and Evidence-Based Practice: A Clinical Behavior Analytic Perspective
+
+NEIGHBOURING TOPIC 105 (similarity 0.85)
+Key terms: behavioral intervention, residential, health, interventions
+- On the Longevity of Behavioral Intervention
+- A “Healthy-Contingencies” Behavioral Intervention
+- A programmatic description of an early, intensive behavioral intervention program in Australia
+
+NEIGHBOURING TOPIC 82 (similarity 0.84)
+Key terms: qualitative, behavioral research, methods, practice
+- Rethinking the Place of Qualitative Methods in Behavior Analysis
+- Ensuring Rich Rigor of Qualitative Methodologies in Behavior Analytic Research
+- How Can Qualitative Methods Be Applied to Behavior Analytic Research: A Discussion and Suggestions for Implementation
+
+NEIGHBOURING TOPIC 160 (similarity 0.82)
+Key terms: treatment challenging, severe challenging, challenging behavior, assessment treatment
+- Advances in Assessment and Intervention for Difficult-to-Treat Problem Behavior
+- Synthesizing Research on the Assessment and Treatment of Problem Behavior
+- From Research to Practice: Current Procedural Advances in the Assessment and Treatment of Problem Behavior

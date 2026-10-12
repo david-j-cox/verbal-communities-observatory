@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "text": "{\"label\":\"Methods for Training Parents and Caregivers\",\"definition\":\"Research on how to teach parents and other caregivers to implement behavioral assessment and intervention, including behavioral skills training, coaching, pyramidal and remote delivery, and barriers to effective training.\",\"distinct_from_neighbours\":\"Focuses on the methods and effectiveness of training caregivers, rather than family perceptions and support, early-intervention therapist practices, or pediatric healthcare applications of behavior analysis.\"}",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1531,
+  "output": 167
+ },
+ "generated_utc": "2026-10-11T00:37:30+00:00"
+}

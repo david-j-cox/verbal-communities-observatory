@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 97
+Key terms: operant demand, economic demand, behavioral economic, price
+
+Titles closest to the topic's center, conference presentations:
+- Novel Applications of Commodity Purchase Tasks in Operant Demand Analyses
+- Current Directions in Behavioral Economic Approaches to Demand
+- Advances in Operant Demand Analysis: Toward Best Practice for Demand Assessment and Quantification
+- Applying Operant Demand Analyses to Issues of Societal Importance
+- How Much is it Worth to You? Behavioral Economic Demand Analyses
+- SQAB Tutorial: Integrating Discounting and Demand: Finding a Common Language Between Behavioral Economic Frameworks and Modeling Strategies
+- Demystifying Demand: A Brief Primer on Behavioral Economic Demand for Researchers and Clinicians
+- A Behavioral Economic Analysis of Demand for Gym Membership
+- Behavioral Economic Demand Elasticity Significantly Predicts Blood Nicotine Across ReducedNicotine Cigarettes: A Preliminary Analysis
+- Much Ado about Zeros: Recent Thoughts on Demand Analyses
+
+Titles closest to the topic's center, journal articles:
+- Hidden equivalence in the operant demand framework: A review and evaluation of multiple methods for evaluating nonconsumption
+- Applying Mixed-Effects Modeling to Behavioral Economic Demand: An Introduction
+- The Use of Demand Assessments: A Brief Review and Practical Guide
+- The Demand Curve Analyzer: Behavioral economic software for applied research
+- Evaluation of a concurrent‐operant demand assessment to determine task preference
+- Use of a paired‐stimulus demand analysis to evaluate demands for inclusion in functional analyses
+- Reliability and validity of behavioral‐economic measures: A review and synthesis of discounting and demand
+- A comparison of rate‐based and latency‐based assessments for determining demand aversiveness
+- Use of a latency-based demand assessment to identify potential demands for functional analyses
+- A Model of Consumer Demand with Anchoring and Price Effects on Purchase Behavior
+
+NEIGHBOURING TOPIC 57 (similarity 0.76)
+Key terms: behavioral economics
+- Behavioral Economics: Implications for Research and Practice
+- Advances in Behavioral Economics
+- Behavioral Economics: Novel Applications to Basic and Applied Research
+
+NEIGHBOURING TOPIC 54 (similarity 0.62)
+Key terms: delay discounting, probability, choice, temporal
+- Delay discounting of different outcomes: Review and theory
+- Recent Advances in the Study of Delay Discounting
+- Complexities and Discounting: Examining Complex Variables and Contexts in Delay Discounting
+
+NEIGHBOURING TOPIC 99 (similarity 0.60)
+Key terms: choice, preference, model
+- Behavior Analytic Perspectives on Choice
+- A model of changeover behavior in two‐alternative choice
+- A Model of Changeover Behavior in Two-Alternative Choice

@@ -1,0 +1,54 @@
+You are helping label topics found by clustering the titles of behavior-analytic conference presentations and journal articles (2016-2026). Clustering and term extraction were automatic. Your job is to describe one topic accurately for readers of a behavior-analytic journal who will see the label in a table.
+
+Base your answer only on the evidence below. The titles closest to the topic's center are the best guide to what it contains; the key terms are word statistics and can be generic. The neighbouring topics are the most similar topics in the same model: say what separates this topic from them, so that neighbours never receive the same label.
+
+Return JSON only, with exactly these keys:
+  "label": a plain-language name, at most 6 words, no abbreviations a general behavior-analytic reader would not know, not ending in a period
+  "definition": one sentence, at most 35 words, saying what work in this topic is about
+  "distinct_from_neighbours": one sentence, at most 30 words, saying what separates it from the neighbouring topics
+Do not mention conferences, journals, counts, or the clustering itself.
+
+TOPIC 162
+Key terms: children autism, learners autism, skill acquisition, autism spectrum
+
+Titles closest to the topic's center, conference presentations:
+- Advancing and Refining Skill Acquisition Procedures for Young Children With Autism
+- Recent Research on Skill Acquisition With Children With Autism
+- Enhancing the Efficiency of Instructional Procedures for Children With Autism Spectrum Disorders
+- Methods to Address Errors and Response Bias During Skill Acquisition for Learners With Autism
+- Comparing Procedural Variables in Skill Acquisition Arrangements for Children With Autism
+- Refining Instructional Procedures for Individuals With Autism Spectrum Disorder
+- Prompt Less and Shape More: Using Interconnected Chains for Skill Acquisition and Problem Behavior Reduction When Teaching Children With Autism
+- Utilizing Rate of Skill Acquisition to Predict Learning Outcomes in Learners With Autism
+- Reinforcement Variables That Impact Skill Acquisition and Performance in Individuals With Autism
+- Reinforcement Variations for the Acquisition and Maintenance of Skills by Learners With Autism
+
+Titles closest to the topic's center, journal articles:
+- The effects of intertrial interval and instructional format on skill acquisition and maintenance for children with autism spectrum disorders
+- Reinforcer Choice on Skill Acquisition for Children with Autism Spectrum Disorder: a Systematic Replication
+- Comparing Skill Acquisition Under Different Stimulus Set Sizes With Adolescents With Autism Spectrum Disorder: A Replication
+- Comparing Matrix-Training Procedures with Children with Autism Spectrum Disorder
+- Intensity and Learning Outcomes in the Treatment of Children With Autism Spectrum Disorder
+- Inserting mastered targets during error correction when teaching skills to children with autism
+- An assessment of differential reinforcement procedures for learners with autism spectrum disorder
+- Increasing Behavioral Variability and Social Skill Accuracy in Children with Autism Spectrum Disorder
+- Investigating the effects of error‐correction procedures across different skill sets for children with autism
+- Procedural parameters in equivalence‐based instruction with individuals diagnosed with autism: A call for systematic research
+
+NEIGHBOURING TOPIC 8 (similarity 0.92)
+Key terms: autism, spectrum disorder, behavioral skills, parents
+- Skills Training Research for Adults With Autism or Developmental Disabilities
+- Training caregivers to teach communication skills to their child diagnosed with autism using behavioral skills training: An assessment of booster trainings.
+- Innovations in Parent Training for Children With Autism Spectrum Disorder: Reaching New Populations and Skills
+
+NEIGHBOURING TOPIC 13 (similarity 0.91)
+Key terms: children autism, teaching children, video modeling, skills children
+- Teaching Social Skills to Children With Autism and Related Disorders
+- Teaching Social Skills to Individuals With Autism Spectrum Disorders
+- Teaching Social Skills Repertoires to Children With Autism
+
+NEIGHBOURING TOPIC 188 (similarity 0.88)
+Key terms: children autism, activity schedules, autism spectrum, autistic
+- Addressing Restricted and Repetitive Behavior and Social Deficits in Individuals With Autism
+- A comparison of token and tandem schedules of reinforcement on response patterns for adolescents with autism
+- Social and Nonsocial Stimuli as Reinforcers for the Behavior of Children With Autism Spectrum Disorders and Typically Developing Children
